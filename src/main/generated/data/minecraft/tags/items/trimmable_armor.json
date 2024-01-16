@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "bsroleplay:judge_chestplate",
+    "bsroleplay:judge_leggings",
+    "bsroleplay:judge_boots",
+    "bsroleplay:police_helmet",
+    "bsroleplay:police_chestplate",
+    "bsroleplay:police_leggings",
+    "bsroleplay:police_boots",
+    "bsroleplay:dream_mask",
+    "bsroleplay:bunny_mask"
+  ]
+}

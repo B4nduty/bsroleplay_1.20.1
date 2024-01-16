@@ -1,0 +1,53 @@
+{
+  "item.bsroleplay.red_pirate_helmet": "Tricornio Rojo",
+  "item.bsroleplay.red_pirate_chestplate": "Vestimenta de Pirata Roja",
+  "item.bsroleplay.red_pirate_leggings": "Pantalones Pirata Rojos",
+
+  "item.bsroleplay.blue_pirate_helmet": "Tricornio Azul",
+  "item.bsroleplay.blue_pirate_chestplate": "Vestimenta de Pirata Azul",
+  "item.bsroleplay.blue_pirate_leggings": "Pantalones Pirata Azules",
+
+  "item.bsroleplay.crown": "Corona",
+  "item.bsroleplay.mini_crown": "Corona Chiquita",
+
+  "item.bsroleplay.dream_mask": "Máscara de Dream",
+  "item.bsroleplay.bunny_mask": "Máscara de Conejo",
+
+  "item.bsroleplay.hook": "Garfio",
+  "tooltip.bsroleplay.hook.tooltip": "Cuando haces clic derecho, aparece unos Colmillos de Evocador",
+
+  "item.bsroleplay.dolor_en_el_pecho_carola_music_disc": "Disco de Música",
+  "item.bsroleplay.dolor_en_el_pecho_carola_music_disc.desc": "Shivita - Dolor En El Pecho Remix",
+
+  "item.bsroleplay.holy_seeds": "Semillas Sagradas",
+  "tooltip.bsroleplay.holy_seeds.tooltip": "Usado en Ciertos Mobs Sagrados",
+
+  "item.bsroleplay.judge_hammer": "Martillo de Juez",
+  "tooltip.bsroleplay.judgehammer.tooltip": "Al darle Clic Derecho hace un Sonido",
+
+  "item.bsroleplay.judge_chestplate": "Toga Superior",
+  "item.bsroleplay.judge_leggings": "Toga Inferior",
+  "item.bsroleplay.judge_boots": "Zapatos de Juez",
+
+  "item.bsroleplay.police_baton": "Porra Policial",
+
+  "item.bsroleplay.police_helmet": "Gorra Policial",
+  "item.bsroleplay.police_chestplate": "Uniforme Policial",
+  "item.bsroleplay.police_leggings": "Pantalón Policial",
+  "item.bsroleplay.police_boots": "Zapatos Policiales",
+
+  "item.bsroleplay.holy_weapon": "Arma Sagrada",
+  "tooltip.bsroleplay.holyweapon.tooltip": "Al darle Clic Derecho aparece un Rayo",
+
+  "item.bsroleplay.halo": "Aureola",
+
+  "itemgroup.bsroleplay": "BsRolePlay",
+
+  "item.bsroleplay.holy_cloud_spawn_egg": "Generar Nubes Sagradas",
+
+  "block.bsroleplay.holy_cloud_generator_station": "Recolector Divino",
+
+  "block.bsroleplay.holy_cloud_egg_block": "Huevo de Nubes Sagradas",
+
+  "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez"
+}

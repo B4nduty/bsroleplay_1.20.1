@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:dark_oak_wood"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "H": {
+      "item": "bsroleplay:holy_weapon"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "   ",
+    "DHD",
+    "WGW"
+  ],
+  "result": {
+    "item": "bsroleplay:holy_cloud_generator_station"
+  },
+  "show_notification": true
+}

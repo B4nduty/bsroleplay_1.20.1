@@ -1,0 +1,11 @@
+{
+  "type": "bsroleplay:holy_cloud_generator",
+  "ingredients": [
+    {
+      "item": "bsroleplay:mini_crown"
+    }
+  ],
+  "output": {
+    "item": "bsroleplay:crown"
+  }
+}

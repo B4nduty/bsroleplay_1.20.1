@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dark_oak_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dark_oak_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_gold_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_holy_weapon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:holy_weapon"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:holy_cloud_generator_station"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:white_wool"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_white_wool",
+      "has_gold_block",
+      "has_dark_oak_wood",
+      "has_holy_weapon",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:holy_cloud_generator_station"
+    ]
+  },
+  "sends_telemetry_event": false
+}

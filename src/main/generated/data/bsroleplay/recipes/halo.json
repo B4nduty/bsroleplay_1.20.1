@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "bsroleplay:holy_weapon"
+    },
+    "I": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "IHI",
+    "III"
+  ],
+  "result": {
+    "item": "bsroleplay:halo"
+  },
+  "show_notification": true
+}

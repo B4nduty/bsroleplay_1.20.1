@@ -1,0 +1,11 @@
+{
+  "type": "bsroleplay:holy_cloud_generator",
+  "ingredients": [
+    {
+      "item": "bsroleplay:dream_mask"
+    }
+  ],
+  "output": {
+    "item": "bsroleplay:bunny_mask"
+  }
+}

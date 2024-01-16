@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "J": {
+      "item": "bsroleplay:judge_hammer"
+    }
+  },
+  "pattern": [
+    "   ",
+    "J J",
+    "B B"
+  ],
+  "result": {
+    "item": "bsroleplay:judge_boots"
+  },
+  "show_notification": true
+}

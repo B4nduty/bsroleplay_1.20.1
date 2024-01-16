@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_wool"
+    },
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "B B",
+    "BIB",
+    "IWI"
+  ],
+  "result": {
+    "item": "bsroleplay:blue_pirate_chestplate"
+  },
+  "show_notification": true
+}

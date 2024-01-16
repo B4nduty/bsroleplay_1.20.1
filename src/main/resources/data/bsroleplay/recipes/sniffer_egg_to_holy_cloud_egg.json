@@ -1,0 +1,11 @@
+{
+  "type": "bsroleplay:holy_cloud_generator",
+  "ingredients": [
+    {
+      "item": "minecraft:sniffer_egg"
+    }
+  ],
+  "output": {
+    "item": "bsroleplay:holy_cloud_egg_block"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "bsroleplay:holy_cloud_generator",
+  "ingredients": [
+    {
+      "item": "bsroleplay:halo"
+    }
+  ],
+  "output": {
+    "item": "bsroleplay:dolor_en_el_pecho_carola_music_disc"
+  }
+}

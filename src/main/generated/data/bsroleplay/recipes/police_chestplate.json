@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "P": {
+      "item": "bsroleplay:police_baton"
+    }
+  },
+  "pattern": [
+    "B B",
+    "BPB",
+    "BBB"
+  ],
+  "result": {
+    "item": "bsroleplay:police_chestplate"
+  },
+  "show_notification": true
+}

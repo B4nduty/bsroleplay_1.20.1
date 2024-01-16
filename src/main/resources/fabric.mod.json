@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "bsroleplay",
+	"version": "${version}",
+	"name": "BsRolePlay",
+	"description": "First official mod from Banduty! This is a Roleplay mod!",
+	"authors": [
+		"Banduty!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bsroleplay/textures/item/judge_hammer.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"banduty.bsroleplay.BsRolePlay"
+		],
+		"client": [
+			"banduty.bsroleplay.BsRolePlayClient"
+		],
+		"fabric-datagen": [
+			"banduty.bsroleplay.BsRolePlayDataGenerator"
+		],
+		"rei_client": [
+			"banduty.bsroleplay.compat.BsRolePlayREIClientPlugin"
+		]
+	},
+	"mixins": [
+		"bsroleplay.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"geckolib": ">=4.4",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

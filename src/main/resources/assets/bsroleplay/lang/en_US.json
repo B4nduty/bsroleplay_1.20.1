@@ -1,0 +1,53 @@
+{
+  "item.bsroleplay.red_pirate_helmet": "Red Tricorn",
+  "item.bsroleplay.red_pirate_chestplate": "Red Pirate Clothing",
+  "item.bsroleplay.red_pirate_leggings": "Red Pirate Pants",
+
+  "item.bsroleplay.blue_pirate_helmet": "Blue Tricorn",
+  "item.bsroleplay.blue_pirate_chestplate": "Blue Pirate Clothing",
+  "item.bsroleplay.blue_pirate_leggings": "Blue Pirate Pants",
+
+  "item.bsroleplay.crown": "Crown",
+  "item.bsroleplay.mini_crown": "Mini Crown",
+
+  "item.bsroleplay.dream_mask": "Dream Mask",
+  "item.bsroleplay.bunny_mask": "Bunny Mask",
+
+  "item.bsroleplay.hook": "Hook",
+  "tooltip.bsroleplay.hook.tooltip": "When Right Click Summon Evoker Fangs",
+
+  "item.bsroleplay.dolor_en_el_pecho_carola_music_disc": "Music Disc",
+  "item.bsroleplay.dolor_en_el_pecho_carola_music_disc.desc": "Shivita - Dolor En El Pecho Remix",
+
+  "item.bsroleplay.holy_seeds": "Holy Seeds",
+  "tooltip.bsroleplay.holy_seeds.tooltip": "Used on certain Holy Mobs",
+
+  "item.bsroleplay.judge_hammer": "Judge Hammer",
+  "tooltip.bsroleplay.judgehammer.tooltip": "When Right Click play a Sound",
+
+  "item.bsroleplay.judge_chestplate": "Judge Top Toga",
+  "item.bsroleplay.judge_leggings": "Judge Bottom Toga",
+  "item.bsroleplay.judge_boots": "Judge Shoes",
+
+  "item.bsroleplay.police_baton": "Police Baton",
+
+  "item.bsroleplay.police_helmet": "Police Hat",
+  "item.bsroleplay.police_chestplate": "Police Uniform",
+  "item.bsroleplay.police_leggings": "Police Leggings",
+  "item.bsroleplay.police_boots": "Police Boots",
+
+  "item.bsroleplay.holy_weapon": "Holy Weapon",
+  "tooltip.bsroleplay.holyweapon.tooltip": "When Right Click summon a Lightning",
+
+  "item.bsroleplay.halo": "Halo",
+
+  "item.bsroleplay.holy_cloud_spawn_egg": "Holy Cloud Spawn Egg",
+
+  "block.bsroleplay.holy_cloud_generator_station": "Divine Gatherer",
+
+  "block.bsroleplay.holy_cloud_egg_block": "Holy Cloud Egg",
+
+  "itemgroup.bsroleplay": "BsRolePlay",
+
+  "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise"
+}

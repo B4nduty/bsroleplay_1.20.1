@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "W": {
+      "item": "minecraft:dark_oak_wood"
+    }
+  },
+  "pattern": [
+    " G ",
+    "WSW",
+    " W "
+  ],
+  "result": {
+    "item": "bsroleplay:holy_weapon"
+  },
+  "show_notification": true
+}

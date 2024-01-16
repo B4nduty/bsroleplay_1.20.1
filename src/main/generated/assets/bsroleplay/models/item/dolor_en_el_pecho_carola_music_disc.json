@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bsroleplay:item/dolor_en_el_pecho_carola_music_disc"
+  }
+}

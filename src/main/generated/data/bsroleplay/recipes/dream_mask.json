@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "BWB",
+    "WWW",
+    "BBB"
+  ],
+  "result": {
+    "item": "bsroleplay:dream_mask"
+  },
+  "show_notification": true
+}

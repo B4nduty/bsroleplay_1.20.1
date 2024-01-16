@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_wool"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "B B",
+    "G G"
+  ],
+  "result": {
+    "item": "bsroleplay:blue_pirate_leggings"
+  },
+  "show_notification": true
+}
