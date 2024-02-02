@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:oak_leaves"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "O O",
+    "OOO"
+  ],
+  "result": {
+    "item": "bsroleplay:civic_crown"
+  },
+  "show_notification": true
+}

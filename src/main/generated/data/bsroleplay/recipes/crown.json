@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "M": {
+      "item": "bsroleplay:mini_crown"
+    }
+  },
+  "pattern": [
+    "G G",
+    "LME",
+    "   "
+  ],
+  "result": {
+    "item": "bsroleplay:crown"
+  },
+  "show_notification": true
+}

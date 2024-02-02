@@ -1,7 +1,6 @@
 package banduty.bsroleplay.item;
 
 import banduty.bsroleplay.BsRolePlay;
-import banduty.bsroleplay.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -12,35 +11,17 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup BSROLEPLAY_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(BsRolePlay.MOD_ID,"holy_seeds"),
+            new Identifier(BsRolePlay.MOD_ID,"crown"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bsroleplay"))
-                    .icon(() -> new ItemStack(ModItems.HOLY_SEEDS)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC);
-
-                        entries.add(ModItems.HOLY_SEEDS);
-
-                        entries.add(ModItems.JUDGE_HAMMER);
-
+                    .icon(() -> new ItemStack(ModItems.CROWN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.JUDGE_CHESTPLATE);
                         entries.add(ModItems.JUDGE_LEGGINGS);
                         entries.add(ModItems.JUDGE_BOOTS);
-
-                        entries.add(ModItems.POLICE_BATON);
 
                         entries.add(ModItems.POLICE_HELMET);
                         entries.add(ModItems.POLICE_CHESTPLATE);
                         entries.add(ModItems.POLICE_LEGGINGS);
                         entries.add(ModItems.POLICE_BOOTS);
-
-                        entries.add(ModItems.HOLY_WEAPON);
-
-                        entries.add(ModItems.HALO);
-
-                        entries.add(ModItems.HOLY_CLOUD_SPAWN_EGG);
-
-                        entries.add(ModBlocks.HOLY_CLOUD_GENERATOR_STATION);
-
-                        entries.add(ModBlocks.HOLY_CLOUD_EGG_BLOCK);
 
                         entries.add(ModItems.RED_PIRATE_HELMET);
                         entries.add(ModItems.RED_PIRATE_CHESTPLATE);
@@ -50,14 +31,31 @@ public class ModItemGroups {
                         entries.add(ModItems.BLUE_PIRATE_CHESTPLATE);
                         entries.add(ModItems.BLUE_PIRATE_LEGGINGS);
 
-                        entries.add(ModItems.HOOK);
+                        entries.add(ModItems.DREAM_MASK);
+                        entries.add(ModItems.BUNNY_MASK);
+
+                        entries.add(ModItems.NEANDERTHAL_CHESTPLATE);
+
+                        entries.add(ModItems.FUNERAL_MASK);
 
                         entries.add(ModItems.CROWN);
                         entries.add(ModItems.MINI_CROWN);
 
-                        entries.add(ModItems.DREAM_MASK);
+                        entries.add(ModItems.CIVIC_CROWN);
 
-                        entries.add(ModItems.BUNNY_MASK);
+                        entries.add(ModItems.COWBOY_HAT);
+                        entries.add(ModItems.PONCHO);
+
+                        entries.add(ModItems.HALO);
+
+                        entries.add(ModItems.JUDGE_HAMMER);
+                        entries.add(ModItems.POLICE_BATON);
+                        entries.add(ModItems.HOOK);
+                        entries.add(ModItems.PHARAOH_STAFF);
+
+                        entries.add(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC);
+
+                        entries.add(ModItems.HAPPY_PILL);
 
                     }).build());
 

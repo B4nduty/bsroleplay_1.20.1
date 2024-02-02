@@ -1,7 +1,6 @@
 package banduty.bsroleplay.item;
 
 import banduty.bsroleplay.BsRolePlay;
-import banduty.bsroleplay.entity.ModEntities;
 import banduty.bsroleplay.item.custom.*;
 import banduty.bsroleplay.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -16,16 +15,14 @@ import net.minecraft.util.Rarity;
 public class ModItems {
     public static final Item DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC = registerItem("dolor_en_el_pecho_carola_music_disc",
             new MusicDiscItem(7, ModSounds.DOLOR_EN_EL_PECHO_CAROLA, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1), 193));
-    public static final Item HOLY_SEEDS = registerItem("holy_seeds",
-            new HolySeeds(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item JUDGE_HAMMER = registerItem("judge_hammer",
             new JudgeHammer(new FabricItemSettings().maxCount(1).maxDamage(0).rarity(Rarity.RARE)));
 
     public static final Item POLICE_BATON = registerItem("police_baton",
             new SwordItem(ModToolMaterial.POLICE, 3, 1f, new FabricItemSettings().maxDamage(0).rarity(Rarity.UNCOMMON)));
 
-    public static final Item HOLY_WEAPON = registerItem("holy_weapon",
-            new HolyWeapon(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
+    public static final Item PHARAOH_STAFF = registerItem("pharaoh_staff",
+            new PharaohStaff(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final Item JUDGE_CHESTPLATE = registerItem("judge_chestplate",
             new ArmorItem(ModArmorMaterials.JUDGE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
@@ -45,9 +42,6 @@ public class ModItems {
 
     public static final Item HALO = registerItem("halo",
             new HaloItem(ModArmorMaterials.HOLY, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
-
-    public static final Item HOLY_CLOUD_SPAWN_EGG = registerItem("holy_cloud_spawn_egg",
-            new SpawnEggItem(ModEntities.HOLY_CLOUD, 0xCDCDCD, 0xffff00, new FabricItemSettings()));
 
     public static final Item RED_PIRATE_HELMET = registerItem("red_pirate_helmet",
             new RedPirateArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -78,8 +72,27 @@ public class ModItems {
     public static final Item BUNNY_MASK = registerItem("bunny_mask",
             new BunnyMaskItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.RARE)));
 
+    public static final Item NEANDERTHAL_CHESTPLATE = registerItem("neanderthal_chestplate",
+            new NeanderthalItem(ModArmorMaterials.NEANDERTHAL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().rarity(Rarity.RARE)));
+
+    public static final Item FUNERAL_MASK = registerItem("funeral_mask",
+            new FuneralMaskItem(ModArmorMaterials.PHARAOH, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
+
+    public static final Item CIVIC_CROWN= registerItem("civic_crown",
+            new RomanEmperorItem(ModArmorMaterials.ROMAN, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
+
+    public static final Item HAPPY_PILL= registerItem("happy_pill",
+            new Item(new FabricItemSettings().food(ModFoodComponents.PILL).maxCount(3)));
+
+    public static final Item COWBOY_HAT= registerItem("cowboy_hat",
+            new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
+
+    public static final Item PONCHO= registerItem("poncho",
+            new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().rarity(Rarity.EPIC)));
+
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(HOLY_SEEDS);
+
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BsRolePlay.MOD_ID, name), item);

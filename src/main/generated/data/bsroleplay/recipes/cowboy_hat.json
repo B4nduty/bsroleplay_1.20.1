@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "L L",
+    "LGL",
+    "LLL"
+  ],
+  "result": {
+    "item": "bsroleplay:cowboy_hat"
+  },
+  "show_notification": true
+}

@@ -13,7 +13,7 @@
     }
   },
   "pattern": [
-    "R R",
+    "RWR",
     "RIR",
     "IWI"
   ],

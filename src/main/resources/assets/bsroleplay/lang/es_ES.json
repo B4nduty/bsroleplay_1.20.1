@@ -19,9 +19,6 @@
   "item.bsroleplay.dolor_en_el_pecho_carola_music_disc": "Disco de Música",
   "item.bsroleplay.dolor_en_el_pecho_carola_music_disc.desc": "Shivita - Dolor En El Pecho Remix",
 
-  "item.bsroleplay.holy_seeds": "Semillas Sagradas",
-  "tooltip.bsroleplay.holy_seeds.tooltip": "Usado en Ciertos Mobs Sagrados",
-
   "item.bsroleplay.judge_hammer": "Martillo de Juez",
   "tooltip.bsroleplay.judgehammer.tooltip": "Al darle Clic Derecho hace un Sonido",
 
@@ -36,18 +33,45 @@
   "item.bsroleplay.police_leggings": "Pantalón Policial",
   "item.bsroleplay.police_boots": "Zapatos Policiales",
 
-  "item.bsroleplay.holy_weapon": "Arma Sagrada",
-  "tooltip.bsroleplay.holyweapon.tooltip": "Al darle Clic Derecho aparece un Rayo",
+  "item.bsroleplay.pharaoh_staff": "Bastón del Faraón",
+  "tooltip.bsroleplay.pharaoh_staff.tooltip": "Al darle Clic Derecho aparece un Rayo",
 
   "item.bsroleplay.halo": "Aureola",
 
   "itemgroup.bsroleplay": "BsRolePlay",
 
-  "item.bsroleplay.holy_cloud_spawn_egg": "Generar Nubes Sagradas",
+  "item.bsroleplay.neanderthal_chestplate": "Ropa de Cuero",
 
-  "block.bsroleplay.holy_cloud_generator_station": "Recolector Divino",
+  "item.bsroleplay.funeral_mask": "Máscara Funeraria",
 
-  "block.bsroleplay.holy_cloud_egg_block": "Huevo de Nubes Sagradas",
+  "item.bsroleplay.civic_crown": "Láurea",
 
-  "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez"
+  "item.bsroleplay.cowboy_hat": "Sombrero de Cowboy",
+  "item.bsroleplay.poncho": "Poncho",
+
+  "item.bsroleplay.happy_pill": "Píldora Optimista",
+
+  "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
+
+  "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
+  "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bastón del Faraón - Relámpagos",
+  "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Garfio - Colmillos de Evocador",
+  "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Martillo del Juez - Sonido",
+  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bastón del Faraón - Enfriamiento",
+  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.hookCooldown": "Garfio - Enfriamiento",
+  "text.autoconfig.bsroleplay.option.common.hookCooldown.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown": "Martillo de Juez - Enfriamiento",
+  "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime": "Píldora Optimista - Tiempo de Ceguera",
+  "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.happyPillBlindnessChance": "Píldora Optimista - Posibilidad Ceguera",
+  "text.autoconfig.bsroleplay.option.common.happyPillWeaknessTime": "Píldora Optimista - Tiempo de Debilidad",
+  "text.autoconfig.bsroleplay.option.common.happyPillWeaknessTime.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.happyPillWeaknessChance": "Píldora Optimista - Posibilidad Debilidad",
+  "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime": "Píldora Optimista - Tiempo de Nausea",
+  "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.happyPillNauseaChance": "Píldora Optimista - Posibilidad Nausea",
+  "text.autoconfig.bsroleplay.option.common.happyPillInstantHealthChance": "Píldora Optimista-Curación Instantanea",
+  "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas"
 }

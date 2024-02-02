@@ -19,9 +19,6 @@
   "item.bsroleplay.dolor_en_el_pecho_carola_music_disc": "Music Disc",
   "item.bsroleplay.dolor_en_el_pecho_carola_music_disc.desc": "Shivita - Dolor En El Pecho Remix",
 
-  "item.bsroleplay.holy_seeds": "Holy Seeds",
-  "tooltip.bsroleplay.holy_seeds.tooltip": "Used on certain Holy Mobs",
-
   "item.bsroleplay.judge_hammer": "Judge Hammer",
   "tooltip.bsroleplay.judgehammer.tooltip": "When Right Click play a Sound",
 
@@ -36,18 +33,45 @@
   "item.bsroleplay.police_leggings": "Police Leggings",
   "item.bsroleplay.police_boots": "Police Boots",
 
-  "item.bsroleplay.holy_weapon": "Holy Weapon",
-  "tooltip.bsroleplay.holyweapon.tooltip": "When Right Click summon a Lightning",
+  "item.bsroleplay.pharaoh_staff": "Pharaoh Staff",
+  "tooltip.bsroleplay.pharaoh_staff.tooltip": "When Right Click summon a Lightning",
 
   "item.bsroleplay.halo": "Halo",
 
-  "item.bsroleplay.holy_cloud_spawn_egg": "Holy Cloud Spawn Egg",
+  "item.bsroleplay.neanderthal_chestplate": "Leather Clothes",
 
-  "block.bsroleplay.holy_cloud_generator_station": "Divine Gatherer",
+  "item.bsroleplay.funeral_mask": "Funeral Mask",
 
-  "block.bsroleplay.holy_cloud_egg_block": "Holy Cloud Egg",
+  "item.bsroleplay.civic_crown": "Civic Crown",
+
+  "item.bsroleplay.cowboy_hat": "Cowboy Hat",
+  "item.bsroleplay.poncho": "Poncho",
+
+  "item.bsroleplay.happy_pill": "Happy Pill",
 
   "itemgroup.bsroleplay": "BsRolePlay",
 
-  "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise"
+  "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",
+
+  "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
+  "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Pharaoh Staff - Lightnings",
+  "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Hook - Evoker Fang",
+  "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Judge Hammer - Sound",
+  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Pharaoh Staff - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.hookCooldown": "Hook - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.hookCooldown.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown": "Judge Hammer - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime": "Happy Pill - Blindness Time",
+  "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.happyPillBlindnessChance": "Happy Pill - Blindness Chance",
+  "text.autoconfig.bsroleplay.option.common.happyPillWeaknessTime": "Happy Pill - Weakness Time",
+  "text.autoconfig.bsroleplay.option.common.happyPillWeaknessTime.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.happyPillWeaknessChance": "Happy Pill - Weakness Chance",
+  "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime": "Happy Pill - Nausea Time",
+  "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.happyPillNauseaChance": "Happy Pill - Nausea Chance",
+  "text.autoconfig.bsroleplay.option.common.happyPillInstantHealthChance": "Happy Pill - Instant Health Chance",
+  "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Show Item Tooltips"
 }

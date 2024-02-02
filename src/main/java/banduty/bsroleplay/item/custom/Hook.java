@@ -1,5 +1,6 @@
 package banduty.bsroleplay.item.custom;
 
+import banduty.bsroleplay.BsRolePlay;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -24,25 +25,32 @@ public class Hook extends Item {
     }
 
     public ActionResult useOnBlock(ItemUsageContext context) {
-        BlockPos positionClicked = context.getBlockPos();
-        PlayerEntity player = context.getPlayer();
-        World World = context.getWorld();
 
-        Entity evokerFangs = new EvokerFangsEntity(EntityType.EVOKER_FANGS, World);
-        evokerFangs.setPosition(positionClicked.toCenterPos());
-        World.spawnEntity(evokerFangs);
+        if (BsRolePlay.CONFIG.common.modifyHookEvokerFang) {
+            BlockPos blockPos = context.getBlockPos();
+            PlayerEntity player = context.getPlayer();
+            World World = context.getWorld();
 
-        context.getWorld().playSound(null, positionClicked, SoundEvents.BLOCK_ANVIL_LAND,
-                SoundCategory.BLOCKS, 0.5f, 1f);
+            Entity evokerFangs = new EvokerFangsEntity(EntityType.EVOKER_FANGS, World);
+            evokerFangs.setPosition(blockPos.toCenterPos());
+            World.spawnEntity(evokerFangs);
 
-        player.getItemCooldownManager().set(this, 100);
+            context.getWorld().playSound(null, blockPos, SoundEvents.BLOCK_ANVIL_LAND,
+                    SoundCategory.BLOCKS, 0.5f, 1f);
 
+            assert player != null;
+            player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getHookCooldown() * 20);
+
+            return ActionResult.SUCCESS;
+        }
         return ActionResult.SUCCESS;
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.bsroleplay.hook.tooltip"));
-        super.appendTooltip(stack, world, tooltip, context);
+        if (BsRolePlay.CONFIG.common.showItemTooltips) {
+            tooltip.add(Text.translatable("tooltip.bsroleplay.hook.tooltip"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
     }
 }

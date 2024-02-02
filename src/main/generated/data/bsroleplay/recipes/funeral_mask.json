@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "PGP",
+    "GPG",
+    "P P"
+  ],
+  "result": {
+    "item": "bsroleplay:funeral_mask"
+  },
+  "show_notification": true
+}

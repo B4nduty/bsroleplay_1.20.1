@@ -11,24 +11,35 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    JUDGE("judge", 25, new int[] { 0, 0, 0, 0 }, 19,
+    JUDGE("judge", 5, new int[] { 0, 0, 0, 0 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.JUDGE_HAMMER)),
-    POLICE("police", 25, new int[] { 3, 8, 6, 3 }, 19,
+    POLICE("police", 15, new int[] { 3, 8, 6, 3 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.POLICE_BATON)),
 
     HOLY("holy", 25, new int[] { 1, 0, 0, 0 }, 19,
-            SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.HOLY_WEAPON)),
+            SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(Items.AMETHYST_SHARD)),
 
-    PIRATE("pirate", 25, new int[] { 2, 6, 4, 0 }, 19,
+    PIRATE("pirate", 7, new int[] { 2, 6, 4, 0 }, 19,
     SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
 
-    KING("king", 25, new int[] { 3, 0, 0, 0 }, 19,
+    KING("king", 10, new int[] { 3, 0, 0, 0 }, 19,
     SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(Items.DIAMOND)),
 
-    MINI_KING("mini_king", 25, new int[] { 1, 0, 0, 0 }, 19,
+    MINI_KING("mini_king", 3, new int[] { 1, 0, 0, 0 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(Items.REDSTONE)),
 
-    MASK("mask", 25, new int[] { 1, 0, 0, 0 }, 19,
+    MASK("mask", 3, new int[] { 1, 0, 0, 0 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.LEATHER)),
+
+    NEANDERTHAL("neanderthal", 5, new int[] { 0, 3, 0, 0 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.LEATHER)),
+
+    PHARAOH("pharaoh", 20, new int[] { 5, 0, 0, 0 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(Items.SANDSTONE)),
+    ROMAN("roman", 2, new int[] { 2, 0, 0, 0 }, 19,
+            SoundEvents.BLOCK_AZALEA_LEAVES_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
+
+    COWBOY("cowboy", 3, new int[] { 3, 0, 0, 0 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.LEATHER))
 
     ;
