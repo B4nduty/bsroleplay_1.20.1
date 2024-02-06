@@ -2,17 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
     "G": {
       "item": "minecraft:gold_ingot"
     },
     "L": {
       "item": "minecraft:leather"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     "L L",
-    "LGL",
-    "LLL"
+    "BGB",
+    "LRL"
   ],
   "result": {
     "item": "bsroleplay:cowboy_hat"

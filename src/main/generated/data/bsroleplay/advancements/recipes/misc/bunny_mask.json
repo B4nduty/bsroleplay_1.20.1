@@ -1,18 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dream_mask": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "bsroleplay:dream_mask"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_pink_wool": {
       "conditions": {
         "items": [
@@ -37,6 +25,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_roleplay_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:roleplay_core"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:bunny_mask"
@@ -48,7 +48,7 @@
     [
       "has_pink_wool",
       "has_red_wool",
-      "has_dream_mask",
+      "has_roleplay_core",
       "has_the_recipe"
     ]
   ],

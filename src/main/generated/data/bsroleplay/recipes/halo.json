@@ -4,11 +4,14 @@
   "key": {
     "I": {
       "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     "III",
-    "I I",
+    "IRI",
     "III"
   ],
   "result": {

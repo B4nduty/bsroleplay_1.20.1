@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    },
+    "Y": {
+      "item": "minecraft:yellow_wool"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "BGB",
+    "BRB"
+  ],
+  "result": {
+    "item": "bsroleplay:protection_helmet"
+  },
+  "show_notification": true
+}

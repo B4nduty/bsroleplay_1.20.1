@@ -2,16 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "minecraft:blue_wool"
+    "C": {
+      "item": "bsroleplay:roleplay_core"
     },
     "G": {
       "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "minecraft:blue_wool"
     }
   },
   "pattern": [
-    "BBB",
-    "B B",
+    "RCR",
+    "R R",
     "G G"
   ],
   "result": {

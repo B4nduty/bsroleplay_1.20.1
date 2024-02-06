@@ -7,12 +7,15 @@
     },
     "P": {
       "item": "minecraft:lapis_lazuli"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     "P L",
     " PL",
-    "LLL"
+    "LLR"
   ],
   "result": {
     "item": "bsroleplay:neanderthal_chestplate"

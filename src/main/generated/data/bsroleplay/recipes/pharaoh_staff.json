@@ -10,11 +10,14 @@
     },
     "N": {
       "item": "minecraft:nether_star"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     " GN",
-    " LG",
+    " LR",
     "G  "
   ],
   "result": {

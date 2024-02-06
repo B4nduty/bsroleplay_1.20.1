@@ -14,6 +14,8 @@ public class ModItemGroups {
             new Identifier(BsRolePlay.MOD_ID,"crown"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bsroleplay"))
                     .icon(() -> new ItemStack(ModItems.CROWN)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.ROLEPLAY_CORE);
+
                         entries.add(ModItems.JUDGE_CHESTPLATE);
                         entries.add(ModItems.JUDGE_LEGGINGS);
                         entries.add(ModItems.JUDGE_BOOTS);
@@ -22,6 +24,11 @@ public class ModItemGroups {
                         entries.add(ModItems.POLICE_CHESTPLATE);
                         entries.add(ModItems.POLICE_LEGGINGS);
                         entries.add(ModItems.POLICE_BOOTS);
+
+                        entries.add(ModItems.PROTECTION_HELMET);
+                        entries.add(ModItems.PROTECTION_CHESTPLATE);
+                        entries.add(ModItems.PROTECTION_LEGGINGS);
+                        entries.add(ModItems.PROTECTION_BOOTS);
 
                         entries.add(ModItems.RED_PIRATE_HELMET);
                         entries.add(ModItems.RED_PIRATE_CHESTPLATE);

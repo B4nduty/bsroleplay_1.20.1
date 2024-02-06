@@ -51,6 +51,13 @@
 
   "item.bsroleplay.happy_pill": "Píldora Optimista",
 
+  "item.bsroleplay.roleplay_core": "Roleplay Core",
+
+  "item.bsroleplay.protection_helmet": "Casco de Protección",
+  "item.bsroleplay.protection_chestplate": "Pechera de Protección",
+  "item.bsroleplay.protection_leggings": "Pantalones de Protección",
+  "item.bsroleplay.protection_boots": "Botas de Protección",
+
   "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",

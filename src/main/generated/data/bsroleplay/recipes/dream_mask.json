@@ -5,13 +5,16 @@
     "B": {
       "item": "minecraft:black_wool"
     },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    },
     "W": {
       "item": "minecraft:white_wool"
     }
   },
   "pattern": [
     "BWB",
-    "WWW",
+    "WRW",
     "BBB"
   ],
   "result": {

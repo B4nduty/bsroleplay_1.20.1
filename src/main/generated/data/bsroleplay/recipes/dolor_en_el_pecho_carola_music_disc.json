@@ -5,16 +5,16 @@
     "B": {
       "item": "minecraft:black_wool"
     },
-    "D": {
-      "item": "bsroleplay:dream_mask"
-    },
     "H": {
       "item": "bsroleplay:halo"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     " H ",
-    " D ",
+    " R ",
     " B "
   ],
   "result": {

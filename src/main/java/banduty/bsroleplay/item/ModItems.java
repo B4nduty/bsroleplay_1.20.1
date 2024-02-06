@@ -13,6 +13,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class ModItems {
+    public static final Item ROLEPLAY_CORE = registerItem("roleplay_core",
+            new Item(new FabricItemSettings().maxCount(16).rarity(Rarity.RARE)));
     public static final Item DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC = registerItem("dolor_en_el_pecho_carola_music_disc",
             new MusicDiscItem(7, ModSounds.DOLOR_EN_EL_PECHO_CAROLA, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1), 113));
     public static final Item JUDGE_HAMMER = registerItem("judge_hammer",
@@ -89,6 +91,15 @@ public class ModItems {
 
     public static final Item PONCHO= registerItem("poncho",
             new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().rarity(Rarity.EPIC)));
+
+    public static final Item PROTECTION_HELMET= registerItem("protection_helmet",
+            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item PROTECTION_CHESTPLATE= registerItem("protection_chestplate",
+            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item PROTECTION_LEGGINGS= registerItem("protection_leggings",
+            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item PROTECTION_BOOTS= registerItem("protection_boots",
+            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {

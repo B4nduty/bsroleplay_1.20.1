@@ -5,14 +5,14 @@
     "B": {
       "item": "minecraft:black_wool"
     },
-    "I": {
-      "item": "minecraft:iron_ingot"
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     "  B",
     " B ",
-    "I  "
+    "R  "
   ],
   "result": {
     "item": "bsroleplay:police_baton"

@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "C": {
+      "item": "bsroleplay:roleplay_core"
+    },
     "I": {
       "item": "minecraft:gold_ingot"
     },
@@ -14,7 +17,7 @@
   },
   "pattern": [
     "RWR",
-    "RIR",
+    "RCR",
     "IWI"
   ],
   "result": {

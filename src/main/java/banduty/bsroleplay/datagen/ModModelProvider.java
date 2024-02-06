@@ -20,6 +20,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
+        itemModelGenerator.register(ModItems.ROLEPLAY_CORE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.JUDGE_HAMMER, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.JUDGE_CHESTPLATE));
@@ -32,6 +34,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.POLICE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.POLICE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.POLICE_BOOTS));
+
+        itemModelGenerator.register(ModItems.PROTECTION_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PROTECTION_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PROTECTION_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PROTECTION_BOOTS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PHARAOH_STAFF, Models.HANDHELD);
 

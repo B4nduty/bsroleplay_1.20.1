@@ -49,6 +49,13 @@
 
   "item.bsroleplay.happy_pill": "Happy Pill",
 
+  "item.bsroleplay.roleplay_core": "Roleplay Core",
+
+  "item.bsroleplay.protection_helmet": "Protection Helmet",
+  "item.bsroleplay.protection_chestplate": "Protection Chestplate",
+  "item.bsroleplay.protection_leggings": "Protection Leggings",
+  "item.bsroleplay.protection_boots": "Protection Boots",
+
   "itemgroup.bsroleplay": "BsRolePlay",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",

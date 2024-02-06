@@ -13,12 +13,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_redstone": {
+    "has_roleplay_core": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:redstone"
+              "bsroleplay:roleplay_core"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_gold_ingot",
-      "has_redstone",
+      "has_roleplay_core",
       "has_the_recipe"
     ]
   ],

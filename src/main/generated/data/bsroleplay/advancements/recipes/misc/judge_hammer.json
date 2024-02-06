@@ -13,12 +13,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_gold_ingot": {
+    "has_roleplay_core": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:gold_ingot"
+              "bsroleplay:roleplay_core"
             ]
           }
         ]
@@ -47,7 +47,7 @@
   "requirements": [
     [
       "has_stick",
-      "has_gold_ingot",
+      "has_roleplay_core",
       "has_dark_oak_planks",
       "has_the_recipe"
     ]

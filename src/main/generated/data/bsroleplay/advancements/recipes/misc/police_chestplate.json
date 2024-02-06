@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_wool": {
+    "has_blue_wool": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:black_wool"
+              "minecraft:blue_wool"
             ]
           }
         ]
@@ -34,7 +34,7 @@
   },
   "requirements": [
     [
-      "has_black_wool",
+      "has_blue_wool",
       "has_police_baton",
       "has_the_recipe"
     ]

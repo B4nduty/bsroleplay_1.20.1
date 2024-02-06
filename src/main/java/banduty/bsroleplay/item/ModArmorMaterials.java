@@ -40,7 +40,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.BLOCK_AZALEA_LEAVES_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
 
     COWBOY("cowboy", 3, new int[] { 3, 0, 0, 0 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.LEATHER))
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.LEATHER)),
+
+    PROTECTION("protection", 11, new int[] { 1, 4, 3, 2 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2f, 0.1f, () -> Ingredient.ofItems(Items.DIORITE))
 
     ;
 

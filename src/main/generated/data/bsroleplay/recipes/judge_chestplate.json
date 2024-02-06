@@ -5,13 +5,13 @@
     "B": {
       "item": "minecraft:black_wool"
     },
-    "J": {
-      "item": "bsroleplay:judge_hammer"
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     "B B",
-    "BJB",
+    "BRB",
     "BBB"
   ],
   "result": {

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    },
+    "Y": {
+      "item": "minecraft:yellow_wool"
+    }
+  },
+  "pattern": [
+    "B B",
+    "YRY",
+    "BBB"
+  ],
+  "result": {
+    "item": "bsroleplay:protection_chestplate"
+  },
+  "show_notification": true
+}

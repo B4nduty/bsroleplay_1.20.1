@@ -7,11 +7,14 @@
     },
     "P": {
       "item": "minecraft:lapis_lazuli"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     "PGP",
-    "GPG",
+    "GRG",
     "P P"
   ],
   "result": {

@@ -4,11 +4,14 @@
   "key": {
     "O": {
       "item": "minecraft:oak_leaves"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     "OOO",
-    "O O",
+    "ORO",
     "OOO"
   ],
   "result": {

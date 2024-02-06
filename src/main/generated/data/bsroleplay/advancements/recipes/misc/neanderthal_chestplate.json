@@ -25,6 +25,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_roleplay_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:roleplay_core"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:neanderthal_chestplate"
@@ -36,6 +48,7 @@
     [
       "has_lapis_lazuli",
       "has_leather",
+      "has_roleplay_core",
       "has_the_recipe"
     ]
   ],

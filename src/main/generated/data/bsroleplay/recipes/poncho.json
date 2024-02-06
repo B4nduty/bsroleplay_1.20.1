@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "B": {
+      "item": "bsroleplay:roleplay_core"
+    },
     "L": {
       "item": "minecraft:leather"
     },
@@ -12,7 +15,7 @@
   "pattern": [
     "RRR",
     "RLL",
-    "L  "
+    "L B"
   ],
   "result": {
     "item": "bsroleplay:poncho"

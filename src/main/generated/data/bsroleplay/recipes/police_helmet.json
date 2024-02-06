@@ -3,15 +3,15 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "minecraft:black_wool"
+      "item": "minecraft:blue_wool"
     },
-    "P": {
-      "item": "bsroleplay:police_baton"
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
-    "BBB",
-    "BPB",
+    " BB",
+    "BRB",
     "   "
   ],
   "result": {

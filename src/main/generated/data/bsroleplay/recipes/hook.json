@@ -7,12 +7,15 @@
     },
     "I": {
       "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
     " GG",
     " G ",
-    "III"
+    "IRI"
   ],
   "result": {
     "item": "bsroleplay:hook"
