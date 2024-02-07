@@ -27,6 +27,7 @@
   "item.bsroleplay.judge_boots": "Zapatos de Juez",
 
   "item.bsroleplay.police_baton": "Porra Policial",
+  "tooltip.bsroleplay.policebaton.tooltip": "Al Golpear da Efecto de Lentitud",
 
   "item.bsroleplay.police_helmet": "Gorra Policial",
   "item.bsroleplay.police_chestplate": "Uniforme Policial",
@@ -55,7 +56,7 @@
   "tooltip.bsroleplay.roleplay_core.tooltip": "Un Núcleo Utilizado para Fabricar Objetos de Roleplay",
 
   "item.bsroleplay.protection_helmet": "Casco de Protección",
-  "item.bsroleplay.protection_chestplate": "Pechera de Protección",
+  "item.bsroleplay.protection_chestplate": "Peto de Protección",
   "item.bsroleplay.protection_leggings": "Pantalones de Protección",
   "item.bsroleplay.protection_boots": "Botas de Protección",
 
@@ -65,6 +66,7 @@
   "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bastón del Faraón - Relámpagos",
   "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Garfio - Colmillos de Evocador",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Martillo del Juez - Sonido",
+  "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Porra Policial - Lentitud",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bastón del Faraón - Enfriamiento",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Garfio - Enfriamiento",

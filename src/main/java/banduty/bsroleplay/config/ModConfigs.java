@@ -30,6 +30,10 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @Comment("Allow Judge Hammer make Sound | Default: true")
         public boolean modifyJudgeHammerSound = true;
 
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Police Baton give Slowness Effect | Default: true")
+        public boolean modifyPoliceBatonSlowness = true;
+
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
                 Pharaoh Staff Cooldown in Seconds | Default: 5
@@ -82,9 +86,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Happy Pill Weakness Time in Seconds | Default: 80
+                Happy Pill Weakness Time in Seconds | Default: 40
                 """)
-        int happyPillWeaknessTime = 80;
+        int happyPillWeaknessTime = 40;
 
         public int getHappyPillWeaknessTime() {
             return Math.max(0, happyPillWeaknessTime);
@@ -92,9 +96,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Weakness Chance | Default: 0.25f
+                Happy Pill Weakness Chance | Default: 1f
                 """)
-        float happyPillWeaknessChance = 0.25f;
+        float happyPillWeaknessChance = 1f;
 
         public float getHappyPillWeaknessChance() {
             return Math.max(0, happyPillWeaknessChance);
@@ -112,9 +116,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Nausea Chance | Default: 1f
+                Happy Pill Nausea Chance | Default: 0.75f
                 """)
-        float happyPillNauseaChance = 1.0f;
+        float happyPillNauseaChance = 0.75f;
 
         public float getHappyPillNauseaChance() {
             return Math.max(0, happyPillNauseaChance);
@@ -122,9 +126,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Instant Health Chance | Default: 0.05f
+                Happy Pill Instant Health Chance | Default: 0.25f
                 """)
-        float happyPillInstantHealthChance = 0.05f;
+        float happyPillInstantHealthChance = 0.25f;
 
         public float getHappyPillInstantHealthChance() {
             return Math.max(0, happyPillInstantHealthChance);

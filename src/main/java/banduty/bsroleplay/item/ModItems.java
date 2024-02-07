@@ -21,7 +21,7 @@ public class ModItems {
             new JudgeHammer(new FabricItemSettings().maxCount(1).maxDamage(0).rarity(Rarity.UNCOMMON)));
 
     public static final Item POLICE_BATON = registerItem("police_baton",
-            new SwordItem(ModToolMaterial.POLICE, 3, 1f, new FabricItemSettings().maxDamage(0)));
+            new PoliceBaton(ModToolMaterial.POLICE, new FabricItemSettings().maxDamage(0)));
 
     public static final Item PHARAOH_STAFF = registerItem("pharaoh_staff",
             new PharaohStaff(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));

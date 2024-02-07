@@ -27,6 +27,7 @@
   "item.bsroleplay.judge_boots": "Chaussures de Juge",
 
   "item.bsroleplay.police_baton": "Bâton de Police",
+  "tooltip.bsroleplay.policebaton.tooltip": "Au Coup, donne un Effet de Lenteur",
 
   "item.bsroleplay.police_helmet": "Casquette de Police",
   "item.bsroleplay.police_chestplate": "Uniforme de Police",
@@ -65,6 +66,7 @@
   "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bâton du Pharaon - Éclairs",
   "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Crochet - Evoker Fang",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Marteau du Juge- Son",
+  "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Bâton de Police - Lenteur",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bâton du Pharaon - Refroidissement",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Crochet - Refroidissement",
