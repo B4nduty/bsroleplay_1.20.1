@@ -51,7 +51,8 @@
 
   "item.bsroleplay.happy_pill": "Píldora Optimista",
 
-  "item.bsroleplay.roleplay_core": "Roleplay Core",
+  "item.bsroleplay.roleplay_core": "Núcleo de Roleplay",
+  "tooltip.bsroleplay.roleplay_core.tooltip": "Un Núcleo Utilizado para Fabricar Objetos de Roleplay",
 
   "item.bsroleplay.protection_helmet": "Casco de Protección",
   "item.bsroleplay.protection_chestplate": "Pechera de Protección",
@@ -80,5 +81,6 @@
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaChance": "Píldora Optimista - Posibilidad Nausea",
   "text.autoconfig.bsroleplay.option.common.happyPillInstantHealthChance": "Píldora Optimista-Curación Instantanea",
+  "text.autoconfig.bsroleplay.option.common.happyPillMaxStack": "Happy Pill - Max Stack",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas"
 }

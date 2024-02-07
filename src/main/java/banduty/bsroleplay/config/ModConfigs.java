@@ -131,6 +131,16 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Happy Pill Max Stack | Default: 3
+                """)
+        int happyPillMaxStack = 3;
+
+        public int getHappyPillMaxStack() {
+            return Math.max(0, happyPillMaxStack);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("Show Item Tooltips | Default: true")
         public boolean showItemTooltips = true;
     }

@@ -148,11 +148,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PIRATE_CHESTPLATE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HOOK, 1)
-                .pattern(" GG")
+                .pattern(" GD")
                 .pattern(" G ")
                 .pattern("IRI")
-                .input('I', Items.IRON_INGOT)
+                .input('I', Items.IRON_BLOCK)
                 .input('G', Items.GOLD_INGOT)
+                .input('D', Items.DRAGON_BREATH)
                 .input('R', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
@@ -391,7 +392,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PROTECTION_BOOTS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ROLEPLAY_CORE, 3)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ROLEPLAY_CORE, 2)
                 .pattern("   ")
                 .pattern("RGR")
                 .pattern("III")

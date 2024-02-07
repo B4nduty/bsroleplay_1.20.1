@@ -49,7 +49,8 @@
 
   "item.bsroleplay.happy_pill": "Happy Pill",
 
-  "item.bsroleplay.roleplay_core": "Roleplay Core",
+  "item.bsroleplay.roleplay_core": "Core Roleplay",
+  "tooltip.bsroleplay.roleplay_core.tooltip": "A Core used to Craft Roleplay Items",
 
   "item.bsroleplay.protection_helmet": "Protection Helmet",
   "item.bsroleplay.protection_chestplate": "Protection Chestplate",
@@ -80,5 +81,6 @@
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaChance": "Happy Pill - Nausea Chance",
   "text.autoconfig.bsroleplay.option.common.happyPillInstantHealthChance": "Happy Pill - Instant Health Chance",
+  "text.autoconfig.bsroleplay.option.common.happyPillMaxStack": "Happy Pill - Max Stack",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Show Item Tooltips"
 }

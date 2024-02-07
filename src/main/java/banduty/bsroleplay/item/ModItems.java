@@ -14,14 +14,14 @@ import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static final Item ROLEPLAY_CORE = registerItem("roleplay_core",
-            new Item(new FabricItemSettings().maxCount(16).rarity(Rarity.RARE)));
+            new RoleplayCore(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC = registerItem("dolor_en_el_pecho_carola_music_disc",
             new MusicDiscItem(7, ModSounds.DOLOR_EN_EL_PECHO_CAROLA, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1), 113));
     public static final Item JUDGE_HAMMER = registerItem("judge_hammer",
-            new JudgeHammer(new FabricItemSettings().maxCount(1).maxDamage(0).rarity(Rarity.RARE)));
+            new JudgeHammer(new FabricItemSettings().maxCount(1).maxDamage(0).rarity(Rarity.UNCOMMON)));
 
     public static final Item POLICE_BATON = registerItem("police_baton",
-            new SwordItem(ModToolMaterial.POLICE, 3, 1f, new FabricItemSettings().maxDamage(0).rarity(Rarity.UNCOMMON)));
+            new SwordItem(ModToolMaterial.POLICE, 3, 1f, new FabricItemSettings().maxDamage(0)));
 
     public static final Item PHARAOH_STAFF = registerItem("pharaoh_staff",
             new PharaohStaff(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
@@ -60,37 +60,37 @@ public class ModItems {
             new BluePirateArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
 
     public static final Item HOOK = registerItem("hook",
-            new Hook(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
+            new Hook(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final Item CROWN = registerItem("crown",
-            new CrownItem(ModArmorMaterials.KING, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
+            new CrownItem(ModArmorMaterials.KING, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item MINI_CROWN = registerItem("mini_crown",
-            new MiniCrownItem(ModArmorMaterials.MINI_KING, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.RARE)));
+            new MiniCrownItem(ModArmorMaterials.MINI_KING, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item DREAM_MASK = registerItem("dream_mask",
-            new DreamMaskItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.RARE)));
+            new DreamMaskItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item BUNNY_MASK = registerItem("bunny_mask",
-            new BunnyMaskItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.RARE)));
+            new BunnyMaskItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item NEANDERTHAL_CHESTPLATE = registerItem("neanderthal_chestplate",
-            new NeanderthalItem(ModArmorMaterials.NEANDERTHAL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().rarity(Rarity.RARE)));
+            new NeanderthalItem(ModArmorMaterials.NEANDERTHAL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
 
     public static final Item FUNERAL_MASK = registerItem("funeral_mask",
-            new FuneralMaskItem(ModArmorMaterials.PHARAOH, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
+            new FuneralMaskItem(ModArmorMaterials.PHARAOH, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item CIVIC_CROWN= registerItem("civic_crown",
-            new RomanEmperorItem(ModArmorMaterials.ROMAN, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
+            new RomanEmperorItem(ModArmorMaterials.ROMAN, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item HAPPY_PILL= registerItem("happy_pill",
-            new Item(new FabricItemSettings().food(ModFoodComponents.PILL).maxCount(3)));
+            new Item(new FabricItemSettings().food(ModFoodComponents.PILL).maxCount(BsRolePlay.CONFIG.common.getHappyPillMaxStack()).rarity(Rarity.RARE)));
 
     public static final Item COWBOY_HAT= registerItem("cowboy_hat",
-            new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
+            new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item PONCHO= registerItem("poncho",
-            new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().rarity(Rarity.EPIC)));
+            new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
 
     public static final Item PROTECTION_HELMET= registerItem("protection_helmet",
             new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.HELMET, new FabricItemSettings()));

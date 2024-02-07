@@ -51,7 +51,8 @@
 
   "item.bsroleplay.happy_pill": "Pilule Heureuse",
 
-  "item.bsroleplay.roleplay_core": "Roleplay Core",
+  "item.bsroleplay.roleplay_core": "Noyau Roleplay",
+  "tooltip.bsroleplay.roleplay_core.tooltip": "Un Noyau utilisé pour Fabriquer des Objets de Roleplay",
 
   "item.bsroleplay.protection_helmet": "Casque de Protection",
   "item.bsroleplay.protection_chestplate": "Plastron de Protection",
@@ -80,5 +81,6 @@
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaChance": "Pilule Heureuse - Risque de Nausée",
   "text.autoconfig.bsroleplay.option.common.happyPillInstantHealthChance": "Pilule Heureuse-Guérison Immédiate",
+  "text.autoconfig.bsroleplay.option.common.happyPillMaxStack": "Happy Pill - Max Stack",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Info-bulles des Éléments"
 }

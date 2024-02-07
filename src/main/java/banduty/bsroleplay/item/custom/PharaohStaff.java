@@ -37,8 +37,9 @@ public class PharaohStaff extends Item {
             context.getWorld().playSound(null, blockPos, SoundEvents.BLOCK_AMETHYST_BLOCK_RESONATE,
                     SoundCategory.BLOCKS, 1f, 1f);
 
-            assert player != null;
-            player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getPharaohStaffCooldown() * 20);
+            if (player != null) {
+                player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getPharaohStaffCooldown() * 20);
+            }
 
             return ActionResult.SUCCESS;
         }

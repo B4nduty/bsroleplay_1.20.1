@@ -29,8 +29,9 @@ public class JudgeHammer extends Item {
             context.getWorld().playSound(null, blockPos, ModSounds.JUDGE_HAMMER_RIGHT_CLICK,
                     SoundCategory.BLOCKS, 1f, 1f);
 
-            assert player != null;
-            player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getJudgeHammerCooldown() * 20);
+            if (player != null) {
+                player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getJudgeHammerCooldown() * 20);
+            }
 
             return ActionResult.SUCCESS;
         }
