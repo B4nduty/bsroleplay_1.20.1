@@ -20,7 +20,7 @@
   "item.bsroleplay.dolor_en_el_pecho_carola_music_disc.desc": "Shivita - Dolor En El Pecho Remix",
 
   "item.bsroleplay.judge_hammer": "Martillo de Juez",
-  "tooltip.bsroleplay.judgehammer.tooltip": "Al darle Clic Derecho hace un Sonido",
+  "tooltip.bsroleplay.judgehammer.tooltip": "Al darle Clic Derecho hace Sonido",
 
   "item.bsroleplay.judge_chestplate": "Toga Superior",
   "item.bsroleplay.judge_leggings": "Toga Inferior",
@@ -82,7 +82,7 @@
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime": "Píldora Optimista - Tiempo de Nausea",
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaChance": "Píldora Optimista - Posibilidad Nausea",
-  "text.autoconfig.bsroleplay.option.common.happyPillInstantHealthChance": "Píldora Optimista-Curación Instantanea",
+  "text.autoconfig.bsroleplay.option.common.happyPillInstantHealthChance": "Píldora Optimista-Probabilidad Curación",
   "text.autoconfig.bsroleplay.option.common.happyPillMaxStack": "Happy Pill - Max Stack",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas"
 }

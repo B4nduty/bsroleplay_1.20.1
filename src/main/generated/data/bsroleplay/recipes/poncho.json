@@ -13,9 +13,9 @@
     }
   },
   "pattern": [
-    "RRR",
+    "RBR",
     "RLL",
-    "L B"
+    "L  "
   ],
   "result": {
     "item": "bsroleplay:poncho"

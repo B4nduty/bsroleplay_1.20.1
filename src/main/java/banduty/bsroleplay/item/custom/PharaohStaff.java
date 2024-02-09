@@ -13,6 +13,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -49,7 +50,7 @@ public class PharaohStaff extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (BsRolePlay.CONFIG.common.showItemTooltips) {
-            tooltip.add(Text.translatable("tooltip.bsroleplay.pharaoh_staff.tooltip"));
+            tooltip.add(Text.translatable("tooltip.bsroleplay.pharaoh_staff.tooltip").formatted(Formatting.AQUA, Formatting.ITALIC));
             super.appendTooltip(stack, world, tooltip, context);
         }
     }

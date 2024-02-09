@@ -14,14 +14,14 @@ import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static final Item ROLEPLAY_CORE = registerItem("roleplay_core",
-            new RoleplayCore(new FabricItemSettings().rarity(Rarity.RARE)));
+            new RoleplayCore(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC = registerItem("dolor_en_el_pecho_carola_music_disc",
             new MusicDiscItem(7, ModSounds.DOLOR_EN_EL_PECHO_CAROLA, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1), 113));
     public static final Item JUDGE_HAMMER = registerItem("judge_hammer",
             new JudgeHammer(new FabricItemSettings().maxCount(1).maxDamage(0).rarity(Rarity.UNCOMMON)));
 
     public static final Item POLICE_BATON = registerItem("police_baton",
-            new PoliceBaton(ModToolMaterial.POLICE, new FabricItemSettings().maxDamage(0)));
+            new PoliceBaton(ModToolMaterial.POLICE, new FabricItemSettings().maxDamage(0).rarity(Rarity.UNCOMMON)));
 
     public static final Item PHARAOH_STAFF = registerItem("pharaoh_staff",
             new PharaohStaff(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));

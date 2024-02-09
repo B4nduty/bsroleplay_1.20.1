@@ -333,9 +333,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.COWBOY_HAT)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PONCHO, 1)
-                .pattern("RRR")
+                .pattern("RBR")
                 .pattern("RLL")
-                .pattern("L B")
+                .pattern("L  ")
                 .input('R', Items.RED_WOOL)
                 .input('L', Items.LEATHER)
                 .input('B', ModItems.ROLEPLAY_CORE)
