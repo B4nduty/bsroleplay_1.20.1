@@ -22,10 +22,6 @@
   "item.bsroleplay.judge_hammer": "Marteau du Juge",
   "tooltip.bsroleplay.judgehammer.tooltip": "Lorsque vous faites un clic droit, cela fait un son",
 
-  "item.bsroleplay.judge_chestplate": "Robe Supérieure",
-  "item.bsroleplay.judge_leggings": "Robe Inférieure",
-  "item.bsroleplay.judge_boots": "Chaussures de Juge",
-
   "item.bsroleplay.police_baton": "Bâton de Police",
   "tooltip.bsroleplay.policebaton.tooltip": "Au Coup, donne un Effet de Lenteur",
 
@@ -73,6 +69,11 @@
   "text.autoconfig.bsroleplay.option.common.hookCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown": "Marteau du Juge - Refroidissement",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown.@Tooltip": "En Secondes",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessLevel": "Bâton de Police - Niveau de Lenteur",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration": "Bâton de Police - Durée Lenteur",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "En Secondes",
+  "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Bâton de Police - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime": "Pilule Heureuse - Temps de Cécité",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessChance": "Pilule Heureuse - Risque de Cécité",

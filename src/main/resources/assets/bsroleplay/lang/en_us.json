@@ -22,10 +22,6 @@
   "item.bsroleplay.judge_hammer": "Judge Hammer",
   "tooltip.bsroleplay.judgehammer.tooltip": "When Right Click play a Sound",
 
-  "item.bsroleplay.judge_chestplate": "Judge Top Toga",
-  "item.bsroleplay.judge_leggings": "Judge Bottom Toga",
-  "item.bsroleplay.judge_boots": "Judge Shoes",
-
   "item.bsroleplay.police_baton": "Police Baton",
   "tooltip.bsroleplay.policebaton.tooltip": "On Hit gives Slowness Effect",
 
@@ -73,6 +69,11 @@
   "text.autoconfig.bsroleplay.option.common.hookCooldown.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown": "Judge Hammer - Cooldown",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessLevel": "Police Baton - Slowness Level",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration": "Police Baton - Slowness Duration",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Police Baton - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime": "Happy Pill - Blindness Time",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessChance": "Happy Pill - Blindness Chance",

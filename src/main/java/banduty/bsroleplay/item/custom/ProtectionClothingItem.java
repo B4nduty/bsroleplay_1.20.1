@@ -2,11 +2,16 @@ package banduty.bsroleplay.item.custom;
 
 import banduty.bsroleplay.item.client.ProtectionClothingRenderer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -18,6 +23,27 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class ProtectionClothingItem extends ArmorItem implements GeoItem {
+    @Override
+    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+        if (!world.isClient() && entity instanceof PlayerEntity player) {
+            boolean wearingCorrectArmor = true;
+            for (ItemStack armorStack : player.getArmorItems()) {
+                if (!(armorStack.getItem() instanceof ArmorItem armorItem) || armorItem.getMaterial() != this.material) {
+                    wearingCorrectArmor = false;
+                    break;
+                }
+            }
+            if (wearingCorrectArmor) {
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 40, 0,
+                        false, false, false));
+                player.removeStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 40, 0,
+                        false, false, false).getEffectType());
+            }
+        }
+
+        super.inventoryTick(stack, world, entity, slot, selected);
+    }
+
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 

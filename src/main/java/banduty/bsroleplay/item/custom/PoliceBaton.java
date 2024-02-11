@@ -26,9 +26,9 @@ public class PoliceBaton extends AxeItem {
         if (BsRolePlay.CONFIG.common.modifyPoliceBatonSlowness &&
                 !(attacker instanceof PlayerEntity playerAttacker && playerAttacker.getItemCooldownManager().isCoolingDown(this))) {
             if (attacker instanceof PlayerEntity playerAttacker) {
-                playerAttacker.getItemCooldownManager().set(this, 300);
+                playerAttacker.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getPoliceBatonCooldown()*20);
             }
-            target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 80, 2));
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, BsRolePlay.CONFIG.common.getPoliceBatonSlownessDuration()*20, BsRolePlay.CONFIG.common.getPoliceBatonSlownessLevel()-1));
             return true;
         }
         return false;

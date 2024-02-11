@@ -22,10 +22,6 @@
   "item.bsroleplay.judge_hammer": "Martillo de Juez",
   "tooltip.bsroleplay.judgehammer.tooltip": "Al darle Clic Derecho hace Sonido",
 
-  "item.bsroleplay.judge_chestplate": "Toga Superior",
-  "item.bsroleplay.judge_leggings": "Toga Inferior",
-  "item.bsroleplay.judge_boots": "Zapatos de Juez",
-
   "item.bsroleplay.police_baton": "Porra Policial",
   "tooltip.bsroleplay.policebaton.tooltip": "Al Golpear da Efecto de Lentitud",
 
@@ -73,6 +69,11 @@
   "text.autoconfig.bsroleplay.option.common.hookCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown": "Martillo de Juez - Enfriamiento",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessLevel": "Porra Policial - Nivel de Lentitud",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration": "Porra Policial - Duración de Lentitud",
+  "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Porra Policial - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime": "Píldora Optimista - Tiempo de Ceguera",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessChance": "Píldora Optimista - Posibilidad Ceguera",

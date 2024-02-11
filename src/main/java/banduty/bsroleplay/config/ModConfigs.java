@@ -64,6 +64,36 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
             return Math.max(0, judgeHammerCooldown);
         }
 
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Police Baton Slowness Level | Default: 3
+                """)
+        int policeBatonSlownessLevel = 3;
+
+        public int getPoliceBatonSlownessLevel() {
+            return Math.max(0, policeBatonSlownessLevel);
+        }
+
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
+                Police Baton Slowness Duration in Seconds | Default: 4
+                """)
+        int policeBatonSlownessDuration = 4;
+
+        public int getPoliceBatonSlownessDuration() {
+            return Math.max(0, policeBatonSlownessDuration);
+        }
+
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
+                Police Baton Cooldown in Seconds | Default: 15
+                """)
+        int policeBatonCooldown = 15;
+
+        public int getPoliceBatonCooldown() {
+            return Math.max(0, policeBatonCooldown);
+        }
+
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
                 Happy Pill Blindness Time in Seconds | Default: 40

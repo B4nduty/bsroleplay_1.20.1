@@ -16,10 +16,6 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.CROWN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ROLEPLAY_CORE);
 
-                        entries.add(ModItems.JUDGE_CHESTPLATE);
-                        entries.add(ModItems.JUDGE_LEGGINGS);
-                        entries.add(ModItems.JUDGE_BOOTS);
-
                         entries.add(ModItems.POLICE_HELMET);
                         entries.add(ModItems.POLICE_CHESTPLATE);
                         entries.add(ModItems.POLICE_LEGGINGS);

@@ -26,13 +26,6 @@ public class ModItems {
     public static final Item PHARAOH_STAFF = registerItem("pharaoh_staff",
             new PharaohStaff(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
-    public static final Item JUDGE_CHESTPLATE = registerItem("judge_chestplate",
-            new ArmorItem(ModArmorMaterials.JUDGE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item JUDGE_LEGGINGS = registerItem("judge_leggings",
-            new ArmorItem(ModArmorMaterials.JUDGE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-    public static final Item JUDGE_BOOTS = registerItem("judge_boots",
-            new ArmorItem(ModArmorMaterials.JUDGE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
-
     public static final Item POLICE_HELMET = registerItem("police_helmet",
             new PoliceArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item POLICE_CHESTPLATE = registerItem("police_chestplate",

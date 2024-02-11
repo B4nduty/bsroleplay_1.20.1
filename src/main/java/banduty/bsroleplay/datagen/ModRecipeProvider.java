@@ -31,36 +31,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.DARK_OAK_PLANKS), conditionsFromItem(Items.DARK_OAK_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.JUDGE_HAMMER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.JUDGE_CHESTPLATE, 1)
-                .pattern("B B")
-                .pattern("BRB")
-                .pattern("BBB")
-                .input('B', Items.BLACK_WOOL)
-                .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.JUDGE_CHESTPLATE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.JUDGE_LEGGINGS, 1)
-                .pattern("BRB")
-                .pattern("B B")
-                .pattern("B B")
-                .input('B', Items.BLACK_WOOL)
-                .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.JUDGE_LEGGINGS)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.JUDGE_BOOTS, 1)
-                .pattern("   ")
-                .pattern("B B")
-                .pattern("BRB")
-                .input('B', Items.BLACK_WOOL)
-                .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.JUDGE_BOOTS)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.POLICE_BATON, 1)
                 .pattern("  B")
                 .pattern(" B ")

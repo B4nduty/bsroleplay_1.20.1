@@ -9,12 +9,12 @@ public class PoliceArmorModel extends GeoModel<PoliceArmorItem> {
 
     @Override
     public Identifier getModelResource(PoliceArmorItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "geo/police_armor_3d.geo.json");
+        return new Identifier(BsRolePlay.MOD_ID, "geo/police_armor.geo.json");
     }
 
     @Override
     public Identifier getTextureResource(PoliceArmorItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "textures/armor/police_armor_3d.png");
+        return new Identifier(BsRolePlay.MOD_ID, "textures/armor/police_armor.png");
     }
 
     @Override
