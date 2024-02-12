@@ -42,22 +42,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POLICE_BATON)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.POLICE_HELMET, 1)
-                .pattern(" BB")
-                .pattern("BRB")
-                .pattern("   ")
-                .input('B', Items.BLUE_WOOL)
+                .pattern("BBB")
+                .pattern(" RB")
+                .pattern("BBB")
+                .input('B', Items.BLACK_WOOL)
                 .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POLICE_HELMET)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.POLICE_CHESTPLATE, 1)
                 .pattern("B B")
                 .pattern("BRB")
-                .pattern("BBB")
+                .pattern("WWW")
                 .input('B', Items.BLUE_WOOL)
+                .input('W', Items.BLACK_WOOL)
                 .input('R', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
                 .criterion(hasItem(ModItems.POLICE_BATON), conditionsFromItem(ModItems.POLICE_BATON))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POLICE_CHESTPLATE)));
 
@@ -65,19 +67,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("BRB")
                 .pattern("B B")
                 .pattern("B B")
-                .input('B', Items.BLUE_WOOL)
+                .input('B', Items.BLACK_WOOL)
                 .input('R', ModItems.POLICE_BATON)
-                .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POLICE_LEGGINGS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.POLICE_BOOTS, 1)
                 .pattern("   ")
-                .pattern("B B")
-                .pattern("BRB")
-                .input('B', Items.BLUE_WOOL)
+                .pattern("L L")
+                .pattern("LRL")
+                .input('L', Items.LEATHER)
                 .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
+                .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POLICE_BOOTS)));
 

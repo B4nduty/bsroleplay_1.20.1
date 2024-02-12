@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_wool": {
+    "has_leather": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:blue_wool"
+              "minecraft:leather"
             ]
           }
         ]
@@ -34,7 +34,7 @@
   },
   "requirements": [
     [
-      "has_blue_wool",
+      "has_leather",
       "has_roleplay_core",
       "has_the_recipe"
     ]

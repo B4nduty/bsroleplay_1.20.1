@@ -34,6 +34,14 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @Comment("Allow Police Baton give Slowness Effect | Default: true")
         public boolean modifyPoliceBatonSlowness = true;
 
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Protection Set give Effects | Default: true")
+        public boolean modifyProtectionSetEffects = true;
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Police Set give Effect | Default: true")
+        public boolean modifyPoliceSetEffects = true;
+
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
                 Pharaoh Staff Cooldown in Seconds | Default: 5

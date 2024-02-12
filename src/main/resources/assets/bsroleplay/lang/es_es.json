@@ -63,6 +63,8 @@
   "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Garfio - Colmillos de Evocador",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Martillo del Juez - Sonido",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Porra Policial - Lentitud",
+  "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Conjunto de Protección - Efectos",
+  "text.autoconfig.bsroleplay.option.common.modifyPoliceSetEffects": "Conjunto de Policia - Efecto",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bastón del Faraón - Enfriamiento",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Garfio - Enfriamiento",

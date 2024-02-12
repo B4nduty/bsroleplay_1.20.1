@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "minecraft:blue_wool"
+    "L": {
+      "item": "minecraft:leather"
     },
     "R": {
       "item": "bsroleplay:roleplay_core"
@@ -11,8 +11,8 @@
   },
   "pattern": [
     "   ",
-    "B B",
-    "BRB"
+    "L L",
+    "LRL"
   ],
   "result": {
     "item": "bsroleplay:police_boots"

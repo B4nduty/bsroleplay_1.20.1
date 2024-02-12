@@ -63,6 +63,8 @@
   "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Crochet - Evoker Fang",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Marteau du Juge- Son",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Bâton de Police - Lenteur",
+  "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Ensemble de Protections - Effets",
+  "text.autoconfig.bsroleplay.option.common.modifyPoliceSetEffects": "Ensemble de Policiers - Effet",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bâton du Pharaon - Refroidissement",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Crochet - Refroidissement",

@@ -1,5 +1,6 @@
 package banduty.bsroleplay.item.custom;
 
+import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.item.client.PoliceArmorRenderer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.Entity;
@@ -25,7 +26,7 @@ import java.util.function.Supplier;
 public class PoliceArmorItem extends ArmorItem implements GeoItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if (!world.isClient() && entity instanceof PlayerEntity player) {
+        if (!world.isClient() && entity instanceof PlayerEntity player && BsRolePlay.CONFIG.common.modifyPoliceSetEffects) {
             boolean wearingCorrectArmor = true;
             for (ItemStack armorStack : player.getArmorItems()) {
                 if (!(armorStack.getItem() instanceof ArmorItem armorItem) || armorItem.getMaterial() != this.material) {

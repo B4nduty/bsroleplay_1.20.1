@@ -1,6 +1,6 @@
-// 1.20.1	2024-02-11T23:18:43.4545145	BsRolePlay/Model Definitions
-581523d0dfedce690dcffc025548baaa4a42d092 assets\bsroleplay\models\item\blue_pirate_leggings.json
+// 1.20.1	2024-02-12T23:47:39.5329407	BsRolePlay/Model Definitions
 6849e37ac445f69c8aef0448cce5d7716bcb46c2 assets\bsroleplay\models\item\funeral_mask.json
+581523d0dfedce690dcffc025548baaa4a42d092 assets\bsroleplay\models\item\blue_pirate_leggings.json
 a852149e0f365e99de72f244ee79130c64a555ec assets\bsroleplay\models\item\halo.json
 37d92e87ace6ac3d3994128a6f52a4c5387a8382 assets\bsroleplay\models\item\police_helmet.json
 df0fdcacaf612440f3f137e4ff0f9273d3036e0c assets\bsroleplay\models\item\protection_boots.json
@@ -18,15 +18,15 @@ c1fed0545dc2dd265526c4b8d7ef11a5bf8ea6c7 assets\bsroleplay\models\item\bunny_mas
 e9a226fef62cf8c5159d304d3fa12e1914e81b24 assets\bsroleplay\models\item\dream_mask.json
 6088d0e7b29ebb7f69c77cb7a2785a64993469b4 assets\bsroleplay\models\item\neanderthal_chestplate.json
 682244f2c8c786616dde28b802fa702b98392d19 assets\bsroleplay\models\item\civic_crown.json
-34879230cfddb19a3d6e0dcc92e501df52ecdf3b assets\bsroleplay\models\item\police_baton.json
 4df237b263989b5c154f00a2e100795a52581021 assets\bsroleplay\models\item\police_chestplate.json
+34879230cfddb19a3d6e0dcc92e501df52ecdf3b assets\bsroleplay\models\item\police_baton.json
 5c552247f27fffde41c7043025c5bb6bf44ca581 assets\bsroleplay\models\item\poncho.json
 2309a31b971480d9526939ab61b6c4ff524dc5d4 assets\bsroleplay\models\item\police_boots.json
 36057332bf0595eacc435d4d38b7e83e6af5425b assets\bsroleplay\models\item\red_pirate_helmet.json
-3b22be818569d3cc2367cce832c3aecd6968262f assets\bsroleplay\models\item\cowboy_hat.json
 795f13aa1ff70ff7c4b0454cf46fb312ad8e32dc assets\bsroleplay\models\item\blue_pirate_helmet.json
+3b22be818569d3cc2367cce832c3aecd6968262f assets\bsroleplay\models\item\cowboy_hat.json
 7280eca09a5bc41ca538bf310237cfe5f3bae2de assets\bsroleplay\models\item\crown.json
 802a0e72f0bd7c12e342c87f15e773c495c47bfd assets\bsroleplay\models\item\happy_pill.json
 94a6653ec29444ce864bebff85c960551d17293a assets\bsroleplay\models\item\dolor_en_el_pecho_carola_music_disc.json
-84ec0fb2d662405abec089bc813e5b5c659349d3 assets\bsroleplay\models\item\blue_pirate_chestplate.json
 de7e6a34dfc87d49a5a5c189346e10149aadb352 assets\bsroleplay\models\item\police_leggings.json
+84ec0fb2d662405abec089bc813e5b5c659349d3 assets\bsroleplay\models\item\blue_pirate_chestplate.json
