@@ -67,5 +67,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PONCHO, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.HAPPY_PILL, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.DEALER, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SAD_PILL, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PILL_CORE, Models.GENERATED);
     }
 }

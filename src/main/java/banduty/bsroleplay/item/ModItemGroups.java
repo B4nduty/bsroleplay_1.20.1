@@ -15,6 +15,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bsroleplay"))
                     .icon(() -> new ItemStack(ModItems.CROWN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ROLEPLAY_CORE);
+                        entries.add(ModItems.PILL_CORE);
 
                         entries.add(ModItems.POLICE_HELMET);
                         entries.add(ModItems.POLICE_CHESTPLATE);
@@ -36,6 +37,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.DREAM_MASK);
                         entries.add(ModItems.BUNNY_MASK);
+                        entries.add(ModItems.DEALER);
 
                         entries.add(ModItems.NEANDERTHAL_CHESTPLATE);
 
@@ -59,6 +61,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC);
 
                         entries.add(ModItems.HAPPY_PILL);
+                        entries.add(ModItems.SAD_PILL);
 
                     }).build());
 

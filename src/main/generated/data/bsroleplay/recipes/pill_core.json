@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    },
+    "W": {
+      "item": "minecraft:wither_rose"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WRW",
+    " W "
+  ],
+  "result": {
+    "count": 5,
+    "item": "bsroleplay:pill_core"
+  },
+  "show_notification": true
+}

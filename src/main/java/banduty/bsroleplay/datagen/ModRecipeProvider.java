@@ -375,5 +375,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ROLEPLAY_CORE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DEALER, 1)
+                .pattern("BBB")
+                .pattern("WRW")
+                .pattern("   ")
+                .input('B', Items.BLACK_WOOL)
+                .input('W', Items.WHITE_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DEALER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PILL_CORE, 5)
+                .pattern(" W ")
+                .pattern("WRW")
+                .pattern(" W ")
+                .input('W', Items.WITHER_ROSE)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.WITHER_ROSE), conditionsFromItem(Items.WITHER_ROSE))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PILL_CORE)));
     }
 }

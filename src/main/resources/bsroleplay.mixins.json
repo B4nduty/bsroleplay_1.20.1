@@ -3,7 +3,8 @@
 	"package": "banduty.bsroleplay.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"ServerItemCooldownManagerMixin"
 	],
 	"client": [
 		"ItemRendererAccessor",

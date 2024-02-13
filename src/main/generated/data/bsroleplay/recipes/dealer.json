@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "WRW",
+    "   "
+  ],
+  "result": {
+    "item": "bsroleplay:dealer"
+  },
+  "show_notification": true
+}
