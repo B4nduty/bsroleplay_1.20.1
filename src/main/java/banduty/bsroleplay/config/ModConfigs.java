@@ -183,6 +183,26 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Sad Pill Max Stack | Default: 3
+                """)
+        int sadPillMaxStack = 3;
+
+        public int getSadPillMaxStack() {
+            return Math.max(0, sadPillMaxStack);
+        }
+
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
+                Sad Pill Consume Time in Seconds | Default: 1
+                """)
+        int sadPillConsumeTime = 1;
+
+        public int getSadPillConsumeTime() {
+            return Math.max(0, sadPillConsumeTime);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("Show Item Tooltips | Default: true")
         public boolean showItemTooltips = true;
     }

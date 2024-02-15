@@ -37,7 +37,7 @@ public class PoliceBaton extends AxeItem {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (BsRolePlay.CONFIG.common.showItemTooltips) {
-            tooltip.add(Text.translatable("tooltip.bsroleplay.policebaton.tooltip").formatted(Formatting.AQUA, Formatting.ITALIC));
+            tooltip.add(Text.translatable("tooltip.bsroleplay.policebaton.tooltip").formatted(Formatting.AQUA));
             super.appendTooltip(stack, world, tooltip, context);
         }
     }

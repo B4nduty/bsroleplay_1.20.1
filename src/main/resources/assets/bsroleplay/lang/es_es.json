@@ -49,7 +49,6 @@
   "item.bsroleplay.happy_pill": "Píldora Optimista",
 
   "item.bsroleplay.roleplay_core": "Núcleo de Roleplay",
-  "tooltip.bsroleplay.roleplay_core.tooltip": "Un Núcleo Utilizado para Fabricar Objetos de Roleplay",
 
   "item.bsroleplay.protection_helmet": "Casco de Protección",
   "item.bsroleplay.protection_chestplate": "Peto de Protección",
@@ -90,6 +89,9 @@
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.happyPillNauseaChance": "Píldora Optimista - Posibilidad Nausea",
   "text.autoconfig.bsroleplay.option.common.happyPillInstantHealthChance": "Píldora Optimista-Probabilidad Curación",
-  "text.autoconfig.bsroleplay.option.common.happyPillMaxStack": "Happy Pill - Max Stack",
+  "text.autoconfig.bsroleplay.option.common.happyPillMaxStack": "Píldora Optimista - Max Stack",
+  "text.autoconfig.bsroleplay.option.common.sadPillMaxStack": "Pastilla Depresiva - Max Stack",
+  "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime": "Pastilla Depresiva - Temps de Consommation",
+  "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas"
 }

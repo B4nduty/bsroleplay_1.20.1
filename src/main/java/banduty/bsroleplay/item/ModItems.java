@@ -14,7 +14,7 @@ import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static final Item ROLEPLAY_CORE = registerItem("roleplay_core",
-            new RoleplayCore(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+            new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item PILL_CORE = registerItem("pill_core",
             new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC = registerItem("dolor_en_el_pecho_carola_music_disc",
@@ -100,7 +100,7 @@ public class ModItems {
             new DealerItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item SAD_PILL= registerItem("sad_pill",
-            new SadPill(new FabricItemSettings().maxCount(3).rarity(Rarity.RARE)));
+            new SadPill(new FabricItemSettings().maxCount(BsRolePlay.CONFIG.common.getSadPillMaxStack()).rarity(Rarity.RARE)));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
