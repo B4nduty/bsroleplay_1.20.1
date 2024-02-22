@@ -1,9 +1,6 @@
 package banduty.bsroleplay;
 
-import banduty.bsroleplay.datagen.ModItemTagProvider;
-import banduty.bsroleplay.datagen.ModLootTableProvider;
-import banduty.bsroleplay.datagen.ModModelProvider;
-import banduty.bsroleplay.datagen.ModRecipeProvider;
+import banduty.bsroleplay.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -16,5 +13,6 @@ public class BsRolePlayDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
 	}
 }

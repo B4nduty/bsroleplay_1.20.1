@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_roleplay_core": {
+    "has_pill_core": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:roleplay_core"
+              "bsroleplay:pill_core"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pill_core"
+        "recipe": "minecraft:happy_pill"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -35,13 +35,13 @@
   "requirements": [
     [
       "has_wither_rose",
-      "has_roleplay_core",
+      "has_pill_core",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pill_core"
+      "minecraft:happy_pill"
     ]
   },
   "sends_telemetry_event": false

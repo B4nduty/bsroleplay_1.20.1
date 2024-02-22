@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "bsroleplay:pill_core"
-  },
-  "result": "bsroleplay:happy_pill",
-  "experience": 0.35,
-  "cookingtime": 600
-}

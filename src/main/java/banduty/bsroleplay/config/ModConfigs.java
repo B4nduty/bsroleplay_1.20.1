@@ -94,9 +94,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Police Baton Cooldown in Seconds | Default: 15
+                Police Baton Cooldown in Seconds | Default: 10
                 """)
-        int policeBatonCooldown = 15;
+        int policeBatonCooldown = 10;
 
         public int getPoliceBatonCooldown() {
             return Math.max(0, policeBatonCooldown);

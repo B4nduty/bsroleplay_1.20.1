@@ -216,18 +216,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.NEANDERTHAL_CHESTPLATE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FUNERAL_MASK, 1)
-                .pattern("PGP")
-                .pattern("GRG")
-                .pattern("P P")
-                .input('P', Items.LAPIS_LAZULI)
-                .input('G', Items.GOLD_INGOT)
-                .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.LAPIS_LAZULI), conditionsFromItem(Items.LAPIS_LAZULI))
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FUNERAL_MASK)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CIVIC_CROWN, 1)
                 .pattern("OOO")
                 .pattern("ORO")
@@ -388,14 +376,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DEALER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PILL_CORE, 5)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HAPPY_PILL, 1)
+                .pattern("   ")
                 .pattern(" W ")
-                .pattern("WRW")
-                .pattern(" W ")
+                .pattern(" P ")
                 .input('W', Items.WITHER_ROSE)
-                .input('R', ModItems.ROLEPLAY_CORE)
+                .input('P', ModItems.PILL_CORE)
                 .criterion(hasItem(Items.WITHER_ROSE), conditionsFromItem(Items.WITHER_ROSE))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PILL_CORE)));
+                .criterion(hasItem(ModItems.PILL_CORE), conditionsFromItem(ModItems.PILL_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HAPPY_PILL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SAD_PILL, 1)
+                .pattern("   ")
+                .pattern(" N ")
+                .pattern(" P ")
+                .input('N', Items.NETHER_STAR)
+                .input('P', ModItems.PILL_CORE)
+                .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
+                .criterion(hasItem(ModItems.PILL_CORE), conditionsFromItem(ModItems.PILL_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SAD_PILL)));
     }
 }
