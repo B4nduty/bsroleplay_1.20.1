@@ -97,5 +97,10 @@
   "text.autoconfig.bsroleplay.option.common.sadPillMaxStack": "Pilule Dépressive - Max Stack",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime": "Pilule Dépressive - Consume Time",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime.@Tooltip": "En Secondes",
-  "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Info-bulles des Éléments"
+  "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Info-bulles des Éléments",
+  "text.autoconfig.bsroleplay.option.common.pillCoreChestsChance": "Chances de Coffre - Noyau de Pilule",
+  "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Chances de Coffre - Masque Funéraire",
+  "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Chances de Coffre - Bâton du Pharaon",
+  "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Chances de Coffre - Chapeau Gadget",
+  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet"
 }

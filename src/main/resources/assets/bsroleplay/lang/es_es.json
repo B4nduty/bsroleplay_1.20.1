@@ -97,5 +97,10 @@
   "text.autoconfig.bsroleplay.option.common.sadPillMaxStack": "Pastilla Depresiva - Max Stack",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime": "Pastilla Depresiva - Temps de Consommation",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime.@Tooltip": "En Segundos",
-  "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas"
+  "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas",
+  "text.autoconfig.bsroleplay.option.common.pillCoreChestsChance": "Probabilidad de Cofres - Núcleo de Píldora",
+  "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Probabilidad de Cofres - Máscara Funeraria",
+  "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Probabilidad de Cofres - Bastón del Faraón",
+  "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Probabilidad de Cofres - Sombrero de Artilugios",
+  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio"
 }

@@ -119,19 +119,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PIRATE_CHESTPLATE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HOOK, 1)
-                .pattern(" GD")
-                .pattern(" G ")
-                .pattern("IRI")
-                .input('I', Items.IRON_BLOCK)
-                .input('G', Items.GOLD_INGOT)
-                .input('D', Items.DRAGON_BREATH)
-                .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HOOK)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PIRATE_LEGGINGS, 1)
                 .pattern("RCR")
                 .pattern("R R")
@@ -263,20 +250,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .criterion(hasItem(ModItems.MINI_CROWN), conditionsFromItem(ModItems.MINI_CROWN))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CROWN)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PHARAOH_STAFF, 1)
-                .pattern(" GN")
-                .pattern(" LR")
-                .pattern("G  ")
-                .input('G', Items.GOLD_BLOCK)
-                .input('N', Items.NETHER_STAR)
-                .input('L', Items.LAPIS_BLOCK)
-                .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.GOLD_BLOCK), conditionsFromItem(Items.GOLD_BLOCK))
-                .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
-                .criterion(hasItem(Items.LAPIS_BLOCK), conditionsFromItem(Items.LAPIS_BLOCK))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PHARAOH_STAFF)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COWBOY_HAT, 1)
                 .pattern("L L")

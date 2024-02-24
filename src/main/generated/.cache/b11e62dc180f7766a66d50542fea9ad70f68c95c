@@ -1,4 +1,4 @@
-// 1.20.1	2024-02-22T23:10:34.4418711	BsRolePlay/Recipes
+// 1.20.1	2024-02-24T01:00:08.2321067	BsRolePlay/Recipes
 7b56002ef54cc6c0d4b05b879c5b54d0430c6089 data\bsroleplay\advancements\recipes\misc\neanderthal_chestplate.json
 2a50e8b91c434cca4c2772fb69a625fd87845bb6 data\bsroleplay\advancements\recipes\misc\sad_pill.json
 920c3d7b7b25f61ab452dc5d38684b3e1216816b data\bsroleplay\recipes\neanderthal_chestplate.json
@@ -20,7 +20,6 @@ f0dad13b08909fde517a997ce68dd0841b94a5e3 data\bsroleplay\recipes\roleplay_core.j
 82af31f7a4125d04d63209cdf421af9b35f613f5 data\bsroleplay\advancements\recipes\misc\police_helmet.json
 d3eaeb38a9f18d81d906c0f5d51d423e210b088c data\bsroleplay\advancements\recipes\misc\blue_pirate_leggings.json
 46505d51e039a7a4d826afff8b18d72c27497acd data\bsroleplay\advancements\recipes\misc\red_pirate_chestplate.json
-5e5b3d72a44923ef11f205926b912298c346cfde data\bsroleplay\advancements\recipes\misc\pharaoh_staff.json
 da8e938afef2e0c1dbefbfb9b02717155af66b37 data\bsroleplay\advancements\recipes\misc\protection_chestplate.json
 cb71c6cced900ee7397051a4e7c161f4752a526a data\bsroleplay\advancements\recipes\misc\blue_pirate_chestplate.json
 6228f5edcecca19e1b6a4b3546c4962d9c4e4ab9 data\bsroleplay\advancements\recipes\misc\protection_boots.json
@@ -36,12 +35,10 @@ b41d94b0fea6b0c081b97e5fde3ee4d461e683ab data\bsroleplay\recipes\blue_pirate_che
 4b0ad474ccc183c0c425182ec4ca6a7123806bef data\bsroleplay\recipes\mini_crown.json
 321acd83a10ebfd078e971efcc29b7467f24ac77 data\bsroleplay\advancements\recipes\misc\police_boots.json
 2a639724c91fd53a700c2a2f10e7b1ad615df9d8 data\bsroleplay\recipes\red_pirate_helmet.json
-6e44b4bdd44f0a8931423e9b3cfc7f86e4afac3a data\bsroleplay\recipes\hook.json
 07fb75fedaaba35c4047232cdbfd6d7018897cd7 data\bsroleplay\recipes\police_boots.json
 bfdad7285baac16fec4b29d3a202edc45ecc7f35 data\bsroleplay\recipes\dolor_en_el_pecho_carola_music_disc.json
 240c5a33c196af4ef4275a8f4d713fa9a1b21137 data\bsroleplay\advancements\recipes\misc\judge_hammer.json
 835bc528a9075f9f00e5ec7c327edd7f0238262a data\bsroleplay\recipes\protection_boots.json
-c01f9a11ac32483a6d9a2ea24afa9aaaa33721da data\bsroleplay\recipes\pharaoh_staff.json
 0e9759c659e64166fc0c160a3d13eaa9d6cfda1e data\bsroleplay\recipes\police_chestplate.json
 d6baa746555fed5ff2be86c1245feb1e64358c00 data\bsroleplay\advancements\recipes\misc\protection_leggings.json
 434871f5085c8f197a0ea0c76b620ad8a5f0b24f data\bsroleplay\recipes\blue_pirate_leggings.json
@@ -58,7 +55,6 @@ ac3bec67b9f490ad815784f667e21917e00fed31 data\bsroleplay\recipes\crown.json
 bb492023ad39aa715de01176026f7cd546d56b40 data\bsroleplay\advancements\recipes\misc\red_pirate_leggings.json
 95dcde4e1da6671dc8b126b45872d5254371e5bb data\bsroleplay\recipes\police_helmet.json
 952e4781cb61f345d98a73e670dcd80064ac049b data\bsroleplay\recipes\protection_helmet.json
-0033ef7e4bb67d946c38e51a21f545a3ac89649f data\bsroleplay\advancements\recipes\misc\hook.json
 bfa958dcab7c2961decf624eb42dcc094bcd0dfe data\bsroleplay\advancements\recipes\misc\bunny_mask.json
 1ce0f74631f2f0504f28a1b711bf8d183f87dd2a data\bsroleplay\recipes\protection_leggings.json
 9f0d9159482ac4707e7312879a76c568a25d2448 data\bsroleplay\advancements\recipes\misc\protection_helmet.json

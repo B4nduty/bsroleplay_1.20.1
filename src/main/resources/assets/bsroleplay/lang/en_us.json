@@ -97,5 +97,10 @@
   "text.autoconfig.bsroleplay.option.common.sadPillMaxStack": "Sad Pill - Max Stack",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime": "Sad Pill - Consume Time",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime.@Tooltip": "In Seconds",
-  "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Show Item Tooltips"
+  "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Show Item Tooltips",
+  "text.autoconfig.bsroleplay.option.common.pillCoreChestsChance": "Pill Core Chests Chance",
+  "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Funeral Mask Chests Chance",
+  "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Pharaoh Staff Chests Chance",
+  "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Gadget Hat Chests Chances",
+  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance"
 }

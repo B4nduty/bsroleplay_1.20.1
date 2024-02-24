@@ -22,25 +22,6 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @Comment("Allow Pharaoh Staff throw Lightnings | Default: true")
         public boolean modifyPharaohStaffLightning = true;
 
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("Allow Hook spawn Evoker Fang | Default: true")
-        public boolean modifyHookEvokerFang = true;
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("Allow Judge Hammer make Sound | Default: true")
-        public boolean modifyJudgeHammerSound = true;
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("Allow Police Baton give Slowness Effect | Default: true")
-        public boolean modifyPoliceBatonSlowness = true;
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("Allow Protection Set give Effects | Default: true")
-        public boolean modifyProtectionSetEffects = true;
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("Allow Police Set give Effect | Default: true")
-        public boolean modifyPoliceSetEffects = true;
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
@@ -52,6 +33,21 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
             return Math.max(0, pharaohStaffCooldown);
         }
 
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Pharaoh Staff Spawns in Chests Chance | Default: 0.01f
+                """)
+        float pharaohStaffChestsChance = 0.01f;
+
+        public float getPharaohStaffChestsChance() {
+            return Math.max(0, pharaohStaffChestsChance);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Hook spawn Evoker Fang | Default: true")
+        public boolean modifyHookEvokerFang = true;
+
+
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
                 Hook Cooldown in Seconds | Default: 4
@@ -62,6 +58,22 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
             return Math.max(0, hookCooldown);
         }
 
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Hook Spawns in Chests Chance | Default: 0.25f
+                """)
+        float hookChestsChance = 0.25f;
+
+        public float getHookChestsChance() {
+            return Math.max(0, hookChestsChance);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Judge Hammer make Sound | Default: true")
+        public boolean modifyJudgeHammerSound = true;
+
+
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
                 Judge Hammer Cooldown in Seconds | Default: 1
@@ -71,6 +83,10 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         public int getJudgeHammerCooldown() {
             return Math.max(0, judgeHammerCooldown);
         }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Police Baton give Slowness Effect | Default: true")
+        public boolean modifyPoliceBatonSlowness = true;
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
@@ -101,6 +117,14 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         public int getPoliceBatonCooldown() {
             return Math.max(0, policeBatonCooldown);
         }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Protection Set give Effects | Default: true")
+        public boolean modifyProtectionSetEffects = true;
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Police Set give Effect | Default: true")
+        public boolean modifyPoliceSetEffects = true;
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
@@ -200,6 +224,36 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         public int getSadPillConsumeTime() {
             return Math.max(0, sadPillConsumeTime);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Pill Core Spawns in Chests Chance | Default: 0.5f
+                """)
+        float pillCoreChestsChance = 0.5f;
+
+        public float getPillCoreChestsChance() {
+            return Math.max(0, pillCoreChestsChance);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Funeral Mask Spawns in Chests Chance | Default: 0.1f
+                """)
+        float funeralMaskChestsChance = 0.1f;
+
+        public float getFuneralMaskChestsChance() {
+            return Math.max(0, funeralMaskChestsChance);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Gadget Hat Spawns in Chests Chance | Default: 0.1f
+                """)
+        float gadgetHatChestsChance = 0.1f;
+
+        public float getGadgetHatChestsChance() {
+            return Math.max(0, gadgetHatChestsChance);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
