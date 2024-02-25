@@ -13,7 +13,7 @@ public class ModItemGroups {
     public static final ItemGroup BSROLEPLAY_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BsRolePlay.MOD_ID,"roleplay_core"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bsroleplay"))
-                    .icon(() -> new ItemStack(ModItems.CROWN)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.ROLEPLAY_CORE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ROLEPLAY_CORE);
                         entries.add(ModItems.PILL_CORE);
                         entries.add(ModItems.HOLY_CLOUD_STATUE_ITEM);

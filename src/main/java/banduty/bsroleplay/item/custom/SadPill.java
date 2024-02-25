@@ -44,11 +44,11 @@ public class SadPill extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (!world.isClient() && user instanceof PlayerEntity player && !player.hasStatusEffect(StatusEffects.WEAKNESS) && !player.hasStatusEffect(StatusEffects.MINING_FATIGUE) && !player.hasStatusEffect(StatusEffects.SLOWNESS)) {
             if (!player.isCreative()) stack.decrement(1);
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10 * 20, 0, false, false,false));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 10 * 20, 0, false, false,false));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 10 * 20, 3, false, false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, BsRolePlay.CONFIG.common.getSadPill1stStageTime()*20, 0, false, false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, BsRolePlay.CONFIG.common.getSadPill1stStageTime()*20, 0, false, false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, BsRolePlay.CONFIG.common.getSadPill1stStageTime()*20, 3, false, false,false));
 
-            player.getItemCooldownManager().set(this, 10 * 20);
+            player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getSadPill1stStageTime()*20);
             }
 
         return stack;

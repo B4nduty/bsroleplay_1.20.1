@@ -138,9 +138,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Blindness Chance | Default: 0.2f
+                Happy Pill Blindness Chance | Default: 0.1f
                 """)
-        float happyPillBlindnessChance = 0.2f;
+        float happyPillBlindnessChance = 0.1f;
 
         public float getHappyPillBlindnessChance() {
             return Math.max(0, happyPillBlindnessChance);
@@ -148,9 +148,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Happy Pill Weakness Time in Seconds | Default: 40
+                Happy Pill Weakness Time in Seconds | Default: 30
                 """)
-        int happyPillWeaknessTime = 40;
+        int happyPillWeaknessTime = 30;
 
         public int getHappyPillWeaknessTime() {
             return Math.max(0, happyPillWeaknessTime);
@@ -178,9 +178,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Nausea Chance | Default: 0.75f
+                Happy Pill Nausea Chance | Default: 0.1f
                 """)
-        float happyPillNauseaChance = 0.75f;
+        float happyPillNauseaChance = 0.1f;
 
         public float getHappyPillNauseaChance() {
             return Math.max(0, happyPillNauseaChance);
@@ -188,9 +188,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Instant Health Chance | Default: 0.25f
+                Happy Pill Instant Health Chance | Default: 0.5f
                 """)
-        float happyPillInstantHealthChance = 0.25f;
+        float happyPillInstantHealthChance = 0.5f;
 
         public float getHappyPillInstantHealthChance() {
             return Math.max(0, happyPillInstantHealthChance);
@@ -226,11 +226,21 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
             return Math.max(0, sadPillConsumeTime);
         }
 
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
+                Sad Pill Consume Time in Seconds | Default: 30
+                """)
+        int sadPill1stStageTime = 30;
+
+        public int getSadPill1stStageTime() {
+            return Math.max(0, sadPill1stStageTime);
+        }
+
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Pill Core Spawns in Chests Chance | Default: 0.5f
+                Pill Core Spawns in Chests Chance | Default: 0.25f
                 """)
-        float pillCoreChestsChance = 0.5f;
+        float pillCoreChestsChance = 0.25f;
 
         public float getPillCoreChestsChance() {
             return Math.max(0, pillCoreChestsChance);
