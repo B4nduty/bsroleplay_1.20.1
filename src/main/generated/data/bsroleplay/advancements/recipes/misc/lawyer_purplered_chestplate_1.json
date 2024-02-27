@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_purple_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:purple_wool"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_red_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:red_wool"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_roleplay_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:roleplay_core"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:lawyer_purplered_chestplate_1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_purple_wool",
+      "has_red_wool",
+      "has_roleplay_core",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:lawyer_purplered_chestplate_1"
+    ]
+  },
+  "sends_telemetry_event": false
+}

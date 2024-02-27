@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_wool": {
+    "has_dolor_en_el_pecho_carola_music_disc": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:black_wool"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_halo": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "bsroleplay:halo"
+              "bsroleplay:dolor_en_el_pecho_carola_music_disc"
             ]
           }
         ]
@@ -46,9 +34,8 @@
   },
   "requirements": [
     [
-      "has_halo",
       "has_roleplay_core",
-      "has_black_wool",
+      "has_dolor_en_el_pecho_carola_music_disc",
       "has_the_recipe"
     ]
   ],

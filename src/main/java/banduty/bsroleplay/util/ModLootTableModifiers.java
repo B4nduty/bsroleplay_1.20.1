@@ -15,9 +15,6 @@ public class ModLootTableModifiers {
     private static final Identifier DESERT_PYRAMID_ID =
             new Identifier("minecraft", "chests/desert_pyramid");
 
-    private static final Identifier DESERT_PYRAMID_ID_2 =
-            new Identifier("minecraft", "chests/desert_pyramid");
-
     private static final Identifier VILLAGE_TOOLSMITH_ID =
             new Identifier("minecraft", "chests/village_toolsmith");
 
@@ -39,6 +36,16 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
+            if(ANCIENT_CITY_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .with(ItemEntry.builder(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
             if(DESERT_PYRAMID_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
@@ -49,7 +56,7 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
-            if(DESERT_PYRAMID_ID_2.equals(id)) {
+            if(DESERT_PYRAMID_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.common.getPharaohStaffChestsChance()))

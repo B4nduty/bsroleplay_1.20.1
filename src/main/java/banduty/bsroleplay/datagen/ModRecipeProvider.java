@@ -67,9 +67,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("BRB")
                 .pattern("B B")
                 .pattern("B B")
-                .input('B', Items.BLACK_WOOL)
-                .input('R', ModItems.POLICE_BATON)
-                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .input('B', Items.BLUE_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POLICE_LEGGINGS)));
 
@@ -226,15 +226,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.BUNNY_MASK)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC, 1)
-                .pattern(" H ")
+                .pattern(" D ")
                 .pattern(" R ")
-                .pattern(" B ")
-                .input('H', ModItems.HALO)
                 .input('R', ModItems.ROLEPLAY_CORE)
-                .input('B', Items.BLACK_WOOL)
-                .criterion(hasItem(ModItems.HALO), conditionsFromItem(ModItems.HALO))
+                .input('D', ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC)
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC), conditionsFromItem(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CROWN, 1)
@@ -278,27 +275,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PONCHO)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PROTECTION_HELMET, 1)
-                .pattern("YYY")
+                .pattern("BBB")
                 .pattern("BGB")
-                .pattern("BRB")
-                .input('Y', Items.YELLOW_WOOL)
+                .pattern("YRY")
                 .input('B', Items.BLACK_WOOL)
+                .input('Y', Items.YELLOW_WOOL)
                 .input('G', Items.GLASS)
                 .input('R', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.YELLOW_WOOL), conditionsFromItem(Items.YELLOW_WOOL))
                 .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(Items.YELLOW_WOOL), conditionsFromItem(Items.YELLOW_WOOL))
                 .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PROTECTION_HELMET)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PROTECTION_CHESTPLATE, 1)
                 .pattern("B B")
-                .pattern("YRY")
+                .pattern("YRI")
                 .pattern("BBB")
                 .input('Y', Items.YELLOW_WOOL)
                 .input('B', Items.BLACK_WOOL)
+                .input('I', Items.IRON_INGOT)
                 .input('R', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.YELLOW_WOOL), conditionsFromItem(Items.YELLOW_WOOL))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PROTECTION_CHESTPLATE)));
@@ -306,22 +305,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PROTECTION_LEGGINGS, 1)
                 .pattern("BRB")
                 .pattern("Y Y")
-                .pattern("Y Y")
+                .pattern("I I")
                 .input('Y', Items.YELLOW_WOOL)
+                .input('I', Items.IRON_INGOT)
                 .input('B', Items.BLACK_WOOL)
                 .input('R', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.YELLOW_WOOL), conditionsFromItem(Items.YELLOW_WOOL))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PROTECTION_LEGGINGS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PROTECTION_BOOTS, 1)
-                .pattern("   ")
                 .pattern("B B")
-                .pattern("BRB")
+                .pattern("GRG")
                 .input('B', Items.BLACK_WOOL)
+                .input('G', Items.RED_WOOL)
                 .input('R', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PROTECTION_BOOTS)));
 
@@ -368,5 +370,221 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
                 .criterion(hasItem(ModItems.PILL_CORE), conditionsFromItem(ModItems.PILL_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SAD_PILL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_LEGGINGS_BLACK, 1)
+                .pattern("BRB")
+                .pattern("B B")
+                .pattern("B B")
+                .input('B', Items.BLACK_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier("lawyer_leggings_black_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BOOTS_BLACK, 1)
+                .pattern("   ")
+                .pattern("B B")
+                .pattern("BRB")
+                .input('B', Items.BLACK_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier("lawyer_boots_black_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_LEGGINGS_PURPLE, 1)
+                .pattern(" BP")
+                .input('P', Items.PURPLE_DYE)
+                .input('B', ModItems.LAWYER_LEGGINGS_BLACK)
+                .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
+                .criterion(hasItem(ModItems.LAWYER_LEGGINGS_BLACK), conditionsFromItem(ModItems.LAWYER_LEGGINGS_BLACK))
+                .offerTo(exporter, new Identifier("lawyer_leggings_purple_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BOOTS_PURPLE, 1)
+                .pattern(" BP")
+                .input('P', Items.PURPLE_DYE)
+                .input('B', ModItems.LAWYER_BOOTS_BLACK)
+                .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BOOTS_BLACK), conditionsFromItem(ModItems.LAWYER_BOOTS_BLACK))
+                .offerTo(exporter, new Identifier("lawyer_boots_purple_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_LEGGINGS_PURPLE, 1)
+                .pattern("BRB")
+                .pattern("B B")
+                .pattern("B B")
+                .input('B', Items.PURPLE_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.PURPLE_WOOL), conditionsFromItem(Items.PURPLE_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier("lawyer_leggings_purple_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BOOTS_PURPLE, 1)
+                .pattern("   ")
+                .pattern("B B")
+                .pattern("BRB")
+                .input('B', Items.PURPLE_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.PURPLE_WOOL), conditionsFromItem(Items.PURPLE_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier("lawyer_boots_purple_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_LEGGINGS_BLACK, 1)
+                .pattern(" BP")
+                .input('P', Items.BLACK_DYE)
+                .input('B', ModItems.LAWYER_LEGGINGS_PURPLE)
+                .criterion(hasItem(Items.BLACK_DYE), conditionsFromItem(Items.BLACK_DYE))
+                .criterion(hasItem(ModItems.LAWYER_LEGGINGS_PURPLE), conditionsFromItem(ModItems.LAWYER_LEGGINGS_PURPLE))
+                .offerTo(exporter, new Identifier("lawyer_leggings_black_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BOOTS_BLACK, 1)
+                .pattern(" BP")
+                .input('P', Items.BLACK_DYE)
+                .input('B', ModItems.LAWYER_BOOTS_PURPLE)
+                .criterion(hasItem(Items.BLACK_DYE), conditionsFromItem(Items.BLACK_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BOOTS_PURPLE), conditionsFromItem(ModItems.LAWYER_BOOTS_PURPLE))
+                .offerTo(exporter, new Identifier("lawyer_boots_black_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKBLUE_CHESTPLATE, 1)
+                .pattern("B B")
+                .pattern("BLB")
+                .pattern("BRB")
+                .input('B', Items.BLACK_WOOL)
+                .input('L', Items.BLUE_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier("lawyer_blackblue_chestplate_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKBLUE_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.BLUE_DYE)
+                .input('B', ModItems.LAWYER_BLACKGOLD_CHESTPLATE)
+                .criterion(hasItem(Items.BLUE_DYE), conditionsFromItem(Items.BLUE_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackblue_chestplate_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKBLUE_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.BLUE_DYE)
+                .input('B', ModItems.LAWYER_BLACKRED_CHESTPLATE)
+                .criterion(hasItem(Items.BLUE_DYE), conditionsFromItem(Items.BLUE_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BLACKRED_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKRED_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackblue_chestplate_3"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKBLUE_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.BLUE_DYE)
+                .input('B', ModItems.LAWYER_PURPLERED_CHESTPLATE)
+                .criterion(hasItem(Items.BLUE_DYE), conditionsFromItem(Items.BLUE_DYE))
+                .criterion(hasItem(ModItems.LAWYER_PURPLERED_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_PURPLERED_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackblue_chestplate_4"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKGOLD_CHESTPLATE, 1)
+                .pattern("B B")
+                .pattern("BLB")
+                .pattern("BRB")
+                .input('B', Items.BLACK_WOOL)
+                .input('L', Items.GOLD_INGOT)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier("lawyer_blackgold_chestplate_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKGOLD_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.GOLD_INGOT)
+                .input('B', ModItems.LAWYER_BLACKBLUE_CHESTPLATE)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(ModItems.LAWYER_BLACKBLUE_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKBLUE_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackgold_chestplate_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKGOLD_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.GOLD_INGOT)
+                .input('B', ModItems.LAWYER_PURPLERED_CHESTPLATE)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(ModItems.LAWYER_PURPLERED_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_PURPLERED_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackgold_chestplate_3"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKGOLD_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.GOLD_INGOT)
+                .input('B', ModItems.LAWYER_BLACKRED_CHESTPLATE)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(ModItems.LAWYER_BLACKRED_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKRED_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackgold_chestplate_4"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKRED_CHESTPLATE, 1)
+                .pattern("B B")
+                .pattern("BLB")
+                .pattern("BRB")
+                .input('B', Items.BLACK_WOOL)
+                .input('L', Items.RED_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier("lawyer_blackred_chestplate_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKRED_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.RED_DYE)
+                .input('B', ModItems.LAWYER_BLACKBLUE_CHESTPLATE)
+                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BLACKBLUE_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKBLUE_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackred_chestplate_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKRED_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.RED_DYE)
+                .input('B', ModItems.LAWYER_PURPLERED_CHESTPLATE)
+                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
+                .criterion(hasItem(ModItems.LAWYER_PURPLERED_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_PURPLERED_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackred_chestplate_3"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_BLACKRED_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.RED_DYE)
+                .input('B', ModItems.LAWYER_BLACKGOLD_CHESTPLATE)
+                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_blackred_chestplate_4"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_PURPLERED_CHESTPLATE, 1)
+                .pattern("B B")
+                .pattern("BLB")
+                .pattern("BRB")
+                .input('B', Items.PURPLE_WOOL)
+                .input('L', Items.RED_WOOL)
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .criterion(hasItem(Items.PURPLE_WOOL), conditionsFromItem(Items.PURPLE_WOOL))
+                .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier("lawyer_purplered_chestplate_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_PURPLERED_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.PURPLE_DYE)
+                .input('B', ModItems.LAWYER_BLACKBLUE_CHESTPLATE)
+                .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BLACKBLUE_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKBLUE_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_purplered_chestplate_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_PURPLERED_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.PURPLE_DYE)
+                .input('B', ModItems.LAWYER_BLACKRED_CHESTPLATE)
+                .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BLACKRED_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKRED_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_purplered_chestplate_3"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_PURPLERED_CHESTPLATE, 1)
+                .pattern(" BP")
+                .input('P', Items.PURPLE_DYE)
+                .input('B', ModItems.LAWYER_BLACKGOLD_CHESTPLATE)
+                .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
+                .criterion(hasItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE))
+                .offerTo(exporter, new Identifier("lawyer_purplered_chestplate_4"));
     }
 }

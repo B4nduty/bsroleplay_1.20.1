@@ -5,14 +5,16 @@
     "B": {
       "item": "minecraft:black_wool"
     },
+    "G": {
+      "item": "minecraft:red_wool"
+    },
     "R": {
       "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
-    "   ",
     "B B",
-    "BRB"
+    "GRG"
   ],
   "result": {
     "item": "bsroleplay:protection_boots"

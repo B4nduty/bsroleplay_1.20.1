@@ -5,6 +5,9 @@
     "B": {
       "item": "minecraft:black_wool"
     },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
     "R": {
       "item": "bsroleplay:roleplay_core"
     },
@@ -14,7 +17,7 @@
   },
   "pattern": [
     "B B",
-    "YRY",
+    "YRI",
     "BBB"
   ],
   "result": {

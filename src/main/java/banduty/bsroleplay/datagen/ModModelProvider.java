@@ -75,5 +75,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PILL_CORE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GADGET_HAT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.LAWYER_BLACKBLUE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAWYER_BLACKGOLD_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAWYER_BLACKRED_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAWYER_LEGGINGS_BLACK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAWYER_BOOTS_BLACK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.LAWYER_PURPLERED_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAWYER_LEGGINGS_PURPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAWYER_BOOTS_PURPLE, Models.GENERATED);
     }
 }

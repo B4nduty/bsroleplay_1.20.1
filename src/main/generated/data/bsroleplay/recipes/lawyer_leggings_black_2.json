@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "bsroleplay:lawyer_leggings_purple"
+    },
+    "P": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "pattern": [
+    " BP"
+  ],
+  "result": {
+    "item": "bsroleplay:lawyer_leggings_black"
+  },
+  "show_notification": true
+}

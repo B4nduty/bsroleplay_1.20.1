@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "bsroleplay:lawyer_blackblue_chestplate"
+    },
+    "P": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    " BP"
+  ],
+  "result": {
+    "item": "bsroleplay:lawyer_blackgold_chestplate"
+  },
+  "show_notification": true
+}

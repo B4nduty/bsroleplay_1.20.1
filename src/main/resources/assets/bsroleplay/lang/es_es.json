@@ -35,7 +35,8 @@
 
   "item.bsroleplay.halo": "Aureola",
 
-  "itemgroup.bsroleplay": "BsRolePlay",
+  "itemgroup.bsroleplay.item": "BsRolePlay Item",
+  "itemgroup.bsroleplay.armor": "BsRolePlay Armor",
 
   "item.bsroleplay.neanderthal_chestplate": "Ropa de Cuero",
 
@@ -62,6 +63,15 @@
   "item.bsroleplay.gadget_hat": "Sombrero de Artilugios",
 
   "block.bsroleplay.holy_cloud_statue": "Estatua de la Nube Sagrada",
+
+  "item.bsroleplay.lawyer_blackblue_chestplate": "Traje Negro y Azul",
+  "item.bsroleplay.lawyer_blackgold_chestplate": "Traje Negro y Oro",
+  "item.bsroleplay.lawyer_blackred_chestplate": "Traje Negro y Rojo",
+  "item.bsroleplay.lawyer_leggings_black": "Pantalones Negros",
+  "item.bsroleplay.lawyer_boots_black": "Zapatos Negros",
+  "item.bsroleplay.lawyer_purplered_chestplate": "Traje Morado y Rojo",
+  "item.bsroleplay.lawyer_leggings_purple": "Pantalones Morados",
+  "item.bsroleplay.lawyer_boots_purple": "Zapatos Morados",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
 
@@ -102,5 +112,7 @@
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Probabilidad de Cofres - Máscara Funeraria",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Probabilidad de Cofres - Bastón del Faraón",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Probabilidad de Cofres - Sombrero de Artilugios",
+  "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Pastilla Depresiva - Primera Etapa",
+  "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio"
 }

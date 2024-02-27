@@ -46,7 +46,7 @@
 
   "item.bsroleplay.happy_pill": "Happy Pill",
 
-  "item.bsroleplay.roleplay_core": "Core Roleplay",
+  "item.bsroleplay.roleplay_core": "Roleplay Core",
 
   "item.bsroleplay.protection_helmet": "Protection Helmet",
   "item.bsroleplay.protection_chestplate": "Protection Chestplate",
@@ -61,7 +61,17 @@
 
   "block.bsroleplay.holy_cloud_statue": "Holy Cloud Statue",
 
-  "itemgroup.bsroleplay": "BsRolePlay",
+  "item.bsroleplay.lawyer_blackblue_chestplate": "Black and Blue Suit",
+  "item.bsroleplay.lawyer_blackgold_chestplate": "Black and Gold Suit",
+  "item.bsroleplay.lawyer_blackred_chestplate": "Black and Red Suit",
+  "item.bsroleplay.lawyer_leggings_black": "Black Pants",
+  "item.bsroleplay.lawyer_boots_black": "Black Boots",
+  "item.bsroleplay.lawyer_purplered_chestplate": "Purple and Red Suit",
+  "item.bsroleplay.lawyer_leggings_purple": "Purple Pants",
+  "item.bsroleplay.lawyer_boots_purple": "Purple Boots",
+
+  "itemgroup.bsroleplay.item": "BsRolePlay Item",
+  "itemgroup.bsroleplay.armor": "BsRolePlay Armor",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",
 
@@ -102,5 +112,7 @@
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Funeral Mask Chests Chance",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Pharaoh Staff Chests Chance",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Gadget Hat Chests Chances",
+  "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Sad Pill 1st Stage Time",
+  "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance"
 }

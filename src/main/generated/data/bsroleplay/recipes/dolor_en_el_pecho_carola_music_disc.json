@@ -2,20 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "minecraft:black_wool"
-    },
-    "H": {
-      "item": "bsroleplay:halo"
+    "D": {
+      "item": "bsroleplay:dolor_en_el_pecho_carola_music_disc"
     },
     "R": {
       "item": "bsroleplay:roleplay_core"
     }
   },
   "pattern": [
-    " H ",
-    " R ",
-    " B "
+    " D ",
+    " R "
   ],
   "result": {
     "item": "bsroleplay:dolor_en_el_pecho_carola_music_disc"

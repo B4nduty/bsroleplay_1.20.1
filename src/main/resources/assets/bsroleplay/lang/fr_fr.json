@@ -35,7 +35,8 @@
 
   "item.bsroleplay.halo": "Aura",
 
-  "itemgroup.bsroleplay": "BsRolePlay",
+  "itemgroup.bsroleplay.item": "BsRolePlay Item",
+  "itemgroup.bsroleplay.armor": "BsRolePlay Armor",
 
   "item.bsroleplay.neanderthal_chestplate": "Vêtements en Cuir",
 
@@ -62,6 +63,15 @@
   "item.bsroleplay.gadget_hat": "Chapeau Gadget",
 
   "block.bsroleplay.holy_cloud_statue": "Statue du Nuage Sacré",
+
+  "item.bsroleplay.lawyer_blackblue_chestplate": "Costume Noir et Bleu",
+  "item.bsroleplay.lawyer_blackgold_chestplate": "Costume Noir et Or",
+  "item.bsroleplay.lawyer_blackred_chestplate": "Costume Noir et Rouge",
+  "item.bsroleplay.lawyer_leggings_black": "Pantalon Noir",
+  "item.bsroleplay.lawyer_boots_black": "Chaussures Noires",
+  "item.bsroleplay.lawyer_purplered_chestplate": "Costume Noir et Rouge",
+  "item.bsroleplay.lawyer_leggings_purple": "Pantalon Violet",
+  "item.bsroleplay.lawyer_boots_purple": "Chaussures Violettes",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Coup de Marteau du Juge",
 
@@ -102,5 +112,7 @@
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Chances de Coffre - Masque Funéraire",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Chances de Coffre - Bâton du Pharaon",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Chances de Coffre - Chapeau Gadget",
+  "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Pilule Dépressive - 1ère Étape",
+  "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet"
 }

@@ -16,9 +16,9 @@
     }
   },
   "pattern": [
-    "YYY",
+    "BBB",
     "BGB",
-    "BRB"
+    "YRY"
   ],
   "result": {
     "item": "bsroleplay:protection_helmet"

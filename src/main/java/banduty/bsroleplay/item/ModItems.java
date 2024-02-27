@@ -7,7 +7,10 @@ import banduty.bsroleplay.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.*;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.MusicDiscItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -32,11 +35,11 @@ public class ModItems {
     public static final Item POLICE_HELMET = registerItem("police_helmet",
             new PoliceArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item POLICE_CHESTPLATE = registerItem("police_chestplate",
-            new ArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new PoliceArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item POLICE_LEGGINGS = registerItem("police_leggings",
-            new ArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new PoliceArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item POLICE_BOOTS = registerItem("police_boots",
-            new ArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new PoliceArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item HALO = registerItem("halo",
             new HaloItem(ModArmorMaterials.HOLY, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
@@ -108,6 +111,24 @@ public class ModItems {
 
     public static final Item GADGET_HAT= registerItem("gadget_hat",
             new GadgetArmor(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
+
+    public static final Item LAWYER_BLACKBLUE_CHESTPLATE= registerItem("lawyer_blackblue_chestplate",
+            new LawyerBlackAndBlueItem(ModArmorMaterials.MASK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item LAWYER_BLACKGOLD_CHESTPLATE= registerItem("lawyer_blackgold_chestplate",
+            new LawyerBlackAndGoldItem(ModArmorMaterials.MASK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item LAWYER_BLACKRED_CHESTPLATE= registerItem("lawyer_blackred_chestplate",
+            new LawyerBlackAndRedItem(ModArmorMaterials.MASK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item LAWYER_LEGGINGS_BLACK= registerItem("lawyer_leggings_black",
+            new LawyerBlackAndBlueItem(ModArmorMaterials.MASK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item LAWYER_BOOTS_BLACK= registerItem("lawyer_boots_black",
+            new LawyerBlackAndBlueItem(ModArmorMaterials.MASK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item LAWYER_PURPLERED_CHESTPLATE= registerItem("lawyer_purplered_chestplate",
+            new LawyerPurpleAndRedItem(ModArmorMaterials.MASK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item LAWYER_LEGGINGS_PURPLE= registerItem("lawyer_leggings_purple",
+            new LawyerPurpleAndRedItem(ModArmorMaterials.MASK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item LAWYER_BOOTS_PURPLE= registerItem("lawyer_boots_purple",
+            new LawyerPurpleAndRedItem(ModArmorMaterials.MASK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
 

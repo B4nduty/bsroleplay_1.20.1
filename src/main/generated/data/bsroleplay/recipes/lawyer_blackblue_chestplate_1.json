@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "L": {
+      "item": "minecraft:blue_wool"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    }
+  },
+  "pattern": [
+    "B B",
+    "BLB",
+    "BRB"
+  ],
+  "result": {
+    "item": "bsroleplay:lawyer_blackblue_chestplate"
+  },
+  "show_notification": true
+}

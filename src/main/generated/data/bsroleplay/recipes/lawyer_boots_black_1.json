@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    }
+  },
+  "pattern": [
+    "   ",
+    "B B",
+    "BRB"
+  ],
+  "result": {
+    "item": "bsroleplay:lawyer_boots_black"
+  },
+  "show_notification": true
+}
