@@ -14,5 +14,6 @@ public class BsRolePlayDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(AdvancementsProvider::new);
 	}
 }

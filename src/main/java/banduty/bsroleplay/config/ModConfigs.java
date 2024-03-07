@@ -25,9 +25,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Pharaoh Staff Cooldown in Seconds | Default: 5
+                Pharaoh Staff Cooldown in Seconds | Default: 10
                 """)
-        int pharaohStaffCooldown = 5;
+        int pharaohStaffCooldown = 10;
 
         public int getPharaohStaffCooldown() {
             return Math.max(0, pharaohStaffCooldown);
@@ -218,9 +218,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Sad Pill Consume Time in Seconds | Default: 1
+                Sad Pill Consume Time in Seconds | Default: 2
                 """)
-        int sadPillConsumeTime = 1;
+        int sadPillConsumeTime = 2;
 
         public int getSadPillConsumeTime() {
             return Math.max(0, sadPillConsumeTime);

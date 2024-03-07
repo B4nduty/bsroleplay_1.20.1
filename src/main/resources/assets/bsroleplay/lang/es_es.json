@@ -35,9 +35,6 @@
 
   "item.bsroleplay.halo": "Aureola",
 
-  "itemgroup.bsroleplay.item": "BsRolePlay Item",
-  "itemgroup.bsroleplay.armor": "BsRolePlay Armor",
-
   "item.bsroleplay.neanderthal_chestplate": "Ropa de Cuero",
 
   "item.bsroleplay.funeral_mask": "Máscara Funeraria",
@@ -62,7 +59,7 @@
 
   "item.bsroleplay.gadget_hat": "Sombrero de Artilugios",
 
-  "block.bsroleplay.holy_cloud_statue": "Estatua de la Nube Sagrada",
+  "block.bsroleplay.holy_cloud_statue": "BsRoleplay Estatua",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Traje Negro y Azul",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Traje Negro y Oro",
@@ -72,6 +69,10 @@
   "item.bsroleplay.lawyer_purplered_chestplate": "Traje Morado y Rojo",
   "item.bsroleplay.lawyer_leggings_purple": "Pantalones Morados",
   "item.bsroleplay.lawyer_boots_purple": "Zapatos Morados",
+
+  "item.bsroleplay.briefcase": "Maletín",
+  "item.bsroleplay.black_briefcase": "Maletín Negro",
+  "item.bsroleplay.purple_briefcase": "Maletín Morado",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
 
@@ -114,5 +115,32 @@
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Probabilidad de Cofres - Sombrero de Artilugios",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Pastilla Depresiva - Primera Etapa",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "En Segundos",
-  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio"
+  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio",
+
+  "advancement.police_set.title": "I'm Justice",
+  "advancement.police_set.desc": "Crea la Porra Policial y el Conjunto Policial",
+
+  "advancement.roleplay_core.title": "Let's Roleplay!",
+  "advancement.roleplay_core.desc": "Craftea un Núcleo de Roleplay",
+
+  "advancement.pharaoh_staff.title": "Dios de las Armas",
+  "advancement.pharaoh_staff.desc": "Encuentra el Bastón del Faraón",
+
+  "advancement.funeral_mask.title": "Sé el Jugador Supremo",
+  "advancement.funeral_mask.desc": "Encuentra una Máscara Funeraria",
+
+  "advancement.hook.title": "El Rey de los Piratas",
+  "advancement.hook.desc": "Encuentra un Garfio",
+
+  "advancement.music_disc.title": "Feel the Moment",
+  "advancement.music_disc.desc": "Encuentra el Disco de Música - Dolor en el Pecho",
+
+  "advancement.pill_core.title": "El Gran Traficante",
+  "advancement.pill_core.desc": "Encuentra el Núcleo de Píldora",
+
+  "advancement.bsroleplay_statue.title": "Conoce los Fundamentos",
+  "advancement.bsroleplay_statue.desc": "Consigue el BsRoleplay Estatua",
+
+  "advancement.purple_lawyer_set.title": "Hombre de Morado",
+  "advancement.purple_lawyer_set.desc": "Crea el Maletín Morado y el conjunto de Abogado Morado"
 }

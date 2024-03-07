@@ -12,11 +12,14 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup BSROLEPLAY_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BsRolePlay.MOD_ID,"roleplay_item"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bsroleplay.item"))
+            FabricItemGroup.builder().displayName(Text.literal("BsRoleplay Item"))
                     .icon(() -> new ItemStack(ModItems.ROLEPLAY_CORE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ROLEPLAY_CORE);
                         entries.add(ModItems.PILL_CORE);
 
+                        entries.add(ModItems.BRIEFCASE);
+                        entries.add(ModItems.BLACK_BRIEFCASE);
+                        entries.add(ModItems.VIOLET_BRIEFCASE);
                         entries.add(ModItems.JUDGE_HAMMER);
                         entries.add(ModItems.POLICE_BATON);
                         entries.add(ModItems.HOOK);
@@ -26,14 +29,20 @@ public class ModItemGroups {
 
                         entries.add(ModItems.HAPPY_PILL);
                         entries.add(ModItems.SAD_PILL);
+                    })
+                    .build());
 
+    public static final ItemGroup BSROLEPLAY_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(BsRolePlay.MOD_ID,"roleplay_block"),
+            FabricItemGroup.builder().displayName(Text.literal("BsRoleplay Block"))
+                    .icon(() -> new ItemStack(ModItems.HOLY_CLOUD_STATUE_ITEM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.HOLY_CLOUD_STATUE_ITEM);
                     })
                     .build());
 
     public static final ItemGroup BSROLEPLAY_ARMOR_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BsRolePlay.MOD_ID,"roleplay_armor"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bsroleplay.armor"))
+            FabricItemGroup.builder().displayName(Text.literal("BsRoleplay Armor"))
                     .icon(() -> new ItemStack(ModItems.CIVIC_CROWN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.POLICE_HELMET);
                         entries.add(ModItems.POLICE_CHESTPLATE);

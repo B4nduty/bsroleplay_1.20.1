@@ -11,7 +11,6 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Consumer;
 
-
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -216,12 +215,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BUNNY_MASK, 1)
                 .pattern("O O")
                 .pattern("RDR")
-                .pattern(" O ")
+                .pattern("WOW")
                 .input('O', Items.PINK_WOOL)
                 .input('R', Items.RED_WOOL)
+                .input('W', Items.WHITE_WOOL)
                 .input('D', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.PINK_WOOL), conditionsFromItem(Items.PINK_WOOL))
                 .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
+                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.BUNNY_MASK)));
 
@@ -586,5 +587,47 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
                 .criterion(hasItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE))
                 .offerTo(exporter, new Identifier("lawyer_purplered_chestplate_4"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HOLY_CLOUD_STATUE_ITEM, 1)
+                .pattern("  H")
+                .pattern("SRS")
+                .pattern("ST ")
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .input('H', ModItems.HALO)
+                .input('S', Items.STONE)
+                .input('T', Items.STICK)
+                .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .criterion(hasItem(ModItems.HALO), conditionsFromItem(ModItems.HALO))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HOLY_CLOUD_STATUE_ITEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BRIEFCASE, 1)
+                .pattern("GGG")
+                .pattern("LRL")
+                .pattern("LLL")
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .input('L', Items.LEATHER)
+                .input('G', Items.GOLD_INGOT)
+                .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BRIEFCASE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLACK_BRIEFCASE, 1)
+                .pattern(" BD")
+                .input('B', ModItems.BRIEFCASE)
+                .input('D', Items.BLACK_DYE)
+                .criterion(hasItem(Items.BLACK_DYE), conditionsFromItem(Items.BLACK_DYE))
+                .criterion(hasItem(ModItems.BRIEFCASE), conditionsFromItem(ModItems.BRIEFCASE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BLACK_BRIEFCASE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VIOLET_BRIEFCASE, 1)
+                .pattern(" BP")
+                .input('B', ModItems.BRIEFCASE)
+                .input('P', Items.PURPLE_DYE)
+                .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
+                .criterion(hasItem(ModItems.BRIEFCASE), conditionsFromItem(ModItems.BRIEFCASE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VIOLET_BRIEFCASE)));
     }
 }

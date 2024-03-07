@@ -1,0 +1,99 @@
+{
+  "parent": "minecraft:bsroleplay/got_roleplay_core",
+  "criteria": {
+    "got_police_baton": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:police_baton"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_police_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:police_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_police_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:police_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_police_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:police_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_police_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:police_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.police_set.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "bsroleplay:police_baton",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.police_set.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_police_baton"
+    ],
+    [
+      "got_police_helmet"
+    ],
+    [
+      "got_police_chestplate"
+    ],
+    [
+      "got_police_leggings"
+    ],
+    [
+      "got_police_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

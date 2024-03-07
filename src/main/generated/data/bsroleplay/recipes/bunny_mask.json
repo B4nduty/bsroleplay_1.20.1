@@ -10,12 +10,15 @@
     },
     "R": {
       "item": "minecraft:red_wool"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
     }
   },
   "pattern": [
     "O O",
     "RDR",
-    " O "
+    "WOW"
   ],
   "result": {
     "item": "bsroleplay:bunny_mask"

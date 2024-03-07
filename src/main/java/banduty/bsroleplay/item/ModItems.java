@@ -128,7 +128,12 @@ public class ModItems {
             new LawyerPurpleAndRedItem(ModArmorMaterials.MASK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item LAWYER_BOOTS_PURPLE= registerItem("lawyer_boots_purple",
             new LawyerPurpleAndRedItem(ModArmorMaterials.MASK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
-
+    public static final Item BRIEFCASE= registerItem("briefcase",
+            new BriefCase(new FabricItemSettings().maxCount(1)));
+    public static final Item BLACK_BRIEFCASE= registerItem("black_briefcase",
+            new BlackBriefCase(new FabricItemSettings().maxCount(1)));
+    public static final Item VIOLET_BRIEFCASE= registerItem("purple_briefcase",
+            new VioletBriefCase(new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
 

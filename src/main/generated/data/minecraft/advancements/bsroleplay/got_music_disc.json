@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:bsroleplay/got_roleplay_core",
+  "criteria": {
+    "got_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:dolor_en_el_pecho_carola_music_disc"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.music_disc.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "bsroleplay:dolor_en_el_pecho_carola_music_disc"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.music_disc.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_music_disc"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

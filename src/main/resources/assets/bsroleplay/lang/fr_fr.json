@@ -35,9 +35,6 @@
 
   "item.bsroleplay.halo": "Aura",
 
-  "itemgroup.bsroleplay.item": "BsRolePlay Item",
-  "itemgroup.bsroleplay.armor": "BsRolePlay Armor",
-
   "item.bsroleplay.neanderthal_chestplate": "Vêtements en Cuir",
 
   "item.bsroleplay.funeral_mask": "Masque Funéraire",
@@ -62,7 +59,7 @@
 
   "item.bsroleplay.gadget_hat": "Chapeau Gadget",
 
-  "block.bsroleplay.holy_cloud_statue": "Statue du Nuage Sacré",
+  "block.bsroleplay.holy_cloud_statue": "BsRoleplay Statue",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Costume Noir et Bleu",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Costume Noir et Or",
@@ -72,6 +69,10 @@
   "item.bsroleplay.lawyer_purplered_chestplate": "Costume Noir et Rouge",
   "item.bsroleplay.lawyer_leggings_purple": "Pantalon Violet",
   "item.bsroleplay.lawyer_boots_purple": "Chaussures Violettes",
+
+  "item.bsroleplay.briefcase": "Mallette",
+  "item.bsroleplay.black_briefcase": "Mallette Noire",
+  "item.bsroleplay.purple_briefcase": "Mallette Violette",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Coup de Marteau du Juge",
 
@@ -114,5 +115,32 @@
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Chances de Coffre - Chapeau Gadget",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Pilule Dépressive - 1ère Étape",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "En Secondes",
-  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet"
+  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet",
+
+  "advancement.police_set.title": "I'm Justice",
+  "advancement.police_set.desc": "Fabriquez le Bâton de Police et l'Ensemble de Police",
+
+  "advancement.roleplay_core.title": "Let's Roleplay!",
+  "advancement.roleplay_core.desc": "Créer un Noyau Roleplay",
+
+  "advancement.pharaoh_staff.title": "Dieu des Armes",
+  "advancement.pharaoh_staff.desc": "Trouver le Bâton du Pharaon",
+
+  "advancement.funeral_mask.title": "Soyez le Joueur Ultime",
+  "advancement.funeral_mask.desc": "Trouver un Masque Funéraire",
+
+  "advancement.hook.title": "Le Roi des Pirates",
+  "advancement.hook.desc": "Trouver un Crochet",
+
+  "advancement.music_disc.title": "Feel the Moment",
+  "advancement.music_disc.desc": "Trouver le Disque de Musique - Dolor en el Pecho",
+
+  "advancement.pill_core.title": "Le Grand Dealer",
+  "advancement.pill_core.desc": "Trouver le Noyau de Pilule",
+
+  "advancement.bsroleplay_statue.title": "Connaître les Fondamentaux",
+  "advancement.bsroleplay_statue.desc": "Obtenir le BsRoleplay Statue",
+
+  "advancement.purple_lawyer_set.title": "Purple Guy",
+  "advancement.purple_lawyer_set.desc": "Fabriquez la Mallette Violette et l'ensemble d'Avocat Violet"
 }

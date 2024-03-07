@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_wool": {
+    "has_halo": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:pink_wool"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_red_wool": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:red_wool"
+              "bsroleplay:halo"
             ]
           }
         ]
@@ -37,37 +25,49 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "minecraft:bunny_mask"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_white_wool": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:white_wool"
+              "minecraft:stick"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:holy_cloud_statue"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pink_wool",
-      "has_red_wool",
-      "has_white_wool",
+      "has_stone",
+      "has_stick",
       "has_roleplay_core",
+      "has_halo",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bunny_mask"
+      "minecraft:holy_cloud_statue"
     ]
   },
   "sends_telemetry_event": false

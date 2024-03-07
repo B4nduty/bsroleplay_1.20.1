@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:bsroleplay/got_roleplay_core",
+  "criteria": {
+    "got_bsroleplay_statue": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:holy_cloud_statue"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.bsroleplay_statue.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "bsroleplay:holy_cloud_statue"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.bsroleplay_statue.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_bsroleplay_statue"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

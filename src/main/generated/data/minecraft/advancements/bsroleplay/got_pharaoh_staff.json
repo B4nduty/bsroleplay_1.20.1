@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:bsroleplay/got_roleplay_core",
+  "criteria": {
+    "got_pharaoh_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:pharaoh_staff"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.pharaoh_staff.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "bsroleplay:pharaoh_staff"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.pharaoh_staff.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_pharaoh_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

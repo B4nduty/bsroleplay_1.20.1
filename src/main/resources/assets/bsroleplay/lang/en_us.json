@@ -59,7 +59,7 @@
 
   "item.bsroleplay.gadget_hat": "Gadget Hat",
 
-  "block.bsroleplay.holy_cloud_statue": "Holy Cloud Statue",
+  "block.bsroleplay.holy_cloud_statue": "BsRoleplay Statue",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Black and Blue Suit",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Black and Gold Suit",
@@ -70,8 +70,9 @@
   "item.bsroleplay.lawyer_leggings_purple": "Purple Pants",
   "item.bsroleplay.lawyer_boots_purple": "Purple Boots",
 
-  "itemgroup.bsroleplay.item": "BsRolePlay Item",
-  "itemgroup.bsroleplay.armor": "BsRolePlay Armor",
+  "item.bsroleplay.briefcase": "Briefcase",
+  "item.bsroleplay.black_briefcase": "Black Briefcase",
+  "item.bsroleplay.purple_briefcase": "Purple Briefcase",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",
 
@@ -114,5 +115,32 @@
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Gadget Hat Chests Chances",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Sad Pill 1st Stage Time",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "In Seconds",
-  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance"
+  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance",
+
+  "advancement.police_set.title": "I'm Justice",
+  "advancement.police_set.desc": "Craft the Police Baton and Police Set",
+
+  "advancement.roleplay_core.title": "Let's Roleplay!",
+  "advancement.roleplay_core.desc": "Craft a Roleplay Core",
+
+  "advancement.pharaoh_staff.title": "God Of Weapons",
+  "advancement.pharaoh_staff.desc": "Find the Pharaoh Staff",
+
+  "advancement.funeral_mask.title": "Be the Supreme Player",
+  "advancement.funeral_mask.desc": "Find a Funeral Mask",
+
+  "advancement.hook.title": "The Pirate King",
+  "advancement.hook.desc": "Find a Hook",
+
+  "advancement.music_disc.title": "Feel the Moment",
+  "advancement.music_disc.desc": "Find the Music Disc - Dolor en el Pecho",
+
+  "advancement.pill_core.title": "The Great Dealer",
+  "advancement.pill_core.desc": "Find a Pill Core",
+
+  "advancement.bsroleplay_statue.title": "Know the Fundaments",
+  "advancement.bsroleplay_statue.desc": "Get the BsRoleplay Statue",
+
+  "advancement.purple_lawyer_set.title": "Purple Guy",
+  "advancement.purple_lawyer_set.desc": "Craft the Purple Briefcase and Purple Lawyer Set"
 }

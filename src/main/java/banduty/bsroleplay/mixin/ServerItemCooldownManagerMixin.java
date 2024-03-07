@@ -20,8 +20,10 @@ public class ServerItemCooldownManagerMixin {
 
     @Inject(method = "onCooldownUpdate(Lnet/minecraft/item/Item;I)V", at = @At("TAIL"))
     private void onCooldownUpdate(Item item, int duration, CallbackInfo ci) {
-        if (duration == 0 && item == ModItems.SAD_PILL) {
+        if (duration == 0) {
+            if (item == ModItems.SAD_PILL) {
             addEffectsSadPill(this.player);
+            }
         }
     }
     @Inject(method = "onCooldownUpdate(Lnet/minecraft/item/Item;)V", at = @At("TAIL"))

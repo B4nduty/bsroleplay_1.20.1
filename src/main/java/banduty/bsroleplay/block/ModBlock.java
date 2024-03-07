@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModBlock {
 
     public static final Block HOLY_CLOUD_STATUE = Registry.register(Registries.BLOCK, new Identifier(BsRolePlay.MOD_ID, "holy_cloud_statue"),
-            new HolyCloudStatue(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.AMETHYST_BLOCK).strength(30.0f).nonOpaque().noBlockBreakParticles()));
+            new HolyCloudStatue(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.AMETHYST_BLOCK).strength(30.0f).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
