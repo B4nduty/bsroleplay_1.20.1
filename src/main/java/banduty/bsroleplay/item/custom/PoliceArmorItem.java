@@ -35,7 +35,7 @@ public class PoliceArmorItem extends ArmorItem implements GeoItem {
                 }
             }
             if (wearingCorrectArmor) {
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 40, 0,
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 40, BsRolePlay.CONFIG.common.getPoliceSetSpeedLevel()-1,
                         false, false, false));
             }
         }

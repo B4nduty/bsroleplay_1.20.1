@@ -40,6 +40,7 @@
   "item.bsroleplay.funeral_mask": "Funeral Mask",
 
   "item.bsroleplay.civic_crown": "Civic Crown",
+  "item.bsroleplay.roman_toga": "Roman Toga",
 
   "item.bsroleplay.cowboy_hat": "Cowboy Hat",
   "item.bsroleplay.poncho": "Poncho",
@@ -60,6 +61,8 @@
   "item.bsroleplay.gadget_hat": "Gadget Hat",
 
   "block.bsroleplay.holy_cloud_statue": "BsRoleplay Statue",
+
+  "block.bsroleplay.tiny_banduty": "Tiny Banduty",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Black and Blue Suit",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Black and Gold Suit",
@@ -83,6 +86,7 @@
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Police Baton - Slowness",
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Protection Set - Effects",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceSetEffects": "Police Set - Effect",
+  "text.autoconfig.bsroleplay.option.common.policeSetSpeedLevel": "Police Set - Speed Level",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Pharaoh Staff - Cooldown",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Hook - Cooldown",
@@ -142,5 +146,8 @@
   "advancement.bsroleplay_statue.desc": "Get the BsRoleplay Statue",
 
   "advancement.purple_lawyer_set.title": "Purple Guy",
-  "advancement.purple_lawyer_set.desc": "Craft the Purple Briefcase and Purple Lawyer Set"
+  "advancement.purple_lawyer_set.desc": "Craft the Purple Briefcase and Purple Lawyer Set",
+
+  "advancement.tiny_banduty.title": "It's me!",
+  "advancement.tiny_banduty.desc": "Get Tiny Banduty"
 }

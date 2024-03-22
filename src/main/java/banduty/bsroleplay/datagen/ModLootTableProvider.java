@@ -13,5 +13,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlock.HOLY_CLOUD_STATUE,  ModItems.HOLY_CLOUD_STATUE_ITEM);
+        addDrop(ModBlock.TINY_BANDUTY,  ModItems.TINY_BANDUTY_ITEM);
     }
 }

@@ -63,6 +63,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.CIVIC_CROWN, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.ROMAN_TOGA, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.COWBOY_HAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PONCHO, Models.GENERATED);
 

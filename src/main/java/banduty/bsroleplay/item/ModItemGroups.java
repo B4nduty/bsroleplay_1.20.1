@@ -35,8 +35,10 @@ public class ModItemGroups {
     public static final ItemGroup BSROLEPLAY_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BsRolePlay.MOD_ID,"roleplay_block"),
             FabricItemGroup.builder().displayName(Text.literal("BsRoleplay Block"))
-                    .icon(() -> new ItemStack(ModItems.HOLY_CLOUD_STATUE_ITEM)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.TINY_BANDUTY_ITEM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.HOLY_CLOUD_STATUE_ITEM);
+
+                        entries.add(ModItems.TINY_BANDUTY_ITEM);
                     })
                     .build());
 
@@ -89,6 +91,7 @@ public class ModItemGroups {
                         entries.add(ModItems.MINI_CROWN);
 
                         entries.add(ModItems.CIVIC_CROWN);
+                        entries.add(ModItems.ROMAN_TOGA);
 
                         entries.add(ModItems.HALO);
                     })

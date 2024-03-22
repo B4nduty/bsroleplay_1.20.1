@@ -40,6 +40,7 @@
   "item.bsroleplay.funeral_mask": "Máscara Funeraria",
 
   "item.bsroleplay.civic_crown": "Láurea",
+  "item.bsroleplay.roman_toga": "Toga Romana",
 
   "item.bsroleplay.cowboy_hat": "Sombrero de Cowboy",
   "item.bsroleplay.poncho": "Poncho",
@@ -60,6 +61,8 @@
   "item.bsroleplay.gadget_hat": "Sombrero de Artilugios",
 
   "block.bsroleplay.holy_cloud_statue": "BsRoleplay Estatua",
+
+  "block.bsroleplay.tiny_banduty": "Mini Banduty",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Traje Negro y Azul",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Traje Negro y Oro",
@@ -142,5 +145,8 @@
   "advancement.bsroleplay_statue.desc": "Consigue el BsRoleplay Estatua",
 
   "advancement.purple_lawyer_set.title": "Hombre de Morado",
-  "advancement.purple_lawyer_set.desc": "Crea el Maletín Morado y el conjunto de Abogado Morado"
+  "advancement.purple_lawyer_set.desc": "Crea el Maletín Morado y el conjunto de Abogado Morado",
+
+  "advancement.tiny_banduty.title": "¡Soy yo!",
+  "advancement.tiny_banduty.desc": "Consigue un Mini Banduty"
 }

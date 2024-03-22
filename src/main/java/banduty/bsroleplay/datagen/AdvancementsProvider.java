@@ -151,5 +151,19 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                 .criterion("got_purple_leggings", InventoryChangedCriterion.Conditions.items(ModItems.LAWYER_LEGGINGS_PURPLE))
                 .criterion("got_purple_boots", InventoryChangedCriterion.Conditions.items(ModItems.LAWYER_BOOTS_PURPLE))
                 .build(consumer, BsRolePlay.MOD_ID + "/got_purple_lawyer_set");
+
+        Advancement tinyBandutyAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
+                .display(
+                        ModItems.TINY_BANDUTY_ITEM,
+                        Text.translatable("advancement.tiny_banduty.title"),
+                        Text.translatable("advancement.tiny_banduty.desc"),
+                        null,
+                        AdvancementFrame.TASK,
+                        true,
+                        false,
+                        false
+                )
+                .criterion("got_tiny_banduty", InventoryChangedCriterion.Conditions.items(ModItems.TINY_BANDUTY_ITEM))
+                .build(consumer, BsRolePlay.MOD_ID + "/got_tiny_banduty");
     }
 }

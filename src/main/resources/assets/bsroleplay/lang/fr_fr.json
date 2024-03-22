@@ -40,6 +40,7 @@
   "item.bsroleplay.funeral_mask": "Masque Funéraire",
 
   "item.bsroleplay.civic_crown": "Couronne Triomphale",
+  "item.bsroleplay.roman_toga": "Toge Romaine",
 
   "item.bsroleplay.cowboy_hat": "Chapeau de Cowboy",
   "item.bsroleplay.poncho": "Poncho",
@@ -60,6 +61,8 @@
   "item.bsroleplay.gadget_hat": "Chapeau Gadget",
 
   "block.bsroleplay.holy_cloud_statue": "BsRoleplay Statue",
+
+  "block.bsroleplay.tiny_banduty": "Mini-Banduty",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Costume Noir et Bleu",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Costume Noir et Or",
@@ -142,5 +145,8 @@
   "advancement.bsroleplay_statue.desc": "Obtenir le BsRoleplay Statue",
 
   "advancement.purple_lawyer_set.title": "Purple Guy",
-  "advancement.purple_lawyer_set.desc": "Fabriquez la Mallette Violette et l'ensemble d'Avocat Violet"
+  "advancement.purple_lawyer_set.desc": "Fabriquez la Mallette Violette et l'ensemble d'Avocat Violet",
+
+  "advancement.tiny_banduty.title": "C'est Moi!",
+  "advancement.tiny_banduty.desc": "Obtenez un Mini-Banduty"
 }

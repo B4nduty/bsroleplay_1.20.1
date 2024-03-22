@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_stained_glass"
+    },
+    "G": {
+      "item": "minecraft:gray_wool"
+    },
+    "P": {
+      "item": "minecraft:pink_wool"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "BRB",
+    "GPG"
+  ],
+  "result": {
+    "item": "bsroleplay:tiny_banduty"
+  },
+  "show_notification": true
+}

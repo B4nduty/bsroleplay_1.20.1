@@ -2,6 +2,7 @@ package banduty.bsroleplay.block;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.block.custom.HolyCloudStatue;
+import banduty.bsroleplay.block.custom.TinyBanduty;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -17,6 +18,9 @@ public class ModBlock {
 
     public static final Block HOLY_CLOUD_STATUE = Registry.register(Registries.BLOCK, new Identifier(BsRolePlay.MOD_ID, "holy_cloud_statue"),
             new HolyCloudStatue(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.AMETHYST_BLOCK).strength(30.0f).nonOpaque()));
+
+    public static final Block TINY_BANDUTY = Registry.register(Registries.BLOCK, new Identifier(BsRolePlay.MOD_ID, "tiny_banduty"),
+            new TinyBanduty(FabricBlockSettings.copyOf(Blocks.BLACK_WOOL).sounds(BlockSoundGroup.WOOL).strength(1.0f).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

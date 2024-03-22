@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Consumer;
 
+
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -629,5 +630,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
                 .criterion(hasItem(ModItems.BRIEFCASE), conditionsFromItem(ModItems.BRIEFCASE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.VIOLET_BRIEFCASE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ROMAN_TOGA, 1)
+                .pattern("D W")
+                .pattern("DRD")
+                .pattern("WWW")
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .input('W', Items.WHITE_WOOL)
+                .input('D', Items.RED_WOOL)
+                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
+                .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ROMAN_TOGA)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TINY_BANDUTY_ITEM, 1)
+                .pattern("GGG")
+                .pattern("BRB")
+                .pattern("GPG")
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .input('G', Items.GRAY_WOOL)
+                .input('B', Items.BLACK_STAINED_GLASS)
+                .input('P', Items.PINK_WOOL)
+                .criterion(hasItem(Items.GRAY_WOOL), conditionsFromItem(Items.GRAY_WOOL))
+                .criterion(hasItem(Items.BLACK_STAINED_GLASS), conditionsFromItem(Items.BLACK_STAINED_GLASS))
+                .criterion(hasItem(Items.PINK_WOOL), conditionsFromItem(Items.PINK_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TINY_BANDUTY_ITEM)));
     }
 }

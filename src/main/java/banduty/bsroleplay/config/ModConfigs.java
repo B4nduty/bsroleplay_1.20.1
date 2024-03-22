@@ -128,6 +128,16 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
+                Police Set Speed Level | Default: 1
+                """)
+        int policeSetSpeedLevel = 1;
+
+        public int getPoliceSetSpeedLevel() {
+            return Math.max(0, policeSetSpeedLevel);
+        }
+
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
                 Happy Pill Blindness Time in Seconds | Default: 40
                 """)
         int happyPillBlindnessTime = 40;
@@ -228,7 +238,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Sad Pill Consume Time in Seconds | Default: 30
+                Sad Pill 1st Stage in Seconds | Default: 30
                 """)
         int sadPill1stStageTime = 30;
 
