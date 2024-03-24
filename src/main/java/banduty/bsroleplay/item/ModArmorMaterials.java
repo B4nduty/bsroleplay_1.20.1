@@ -3,7 +3,6 @@ package banduty.bsroleplay.item;
 import banduty.bsroleplay.BsRolePlay;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -11,37 +10,37 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    POLICE("a", 15, new int[] { 3, 8, 6, 3 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.POLICE_BATON)),
+    POLICE("", 15, new int[] { 3, 8, 6, 3 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    HOLY("a", 25, new int[] { 1, 0, 0, 0 }, 19,
-            SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(Items.AMETHYST_SHARD)),
+    HOLY("", 25, new int[] { 1, 0, 0, 0 }, 19,
+            SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    PIRATE("a", 7, new int[] { 2, 6, 4, 0 }, 19,
-    SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
+    PIRATE("", 7, new int[] { 2, 6, 4, 0 }, 19,
+    SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    KING("a", 10, new int[] { 3, 0, 0, 0 }, 19,
-    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(Items.DIAMOND)),
+    KING("", 10, new int[] { 3, 0, 0, 0 }, 19,
+    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    MINI_KING("a", 3, new int[] { 1, 0, 0, 0 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(Items.REDSTONE)),
+    MINI_KING("", 3, new int[] { 1, 0, 0, 0 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    MASK("a", 3, new int[] { 1, 0, 0, 0 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.LEATHER)),
+    MASK("", 3, new int[] { 1, 0, 0, 0 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    NEANDERTHAL("a", 5, new int[] { 0, 3, 0, 0 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.LEATHER)),
+    NEANDERTHAL("", 5, new int[] { 0, 3, 0, 0 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    PHARAOH("a", 20, new int[] { 5, 0, 0, 0 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(Items.SANDSTONE)),
-    ROMAN("a", 2, new int[] { 2, 5, 0, 0 }, 19,
-            SoundEvents.BLOCK_AZALEA_LEAVES_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
+    PHARAOH("", 20, new int[] { 5, 0, 0, 0 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
+    ROMAN("", 2, new int[] { 2, 5, 0, 0 }, 19,
+            SoundEvents.BLOCK_AZALEA_LEAVES_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    COWBOY("a", 3, new int[] { 3, 0, 0, 0 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(Items.LEATHER)),
+    COWBOY("", 3, new int[] { 3, 0, 0, 0 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    PROTECTION("a", 11, new int[] { 1, 4, 3, 2 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2f, 0.1f, () -> Ingredient.ofItems(Items.DIORITE))
+    PROTECTION("", 11, new int[] { 1, 4, 3, 2 }, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE))
 
     ;
 

@@ -21,41 +21,26 @@ public class TinyBanduty extends BlockWithEntity {
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
     }
     protected static final VoxelShape TINY;
-    protected static final VoxelShape WEAST_TINY;
-    protected static final VoxelShape TINY_COLLISION;
-    protected static final VoxelShape TINY_COLLISION_WEAST;
     public static final DirectionProperty FACING;
 
     static {
-        WEAST_TINY = Block.createCuboidShape(6.0, 0.0, 0.0, 10.0, 16.0, 16.0);
-        TINY = Block.createCuboidShape(0.0, 0.0, 6.0, 16.0, 16.0, 10.0);
-        TINY_COLLISION_WEAST = Block.createCuboidShape(3.0, 0.0, 0.0, 13.0, 27.0, 16.0);
-        TINY_COLLISION = Block.createCuboidShape(0.0, 0.0, 3.0, 16.0, 27.0, 13.0);
+        TINY = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
         FACING = HorizontalFacingBlock.FACING;
     }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return switch (state.get(FACING)) {
-            case EAST, WEST -> WEAST_TINY;
-            default -> TINY;
-        };
+        return TINY;
     }
 
     @Override
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return switch (state.get(FACING)) {
-            case EAST, WEST -> TINY_COLLISION_WEAST;
-            default -> TINY_COLLISION;
-        };
+        return TINY;
     }
 
     @Override
     public VoxelShape getCameraCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return switch (state.get(FACING)) {
-            case EAST, WEST -> TINY_COLLISION_WEAST;
-            default -> TINY_COLLISION;
-        };
+        return TINY;
     }
 
     @Override
