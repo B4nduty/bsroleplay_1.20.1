@@ -77,7 +77,12 @@
   "item.bsroleplay.black_briefcase": "Mallette Noire",
   "item.bsroleplay.purple_briefcase": "Mallette Violette",
 
+  "item.bsroleplay.handcuffs": "Menottes",
+  "item.bsroleplay.handcuffs_key": "Clé de Menottes",
+
   "sounds.bsroleplay.judge_hammer_right_click": "Coup de Marteau du Juge",
+  "sounds.bsroleplay.handcuffed": "Passer les Menottes",
+  "sounds.bsroleplay.handcuffednt": "Libérer",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bâton du Pharaon - Éclairs",
@@ -86,6 +91,8 @@
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Bâton de Police - Lenteur",
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Ensemble de Protections - Effets",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceSetEffects": "Ensemble de Policiers - Effet",
+  "text.autoconfig.bsroleplay.option.common.handcuffsSlownessLevel": "Menottes - Niveau de Lenteur",
+  "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Menottes - Niveau de Faiblesse",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bâton du Pharaon - Refroidissement",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Crochet - Refroidissement",
@@ -121,7 +128,7 @@
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet",
 
   "advancement.police_set.title": "I'm Justice",
-  "advancement.police_set.desc": "Fabriquez le Bâton de Police et l'Ensemble de Police",
+  "advancement.police_set.desc": "Fabriquez l'Ensemble de Police, le Bâton de Police et Menottes",
 
   "advancement.roleplay_core.title": "Let's Roleplay!",
   "advancement.roleplay_core.desc": "Créer un Noyau Roleplay",

@@ -77,7 +77,12 @@
   "item.bsroleplay.black_briefcase": "Maletín Negro",
   "item.bsroleplay.purple_briefcase": "Maletín Morado",
 
+  "item.bsroleplay.handcuffs": "Esposas",
+  "item.bsroleplay.handcuffs_key": "Llave de Esposas",
+
   "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
+  "sounds.bsroleplay.handcuffed": "Esposar",
+  "sounds.bsroleplay.handcuffednt": "Exesposado",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bastón del Faraón - Relámpagos",
@@ -86,6 +91,8 @@
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Porra Policial - Lentitud",
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Conjunto de Protección - Efectos",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceSetEffects": "Conjunto de Policia - Efecto",
+  "text.autoconfig.bsroleplay.option.common.handcuffsSlownessLevel": "Esposas - Nivel de Lentitud",
+  "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Esposas - Nivel de Debilidad",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bastón del Faraón - Enfriamiento",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Garfio - Enfriamiento",
@@ -121,7 +128,7 @@
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio",
 
   "advancement.police_set.title": "I'm Justice",
-  "advancement.police_set.desc": "Crea la Porra Policial y el Conjunto Policial",
+  "advancement.police_set.desc": "Crea el Conjunto Policial, la Porra Policial y las esposas",
 
   "advancement.roleplay_core.title": "Let's Roleplay!",
   "advancement.roleplay_core.desc": "Craftea un Núcleo de Roleplay",

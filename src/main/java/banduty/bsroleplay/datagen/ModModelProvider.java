@@ -20,6 +20,8 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
         itemModelGenerator.register(ModItems.ROLEPLAY_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HANDCUFFS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HANDCUFFS_KEY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.JUDGE_HAMMER, Models.HANDHELD);
 

@@ -41,6 +41,7 @@
 		"java": ">=17",
 		"geckolib": ">=4.4.4",
 		"cloth-config": ">=11.1.118-fabric",
+		"architectury": ">=9.1.12-fabric",
 		"fabric-api": "*"
 	},
 	"suggests": {

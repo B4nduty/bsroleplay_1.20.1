@@ -10,36 +10,36 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    POLICE("", 15, new int[] { 3, 8, 6, 3 }, 19,
+    POLICE("a", 15, new int[] { 3, 8, 6, 3 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    HOLY("", 25, new int[] { 1, 0, 0, 0 }, 19,
+    HOLY("a", 25, new int[] { 1, 0, 0, 0 }, 19,
             SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    PIRATE("", 7, new int[] { 2, 6, 4, 0 }, 19,
+    PIRATE("a", 7, new int[] { 2, 6, 4, 0 }, 19,
     SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    KING("", 10, new int[] { 3, 0, 0, 0 }, 19,
+    KING("a", 10, new int[] { 3, 0, 0, 0 }, 19,
     SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    MINI_KING("", 3, new int[] { 1, 0, 0, 0 }, 19,
+    MINI_KING("a", 3, new int[] { 1, 0, 0, 0 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    MASK("", 3, new int[] { 1, 0, 0, 0 }, 19,
+    MASK("a", 3, new int[] { 1, 0, 0, 0 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    NEANDERTHAL("", 5, new int[] { 0, 3, 0, 0 }, 19,
+    NEANDERTHAL("a", 5, new int[] { 0, 3, 0, 0 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    PHARAOH("", 20, new int[] { 5, 0, 0, 0 }, 19,
+    PHARAOH("a", 20, new int[] { 5, 0, 0, 0 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
-    ROMAN("", 2, new int[] { 2, 5, 0, 0 }, 19,
+    ROMAN("a", 2, new int[] { 2, 5, 0, 0 }, 19,
             SoundEvents.BLOCK_AZALEA_LEAVES_PLACE, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    COWBOY("", 3, new int[] { 3, 0, 0, 0 }, 19,
+    COWBOY("a", 3, new int[] { 3, 0, 0, 0 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE)),
 
-    PROTECTION("", 11, new int[] { 1, 4, 3, 2 }, 19,
+    PROTECTION("a", 11, new int[] { 1, 4, 3, 2 }, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.ROLEPLAY_CORE))
 
     ;

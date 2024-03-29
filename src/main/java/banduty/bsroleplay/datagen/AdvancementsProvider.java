@@ -119,6 +119,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                 .criterion("got_police_chestplate", InventoryChangedCriterion.Conditions.items(ModItems.POLICE_CHESTPLATE))
                 .criterion("got_police_leggings", InventoryChangedCriterion.Conditions.items(ModItems.POLICE_LEGGINGS))
                 .criterion("got_police_boots", InventoryChangedCriterion.Conditions.items(ModItems.POLICE_BOOTS))
+                .criterion("got_handcuffs", InventoryChangedCriterion.Conditions.items(ModItems.HANDCUFFS))
                 .build(consumer, BsRolePlay.MOD_ID + "/got_police_set");
 
         Advancement bsroleplayStatueAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)

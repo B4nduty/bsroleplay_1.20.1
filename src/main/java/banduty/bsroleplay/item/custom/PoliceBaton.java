@@ -23,7 +23,7 @@ public class PoliceBaton extends AxeItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (BsRolePlay.CONFIG.common.modifyPoliceBatonSlowness &&
+        if (BsRolePlay.CONFIG.common.modifyPoliceBatonSlowness && target instanceof PlayerEntity &&
                 !(attacker instanceof PlayerEntity playerAttacker && playerAttacker.getItemCooldownManager().isCoolingDown(this))) {
             if (attacker instanceof PlayerEntity playerAttacker) {
                 playerAttacker.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getPoliceBatonCooldown()*20);

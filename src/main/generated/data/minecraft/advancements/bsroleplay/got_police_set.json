@@ -1,6 +1,18 @@
 {
   "parent": "minecraft:bsroleplay/got_roleplay_core",
   "criteria": {
+    "got_handcuffs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:handcuffs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "got_police_baton": {
       "conditions": {
         "items": [
@@ -93,6 +105,9 @@
     ],
     [
       "got_police_boots"
+    ],
+    [
+      "got_handcuffs"
     ]
   ],
   "sends_telemetry_event": true

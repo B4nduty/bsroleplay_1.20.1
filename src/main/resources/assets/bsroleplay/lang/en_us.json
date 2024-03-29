@@ -77,7 +77,12 @@
   "item.bsroleplay.black_briefcase": "Black Briefcase",
   "item.bsroleplay.purple_briefcase": "Purple Briefcase",
 
+  "item.bsroleplay.handcuffs": "Handcuffs",
+  "item.bsroleplay.handcuffs_key": "Handcuffs Key",
+
   "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",
+  "sounds.bsroleplay.handcuffed": "Handcuffed",
+  "sounds.bsroleplay.handcuffednt": "Handcuffednt",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Pharaoh Staff - Lightnings",
@@ -87,6 +92,8 @@
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Protection Set - Effects",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceSetEffects": "Police Set - Effect",
   "text.autoconfig.bsroleplay.option.common.policeSetSpeedLevel": "Police Set - Speed Level",
+  "text.autoconfig.bsroleplay.option.common.handcuffsSlownessLevel": "Handcuffs - Slowness Level",
+  "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Handcuffs - Weakness Level",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Pharaoh Staff - Cooldown",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Hook - Cooldown",
@@ -122,7 +129,7 @@
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance",
 
   "advancement.police_set.title": "I'm Justice",
-  "advancement.police_set.desc": "Craft the Police Baton and Police Set",
+  "advancement.police_set.desc": "Craft the Police Set, Police Baton & Handcuffs",
 
   "advancement.roleplay_core.title": "Let's Roleplay!",
   "advancement.roleplay_core.desc": "Craft a Roleplay Core",

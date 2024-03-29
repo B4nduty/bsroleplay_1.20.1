@@ -656,5 +656,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.PINK_WOOL), conditionsFromItem(Items.PINK_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TINY_BANDUTY_ITEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HANDCUFFS, 1)
+                .pattern("III")
+                .pattern("IRI")
+                .pattern("III")
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .input('I', Items.IRON_NUGGET)
+                .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HANDCUFFS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HANDCUFFS_KEY, 1)
+                .pattern("RGG")
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .input('G', Items.GOLD_NUGGET)
+                .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HANDCUFFS_KEY)));
     }
 }

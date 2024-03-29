@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    POLICE(5, 650, 4.5f, 3.5f, 26,
+    POLICE(5, 650, 4.5f, 3.5f, 0,
             () -> Ingredient.ofItems(Items.IRON_INGOT));
 
     private final int miningLevel;

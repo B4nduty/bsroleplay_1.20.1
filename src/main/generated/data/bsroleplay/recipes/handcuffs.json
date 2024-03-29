@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    }
+  },
+  "pattern": [
+    "III",
+    "IRI",
+    "III"
+  ],
+  "result": {
+    "item": "bsroleplay:handcuffs"
+  },
+  "show_notification": true
+}

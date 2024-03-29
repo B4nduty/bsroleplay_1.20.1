@@ -141,6 +141,11 @@ public class ModItems {
     public static final Item TINY_BANDUTY_ITEM= registerItem("tiny_banduty",
             new TinyBandutyItem(ModBlock.TINY_BANDUTY, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
 
+    public static final Item HANDCUFFS= registerItem("handcuffs",
+            new HandCuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+    public static final Item HANDCUFFS_KEY= registerItem("handcuffs_key",
+            new HandcuffsKey(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
 
     }

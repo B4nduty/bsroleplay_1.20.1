@@ -22,6 +22,8 @@ public class ModItemGroups {
                         entries.add(ModItems.VIOLET_BRIEFCASE);
                         entries.add(ModItems.JUDGE_HAMMER);
                         entries.add(ModItems.POLICE_BATON);
+                        entries.add(ModItems.HANDCUFFS);
+                        entries.add(ModItems.HANDCUFFS_KEY);
                         entries.add(ModItems.HOOK);
                         entries.add(ModItems.PHARAOH_STAFF);
 

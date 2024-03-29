@@ -8,7 +8,7 @@ import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
 @Config(name = BsRolePlay.MOD_ID)
-@Config.Gui.Background("minecraft:textures/block/gold_block.png")
+@Config.Gui.Background("minecraft:textures/block/oak_planks.png")
 public class ModConfigs extends PartitioningSerializer.GlobalData {
 
     @ConfigEntry.Category("common")
@@ -126,7 +126,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @Comment("Allow Police Set give Effect | Default: true")
         public boolean modifyPoliceSetEffects = true;
 
-        @ConfigEntry.Gui.Tooltip()
+        @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
                 Police Set Speed Level | Default: 1
                 """)
@@ -134,6 +134,26 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         public int getPoliceSetSpeedLevel() {
             return Math.max(0, policeSetSpeedLevel);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Handcuffs Slowness Level | Default: 6
+                """)
+        int handcuffsSlownessLevel = 6;
+
+        public int getHandcuffsSlownessLevel() {
+            return Math.max(0, handcuffsSlownessLevel);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Handcuffs Weakness Level | Default: 6
+                """)
+        int handcuffsWeaknessLevel = 6;
+
+        public int getHandcuffsWeaknessLevel() {
+            return Math.max(0, handcuffsWeaknessLevel);
         }
 
         @ConfigEntry.Gui.Tooltip()

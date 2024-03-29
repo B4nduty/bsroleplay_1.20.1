@@ -30,11 +30,11 @@ public class Hook extends Item {
         if (BsRolePlay.CONFIG.common.modifyHookEvokerFang) {
             BlockPos blockPos = context.getBlockPos();
             PlayerEntity player = context.getPlayer();
-            World World = context.getWorld();
+            World world = context.getWorld();
 
-            Entity evokerFangs = new EvokerFangsEntity(EntityType.EVOKER_FANGS, World);
+            Entity evokerFangs = new EvokerFangsEntity(EntityType.EVOKER_FANGS, world);
             evokerFangs.setPosition(blockPos.toCenterPos());
-            World.spawnEntity(evokerFangs);
+            world.spawnEntity(evokerFangs);
 
             context.getWorld().playSound(null, blockPos, SoundEvents.BLOCK_ANVIL_LAND,
                     SoundCategory.BLOCKS, 0.5f, 1f);

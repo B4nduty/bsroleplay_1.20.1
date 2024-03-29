@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    }
+  },
+  "pattern": [
+    "RGG"
+  ],
+  "result": {
+    "item": "bsroleplay:handcuffs_key"
+  },
+  "show_notification": true
+}

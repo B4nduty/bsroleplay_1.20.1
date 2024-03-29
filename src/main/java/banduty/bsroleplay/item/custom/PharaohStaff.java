@@ -28,12 +28,12 @@ public class PharaohStaff extends Item {
     public ActionResult useOnBlock(ItemUsageContext context) {
         BlockPos blockPos = context.getBlockPos();
         PlayerEntity player = context.getPlayer();
-        World World = context.getWorld();
+        World world = context.getWorld();
         if (BsRolePlay.CONFIG.common.modifyPharaohStaffLightning) {
 
-            Entity lightning = new LightningEntity(EntityType.LIGHTNING_BOLT, World);
+            Entity lightning = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
             lightning.setPosition(blockPos.toCenterPos());
-            World.spawnEntity(lightning);
+            world.spawnEntity(lightning);
 
             context.getWorld().playSound(null, blockPos, SoundEvents.BLOCK_AMETHYST_BLOCK_RESONATE,
                     SoundCategory.BLOCKS, 1f, 1f);

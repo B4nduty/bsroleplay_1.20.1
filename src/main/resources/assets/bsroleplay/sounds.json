@@ -6,6 +6,20 @@
     ]
   },
 
+  "handcuffed": {
+    "subtitle": "sounds.bsroleplay.handcuffed",
+    "sounds": [
+      "bsroleplay:handcuffed"
+    ]
+  },
+
+  "handcuffednt": {
+    "subtitle": "sounds.bsroleplay.handcuffednt",
+    "sounds": [
+      "bsroleplay:handcuffednt"
+    ]
+  },
+
   "dolor_en_el_pecho_carola": {
     "sounds": [
       {
