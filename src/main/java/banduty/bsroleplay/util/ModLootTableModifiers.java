@@ -24,6 +24,9 @@ public class ModLootTableModifiers {
     private static final Identifier BURIED_TREASURE_ID =
             new Identifier("minecraft", "chests/buried_treasure");
 
+    private static final Identifier STRONGHOLD_LIBRARY_ID =
+            new Identifier("minecraft", "chests/stronghold_library");
+
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(ANCIENT_CITY_ID.equals(id)) {
@@ -81,6 +84,16 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.common.getHookChestsChance()))
                         .with(ItemEntry.builder(ModItems.HOOK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(STRONGHOLD_LIBRARY_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.001f))
+                        .with(ItemEntry.builder(ModItems.GODS_HANDCUFFS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

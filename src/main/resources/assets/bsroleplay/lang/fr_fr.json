@@ -79,6 +79,13 @@
 
   "item.bsroleplay.handcuffs": "Menottes",
   "item.bsroleplay.handcuffs_key": "Clé de Menottes",
+  "item.bsroleplay.gods_handcuffs": "Menottes Anti-Dieu",
+
+  "tooltip.bsroleplay.handcuff.handcuffed_1": "%s a été Menotté",
+  "tooltip.bsroleplay.handcuff.handcuffed_2": "Vous avez été Menotté",
+  "tooltip.bsroleplay.gods_handcuff.handcuffed": "Dieu %s a été déclassé au rang de Mortel",
+  "tooltip.bsroleplay.handcuff_key.free_1": "%s a été Libéré",
+  "tooltip.bsroleplay.handcuff_key.free_2": "Tu as été Libéré",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Coup de Marteau du Juge",
   "sounds.bsroleplay.handcuffed": "Passer les Menottes",
@@ -91,6 +98,7 @@
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Bâton de Police - Lenteur",
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Ensemble de Protections - Effets",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceSetEffects": "Ensemble de Policiers - Effet",
+  "text.autoconfig.bsroleplay.option.common.policeSetSpeedLevel": "Ensemble de Policiers - Niveau de Vitesse",
   "text.autoconfig.bsroleplay.option.common.handcuffsSlownessLevel": "Menottes - Niveau de Lenteur",
   "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Menottes - Niveau de Faiblesse",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bâton du Pharaon - Refroidissement",
@@ -155,5 +163,8 @@
   "advancement.purple_lawyer_set.desc": "Fabriquez la Mallette Violette et l'ensemble d'Avocat Violet",
 
   "advancement.tiny_banduty.title": "C'est Moi!",
-  "advancement.tiny_banduty.desc": "Obtenez un Mini-Banduty"
+  "advancement.tiny_banduty.desc": "Obtenez un Mini-Banduty",
+
+  "advancement.gods_handcuffs.title": "Le Destructeur de Dieux",
+  "advancement.gods_handcuffs.desc": "Obtenir des Menottes Anti-Dieu"
 }

@@ -79,6 +79,13 @@
 
   "item.bsroleplay.handcuffs": "Handcuffs",
   "item.bsroleplay.handcuffs_key": "Handcuffs Key",
+  "item.bsroleplay.gods_handcuffs": "Anti-God Handcuffs",
+
+  "tooltip.bsroleplay.handcuff.handcuffed_1": "%s has been Handcuffed",
+  "tooltip.bsroleplay.handcuff.handcuffed_2": "You have been Handcuffed",
+  "tooltip.bsroleplay.gods_handcuff.handcuffed": "God %s has been downgraded to be a Mortal",
+  "tooltip.bsroleplay.handcuff_key.free_1": "%s has been freed",
+  "tooltip.bsroleplay.handcuff_key.free_2": "You have been freed",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",
   "sounds.bsroleplay.handcuffed": "Handcuffed",
@@ -156,5 +163,8 @@
   "advancement.purple_lawyer_set.desc": "Craft the Purple Briefcase and Purple Lawyer Set",
 
   "advancement.tiny_banduty.title": "It's me!",
-  "advancement.tiny_banduty.desc": "Get Tiny Banduty"
+  "advancement.tiny_banduty.desc": "Get Tiny Banduty",
+
+  "advancement.gods_handcuffs.title": "The God Destroyer",
+  "advancement.gods_handcuffs.desc": "Get the Anti-God Handcuffs"
 }

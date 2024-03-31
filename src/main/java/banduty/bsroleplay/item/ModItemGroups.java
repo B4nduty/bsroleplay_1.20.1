@@ -16,21 +16,19 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.ROLEPLAY_CORE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ROLEPLAY_CORE);
                         entries.add(ModItems.PILL_CORE);
-
                         entries.add(ModItems.BRIEFCASE);
                         entries.add(ModItems.BLACK_BRIEFCASE);
                         entries.add(ModItems.VIOLET_BRIEFCASE);
                         entries.add(ModItems.JUDGE_HAMMER);
                         entries.add(ModItems.POLICE_BATON);
-                        entries.add(ModItems.HANDCUFFS);
                         entries.add(ModItems.HANDCUFFS_KEY);
+                        entries.add(ModItems.HANDCUFFS);
+                        entries.add(ModItems.GODS_HANDCUFFS);
                         entries.add(ModItems.HOOK);
                         entries.add(ModItems.PHARAOH_STAFF);
-
-                        entries.add(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC);
-
                         entries.add(ModItems.HAPPY_PILL);
                         entries.add(ModItems.SAD_PILL);
+                        entries.add(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC);
                     })
                     .build());
 

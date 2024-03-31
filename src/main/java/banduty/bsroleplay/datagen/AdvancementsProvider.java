@@ -166,5 +166,19 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                 )
                 .criterion("got_tiny_banduty", InventoryChangedCriterion.Conditions.items(ModItems.TINY_BANDUTY_ITEM))
                 .build(consumer, BsRolePlay.MOD_ID + "/got_tiny_banduty");
+
+        Advancement godsHandcuffsAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
+                .display(
+                        ModItems.GODS_HANDCUFFS,
+                        Text.translatable("advancement.gods_handcuffs.title"),
+                        Text.translatable("advancement.gods_handcuffs.desc"),
+                        null,
+                        AdvancementFrame.TASK,
+                        true,
+                        false,
+                        false
+                )
+                .criterion("got_gods_handcuffs", InventoryChangedCriterion.Conditions.items(ModItems.GODS_HANDCUFFS))
+                .build(consumer, BsRolePlay.MOD_ID + "/got_gods_handcuffs");
     }
 }

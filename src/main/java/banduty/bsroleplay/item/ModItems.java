@@ -145,6 +145,8 @@ public class ModItems {
             new HandCuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
     public static final Item HANDCUFFS_KEY= registerItem("handcuffs_key",
             new HandcuffsKey(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+    public static final Item GODS_HANDCUFFS= registerItem("gods_handcuffs",
+            new GodsHandcuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
 

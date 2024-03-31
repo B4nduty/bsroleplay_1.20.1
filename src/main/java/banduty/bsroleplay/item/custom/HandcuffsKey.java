@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
@@ -37,6 +38,11 @@ public class HandcuffsKey extends Item {
             }
 
             BlockedMilk.setMilkBlocked(((IEntityDataSaver) entity), false);
+
+            if (world.isClient) {
+                entity.sendMessage(Text.translatable("tooltip.bsroleplay.handcuff_key.free_2"));
+                user.sendMessage(Text.translatable("tooltip.bsroleplay.handcuff_key.free_1", entity.getName().getString()));
+            }
 
             return ActionResult.SUCCESS;
         }

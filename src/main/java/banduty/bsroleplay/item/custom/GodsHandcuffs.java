@@ -10,26 +10,30 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.GameMode;
 import net.minecraft.world.World;
 
-public class HandCuffs extends Item {
-
-    public HandCuffs(Settings settings) {
+public class GodsHandcuffs extends Item {
+    public GodsHandcuffs(Settings settings) {
         super(settings);
     }
 
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
         if (entity instanceof PlayerEntity)
-            if (!((PlayerEntity) entity).isCreative()) {
+            if (((PlayerEntity) entity).isCreative()) {
                 if (!BlockedMilk.isMilkBlocked((IEntityDataSaver) entity)) {
                     if (!user.isCreative()) stack.decrement(1);
+                    if (entity instanceof ServerPlayerEntity serverPlayerEntity) {
+                        serverPlayerEntity.changeGameMode(((ServerPlayerEntity) entity).isCreative() ? GameMode.SURVIVAL : GameMode.CREATIVE);
+                    }
                     entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,
                             -1, BsRolePlay.CONFIG.common.getHandcuffsSlownessLevel()-1, false,
                             false, false));
@@ -41,7 +45,6 @@ public class HandCuffs extends Item {
 
                     BlockedMilk.setMilkBlocked(((IEntityDataSaver) entity), true);
 
-
                     World world = user.getWorld();
                     if (!world.isClient) {
                         ServerWorld serverWorld = (ServerWorld) user.getWorld();
@@ -51,12 +54,12 @@ public class HandCuffs extends Item {
 
                     if (world.isClient) {
                         entity.sendMessage(Text.translatable("tooltip.bsroleplay.handcuff.handcuffed_2"));
-                        user.sendMessage(Text.translatable("tooltip.bsroleplay.handcuff.handcuffed_1", entity.getName().getString()));
+                        user.sendMessage(Text.translatable("tooltip.bsroleplay.gods_handcuff.handcuffed", entity.getName().getString()));
                     }
 
                     return ActionResult.SUCCESS;
+                }
             }
-        }
         return ActionResult.PASS;
     }
 }

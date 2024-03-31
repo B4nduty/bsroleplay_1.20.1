@@ -79,6 +79,13 @@
 
   "item.bsroleplay.handcuffs": "Esposas",
   "item.bsroleplay.handcuffs_key": "Llave de Esposas",
+  "item.bsroleplay.gods_handcuffs": "Esposas Anti-Dioses",
+
+  "tooltip.bsroleplay.handcuff.handcuffed_1": "%s ha sido esposado",
+  "tooltip.bsroleplay.handcuff.handcuffed_2": "Has sido esposado",
+  "tooltip.bsroleplay.gods_handcuff.handcuffed": "El Dios %s ha sido rebajado a un simple Mortal",
+  "tooltip.bsroleplay.handcuff_key.free_1": "%s ha sido liberado",
+  "tooltip.bsroleplay.handcuff_key.free_2": "Has sido liberado",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
   "sounds.bsroleplay.handcuffed": "Esposar",
@@ -91,6 +98,7 @@
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Porra Policial - Lentitud",
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Conjunto de Protección - Efectos",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceSetEffects": "Conjunto de Policia - Efecto",
+  "text.autoconfig.bsroleplay.option.common.policeSetSpeedLevel": "Conjunto de Policia - Nivel de Velocidad",
   "text.autoconfig.bsroleplay.option.common.handcuffsSlownessLevel": "Esposas - Nivel de Lentitud",
   "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Esposas - Nivel de Debilidad",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bastón del Faraón - Enfriamiento",
@@ -155,5 +163,8 @@
   "advancement.purple_lawyer_set.desc": "Crea el Maletín Morado y el conjunto de Abogado Morado",
 
   "advancement.tiny_banduty.title": "¡Soy yo!",
-  "advancement.tiny_banduty.desc": "Consigue un Mini Banduty"
+  "advancement.tiny_banduty.desc": "Consigue un Mini Banduty",
+
+  "advancement.gods_handcuffs.title": "El Destructor de Dioses",
+  "advancement.gods_handcuffs.desc": "Consigue unas Esposas Anti-Dioses"
 }

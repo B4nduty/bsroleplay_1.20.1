@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:bsroleplay/got_roleplay_core",
+  "criteria": {
+    "got_gods_handcuffs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:gods_handcuffs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.gods_handcuffs.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "bsroleplay:gods_handcuffs"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.gods_handcuffs.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_gods_handcuffs"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
