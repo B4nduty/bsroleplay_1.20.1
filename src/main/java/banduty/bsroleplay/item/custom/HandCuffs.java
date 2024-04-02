@@ -47,9 +47,6 @@ public class HandCuffs extends Item {
                         ServerWorld serverWorld = (ServerWorld) user.getWorld();
                         BlockPos blockPos = user.getBlockPos();
                         serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFED, SoundCategory.PLAYERS, 1f, 1f);
-                    }
-
-                    if (world.isClient) {
                         entity.sendMessage(Text.translatable("tooltip.bsroleplay.handcuff.handcuffed_2"));
                         user.sendMessage(Text.translatable("tooltip.bsroleplay.handcuff.handcuffed_1", entity.getName().getString()));
                     }

@@ -35,14 +35,10 @@ public class HandcuffsKey extends Item {
                 ServerWorld serverWorld = (ServerWorld) user.getWorld();
                 BlockPos blockPos = user.getBlockPos();
                 serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFEDNT, SoundCategory.PLAYERS, 1f, 1f);
-            }
-
-            BlockedMilk.setMilkBlocked(((IEntityDataSaver) entity), false);
-
-            if (world.isClient) {
                 entity.sendMessage(Text.translatable("tooltip.bsroleplay.handcuff_key.free_2"));
                 user.sendMessage(Text.translatable("tooltip.bsroleplay.handcuff_key.free_1", entity.getName().getString()));
             }
+            BlockedMilk.setMilkBlocked(((IEntityDataSaver) entity), false);
 
             return ActionResult.SUCCESS;
         }
