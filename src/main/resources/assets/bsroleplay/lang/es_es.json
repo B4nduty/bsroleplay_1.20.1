@@ -79,13 +79,13 @@
 
   "item.bsroleplay.handcuffs": "Esposas",
   "item.bsroleplay.handcuffs_key": "Llave de Esposas",
-  "item.bsroleplay.gods_handcuffs": "Esposas Anti-Dioses",
+  "item.bsroleplay.anti_god_handcuffs": "Esposas Anti-Dioses",
 
-  "tooltip.bsroleplay.handcuff.handcuffed_1": "%s ha sido esposado",
-  "tooltip.bsroleplay.handcuff.handcuffed_2": "Has sido esposado",
-  "tooltip.bsroleplay.gods_handcuff.handcuffed": "El Dios %s ha sido rebajado a un simple Mortal",
-  "tooltip.bsroleplay.handcuff_key.free_1": "%s ha sido liberado",
-  "tooltip.bsroleplay.handcuff_key.free_2": "Has sido liberado",
+  "message.bsroleplay.handcuff.handcuffed_1": "%s ha sido esposado",
+  "message.bsroleplay.handcuff.handcuffed_2": "Has sido esposado",
+  "message.bsroleplay.anti_god_handcuffs.handcuffed": "El Dios %s ha sido rebajado a un simple Mortal",
+  "message.bsroleplay.handcuff_key.free_1": "%s ha sido liberado",
+  "message.bsroleplay.handcuff_key.free_2": "Has sido liberado",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
   "sounds.bsroleplay.handcuffed": "Esposar",
@@ -134,6 +134,7 @@
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Pastilla Depresiva - Primera Etapa",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio",
+  "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Esposas Anti-Dioses - Mechero",
 
   "advancement.police_set.title": "I'm Justice",
   "advancement.police_set.desc": "Crea el Conjunto Policial, la Porra Policial y las esposas",
@@ -141,11 +142,8 @@
   "advancement.roleplay_core.title": "Let's Roleplay!",
   "advancement.roleplay_core.desc": "Craftea un Núcleo de Roleplay",
 
-  "advancement.pharaoh_staff.title": "Dios de las Armas",
-  "advancement.pharaoh_staff.desc": "Encuentra el Bastón del Faraón",
-
   "advancement.funeral_mask.title": "Sé el Jugador Supremo",
-  "advancement.funeral_mask.desc": "Encuentra una Máscara Funeraria",
+  "advancement.funeral_mask.desc": "Encuentra una Máscara Funeraria y el Bastón del Faraón",
 
   "advancement.hook.title": "El Rey de los Piratas",
   "advancement.hook.desc": "Encuentra un Garfio",
@@ -161,9 +159,6 @@
 
   "advancement.purple_lawyer_set.title": "Hombre de Morado",
   "advancement.purple_lawyer_set.desc": "Crea el Maletín Morado y el conjunto de Abogado Morado",
-
-  "advancement.tiny_banduty.title": "¡Soy yo!",
-  "advancement.tiny_banduty.desc": "Consigue un Mini Banduty",
 
   "advancement.gods_handcuffs.title": "El Destructor de Dioses",
   "advancement.gods_handcuffs.desc": "Consigue unas Esposas Anti-Dioses"

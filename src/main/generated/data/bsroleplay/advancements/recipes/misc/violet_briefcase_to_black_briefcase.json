@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_amethyst_shard": {
+    "has_brown_dye": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:amethyst_shard"
+              "minecraft:black_dye"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_roleplay_core": {
+    "has_purple_briefcase": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:roleplay_core"
+              "bsroleplay:purple_briefcase"
             ]
           }
         ]
@@ -27,21 +27,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:handcuffs_key"
+        "recipe": "minecraft:violet_briefcase_to_black_briefcase"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_amethyst_shard",
-      "has_roleplay_core",
+      "has_brown_dye",
+      "has_purple_briefcase",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:handcuffs_key"
+      "minecraft:violet_briefcase_to_black_briefcase"
     ]
   },
   "sends_telemetry_event": false

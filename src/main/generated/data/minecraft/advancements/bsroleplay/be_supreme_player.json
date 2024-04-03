@@ -1,6 +1,18 @@
 {
   "parent": "minecraft:bsroleplay/got_roleplay_core",
   "criteria": {
+    "got_funeral_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:funeral_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "got_pharaoh_staff": {
       "conditions": {
         "items": [
@@ -17,19 +29,23 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.pharaoh_staff.desc"
+      "translate": "advancement.funeral_mask.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bsroleplay:pharaoh_staff"
+      "item": "bsroleplay:funeral_mask",
+      "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.pharaoh_staff.title"
+      "translate": "advancement.funeral_mask.title"
     }
   },
   "requirements": [
+    [
+      "got_funeral_mask"
+    ],
     [
       "got_pharaoh_staff"
     ]

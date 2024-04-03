@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "minecraft:amethyst_shard"
+    "B": {
+      "item": "bsroleplay:black_briefcase"
     },
-    "R": {
-      "item": "bsroleplay:roleplay_core"
+    "P": {
+      "item": "minecraft:purple_dye"
     }
   },
   "pattern": [
-    "AAR"
+    " BP"
   ],
   "result": {
-    "item": "bsroleplay:handcuffs_key"
+    "item": "bsroleplay:purple_briefcase"
   },
   "show_notification": true
 }

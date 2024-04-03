@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bsroleplay:item/gods_handcuffs"
+    "layer0": "bsroleplay:item/anti_god_handcuffs"
   }
 }

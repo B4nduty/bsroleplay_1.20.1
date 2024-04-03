@@ -79,13 +79,13 @@
 
   "item.bsroleplay.handcuffs": "Menottes",
   "item.bsroleplay.handcuffs_key": "Clé de Menottes",
-  "item.bsroleplay.gods_handcuffs": "Menottes Anti-Dieu",
+  "item.bsroleplay.anti_god_handcuffs": "Menottes Anti-Dieu",
 
-  "tooltip.bsroleplay.handcuff.handcuffed_1": "%s a été Menotté",
-  "tooltip.bsroleplay.handcuff.handcuffed_2": "Vous avez été Menotté",
-  "tooltip.bsroleplay.gods_handcuff.handcuffed": "Dieu %s a été déclassé au rang de Mortel",
-  "tooltip.bsroleplay.handcuff_key.free_1": "%s a été Libéré",
-  "tooltip.bsroleplay.handcuff_key.free_2": "Tu as été Libéré",
+  "message.bsroleplay.handcuff.handcuffed_1": "%s a été Menotté",
+  "message.bsroleplay.handcuff.handcuffed_2": "Vous avez été Menotté",
+  "message.bsroleplay.anti_god_handcuffs.handcuffed": "Dieu %s a été déclassé au rang de Mortel",
+  "message.bsroleplay.handcuff_key.free_1": "%s a été Libéré",
+  "message.bsroleplay.handcuff_key.free_2": "Tu as été Libéré",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Coup de Marteau du Juge",
   "sounds.bsroleplay.handcuffed": "Passer les Menottes",
@@ -134,6 +134,7 @@
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Pilule Dépressive - 1ère Étape",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet",
+  "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Menottes Anti-Dieu - Briquet",
 
   "advancement.police_set.title": "I'm Justice",
   "advancement.police_set.desc": "Fabriquez l'Ensemble de Police, le Bâton de Police et Menottes",
@@ -141,11 +142,8 @@
   "advancement.roleplay_core.title": "Let's Roleplay!",
   "advancement.roleplay_core.desc": "Créer un Noyau Roleplay",
 
-  "advancement.pharaoh_staff.title": "Dieu des Armes",
-  "advancement.pharaoh_staff.desc": "Trouver le Bâton du Pharaon",
-
   "advancement.funeral_mask.title": "Soyez le Joueur Ultime",
-  "advancement.funeral_mask.desc": "Trouver un Masque Funéraire",
+  "advancement.funeral_mask.desc": "Trouver un Masque Funéraire et le Bâton du Pharaon",
 
   "advancement.hook.title": "Le Roi des Pirates",
   "advancement.hook.desc": "Trouver un Crochet",
@@ -161,9 +159,6 @@
 
   "advancement.purple_lawyer_set.title": "Purple Guy",
   "advancement.purple_lawyer_set.desc": "Fabriquez la Mallette Violette et l'ensemble d'Avocat Violet",
-
-  "advancement.tiny_banduty.title": "C'est Moi!",
-  "advancement.tiny_banduty.desc": "Obtenez un Mini-Banduty",
 
   "advancement.gods_handcuffs.title": "Le Destructeur de Dieux",
   "advancement.gods_handcuffs.desc": "Obtenir des Menottes Anti-Dieu"

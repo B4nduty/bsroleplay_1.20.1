@@ -23,7 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.POLICE_BATON);
                         entries.add(ModItems.HANDCUFFS_KEY);
                         entries.add(ModItems.HANDCUFFS);
-                        entries.add(ModItems.GODS_HANDCUFFS);
+                        entries.add(ModItems.ANTI_GOD_HANDCUFFS);
                         entries.add(ModItems.HOOK);
                         entries.add(ModItems.PHARAOH_STAFF);
                         entries.add(ModItems.HAPPY_PILL);

@@ -79,13 +79,13 @@
 
   "item.bsroleplay.handcuffs": "Handcuffs",
   "item.bsroleplay.handcuffs_key": "Handcuffs Key",
-  "item.bsroleplay.gods_handcuffs": "Anti-God Handcuffs",
+  "item.bsroleplay.anti_god_handcuffs": "Anti-God Handcuffs",
 
-  "tooltip.bsroleplay.handcuff.handcuffed_1": "%s has been Handcuffed",
-  "tooltip.bsroleplay.handcuff.handcuffed_2": "You have been Handcuffed",
-  "tooltip.bsroleplay.gods_handcuff.handcuffed": "God %s has been downgraded to be a Mortal",
-  "tooltip.bsroleplay.handcuff_key.free_1": "%s has been freed",
-  "tooltip.bsroleplay.handcuff_key.free_2": "You have been freed",
+  "message.bsroleplay.handcuff.handcuffed_1": "%s has been Handcuffed",
+  "message.bsroleplay.handcuff.handcuffed_2": "You have been Handcuffed",
+  "message.bsroleplay.anti_god_handcuffs.handcuffed": "God %s has been downgraded to be a Mortal",
+  "message.bsroleplay.handcuff_key.free_1": "%s has been freed",
+  "message.bsroleplay.handcuff_key.free_2": "You have been freed",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",
   "sounds.bsroleplay.handcuffed": "Handcuffed",
@@ -134,6 +134,7 @@
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime": "Sad Pill 1st Stage Time",
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance",
+  "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Anti-God Handcuffs - Flint & Steel",
 
   "advancement.police_set.title": "I'm Justice",
   "advancement.police_set.desc": "Craft the Police Set, Police Baton & Handcuffs",
@@ -141,11 +142,8 @@
   "advancement.roleplay_core.title": "Let's Roleplay!",
   "advancement.roleplay_core.desc": "Craft a Roleplay Core",
 
-  "advancement.pharaoh_staff.title": "God Of Weapons",
-  "advancement.pharaoh_staff.desc": "Find the Pharaoh Staff",
-
   "advancement.funeral_mask.title": "Be the Supreme Player",
-  "advancement.funeral_mask.desc": "Find a Funeral Mask",
+  "advancement.funeral_mask.desc": "Find a Funeral Mask and the Pharaoh Staff",
 
   "advancement.hook.title": "The Pirate King",
   "advancement.hook.desc": "Find a Hook",
@@ -161,9 +159,6 @@
 
   "advancement.purple_lawyer_set.title": "Purple Guy",
   "advancement.purple_lawyer_set.desc": "Craft the Purple Briefcase and Purple Lawyer Set",
-
-  "advancement.tiny_banduty.title": "It's me!",
-  "advancement.tiny_banduty.desc": "Get Tiny Banduty",
 
   "advancement.gods_handcuffs.title": "The God Destroyer",
   "advancement.gods_handcuffs.desc": "Get the Anti-God Handcuffs"

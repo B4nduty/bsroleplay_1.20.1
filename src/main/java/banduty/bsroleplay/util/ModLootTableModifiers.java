@@ -92,8 +92,8 @@ public class ModLootTableModifiers {
             if(STRONGHOLD_LIBRARY_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.001f))
-                        .with(ItemEntry.builder(ModItems.GODS_HANDCUFFS))
+                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .with(ItemEntry.builder(ModItems.ANTI_GOD_HANDCUFFS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

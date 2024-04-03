@@ -18,9 +18,9 @@ import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static final Item ROLEPLAY_CORE = registerItem("roleplay_core",
-            new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+            new Item(new FabricItemSettings()));
     public static final Item PILL_CORE = registerItem("pill_core",
-            new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+            new Item(new FabricItemSettings()));
     public static final Item DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC = registerItem("dolor_en_el_pecho_carola_music_disc",
             new MusicDiscItem(7, ModSounds.DOLOR_EN_EL_PECHO_CAROLA, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1), 113));
     public static final Item JUDGE_HAMMER = registerItem("judge_hammer",
@@ -145,8 +145,8 @@ public class ModItems {
             new HandCuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
     public static final Item HANDCUFFS_KEY= registerItem("handcuffs_key",
             new HandcuffsKey(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
-    public static final Item GODS_HANDCUFFS= registerItem("gods_handcuffs",
-            new GodsHandcuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
+    public static final Item ANTI_GOD_HANDCUFFS= registerItem("anti_god_handcuffs",
+            new AntiGodHandcuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
 

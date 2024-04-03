@@ -35,9 +35,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Pharaoh Staff Spawns in Chests Chance | Default: 0.01f
+                Pharaoh Staff Spawns in Chests Chance | Default: 0.05f
                 """)
-        float pharaohStaffChestsChance = 0.01f;
+        float pharaohStaffChestsChance = 0.05f;
 
         public float getPharaohStaffChestsChance() {
             return Math.max(0, pharaohStaffChestsChance);
@@ -61,9 +61,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Hook Spawns in Chests Chance | Default: 0.25f
+                Hook Spawns in Chests Chance | Default: 0.5f
                 """)
-        float hookChestsChance = 0.25f;
+        float hookChestsChance = 0.5f;
 
         public float getHookChestsChance() {
             return Math.max(0, hookChestsChance);
@@ -155,6 +155,10 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         public int getHandcuffsWeaknessLevel() {
             return Math.max(0, handcuffsWeaknessLevel);
         }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Allow Anti-God Handcuffs work as a Flint and Steel | Default: true")
+        public boolean modifyAntiGodHandcuffsFire = true;
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
@@ -278,9 +282,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Funeral Mask Spawns in Chests Chance | Default: 0.1f
+                Funeral Mask Spawns in Chests Chance | Default: 0.2f
                 """)
-        float funeralMaskChestsChance = 0.1f;
+        float funeralMaskChestsChance = 0.2f;
 
         public float getFuneralMaskChestsChance() {
             return Math.max(0, funeralMaskChestsChance);
