@@ -36,8 +36,6 @@ public class ModItemGroups {
             new Identifier(BsRolePlay.MOD_ID,"roleplay_block"),
             FabricItemGroup.builder().displayName(Text.literal("BsRoleplay Block"))
                     .icon(() -> new ItemStack(ModItems.TINY_BANDUTY_ITEM)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.HOLY_CLOUD_STATUE_ITEM);
-
                         entries.add(ModItems.TINY_BANDUTY_ITEM);
                     })
                     .build());

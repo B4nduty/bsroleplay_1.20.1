@@ -60,8 +60,6 @@
 
   "item.bsroleplay.gadget_hat": "Gadget Hat",
 
-  "block.bsroleplay.holy_cloud_statue": "BsRoleplay Statue",
-
   "block.bsroleplay.tiny_banduty": "Tiny Banduty",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Black and Blue Suit",
@@ -153,9 +151,6 @@
 
   "advancement.pill_core.title": "The Great Dealer",
   "advancement.pill_core.desc": "Find a Pill Core",
-
-  "advancement.bsroleplay_statue.title": "Know the Fundaments",
-  "advancement.bsroleplay_statue.desc": "Get the BsRoleplay Statue",
 
   "advancement.purple_lawyer_set.title": "Purple Guy",
   "advancement.purple_lawyer_set.desc": "Craft the Purple Briefcase and Purple Lawyer Set",

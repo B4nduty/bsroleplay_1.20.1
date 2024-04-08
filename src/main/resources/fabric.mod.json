@@ -12,7 +12,7 @@
 		"sources": "https://github.com/B4nduty/BsRolePlay-new",
 		"issues": "https://discord.gg/vbZ2zTHGNA"
 	},
-	"license": "GNU GENERAL PUBLIC LICENSE",
+	"license": "All Rights Reserved",
 	"icon": "assets/bsroleplay/textures/logo/bandutys_roleplay_logo.png",
 	"environment": "*",
 	"entrypoints": {

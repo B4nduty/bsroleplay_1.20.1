@@ -60,8 +60,6 @@
 
   "item.bsroleplay.gadget_hat": "Chapeau Gadget",
 
-  "block.bsroleplay.holy_cloud_statue": "BsRoleplay Statue",
-
   "block.bsroleplay.tiny_banduty": "Mini-Banduty",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Costume Noir et Bleu",
@@ -153,9 +151,6 @@
 
   "advancement.pill_core.title": "Le Grand Dealer",
   "advancement.pill_core.desc": "Trouver le Noyau de Pilule",
-
-  "advancement.bsroleplay_statue.title": "Connaître les Fondamentaux",
-  "advancement.bsroleplay_statue.desc": "Obtenir le BsRoleplay Statue",
 
   "advancement.purple_lawyer_set.title": "Purple Guy",
   "advancement.purple_lawyer_set.desc": "Fabriquez la Mallette Violette et l'ensemble d'Avocat Violet",

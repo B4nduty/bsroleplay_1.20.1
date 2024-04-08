@@ -589,20 +589,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE), conditionsFromItem(ModItems.LAWYER_BLACKGOLD_CHESTPLATE))
                 .offerTo(exporter, new Identifier("lawyer_purplered_chestplate_4"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HOLY_CLOUD_STATUE_ITEM, 1)
-                .pattern("  H")
-                .pattern("SRS")
-                .pattern("ST ")
-                .input('R', ModItems.ROLEPLAY_CORE)
-                .input('H', ModItems.HALO)
-                .input('S', Items.STONE)
-                .input('T', Items.STICK)
-                .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
-                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .criterion(hasItem(ModItems.HALO), conditionsFromItem(ModItems.HALO))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HOLY_CLOUD_STATUE_ITEM)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BRIEFCASE, 1)
                 .pattern("GGG")
                 .pattern("LRL")

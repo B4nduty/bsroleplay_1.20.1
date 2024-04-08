@@ -51,6 +51,8 @@ public class HandCuffs extends Item {
                         user.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_1", entity.getName().getString()));
                     }
 
+                    user.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getHandcuffsCooldown() * 20);
+
                     return ActionResult.SUCCESS;
             }
         }

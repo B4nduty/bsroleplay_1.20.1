@@ -156,6 +156,16 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
             return Math.max(0, handcuffsWeaknessLevel);
         }
 
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
+                Handcuffs Cooldown in Seconds | Default: 3
+                """)
+        int handcuffsCooldown = 3;
+
+        public int getHandcuffsCooldown() {
+            return Math.max(0, handcuffsCooldown);
+        }
+
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("Allow Anti-God Handcuffs work as a Flint and Steel | Default: true")
         public boolean modifyAntiGodHandcuffsFire = true;
