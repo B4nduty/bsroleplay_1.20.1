@@ -25,9 +25,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Pharaoh Staff Cooldown in Seconds | Default: 10
+                Pharaoh Staff Cooldown in Seconds | Default: 15
                 """)
-        int pharaohStaffCooldown = 10;
+        int pharaohStaffCooldown = 15;
 
         public int getPharaohStaffCooldown() {
             return Math.max(0, pharaohStaffCooldown);
@@ -50,9 +50,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Hook Cooldown in Seconds | Default: 4
+                Hook Cooldown in Seconds | Default: 8
                 """)
-        int hookCooldown = 4;
+        int hookCooldown = 8;
 
         public int getHookCooldown() {
             return Math.max(0, hookCooldown);

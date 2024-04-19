@@ -24,7 +24,7 @@ public class TinyBandutyEntity extends BlockEntity implements GeoBlockEntity {
 
     private PlayState predicate(AnimationState animationState) {
         animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
-        return PlayState.CONTINUE;
+        return PlayState.STOP;
     }
 
     @Override

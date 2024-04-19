@@ -2,7 +2,8 @@ package banduty.bsroleplay.item;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.block.ModBlock;
-import banduty.bsroleplay.item.custom.*;
+import banduty.bsroleplay.item.custom.armor.*;
+import banduty.bsroleplay.item.custom.item.*;
 import banduty.bsroleplay.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
