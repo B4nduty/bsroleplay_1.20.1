@@ -19,6 +19,6 @@ public class LawyerBlackAndGoldModel extends GeoModel<LawyerBlackAndGoldItem> {
 
     @Override
     public Identifier getAnimationResource(LawyerBlackAndGoldItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }

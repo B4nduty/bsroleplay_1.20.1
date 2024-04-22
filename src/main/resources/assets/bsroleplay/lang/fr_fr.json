@@ -99,6 +99,8 @@
   "text.autoconfig.bsroleplay.option.common.policeSetSpeedLevel": "Ensemble de Policiers - Niveau de Vitesse",
   "text.autoconfig.bsroleplay.option.common.handcuffsSlownessLevel": "Menottes - Niveau de Lenteur",
   "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Menottes - Niveau de Faiblesse",
+  "text.autoconfig.bsroleplay.option.common.handcuffsCooldown": "Menottes - Refroidissement",
+  "text.autoconfig.bsroleplay.option.common.handcuffsCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bâton du Pharaon - Refroidissement",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Crochet - Refroidissement",

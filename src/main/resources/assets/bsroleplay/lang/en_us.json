@@ -99,6 +99,8 @@
   "text.autoconfig.bsroleplay.option.common.policeSetSpeedLevel": "Police Set - Speed Level",
   "text.autoconfig.bsroleplay.option.common.handcuffsSlownessLevel": "Handcuffs - Slowness Level",
   "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Handcuffs - Weakness Level",
+  "text.autoconfig.bsroleplay.option.common.handcuffsCooldown": "Handcuffs - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.handcuffsCooldown.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Pharaoh Staff - Cooldown",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Hook - Cooldown",

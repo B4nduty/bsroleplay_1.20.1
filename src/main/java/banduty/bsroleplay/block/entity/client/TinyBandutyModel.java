@@ -18,6 +18,6 @@ public class TinyBandutyModel extends GeoModel<TinyBandutyEntity> {
 
     @Override
     public Identifier getAnimationResource(TinyBandutyEntity animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }

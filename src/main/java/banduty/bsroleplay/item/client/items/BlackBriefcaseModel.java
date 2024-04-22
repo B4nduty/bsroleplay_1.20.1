@@ -19,6 +19,6 @@ public class BlackBriefcaseModel extends GeoModel<BlackBriefCase> {
 
     @Override
     public Identifier getAnimationResource(BlackBriefCase animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }

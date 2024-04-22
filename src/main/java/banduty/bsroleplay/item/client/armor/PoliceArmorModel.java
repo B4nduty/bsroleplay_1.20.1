@@ -19,6 +19,6 @@ public class PoliceArmorModel extends GeoModel<PoliceArmorItem> {
 
     @Override
     public Identifier getAnimationResource(PoliceArmorItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }

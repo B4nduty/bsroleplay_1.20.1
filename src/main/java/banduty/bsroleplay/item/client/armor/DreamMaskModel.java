@@ -19,6 +19,6 @@ public class DreamMaskModel extends GeoModel<DreamMaskItem> {
 
     @Override
     public Identifier getAnimationResource(DreamMaskItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }

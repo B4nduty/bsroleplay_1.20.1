@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"unable": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"ball": {
+					"position": {
+						"vector": [0, 8, -0.5]
+					},
+					"scale": {
+						"vector": [0.5, 0.5, 0.5]
+					}
+				}
+			}
+		},
+		"able": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"ball": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, -90, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [1, 0, 1]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

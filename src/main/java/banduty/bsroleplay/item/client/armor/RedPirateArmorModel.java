@@ -18,6 +18,6 @@ public class RedPirateArmorModel extends GeoModel<RedPirateArmorItem> {
 
     @Override
     public Identifier getAnimationResource(RedPirateArmorItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }

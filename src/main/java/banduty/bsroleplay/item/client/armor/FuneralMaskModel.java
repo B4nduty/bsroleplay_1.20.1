@@ -19,6 +19,6 @@ public class FuneralMaskModel extends GeoModel<FuneralMaskItem> {
 
     @Override
     public Identifier getAnimationResource(FuneralMaskItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }

@@ -24,10 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HANDCUFFS_KEY, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANTI_GOD_HANDCUFFS, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.JUDGE_HAMMER, Models.HANDHELD);
-
-        itemModelGenerator.register(ModItems.POLICE_BATON, Models.HANDHELD);
-
         itemModelGenerator.register(ModItems.POLICE_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.POLICE_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.POLICE_LEGGINGS, Models.GENERATED);
@@ -37,8 +33,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PROTECTION_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PROTECTION_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.PROTECTION_BOOTS, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.PHARAOH_STAFF, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.HALO, Models.GENERATED);
 
@@ -51,8 +45,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLUE_PIRATE_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLUE_PIRATE_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLUE_PIRATE_LEGGINGS, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.HOOK, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.CROWN, Models.GENERATED);
         itemModelGenerator.register(ModItems.MINI_CROWN, Models.GENERATED);

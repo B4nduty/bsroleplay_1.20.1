@@ -99,6 +99,8 @@
   "text.autoconfig.bsroleplay.option.common.policeSetSpeedLevel": "Conjunto de Policia - Nivel de Velocidad",
   "text.autoconfig.bsroleplay.option.common.handcuffsSlownessLevel": "Esposas - Nivel de Lentitud",
   "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Esposas - Nivel de Debilidad",
+  "text.autoconfig.bsroleplay.option.common.handcuffsCooldown": "Esposas - Enfriamiento",
+  "text.autoconfig.bsroleplay.option.common.handcuffsCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bastón del Faraón - Enfriamiento",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.hookCooldown": "Garfio - Enfriamiento",

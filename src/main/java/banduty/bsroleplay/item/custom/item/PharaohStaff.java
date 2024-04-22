@@ -1,7 +1,10 @@
 package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
+import banduty.bsroleplay.item.client.items.PharaohStaffRenderer;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
@@ -15,12 +18,67 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.animatable.GeoItem;
+import software.bernie.geckolib.animatable.client.RenderProvider;
+import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
+import software.bernie.geckolib.core.animation.*;
+import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
-public class PharaohStaff extends Item {
-    public PharaohStaff (Settings settings) {
+public class PharaohStaff extends Item implements GeoItem {
+    private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+    private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
+    public PharaohStaff(Settings settings) {
         super(settings);
+    }
+
+    @Override
+    public void createRenderer(Consumer<Object> consumer) {
+        consumer.accept(new RenderProvider() {
+            private final PharaohStaffRenderer renderer = new PharaohStaffRenderer();
+
+            @Override
+            public BuiltinModelItemRenderer getCustomRenderer() {
+                return this.renderer;
+            }
+        });
+    }
+
+    @Override
+    public Supplier<Object> getRenderProvider() {
+        return renderProvider;
+    }
+
+    @Override
+    public double getTick(Object itemStack) {
+        return RenderUtils.getCurrentTick();
+    }
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController(this,"controller", 0, this::predicate));
+    }
+
+    private PlayState predicate(AnimationState animationState) {
+        if (BsRolePlay.CONFIG.common.modifyPharaohStaffLightning) {
+            animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.LOOP));
+            if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {
+                return PlayState.STOP;
+            }
+            return PlayState.CONTINUE;
+        }
+        animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));
+        return PlayState.CONTINUE;
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return cache;
     }
 
     public ActionResult useOnBlock(ItemUsageContext context) {

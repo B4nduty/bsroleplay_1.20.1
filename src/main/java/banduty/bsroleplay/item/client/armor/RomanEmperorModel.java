@@ -19,6 +19,6 @@ public class RomanEmperorModel extends GeoModel<RomanEmperorItem> {
 
     @Override
     public Identifier getAnimationResource(RomanEmperorItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }

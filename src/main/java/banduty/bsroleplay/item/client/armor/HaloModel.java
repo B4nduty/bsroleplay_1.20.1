@@ -19,6 +19,6 @@ public class HaloModel extends GeoModel<HaloItem> {
 
     @Override
     public Identifier getAnimationResource(HaloItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/armors.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
     }
 }
