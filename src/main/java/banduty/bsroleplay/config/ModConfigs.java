@@ -15,7 +15,11 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
     @ConfigEntry.Gui.TransitiveObject()
     public Common common = new Common();
 
-    @Config(name = BsRolePlay.MOD_ID)
+    @ConfigEntry.Category("currency")
+    @ConfigEntry.Gui.TransitiveObject()
+    public ModCurrency currency = new ModCurrency();
+
+    @Config(name = BsRolePlay.MOD_ID + "-common")
     public static final class Common implements ConfigData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -170,6 +174,26 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @Comment("Allow Anti-God Handcuffs work as a Flint and Steel | Default: true")
         public boolean modifyAntiGodHandcuffsFire = true;
 
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Fusion Core drop chance by Golems | Default: 0.3f
+                """)
+        float fusionCoreChanceGolem = 0.01f;
+
+        public float getFusionCoreChanceGolem() {
+            return Math.max(0, fusionCoreChanceGolem);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Fusion Core amount drop by Golems | Default: 3.0f
+                """)
+        float fusionCoreAmountDropGolem = 1.0f;
+
+        public float getFusionCoreAmountDropGolem() {
+            return Math.max(0, fusionCoreAmountDropGolem);
+        }
+
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
                 Happy Pill Blindness Time in Seconds | Default: 40
@@ -282,16 +306,6 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Pill Core Spawns in Chests Chance | Default: 0.25f
-                """)
-        float pillCoreChestsChance = 0.25f;
-
-        public float getPillCoreChestsChance() {
-            return Math.max(0, pillCoreChestsChance);
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("""
                 Funeral Mask Spawns in Chests Chance | Default: 0.2f
                 """)
         float funeralMaskChestsChance = 0.2f;
@@ -313,5 +327,164 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("Show Item Tooltips | Default: true")
         public boolean showItemTooltips = true;
+    }
+
+    @Config(name = BsRolePlay.MOD_ID + "-currency")
+    public static final class ModCurrency implements ConfigData {
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Coin Price | Default: true")
+        public boolean showCoinPrice = true;
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Hostile Mobs Drop Coins | Default: true")
+        public boolean hostileMobsDropCoins = true;
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Boss Mobs Drop Coins | Default: true")
+        public boolean bossMobsDropCoins = true;
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Ores Drop Coins | Default: true")
+        public boolean oresDropCoins = true;
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Bronze Coin drop chance by Hostile Mobs | Default: 0.3f
+                """)
+        float bronzeCoinChanceHostileMobs = 0.3f;
+
+        public float getBronzeCoinChanceHostileMobs() {
+            return Math.max(0, bronzeCoinChanceHostileMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Bronze Coin amount drop by Hostile Mobs | Default: 3.0f
+                """)
+        float bronzeCoinMaxAmountHostileMobs = 3.0f;
+
+        public float getBronzeCoinMaxAmountHostileMobs() {
+            return Math.max(0, bronzeCoinMaxAmountHostileMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Gold Coin drop chance by Hostile Mobs | Default: 0.001f
+                """)
+        float goldCoinChanceHostileMobs = 0.001f;
+
+        public float getGoldCoinChanceHostileMobs() {
+            return Math.max(0, goldCoinChanceHostileMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Gold Coin amount drop by Hostile Mobs | Default: 1.0f
+                """)
+        float goldCoinMaxAmountHostileMobs = 1.0f;
+
+        public float getGoldCoinMaxAmountHostileMobs() {
+            return Math.max(0, goldCoinMaxAmountHostileMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Bronze Coin drop chance by Boss Mobs | Default: 1.0f
+                """)
+        float bronzeCoinChanceBossMobs = 1.0f;
+
+        public float getBronzeCoinChanceBossMobs() {
+            return Math.max(0, bronzeCoinChanceBossMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Bronze Coin amount drop by Boss Mobs | Default: 2.0f
+                """)
+        float bronzeCoinMaxAmountBossMobs = 2.0f;
+
+        public float getBronzeCoinMaxAmountBossMobs() {
+            return Math.max(0, bronzeCoinMaxAmountBossMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Gold Coin drop chance by Boss Mobs | Default: 1.0f
+                """)
+        float goldCoinChanceBossMobs = 1.0f;
+
+        public float getGoldCoinChanceBossMobs() {
+            return Math.max(0, goldCoinChanceBossMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Gold Coin amount drop by Boss Mobs | Default: 5.0f
+                """)
+        float goldCoinMaxAmountBossMobs = 5.0f;
+
+        public float getGoldCoinMaxAmountBossMobs() {
+            return Math.max(0, goldCoinMaxAmountBossMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Netherite Coin drop chance by Boss Mobs | Default: 0.005f
+                """)
+        float netheriteCoinChanceBossMobs = 0.005f;
+
+        public float getNetheriteCoinChanceBossMobs() {
+            return Math.max(0, netheriteCoinChanceBossMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Netherite Coin amount drop by Boss Mobs | Default: 1.0f
+                """)
+        float netheriteCoinMaxAmountBossMobs = 1.0f;
+
+        public float getNetheriteCoinMaxAmountBossMobs() {
+            return Math.max(0, netheriteCoinMaxAmountBossMobs);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Bronze Coin drop chance by Copper Ore | Default: 0.2f
+                """)
+        float bronzeCoinChanceCopperOre = 0.2f;
+
+        public float getBronzeCoinChanceCopperOre() {
+            return Math.max(0, bronzeCoinChanceCopperOre);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Bronze Coin amount drop by Copper Ore | Default: 5.0f
+                """)
+        float bronzeCoinMaxAmountCopperOre = 5.0f;
+
+        public float getBronzeCoinMaxAmountCopperOre() {
+            return Math.max(0, bronzeCoinMaxAmountCopperOre);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Gold Coin drop chance by Gold Ore | Default: 0.001f
+                """)
+        float goldCoinChanceGoldOre = 0.001f;
+
+        public float getGoldCoinChanceGoldOre() {
+            return Math.max(0, goldCoinChanceGoldOre);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Gold Coin amount drop by Gold Ore | Default: 1.0f
+                """)
+        float goldCoinMaxAmountGoldOre = 1.0f;
+
+        public float getGoldCoinMaxAmountGoldOre() {
+            return Math.max(0, goldCoinMaxAmountGoldOre);
+        }
     }
 }

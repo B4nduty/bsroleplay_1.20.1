@@ -56,11 +56,18 @@
 
   "item.bsroleplay.dealer": "Dealer Mask",
   "item.bsroleplay.sad_pill": "Sad Pill",
-  "item.bsroleplay.pill_core": "Pill Core",
+  "item.bsroleplay.fusion_core": "Fusion Core",
 
   "item.bsroleplay.gadget_hat": "Gadget Hat",
 
   "block.bsroleplay.tiny_banduty": "Tiny Banduty",
+
+  "block.bsroleplay.bronze_coin": "Bronze Coin",
+  "block.bsroleplay.bronze_coin_stack": "Bronze Coin Stack",
+  "block.bsroleplay.gold_coin": "Gold Coin",
+  "block.bsroleplay.gold_coin_stack": "Gold Coin Stack",
+  "block.bsroleplay.netherite_coin": "Netherite Coin",
+  "block.bsroleplay.netherite_coin_stack": "Netherite Coin Stack",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Black and Blue Suit",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Black and Gold Suit",
@@ -74,6 +81,8 @@
   "item.bsroleplay.briefcase": "Briefcase",
   "item.bsroleplay.black_briefcase": "Black Briefcase",
   "item.bsroleplay.purple_briefcase": "Purple Briefcase",
+
+  "item.bsroleplay.fedora": "Fedora",
 
   "item.bsroleplay.handcuffs": "Handcuffs",
   "item.bsroleplay.handcuffs_key": "Handcuffs Key",
@@ -90,6 +99,8 @@
   "sounds.bsroleplay.handcuffednt": "Handcuffednt",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
+  "text.autoconfig.bsroleplay.category.common": "Common",
+  "text.autoconfig.bsroleplay.category.currency": "Currency",
   "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Pharaoh Staff - Lightnings",
   "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Hook - Evoker Fang",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Judge Hammer - Sound",
@@ -112,6 +123,8 @@
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Police Baton - Cooldown",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.fusionCoreChanceGolem": "Fusion Core - Golem Drop Chance",
+  "text.autoconfig.bsroleplay.option.common.fusionCoreAmountDropGolem": "Fusion Core - Golem Drop Amount",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime": "Happy Pill - Blindness Time",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessChance": "Happy Pill - Blindness Chance",
@@ -127,7 +140,6 @@
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime": "Sad Pill - Consume Time",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Show Item Tooltips",
-  "text.autoconfig.bsroleplay.option.common.pillCoreChestsChance": "Pill Core Chests Chance",
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Funeral Mask Chests Chance",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Pharaoh Staff Chests Chance",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Gadget Hat Chests Chances",
@@ -135,6 +147,25 @@
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance",
   "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Anti-God Handcuffs - Flint & Steel",
+
+  "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Show Coin Price",
+  "text.autoconfig.bsroleplay.option.currency.hostileMobsDropCoins": "Hostile Mobs Drop Coins",
+  "text.autoconfig.bsroleplay.option.currency.bossMobsDropCoins": "Boss Mobs Drop Coins",
+  "text.autoconfig.bsroleplay.option.currency.oresDropCoins": "Ores Drop Coins",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceHostileMobs": "Hostile Mobs - Bronze Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountHostileMobs": "Hostile Mobs - Bronze Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceHostileMobs": "Hostile Mobs - Gold Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountHostileMobs": "Hostile Mobs - Gold Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceBossMobs": "Boss Mobs - Bronze Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountBossMobs": "Boss Mobs - Bronze Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceBossMobs": "Boss Mobs - Gold Drop Coin Chance",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountBossMobs": "Boss Mobs - Gold Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.netheriteCoinChanceBossMobs": "Boss Mobs - Netherite Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.netheriteCoinMaxAmountBossMobs": "Boss Mobs - Netherite Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceCopperOre": "Copper Ore - Bronze Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountCopperOre": "Copper Ore - Bronze Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceGoldOre": "Gold Ore - Gold Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountGoldOre": "Gold Ore - Gold Coin Max Drop",
 
   "advancement.police_set.title": "I'm Justice",
   "advancement.police_set.desc": "Craft the Police Set, Police Baton & Handcuffs",
@@ -151,12 +182,15 @@
   "advancement.music_disc.title": "Feel the Moment",
   "advancement.music_disc.desc": "Find the Music Disc - Dolor en el Pecho",
 
-  "advancement.pill_core.title": "The Great Dealer",
-  "advancement.pill_core.desc": "Find a Pill Core",
+  "advancement.fusion_core.title": "The Mad Scientist",
+  "advancement.fusion_core.desc": "Find a Fusion Core",
 
   "advancement.purple_lawyer_set.title": "Purple Guy",
   "advancement.purple_lawyer_set.desc": "Craft the Purple Briefcase and Purple Lawyer Set",
 
   "advancement.gods_handcuffs.title": "The God Destroyer",
-  "advancement.gods_handcuffs.desc": "Get the Anti-God Handcuffs"
+  "advancement.gods_handcuffs.desc": "Get the Anti-God Handcuffs",
+
+  "advancement.netherite_coin_stack.title": "The Richest Guy",
+  "advancement.netherite_coin_stack.desc": "Obtain a Netherite Coin Stack and the Fedora"
 }

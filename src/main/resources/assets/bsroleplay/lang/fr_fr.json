@@ -56,11 +56,18 @@
 
   "item.bsroleplay.dealer": "Masque de Trafiquant",
   "item.bsroleplay.sad_pill": "Pilule Dépressive",
-  "item.bsroleplay.pill_core": "Noyau de Pilule",
+  "item.bsroleplay.fusion_core": "Noyau de Fusion",
 
   "item.bsroleplay.gadget_hat": "Chapeau Gadget",
 
   "block.bsroleplay.tiny_banduty": "Mini-Banduty",
+
+  "block.bsroleplay.bronze_coin": "Pièce de Bronze",
+  "block.bsroleplay.bronze_coin_stack": "Pièces de Bronze Empilées",
+  "block.bsroleplay.gold_coin": "Pièce de Or",
+  "block.bsroleplay.gold_coin_stack": "Pièces de Or Empilées",
+  "block.bsroleplay.netherite_coin": "Pièces de Netherite",
+  "block.bsroleplay.netherite_coin_stack": "Pièces de Netherite Empilées",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Costume Noir et Bleu",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Costume Noir et Or",
@@ -74,6 +81,8 @@
   "item.bsroleplay.briefcase": "Mallette",
   "item.bsroleplay.black_briefcase": "Mallette Noire",
   "item.bsroleplay.purple_briefcase": "Mallette Violette",
+
+  "item.bsroleplay.fedora": "Feutre",
 
   "item.bsroleplay.handcuffs": "Menottes",
   "item.bsroleplay.handcuffs_key": "Clé de Menottes",
@@ -90,6 +99,8 @@
   "sounds.bsroleplay.handcuffednt": "Libérer",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
+  "text.autoconfig.bsroleplay.category.common": "Commun",
+  "text.autoconfig.bsroleplay.category.currency": "Devise",
   "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bâton du Pharaon - Éclairs",
   "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Crochet - Evoker Fang",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Marteau du Juge- Son",
@@ -112,6 +123,8 @@
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Bâton de Police - Cooldown",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "En Secondes",
+  "text.autoconfig.bsroleplay.option.common.fusionCoreChanceGolem": "Fusion Core - Chances de Chute du Golem",
+  "text.autoconfig.bsroleplay.option.common.fusionCoreAmountDropGolem": "Fusion Core - Montant des Butins du Golem",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime": "Pilule Heureuse - Temps de Cécité",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessChance": "Pilule Heureuse - Risque de Cécité",
@@ -127,7 +140,6 @@
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime": "Pilule Dépressive - Consume Time",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Info-bulles des Éléments",
-  "text.autoconfig.bsroleplay.option.common.pillCoreChestsChance": "Chances de Coffre - Noyau de Pilule",
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Chances de Coffre - Masque Funéraire",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Chances de Coffre - Bâton du Pharaon",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Chances de Coffre - Chapeau Gadget",
@@ -135,6 +147,25 @@
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet",
   "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Menottes Anti-Dieu - Briquet",
+
+  "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Afficher le Prix des Pièces",
+  "text.autoconfig.bsroleplay.option.currency.hostileMobsDropCoins": "Hostile Mobs Drop Coins",
+  "text.autoconfig.bsroleplay.option.currency.bossMobsDropCoins": "Boss Mobs Drop Coins",
+  "text.autoconfig.bsroleplay.option.currency.oresDropCoins": "Ores Drop Coins",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceHostileMobs": "Hostile Mobs - Chances d'obtenir du Pièce de Bronze",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountHostileMobs": "Hostile Mobs - Maximum d'obtention de Pièce de Bronze",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceHostileMobs": "Hostile Mobs - Chances d'obtenir du Pièce de Or",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountHostileMobs": "Hostile Mobs - Maximum d'obtention de Pièce de Or",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceBossMobs": "Boss Mobs - Chances d'obtenir du Pièce de Bronze",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountBossMobs": "Boss Mobs - Maximum d'obtention de Pièce de Bronze",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceBossMobs": "Boss Mobs - Chances d'obtenir du Pièce de Or",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountBossMobs": "Boss Mobs - Maximum d'obtention de Pièce de Or",
+  "text.autoconfig.bsroleplay.option.currency.netheriteCoinChanceBossMobs": "Boss Mobs - Chances d'obtenir du Pièce de Netherite",
+  "text.autoconfig.bsroleplay.option.currency.netheriteCoinMaxAmountBossMobs": "Boss Mobs - Maximum d'obtention de Pièce de Netherite",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceCopperOre": "Mineral de Cobre - Chances d'obtenir du Pièce de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountCopperOre": "Mineral de Cobre - Maximum d'obtention de Pièce de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceGoldOre": "Mineral de Oro - Chances d'obtenir du de Pièce de Oro",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountGoldOre": "Mineral de Oro - Maximum d'obtention de Pièce de Oro",
 
   "advancement.police_set.title": "I'm Justice",
   "advancement.police_set.desc": "Fabriquez l'Ensemble de Police, le Bâton de Police et Menottes",
@@ -151,12 +182,15 @@
   "advancement.music_disc.title": "Feel the Moment",
   "advancement.music_disc.desc": "Trouver le Disque de Musique - Dolor en el Pecho",
 
-  "advancement.pill_core.title": "Le Grand Dealer",
-  "advancement.pill_core.desc": "Trouver le Noyau de Pilule",
+  "advancement.fusion_core.title": "Le Savant Fou",
+  "advancement.fusion_core.desc": "Trouver le Noyau de Fusion",
 
   "advancement.purple_lawyer_set.title": "Purple Guy",
   "advancement.purple_lawyer_set.desc": "Fabriquez la Mallette Violette et l'ensemble d'Avocat Violet",
 
   "advancement.gods_handcuffs.title": "Le Destructeur de Dieux",
-  "advancement.gods_handcuffs.desc": "Obtenir des Menottes Anti-Dieu"
+  "advancement.gods_handcuffs.desc": "Obtenir des Menottes Anti-Dieu",
+
+  "advancement.netherite_coin_stack.title": "Fils de Riche",
+  "advancement.netherite_coin_stack.desc": "Obtenez une Pile de Pièces Netherite et le Fedora"
 }

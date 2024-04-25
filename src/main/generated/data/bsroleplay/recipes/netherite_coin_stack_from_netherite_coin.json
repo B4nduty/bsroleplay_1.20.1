@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "netherite_coin",
+  "ingredients": [
+    {
+      "item": "bsroleplay:netherite_coin_stack"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "bsroleplay:netherite_coin"
+  }
+}

@@ -27,7 +27,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         new Identifier("textures/gui/advancements/backgrounds/adventure.png"),
                         AdvancementFrame.TASK,
                         true,
-                        false,
+                        true,
                         false
                 )
                 .criterion("got_roleplay_core", InventoryChangedCriterion.Conditions.items(ModItems.ROLEPLAY_CORE))
@@ -41,7 +41,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         null,
                         AdvancementFrame.GOAL,
                         true,
-                        false,
+                        true,
                         false
                 )
                 .criterion("got_funeral_mask", InventoryChangedCriterion.Conditions.items(ModItems.FUNERAL_MASK))
@@ -56,7 +56,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         null,
                         AdvancementFrame.GOAL,
                         true,
-                        false,
+                        true,
                         false
                 )
                 .criterion("got_hook", InventoryChangedCriterion.Conditions.items(ModItems.HOOK))
@@ -70,25 +70,25 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         null,
                         AdvancementFrame.CHALLENGE,
                         true,
-                        false,
+                        true,
                         false
                 )
                 .criterion("got_music_disc", InventoryChangedCriterion.Conditions.items(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC))
                 .build(consumer, BsRolePlay.MOD_ID + "/got_music_disc");
 
-        Advancement pillCoreAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
+        Advancement fusionCoreAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
                 .display(
-                        ModItems.PILL_CORE,
-                        Text.translatable("advancement.pill_core.title"),
-                        Text.translatable("advancement.pill_core.desc"),
+                        ModItems.FUSION_CORE,
+                        Text.translatable("advancement.fusion_core.title"),
+                        Text.translatable("advancement.fusion_core.desc"),
                         null,
                         AdvancementFrame.GOAL,
                         true,
-                        false,
+                        true,
                         false
                 )
-                .criterion("got_pill_core", InventoryChangedCriterion.Conditions.items(ModItems.PILL_CORE))
-                .build(consumer, BsRolePlay.MOD_ID + "/got_pill_core");
+                .criterion("got_fusion_core", InventoryChangedCriterion.Conditions.items(ModItems.FUSION_CORE))
+                .build(consumer, BsRolePlay.MOD_ID + "/got_fusion_core");
 
         Advancement policeSetAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
                 .display(
@@ -98,7 +98,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         null,
                         AdvancementFrame.GOAL,
                         true,
-                        false,
+                        true,
                         false
                 )
                 .criterion("got_police_baton", InventoryChangedCriterion.Conditions.items(ModItems.POLICE_BATON))
@@ -117,7 +117,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         null,
                         AdvancementFrame.GOAL,
                         true,
-                        false,
+                        true,
                         false
                 )
                 .criterion("got_purple_briefcase", InventoryChangedCriterion.Conditions.items(ModItems.VIOLET_BRIEFCASE))
@@ -134,10 +134,25 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         null,
                         AdvancementFrame.CHALLENGE,
                         true,
-                        false,
+                        true,
                         false
                 )
                 .criterion("got_gods_handcuffs", InventoryChangedCriterion.Conditions.items(ModItems.ANTI_GOD_HANDCUFFS))
                 .build(consumer, BsRolePlay.MOD_ID + "/got_gods_handcuffs");
+
+        Advancement coinAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
+                .display(
+                        ModItems.NETHERITE_COIN_STACK,
+                        Text.translatable("advancement.netherite_coin_stack.title"),
+                        Text.translatable("advancement.netherite_coin_stack.desc"),
+                        null,
+                        AdvancementFrame.CHALLENGE,
+                        true,
+                        true,
+                        false
+                )
+                .criterion("got_netherite_coin_stack", InventoryChangedCriterion.Conditions.items(ModItems.NETHERITE_COIN_STACK))
+                .criterion("got_fedora", InventoryChangedCriterion.Conditions.items(ModItems.FEDORA))
+                .build(consumer, BsRolePlay.MOD_ID + "/got_netherite_coin_stack");
     }
 }

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "bsroleplay:bronze_coin",
+    "bsroleplay:bronze_coin_stack",
+    "bsroleplay:gold_coin",
+    "bsroleplay:gold_coin_stack",
+    "bsroleplay:netherite_coin",
+    "bsroleplay:netherite_coin_stack"
+  ]
+}

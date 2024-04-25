@@ -15,7 +15,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.literal("BsRoleplay Item"))
                     .icon(() -> new ItemStack(ModItems.ROLEPLAY_CORE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ROLEPLAY_CORE);
-                        entries.add(ModItems.PILL_CORE);
+                        entries.add(ModItems.FUSION_CORE);
                         entries.add(ModItems.BRIEFCASE);
                         entries.add(ModItems.BLACK_BRIEFCASE);
                         entries.add(ModItems.VIOLET_BRIEFCASE);
@@ -37,6 +37,12 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.literal("BsRoleplay Block"))
                     .icon(() -> new ItemStack(ModItems.TINY_BANDUTY_ITEM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.TINY_BANDUTY_ITEM);
+                        entries.add(ModItems.BRONZE_COIN);
+                        entries.add(ModItems.BRONZE_COIN_STACK);
+                        entries.add(ModItems.GOLD_COIN);
+                        entries.add(ModItems.GOLD_COIN_STACK);
+                        entries.add(ModItems.NETHERITE_COIN);
+                        entries.add(ModItems.NETHERITE_COIN_STACK);
                     })
                     .build());
 
@@ -58,6 +64,8 @@ public class ModItemGroups {
                         entries.add(ModItems.LAWYER_PURPLERED_CHESTPLATE);
                         entries.add(ModItems.LAWYER_LEGGINGS_PURPLE);
                         entries.add(ModItems.LAWYER_BOOTS_PURPLE);
+
+                        entries.add(ModItems.FEDORA);
 
                         entries.add(ModItems.RED_PIRATE_HELMET);
                         entries.add(ModItems.RED_PIRATE_CHESTPLATE);

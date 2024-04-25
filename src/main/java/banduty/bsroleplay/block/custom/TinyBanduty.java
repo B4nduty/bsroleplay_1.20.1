@@ -1,6 +1,7 @@
 package banduty.bsroleplay.block.custom;
 
-import banduty.bsroleplay.block.entity.TinyBandutyEntity;
+import banduty.bsroleplay.block.entity.TinyBandutyBlockEntity;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.ItemPlacementContext;
@@ -20,17 +21,17 @@ public class TinyBanduty extends BlockWithEntity {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
     }
-    protected static final VoxelShape TINY;
+    protected static final VoxelShape SHAPE;
     public static final DirectionProperty FACING;
 
     static {
-        TINY = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+        SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
         FACING = HorizontalFacingBlock.FACING;
     }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return TINY;
+        return SHAPE;
     }
 
     @Override
@@ -54,7 +55,7 @@ public class TinyBanduty extends BlockWithEntity {
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new TinyBandutyEntity(pos, state);
+        return new TinyBandutyBlockEntity(pos, state);
     }
     @Override
     public BlockRenderType getRenderType(BlockState state) {

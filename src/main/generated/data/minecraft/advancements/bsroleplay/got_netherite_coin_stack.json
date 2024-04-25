@@ -1,0 +1,53 @@
+{
+  "parent": "minecraft:bsroleplay/got_roleplay_core",
+  "criteria": {
+    "got_fedora": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:fedora"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_netherite_coin_stack": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:netherite_coin_stack"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.netherite_coin_stack.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "bsroleplay:netherite_coin_stack"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.netherite_coin_stack.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_netherite_coin_stack"
+    ],
+    [
+      "got_fedora"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

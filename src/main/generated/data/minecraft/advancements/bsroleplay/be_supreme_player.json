@@ -27,7 +27,7 @@
     }
   },
   "display": {
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "description": {
       "translate": "advancement.funeral_mask.desc"
     },

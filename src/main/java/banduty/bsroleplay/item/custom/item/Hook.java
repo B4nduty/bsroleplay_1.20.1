@@ -67,16 +67,21 @@ public class Hook extends Item implements GeoItem {
     }
 
     private PlayState predicate(AnimationState animationState) {
-        if (BsRolePlay.CONFIG.common.modifyHookEvokerFang) {
-            if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {
-                animationState.getController().setAnimation(RawAnimation.begin().then("unabled", Animation.LoopType.HOLD_ON_LAST_FRAME));
+        Item mainHand = MinecraftClient.getInstance().player.getMainHandStack().getItem();
+        if (mainHand == this) {
+            if (BsRolePlay.CONFIG.common.modifyHookEvokerFang) {
+                if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {
+                    animationState.getController().setAnimation(RawAnimation.begin().then("unabled", Animation.LoopType.HOLD_ON_LAST_FRAME));
+                    return PlayState.CONTINUE;
+                }
+                animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.HOLD_ON_LAST_FRAME));
                 return PlayState.CONTINUE;
             }
-            animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.HOLD_ON_LAST_FRAME));
+            animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));
             return PlayState.CONTINUE;
+        } else {
+            return PlayState.STOP;
         }
-        animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));
-        return PlayState.CONTINUE;
     }
 
     @Override

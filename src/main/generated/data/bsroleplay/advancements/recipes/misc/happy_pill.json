@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pill_core": {
+    "has_fusion_core": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:pill_core"
+              "bsroleplay:fusion_core"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_wither_rose",
-      "has_pill_core",
+      "has_fusion_core",
       "has_the_recipe"
     ]
   ],

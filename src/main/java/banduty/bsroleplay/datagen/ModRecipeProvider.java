@@ -358,9 +358,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" W ")
                 .pattern(" P ")
                 .input('W', Items.WITHER_ROSE)
-                .input('P', ModItems.PILL_CORE)
+                .input('P', ModItems.FUSION_CORE)
                 .criterion(hasItem(Items.WITHER_ROSE), conditionsFromItem(Items.WITHER_ROSE))
-                .criterion(hasItem(ModItems.PILL_CORE), conditionsFromItem(ModItems.PILL_CORE))
+                .criterion(hasItem(ModItems.FUSION_CORE), conditionsFromItem(ModItems.FUSION_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HAPPY_PILL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SAD_PILL, 1)
@@ -368,9 +368,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" N ")
                 .pattern(" P ")
                 .input('N', Items.NETHER_STAR)
-                .input('P', ModItems.PILL_CORE)
+                .input('P', ModItems.FUSION_CORE)
                 .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
-                .criterion(hasItem(ModItems.PILL_CORE), conditionsFromItem(ModItems.PILL_CORE))
+                .criterion(hasItem(ModItems.FUSION_CORE), conditionsFromItem(ModItems.FUSION_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SAD_PILL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_LEGGINGS_BLACK, 1)
@@ -692,5 +692,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HANDCUFFS_KEY)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FEDORA, 1)
+                .pattern("BBB")
+                .pattern("WWW")
+                .pattern("BRB")
+                .input('R', ModItems.ROLEPLAY_CORE)
+                .input('B', Items.BLACK_WOOL)
+                .input('W', Items.WHITE_WOOL)
+                .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
+                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
+                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FEDORA)));
+
+        offerReversibleCompactingRecipesWithReverseRecipeGroup(exporter, RecipeCategory.MISC, ModItems.BRONZE_COIN, RecipeCategory.MISC,
+                ModItems.BRONZE_COIN_STACK, "bronze_coin_stack_from_bronze_coin", "bronze_coin");
+
+        offerReversibleCompactingRecipesWithReverseRecipeGroup(exporter, RecipeCategory.MISC, ModItems.BRONZE_COIN_STACK, RecipeCategory.MISC,
+                ModItems.GOLD_COIN, "gold_coin_from_bronze_coin_stack", "bronze_coin_stack");
+
+        offerReversibleCompactingRecipesWithReverseRecipeGroup(exporter, RecipeCategory.MISC, ModItems.GOLD_COIN, RecipeCategory.MISC,
+                ModItems.GOLD_COIN_STACK, "gold_coin_stack_from_gold_coin", "gold_coin");
+
+        offerReversibleCompactingRecipesWithReverseRecipeGroup(exporter, RecipeCategory.MISC, ModItems.GOLD_COIN_STACK, RecipeCategory.MISC,
+                ModItems.NETHERITE_COIN, "netherite_coin_from_gold_coin_stack", "gold_coin_stack");
+
+        offerReversibleCompactingRecipesWithReverseRecipeGroup(exporter, RecipeCategory.MISC, ModItems.NETHERITE_COIN, RecipeCategory.MISC,
+                ModItems.NETHERITE_COIN_STACK, "netherite_coin_stack_from_netherite_coin", "netherite_coin");
     }
 }

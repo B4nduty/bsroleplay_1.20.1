@@ -56,11 +56,18 @@
 
   "item.bsroleplay.dealer": "Máscara de Traficante",
   "item.bsroleplay.sad_pill": "Pastilla Depresiva",
-  "item.bsroleplay.pill_core": "Núcleo de Píldora",
+  "item.bsroleplay.fusion_core": "Núcleo de Fusión",
 
   "item.bsroleplay.gadget_hat": "Sombrero de Artilugios",
 
   "block.bsroleplay.tiny_banduty": "Mini Banduty",
+
+  "block.bsroleplay.bronze_coin": "Moneda de Bronce",
+  "block.bsroleplay.bronze_coin_stack": "Pila de Monedas de Bronce",
+  "block.bsroleplay.gold_coin": "Moneda de Oro",
+  "block.bsroleplay.gold_coin_stack": "Pila de Monedas de Oro",
+  "block.bsroleplay.netherite_coin": "Moneda de Netherita",
+  "block.bsroleplay.netherite_coin_stack": "Pila de Monedas de Netherita",
 
   "item.bsroleplay.lawyer_blackblue_chestplate": "Traje Negro y Azul",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Traje Negro y Oro",
@@ -74,6 +81,8 @@
   "item.bsroleplay.briefcase": "Maletín",
   "item.bsroleplay.black_briefcase": "Maletín Negro",
   "item.bsroleplay.purple_briefcase": "Maletín Morado",
+
+  "item.bsroleplay.fedora": "Sombrero de Fieltro",
 
   "item.bsroleplay.handcuffs": "Esposas",
   "item.bsroleplay.handcuffs_key": "Llave de Esposas",
@@ -90,6 +99,8 @@
   "sounds.bsroleplay.handcuffednt": "Exesposado",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
+  "text.autoconfig.bsroleplay.category.common": "Común",
+  "text.autoconfig.bsroleplay.category.currency": "Divisa",
   "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bastón del Faraón - Relámpagos",
   "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Garfio - Colmillos de Evocador",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Martillo del Juez - Sonido",
@@ -112,6 +123,8 @@
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Porra Policial - Cooldown",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.fusionCoreChanceGolem": "Fusion Core - Golem Probabilidad de Drop",
+  "text.autoconfig.bsroleplay.option.common.fusionCoreAmountDropGolem": "Fusion Core - Golem Cantidad de Drop",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime": "Píldora Optimista - Tiempo de Ceguera",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.happyPillBlindnessChance": "Píldora Optimista - Posibilidad Ceguera",
@@ -127,7 +140,6 @@
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime": "Pastilla Depresiva - Temps de Consommation",
   "text.autoconfig.bsroleplay.option.common.sadPillConsumeTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas",
-  "text.autoconfig.bsroleplay.option.common.pillCoreChestsChance": "Probabilidad de Cofres - Núcleo de Píldora",
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Probabilidad de Cofres - Máscara Funeraria",
   "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Probabilidad de Cofres - Bastón del Faraón",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Probabilidad de Cofres - Sombrero de Artilugios",
@@ -135,6 +147,25 @@
   "text.autoconfig.bsroleplay.option.common.sadPill1stStageTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio",
   "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Esposas Anti-Dioses - Mechero",
+
+  "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Mostrar Precio de las Monedas",
+  "text.autoconfig.bsroleplay.option.currency.hostileMobsDropCoins": "Mobs Hostiles Sueltan Monedas",
+  "text.autoconfig.bsroleplay.option.currency.bossMobsDropCoins": "Mobs Jefes Sueltan Monedas",
+  "text.autoconfig.bsroleplay.option.currency.oresDropCoins": "Minerales Sueltan Monedas",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceHostileMobs": "Mobs Hostiles - Probabilidad de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountHostileMobs": "Mobs Hostiles - Cantidad Máxima de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceHostileMobs": "Mobs Hostiles - Probabilidad de Caída de Moneda de Oro",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountHostileMobs": "Mobs Hostiles - Cantidad Máxima de Caída de Moneda de Oro",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceBossMobs": "Mobs Jefes - Probabilidad de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountBossMobs": "Mobs Jefes - Cantidad Máxima de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceBossMobs": "Mobs Jefes - Probabilidad de Caída de Moneda de Oro",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountBossMobs": "Mobs Jefes - Cantidad Máxima de Caída de Moneda de Oro",
+  "text.autoconfig.bsroleplay.option.currency.netheriteCoinChanceBossMobs": "Mobs Jefes - Probabilidad de Caída de Moneda de Netherite",
+  "text.autoconfig.bsroleplay.option.currency.netheriteCoinMaxAmountBossMobs": "Mobs Jefes - Cantidad Máxima de Caída de Moneda de Netherite",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceCopperOre": "Mineral de Cobre - Probabilidad de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountCopperOre": "Mineral de Cobre - Cantidad Máxima de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinChanceGoldOre": "Mineral de Oro - Probabilidad de Caída de Moneda de Oro",
+  "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountGoldOre": "Mineral de Oro - Cantidad Máxima de Caída de Moneda de Oro",
 
   "advancement.police_set.title": "I'm Justice",
   "advancement.police_set.desc": "Crea el Conjunto Policial, la Porra Policial y las esposas",
@@ -151,12 +182,15 @@
   "advancement.music_disc.title": "Feel the Moment",
   "advancement.music_disc.desc": "Encuentra el Disco de Música - Dolor en el Pecho",
 
-  "advancement.pill_core.title": "El Gran Traficante",
-  "advancement.pill_core.desc": "Encuentra el Núcleo de Píldora",
+  "advancement.fusion_core.title": "El Científico Loco",
+  "advancement.fusion_core.desc": "Encuentra el Núcleo de Fusión",
 
   "advancement.purple_lawyer_set.title": "Hombre de Morado",
   "advancement.purple_lawyer_set.desc": "Crea el Maletín Morado y el conjunto de Abogado Morado",
 
   "advancement.gods_handcuffs.title": "El Destructor de Dioses",
-  "advancement.gods_handcuffs.desc": "Consigue unas Esposas Anti-Dioses"
+  "advancement.gods_handcuffs.desc": "Consigue unas Esposas Anti-Dioses",
+
+  "advancement.netherite_coin_stack.title": "El Niño Pijo",
+  "advancement.netherite_coin_stack.desc": "Obtén una Pila de Monedas de Netherita y Fedora"
 }
