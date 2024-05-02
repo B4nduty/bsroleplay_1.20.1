@@ -36,8 +36,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.HALO, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.RED_PIRATE_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RED_PIRATE_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RED_PIRATE_LEGGINGS, Models.GENERATED);

@@ -49,7 +49,7 @@ public class DreamMaskItem extends ArmorItem implements GeoItem {
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController(this,"controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
 
     }
 

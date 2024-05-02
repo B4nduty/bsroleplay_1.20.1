@@ -20,6 +20,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.GameMode;
@@ -56,8 +57,8 @@ public class AntiGodHandcuffs extends Item {
                         ServerWorld serverWorld = (ServerWorld) user.getWorld();
                         BlockPos blockPos = user.getBlockPos();
                         serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFED, SoundCategory.PLAYERS, 1f, 1f);
-                        entity.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2"));
-                        user.sendMessage(Text.translatable("message.bsroleplay.anti_god_handcuffs.handcuffed", entity.getName().getString()));
+                        entity.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2").formatted(Formatting.RED));
+                        user.sendMessage(Text.translatable("message.bsroleplay.anti_god_handcuffs.handcuffed", entity.getName().getString()).formatted(Formatting.RED));
                     }
 
                     return ActionResult.SUCCESS;

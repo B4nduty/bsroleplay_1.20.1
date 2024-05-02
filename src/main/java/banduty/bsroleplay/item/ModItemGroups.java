@@ -28,7 +28,6 @@ public class ModItemGroups {
                         entries.add(ModItems.PHARAOH_STAFF);
                         entries.add(ModItems.HAPPY_PILL);
                         entries.add(ModItems.SAD_PILL);
-                        entries.add(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC);
                     })
                     .build());
 

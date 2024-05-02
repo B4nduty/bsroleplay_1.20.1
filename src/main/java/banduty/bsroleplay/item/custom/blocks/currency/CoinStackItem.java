@@ -5,7 +5,6 @@ import banduty.bsroleplay.item.ModItems;
 import banduty.bsroleplay.item.client.blocks.CoinStackItemRenderer;
 import net.minecraft.block.Block;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -19,14 +18,13 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class CoinStackItem extends BlockItem implements GeoItem {
-    private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+    private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
     public CoinStackItem(Block block, Settings settings) {
@@ -37,10 +35,13 @@ public class CoinStackItem extends BlockItem implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private final CoinStackItemRenderer renderer = new CoinStackItemRenderer();
+            private CoinStackItemRenderer renderer;
 
             @Override
-            public BuiltinModelItemRenderer getCustomRenderer() {
+            public CoinStackItemRenderer getCustomRenderer() {
+                if (this.renderer == null)
+                    this.renderer = new CoinStackItemRenderer();
+
                 return this.renderer;
             }
         });
@@ -53,7 +54,7 @@ public class CoinStackItem extends BlockItem implements GeoItem {
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController(this,"controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
 
     }
 
@@ -65,11 +66,6 @@ public class CoinStackItem extends BlockItem implements GeoItem {
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
-    }
-
-    @Override
-    public double getTick(Object itemStack) {
-        return RenderUtils.getCurrentTick();
     }
 
     @Override

@@ -16,9 +16,6 @@
   "item.bsroleplay.hook": "Hook",
   "tooltip.bsroleplay.hook.tooltip": "When Right Click Summon Evoker Fangs",
 
-  "item.bsroleplay.dolor_en_el_pecho_carola_music_disc": "Music Disc",
-  "item.bsroleplay.dolor_en_el_pecho_carola_music_disc.desc": "Shivita - Dolor En El Pecho Remix",
-
   "item.bsroleplay.judge_hammer": "Judge Hammer",
   "tooltip.bsroleplay.judgehammer.tooltip": "When Right Click play a Sound",
 
@@ -178,9 +175,6 @@
 
   "advancement.hook.title": "The Pirate King",
   "advancement.hook.desc": "Find a Hook",
-
-  "advancement.music_disc.title": "Feel the Moment",
-  "advancement.music_disc.desc": "Find the Music Disc - Dolor en el Pecho",
 
   "advancement.fusion_core.title": "The Mad Scientist",
   "advancement.fusion_core.desc": "Find a Fusion Core",

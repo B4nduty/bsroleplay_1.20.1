@@ -1,7 +1,6 @@
 package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.item.client.items.BriefcaseRenderer;
-import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.item.Item;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -9,7 +8,6 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;
@@ -24,10 +22,13 @@ public class BriefCase extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private final BriefcaseRenderer renderer = new BriefcaseRenderer();
+            private BriefcaseRenderer renderer;
 
             @Override
-            public BuiltinModelItemRenderer getCustomRenderer() {
+            public BriefcaseRenderer getCustomRenderer() {
+                if (this.renderer == null)
+                    this.renderer = new BriefcaseRenderer();
+
                 return this.renderer;
             }
         });
@@ -39,13 +40,8 @@ public class BriefCase extends Item implements GeoItem {
     }
 
     @Override
-    public double getTick(Object itemStack) {
-        return RenderUtils.getCurrentTick();
-    }
-
-    @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController(this,"controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
     }
 
     private PlayState predicate(AnimationState animationState) {

@@ -14,6 +14,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -47,8 +48,8 @@ public class HandCuffs extends Item {
                         ServerWorld serverWorld = (ServerWorld) user.getWorld();
                         BlockPos blockPos = user.getBlockPos();
                         serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFED, SoundCategory.PLAYERS, 1f, 1f);
-                        entity.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2"));
-                        user.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_1", entity.getName().getString()));
+                        entity.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2").formatted(Formatting.RED));
+                        user.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_1", entity.getName().getString()).formatted(Formatting.RED));
                     }
 
                     user.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getHandcuffsCooldown() * 20);

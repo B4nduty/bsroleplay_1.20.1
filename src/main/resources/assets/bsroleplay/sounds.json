@@ -18,14 +18,5 @@
     "sounds": [
       "bsroleplay:handcuffednt"
     ]
-  },
-
-  "dolor_en_el_pecho_carola": {
-    "sounds": [
-      {
-        "name": "bsroleplay:dolor_en_el_pecho_carola",
-        "stream": true
-      }
-    ]
   }
 }

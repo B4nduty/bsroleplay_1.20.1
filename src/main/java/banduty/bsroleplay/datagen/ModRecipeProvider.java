@@ -227,15 +227,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.BUNNY_MASK)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC, 1)
-                .pattern(" D ")
-                .pattern(" R ")
-                .input('R', ModItems.ROLEPLAY_CORE)
-                .input('D', ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC)
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .criterion(hasItem(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC), conditionsFromItem(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CROWN, 1)
                 .pattern("G G")
                 .pattern("LME")

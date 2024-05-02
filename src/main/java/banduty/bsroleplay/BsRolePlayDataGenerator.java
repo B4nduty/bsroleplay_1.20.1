@@ -9,7 +9,6 @@ public class BsRolePlayDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModLootTableProvider::new);

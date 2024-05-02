@@ -18,9 +18,6 @@ public class ChestLootTableModifier {
     private static final Identifier VILLAGE_TOOLSMITH_ID =
             new Identifier("minecraft", "chests/village_toolsmith");
 
-    private static final Identifier ANCIENT_CITY_ID =
-            new Identifier("minecraft", "chests/ancient_city");
-
     private static final Identifier BURIED_TREASURE_ID =
             new Identifier("minecraft", "chests/buried_treasure");
 
@@ -29,16 +26,6 @@ public class ChestLootTableModifier {
 
     public static void modifyChestLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(ANCIENT_CITY_ID.equals(id)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.01f))
-                        .with(ItemEntry.builder(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
-
-                tableBuilder.pool(poolBuilder.build());
-            }
-
             if(DESERT_PYRAMID_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))

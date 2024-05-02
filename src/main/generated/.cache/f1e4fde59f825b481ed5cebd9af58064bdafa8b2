@@ -1,8 +1,8 @@
-// 1.20.1	2024-04-25T17:19:35.2217278	BsRolePlay/Block Loot Tables
-9deaa605ab56a38c90288bfe455d5f3731f71146 data\bsroleplay\loot_tables\blocks\gold_coin.json
+// 1.20.1	2024-05-02T20:35:22.4216861	BsRolePlay/Block Loot Tables
 ee4b1a658b13dc4b0f9a0e9addd92cd11d86f881 data\bsroleplay\loot_tables\blocks\tiny_banduty.json
-ece0afc97a0b28c1d3e408bb6371afffa021b237 data\bsroleplay\loot_tables\blocks\netherite_coin.json
 7fc059bc2a415f77b40f6eab60d3995b7ba0bf92 data\bsroleplay\loot_tables\blocks\bronze_coin_stack.json
+ce9244d91fd9eaed2165340d13312051fa7ed9c6 data\bsroleplay\loot_tables\blocks\bronze_coin.json
+9deaa605ab56a38c90288bfe455d5f3731f71146 data\bsroleplay\loot_tables\blocks\gold_coin.json
+ece0afc97a0b28c1d3e408bb6371afffa021b237 data\bsroleplay\loot_tables\blocks\netherite_coin.json
 566ae932d7c54c682cd844c1727af1ba4eee7a8f data\bsroleplay\loot_tables\blocks\gold_coin_stack.json
 d554cd76afa3ab7193c5c1c40485bdc539399680 data\bsroleplay\loot_tables\blocks\netherite_coin_stack.json
-ce9244d91fd9eaed2165340d13312051fa7ed9c6 data\bsroleplay\loot_tables\blocks\bronze_coin.json

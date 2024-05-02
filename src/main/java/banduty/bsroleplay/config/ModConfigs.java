@@ -44,7 +44,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float pharaohStaffChestsChance = 0.05f;
 
         public float getPharaohStaffChestsChance() {
-            return Math.max(0, pharaohStaffChestsChance);
+            return Math.min(1, Math.max(0, pharaohStaffChestsChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -70,7 +70,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float hookChestsChance = 0.5f;
 
         public float getHookChestsChance() {
-            return Math.max(0, hookChestsChance);
+            return Math.min(1, Math.max(0, hookChestsChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -181,7 +181,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float fusionCoreChanceGolem = 0.01f;
 
         public float getFusionCoreChanceGolem() {
-            return Math.max(0, fusionCoreChanceGolem);
+            return Math.min(1, Math.max(0, fusionCoreChanceGolem));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -211,7 +211,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float happyPillBlindnessChance = 0.1f;
 
         public float getHappyPillBlindnessChance() {
-            return Math.max(0, happyPillBlindnessChance);
+            return Math.min(1, Math.max(0, happyPillBlindnessChance));
         }
 
         @ConfigEntry.Gui.Tooltip()
@@ -231,7 +231,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float happyPillWeaknessChance = 1f;
 
         public float getHappyPillWeaknessChance() {
-            return Math.max(0, happyPillWeaknessChance);
+            return Math.min(1, Math.max(0, happyPillWeaknessChance));
         }
 
         @ConfigEntry.Gui.Tooltip()
@@ -251,7 +251,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float happyPillNauseaChance = 0.1f;
 
         public float getHappyPillNauseaChance() {
-            return Math.max(0, happyPillNauseaChance);
+            return Math.min(1, Math.max(0, happyPillNauseaChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -261,7 +261,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float happyPillInstantHealthChance = 0.5f;
 
         public float getHappyPillInstantHealthChance() {
-            return Math.max(0, happyPillInstantHealthChance);
+            return Math.min(1, Math.max(0, happyPillInstantHealthChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -311,7 +311,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float funeralMaskChestsChance = 0.2f;
 
         public float getFuneralMaskChestsChance() {
-            return Math.max(0, funeralMaskChestsChance);
+            return Math.min(1, Math.max(0, funeralMaskChestsChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -321,7 +321,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float gadgetHatChestsChance = 0.1f;
 
         public float getGadgetHatChestsChance() {
-            return Math.max(0, gadgetHatChestsChance);
+            return Math.min(1, Math.max(0, gadgetHatChestsChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -354,7 +354,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float bronzeCoinChanceHostileMobs = 0.3f;
 
         public float getBronzeCoinChanceHostileMobs() {
-            return Math.max(0, bronzeCoinChanceHostileMobs);
+            return Math.min(1, Math.max(0, bronzeCoinChanceHostileMobs));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -374,7 +374,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float goldCoinChanceHostileMobs = 0.001f;
 
         public float getGoldCoinChanceHostileMobs() {
-            return Math.max(0, goldCoinChanceHostileMobs);
+            return Math.min(1, Math.max(0, goldCoinChanceHostileMobs));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -394,7 +394,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float bronzeCoinChanceBossMobs = 1.0f;
 
         public float getBronzeCoinChanceBossMobs() {
-            return Math.max(0, bronzeCoinChanceBossMobs);
+            return Math.min(1, Math.max(0, bronzeCoinChanceBossMobs));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -414,7 +414,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float goldCoinChanceBossMobs = 1.0f;
 
         public float getGoldCoinChanceBossMobs() {
-            return Math.max(0, goldCoinChanceBossMobs);
+            return Math.min(1, Math.max(0, goldCoinChanceBossMobs));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -434,7 +434,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float netheriteCoinChanceBossMobs = 0.005f;
 
         public float getNetheriteCoinChanceBossMobs() {
-            return Math.max(0, netheriteCoinChanceBossMobs);
+            return Math.min(1, Math.max(0, netheriteCoinChanceBossMobs));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -454,7 +454,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float bronzeCoinChanceCopperOre = 0.2f;
 
         public float getBronzeCoinChanceCopperOre() {
-            return Math.max(0, bronzeCoinChanceCopperOre);
+            return Math.min(1, Math.max(0, bronzeCoinChanceCopperOre));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -474,7 +474,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float goldCoinChanceGoldOre = 0.001f;
 
         public float getGoldCoinChanceGoldOre() {
-            return Math.max(0, goldCoinChanceGoldOre);
+            return Math.min(1, Math.max(0, goldCoinChanceGoldOre));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)

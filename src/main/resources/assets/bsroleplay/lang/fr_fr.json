@@ -16,9 +16,6 @@
   "item.bsroleplay.hook": "Crochet",
   "tooltip.bsroleplay.hook.tooltip": "Lorsque vous faites un clic droit, un Evoker Fangs apparaît",
 
-  "item.bsroleplay.dolor_en_el_pecho_carola_music_disc": "Disque de Musique",
-  "item.bsroleplay.dolor_en_el_pecho_carola_music_disc.desc": "Shivita - Dolor En El Pecho Remix",
-
   "item.bsroleplay.judge_hammer": "Marteau du Juge",
   "tooltip.bsroleplay.judgehammer.tooltip": "Lorsque vous faites un clic droit, cela fait un son",
 
@@ -178,9 +175,6 @@
 
   "advancement.hook.title": "Le Roi des Pirates",
   "advancement.hook.desc": "Trouver un Crochet",
-
-  "advancement.music_disc.title": "Feel the Moment",
-  "advancement.music_disc.desc": "Trouver le Disque de Musique - Dolor en el Pecho",
 
   "advancement.fusion_core.title": "Le Savant Fou",
   "advancement.fusion_core.desc": "Trouver le Noyau de Fusion",

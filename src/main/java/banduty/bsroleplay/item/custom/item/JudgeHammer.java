@@ -5,7 +5,6 @@ import banduty.bsroleplay.item.client.items.JudgeHammerRenderer;
 import banduty.bsroleplay.sound.ModSounds;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -23,7 +22,6 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -39,10 +37,13 @@ public class JudgeHammer extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private final JudgeHammerRenderer renderer = new JudgeHammerRenderer();
+            private JudgeHammerRenderer renderer;
 
             @Override
-            public BuiltinModelItemRenderer getCustomRenderer() {
+            public JudgeHammerRenderer getCustomRenderer() {
+                if (this.renderer == null)
+                    this.renderer = new JudgeHammerRenderer();
+
                 return this.renderer;
             }
         });
@@ -54,16 +55,12 @@ public class JudgeHammer extends Item implements GeoItem {
     }
 
     @Override
-    public double getTick(Object itemStack) {
-        return RenderUtils.getCurrentTick();
-    }
-
-    @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController(this,"controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
     }
 
     private PlayState predicate(AnimationState animationState) {
+        if (MinecraftClient.getInstance().player == null) return PlayState.STOP;
         Item mainHand = MinecraftClient.getInstance().player.getMainHandStack().getItem();
         if (mainHand == this) {
             if (BsRolePlay.CONFIG.common.modifyJudgeHammerSound) {

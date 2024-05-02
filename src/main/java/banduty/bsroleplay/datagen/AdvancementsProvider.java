@@ -62,20 +62,6 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                 .criterion("got_hook", InventoryChangedCriterion.Conditions.items(ModItems.HOOK))
                 .build(consumer, BsRolePlay.MOD_ID + "/got_hook");
 
-        Advancement musicDiscAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
-                .display(
-                        ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC,
-                        Text.translatable("advancement.music_disc.title"),
-                        Text.translatable("advancement.music_disc.desc"),
-                        null,
-                        AdvancementFrame.CHALLENGE,
-                        true,
-                        true,
-                        false
-                )
-                .criterion("got_music_disc", InventoryChangedCriterion.Conditions.items(ModItems.DOLOR_EN_EL_PECHO_CAROLA_MUSIC_DISC))
-                .build(consumer, BsRolePlay.MOD_ID + "/got_music_disc");
-
         Advancement fusionCoreAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
                 .display(
                         ModItems.FUSION_CORE,

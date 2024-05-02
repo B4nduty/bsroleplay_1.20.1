@@ -4,7 +4,6 @@ import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.item.client.items.PharaohStaffRenderer;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
@@ -24,7 +23,6 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -40,10 +38,13 @@ public class PharaohStaff extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private final PharaohStaffRenderer renderer = new PharaohStaffRenderer();
+            private PharaohStaffRenderer renderer;
 
             @Override
-            public BuiltinModelItemRenderer getCustomRenderer() {
+            public PharaohStaffRenderer getCustomRenderer() {
+                if (this.renderer == null)
+                    this.renderer = new PharaohStaffRenderer();
+
                 return this.renderer;
             }
         });
@@ -55,16 +56,12 @@ public class PharaohStaff extends Item implements GeoItem {
     }
 
     @Override
-    public double getTick(Object itemStack) {
-        return RenderUtils.getCurrentTick();
-    }
-
-    @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController(this,"controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
     }
 
     private PlayState predicate(AnimationState animationState) {
+        if (MinecraftClient.getInstance().player == null) return PlayState.STOP;
         if (BsRolePlay.CONFIG.common.modifyPharaohStaffLightning) {
             animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.LOOP));
             if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {

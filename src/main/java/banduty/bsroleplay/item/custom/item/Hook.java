@@ -4,7 +4,6 @@ import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.item.client.items.HookRenderer;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.EvokerFangsEntity;
@@ -26,7 +25,6 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -42,10 +40,13 @@ public class Hook extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private final HookRenderer renderer = new HookRenderer();
+            private HookRenderer renderer;
 
             @Override
-            public BuiltinModelItemRenderer getCustomRenderer() {
+            public HookRenderer getCustomRenderer() {
+                if (this.renderer == null)
+                    this.renderer = new HookRenderer();
+
                 return this.renderer;
             }
         });
@@ -57,13 +58,8 @@ public class Hook extends Item implements GeoItem {
     }
 
     @Override
-    public double getTick(Object itemStack) {
-        return RenderUtils.getCurrentTick();
-    }
-
-    @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController(this,"controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
     }
 
     private PlayState predicate(AnimationState animationState) {
