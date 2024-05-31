@@ -1,8 +1,10 @@
+
 package banduty.bsroleplay.util.loot_table;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.entity.EntityType;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -11,83 +13,27 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
+import java.util.stream.Stream;
+
 public class MobsLootTableModifier {
-    private static final Identifier BLAZE_ID
-            = new Identifier("minecraft", "entities/blaze");
-
-    private static final Identifier CREEPER_ID
-            = new Identifier("minecraft", "entities/creeper");
-
-    private static final Identifier DROWNED_ID
-            = new Identifier("minecraft", "entities/drowned");
-
-    private static final Identifier EVOKER_ID
-            = new Identifier("minecraft", "entities/evoker");
-
-    private static final Identifier HUSK_ID
-            = new Identifier("minecraft", "entities/husk");
-
-    private static final Identifier MAGMA_CUBE_ID
-            = new Identifier("minecraft", "entities/magma_cube");
-
-    private static final Identifier PHANTOM_ID
-            = new Identifier("minecraft", "entities/phantom");
-
-    private static final Identifier PILLAGER_ID
-            = new Identifier("minecraft", "entities/pillager");
-
-    private static final Identifier RAVAGER_ID
-            = new Identifier("minecraft", "entities/ravager");
-
-    private static final Identifier SKELETON_ID
-            = new Identifier("minecraft", "entities/skeleton");
-
-    private static final Identifier STRAY_ID
-            = new Identifier("minecraft", "entities/stray");
-
-    private static final Identifier VINDICATOR_ID
-            = new Identifier("minecraft", "entities/vindicator");
-
-    private static final Identifier WITCH_ID
-            = new Identifier("minecraft", "entities/witch");
-
-    private static final Identifier WITHER_SKELETON_ID
-            = new Identifier("minecraft", "entities/wither_skeleton");
-
-    private static final Identifier ZOMBIE_ID
-            = new Identifier("minecraft", "entities/zombie");
-
-    private static final Identifier ELDER_GUARDIAN_ID
-            = new Identifier("minecraft", "entities/elder_guardian");
-
-    private static final Identifier ENDER_DRAGON_ID
-            = new Identifier("minecraft", "entities/ender_dragon");
-
-    private static final Identifier WARDEN_ID
-            = new Identifier("minecraft", "entities/warden");
-
-    private static final Identifier WITHER_ID
-            = new Identifier("minecraft", "entities/wither");
-
-    private static final Identifier IRON_GOLEM_ID
-            = new Identifier("minecraft", "entities/iron_golem");
-
-    private static final Identifier SNOW_GOLEM_ID
-            = new Identifier("minecraft", "entities/snow_golem");
 
     public static void modifyMobsLootTables() {
         if (BsRolePlay.CONFIG.currency.hostileMobsDropCoins) {
+            List<Identifier> lootTableIds = Stream.of(
+                    EntityType.BLAZE, EntityType.CREEPER, EntityType.DROWNED, EntityType.EVOKER,
+                    EntityType.HUSK, EntityType.MAGMA_CUBE, EntityType.PHANTOM, EntityType.PILLAGER,
+                    EntityType.RAVAGER, EntityType.SKELETON, EntityType.STRAY, EntityType.VINDICATOR,
+                    EntityType.WITCH, EntityType.WITHER_SKELETON, EntityType.ZOMBIE
+            ).map(EntityType::getLootTableId).toList();
+
             LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-                if (BLAZE_ID.equals(id) || CREEPER_ID.equals(id) || DROWNED_ID.equals(id) || EVOKER_ID.equals(id) ||
-                        HUSK_ID.equals(id) || MAGMA_CUBE_ID.equals(id) || PHANTOM_ID.equals(id) ||
-                        PILLAGER_ID.equals(id) || RAVAGER_ID.equals(id) || SKELETON_ID.equals(id) ||
-                        STRAY_ID.equals(id) || VINDICATOR_ID.equals(id) || WITCH_ID.equals(id) ||
-                        WITHER_SKELETON_ID.equals(id) || ZOMBIE_ID.equals(id)) {
+                if (lootTableIds.stream().anyMatch(id::equals)) {
                     LootPool.Builder bronzeCoin = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getBronzeCoinChanceHostileMobs()))
-                            .with(ItemEntry.builder(ModItems.BRONZE_COIN))
-                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getBronzeCoinMaxAmountHostileMobs())).build());
+                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getCopperCoinChanceHostileMobs()))
+                            .with(ItemEntry.builder(ModItems.COPPER_COIN))
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getCopperCoinMaxAmountHostileMobs())).build());
 
                     tableBuilder.pool(bronzeCoin.build());
 
@@ -103,13 +49,17 @@ public class MobsLootTableModifier {
         }
 
         if (BsRolePlay.CONFIG.currency.bossMobsDropCoins) {
+            List<Identifier> lootTableIds = Stream.of(
+                    EntityType.ELDER_GUARDIAN, EntityType.ENDER_DRAGON, EntityType.WARDEN, EntityType.WITHER
+            ).map(EntityType::getLootTableId).toList();
+
             LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-                if (ELDER_GUARDIAN_ID.equals(id) || ENDER_DRAGON_ID.equals(id) || WARDEN_ID.equals(id) || WITHER_ID.equals(id)) {
+                if (lootTableIds.stream().anyMatch(id::equals)) {
                     LootPool.Builder bronzeCoin = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getBronzeCoinChanceBossMobs()))
-                            .with(ItemEntry.builder(ModItems.BRONZE_COIN))
-                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getBronzeCoinMaxAmountBossMobs())).build());
+                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getCopperCoinChanceBossMobs()))
+                            .with(ItemEntry.builder(ModItems.COPPER_COIN))
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getCopperCoinMaxAmountBossMobs())).build());
 
                     tableBuilder.pool(bronzeCoin.build());
 
@@ -133,7 +83,7 @@ public class MobsLootTableModifier {
         }
 
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if (IRON_GOLEM_ID.equals(id) || SNOW_GOLEM_ID.equals(id)) {
+            if (EntityType.IRON_GOLEM.getLootTableId().equals(id) || EntityType.SNOW_GOLEM.getLootTableId().equals(id)) {
                 LootPool.Builder bronzeCoin = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.common.getFusionCoreChanceGolem()))

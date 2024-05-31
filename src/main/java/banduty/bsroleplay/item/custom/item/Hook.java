@@ -1,10 +1,10 @@
+
 package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
-import banduty.bsroleplay.item.client.items.HookRenderer;
+import banduty.bsroleplay.item.client.items.HookModel;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.EvokerFangsEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -25,6 +25,7 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.renderer.GeoItemRenderer;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -40,12 +41,12 @@ public class Hook extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private HookRenderer renderer;
+            private GeoItemRenderer<Hook> renderer;
 
             @Override
-            public HookRenderer getCustomRenderer() {
+            public GeoItemRenderer<Hook> getCustomRenderer() {
                 if (this.renderer == null)
-                    this.renderer = new HookRenderer();
+                    this.renderer = new GeoItemRenderer<>(new HookModel());
 
                 return this.renderer;
             }
@@ -59,25 +60,25 @@ public class Hook extends Item implements GeoItem {
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this, "controller", 0, this::predicate));
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<Hook> animationState) {
+        if (MinecraftClient.getInstance().player == null) return PlayState.STOP;
         Item mainHand = MinecraftClient.getInstance().player.getMainHandStack().getItem();
-        if (mainHand == this) {
-            if (BsRolePlay.CONFIG.common.modifyHookEvokerFang) {
-                if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {
-                    animationState.getController().setAnimation(RawAnimation.begin().then("unabled", Animation.LoopType.HOLD_ON_LAST_FRAME));
-                    return PlayState.CONTINUE;
-                }
-                animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.HOLD_ON_LAST_FRAME));
-                return PlayState.CONTINUE;
-            }
-            animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));
-            return PlayState.CONTINUE;
-        } else {
+        if (mainHand != this) {
             return PlayState.STOP;
         }
+        if (BsRolePlay.CONFIG.common.modifyHookEvokerFang) {
+            if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {
+                animationState.getController().setAnimation(RawAnimation.begin().then("unabled", Animation.LoopType.HOLD_ON_LAST_FRAME));
+                return PlayState.CONTINUE;
+            }
+            animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.HOLD_ON_LAST_FRAME));
+            return PlayState.CONTINUE;
+        }
+        animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));
+        return PlayState.CONTINUE;
     }
 
     @Override
@@ -85,7 +86,7 @@ public class Hook extends Item implements GeoItem {
         return cache;
     }
 
-
+    @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
 
         if (BsRolePlay.CONFIG.common.modifyHookEvokerFang) {
@@ -93,8 +94,9 @@ public class Hook extends Item implements GeoItem {
             PlayerEntity player = context.getPlayer();
             World world = context.getWorld();
 
-            Entity evokerFangs = new EvokerFangsEntity(EntityType.EVOKER_FANGS, world);
+            EvokerFangsEntity evokerFangs = new EvokerFangsEntity(EntityType.EVOKER_FANGS, world);
             evokerFangs.setPosition(blockPos.toCenterPos());
+            evokerFangs.setOwner(player);
             world.spawnEntity(evokerFangs);
 
             context.getWorld().playSound(null, blockPos, SoundEvents.BLOCK_ANVIL_LAND,

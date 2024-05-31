@@ -1,3 +1,4 @@
+
 package banduty.bsroleplay.item.custom.armor;
 
 import banduty.bsroleplay.item.client.armor.FuneralMaskRenderer;
@@ -20,6 +21,7 @@ import java.util.function.Supplier;
 public class FuneralMaskItem extends ArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
+
     public FuneralMaskItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
     }
@@ -53,7 +55,7 @@ public class FuneralMaskItem extends ArmorItem implements GeoItem {
 
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<FuneralMaskItem> animationState) {
         animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.STOP;
     }

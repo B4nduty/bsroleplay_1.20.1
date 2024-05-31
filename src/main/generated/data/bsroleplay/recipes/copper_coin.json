@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bsroleplay:copper_coin_stack"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "bsroleplay:copper_coin"
+  }
+}

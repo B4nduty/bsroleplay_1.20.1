@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "bsroleplay:bronze_coin",
-    "bsroleplay:bronze_coin_stack",
+    "bsroleplay:copper_coin",
+    "bsroleplay:copper_coin_stack",
     "bsroleplay:gold_coin",
     "bsroleplay:gold_coin_stack",
     "bsroleplay:netherite_coin",

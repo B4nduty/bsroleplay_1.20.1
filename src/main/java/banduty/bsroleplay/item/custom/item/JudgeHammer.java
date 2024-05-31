@@ -1,7 +1,8 @@
+
 package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
-import banduty.bsroleplay.item.client.items.JudgeHammerRenderer;
+import banduty.bsroleplay.item.client.items.JudgeHammerModel;
 import banduty.bsroleplay.sound.ModSounds;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
@@ -22,6 +23,7 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.renderer.GeoItemRenderer;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -37,12 +39,12 @@ public class JudgeHammer extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private JudgeHammerRenderer renderer;
+            private GeoItemRenderer<JudgeHammer> renderer;
 
             @Override
-            public JudgeHammerRenderer getCustomRenderer() {
+            public GeoItemRenderer<JudgeHammer> getCustomRenderer() {
                 if (this.renderer == null)
-                    this.renderer = new JudgeHammerRenderer();
+                    this.renderer = new GeoItemRenderer<>(new JudgeHammerModel());
 
                 return this.renderer;
             }
@@ -59,7 +61,7 @@ public class JudgeHammer extends Item implements GeoItem {
         controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<JudgeHammer> animationState) {
         if (MinecraftClient.getInstance().player == null) return PlayState.STOP;
         Item mainHand = MinecraftClient.getInstance().player.getMainHandStack().getItem();
         if (mainHand == this) {

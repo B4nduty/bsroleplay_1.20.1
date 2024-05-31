@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gold_coin_stack": {
+    "has_netherite_coin_stack": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:gold_coin_stack"
+              "bsroleplay:netherite_coin_stack"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gold_coin_stack",
+      "has_netherite_coin_stack",
       "has_the_recipe"
     ]
   ],

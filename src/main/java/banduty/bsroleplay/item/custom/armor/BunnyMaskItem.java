@@ -53,7 +53,7 @@ public class BunnyMaskItem extends ArmorItem implements GeoItem {
 
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<BunnyMaskItem> animationState) {
         animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.STOP;
     }

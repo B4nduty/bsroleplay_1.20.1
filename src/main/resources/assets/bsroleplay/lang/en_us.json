@@ -59,10 +59,12 @@
 
   "block.bsroleplay.tiny_banduty": "Tiny Banduty",
 
-  "block.bsroleplay.bronze_coin": "Bronze Coin",
-  "block.bsroleplay.bronze_coin_stack": "Bronze Coin Stack",
+  "block.bsroleplay.copper_coin": "Copper Coin",
+  "block.bsroleplay.copper_coin_stack": "Copper Coin Stack",
   "block.bsroleplay.gold_coin": "Gold Coin",
   "block.bsroleplay.gold_coin_stack": "Gold Coin Stack",
+  "block.bsroleplay.amethyst_coin": "Amethyst Coin",
+  "block.bsroleplay.amethyst_coin_stack": "Amethyst Coin Stack",
   "block.bsroleplay.netherite_coin": "Netherite Coin",
   "block.bsroleplay.netherite_coin_stack": "Netherite Coin Stack",
 
@@ -80,6 +82,8 @@
   "item.bsroleplay.purple_briefcase": "Purple Briefcase",
 
   "item.bsroleplay.fedora": "Fedora",
+  "item.bsroleplay.fedora_purple": "Purple Fedora",
+  "item.bsroleplay.wallet": "Wallet",
 
   "item.bsroleplay.handcuffs": "Handcuffs",
   "item.bsroleplay.handcuffs_key": "Handcuffs Key",
@@ -149,18 +153,18 @@
   "text.autoconfig.bsroleplay.option.currency.hostileMobsDropCoins": "Hostile Mobs Drop Coins",
   "text.autoconfig.bsroleplay.option.currency.bossMobsDropCoins": "Boss Mobs Drop Coins",
   "text.autoconfig.bsroleplay.option.currency.oresDropCoins": "Ores Drop Coins",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceHostileMobs": "Hostile Mobs - Bronze Coin Drop Chance",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountHostileMobs": "Hostile Mobs - Bronze Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinChanceHostileMobs": "Hostile Mobs - Copper Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinMaxAmountHostileMobs": "Hostile Mobs - Copper Coin Max Drop",
   "text.autoconfig.bsroleplay.option.currency.goldCoinChanceHostileMobs": "Hostile Mobs - Gold Coin Drop Chance",
   "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountHostileMobs": "Hostile Mobs - Gold Coin Max Drop",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceBossMobs": "Boss Mobs - Bronze Coin Drop Chance",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountBossMobs": "Boss Mobs - Bronze Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinChanceBossMobs": "Boss Mobs - Copper Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinMaxAmountBossMobs": "Boss Mobs - Copper Coin Max Drop",
   "text.autoconfig.bsroleplay.option.currency.goldCoinChanceBossMobs": "Boss Mobs - Gold Drop Coin Chance",
   "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountBossMobs": "Boss Mobs - Gold Coin Max Drop",
   "text.autoconfig.bsroleplay.option.currency.netheriteCoinChanceBossMobs": "Boss Mobs - Netherite Coin Drop Chance",
   "text.autoconfig.bsroleplay.option.currency.netheriteCoinMaxAmountBossMobs": "Boss Mobs - Netherite Coin Max Drop",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceCopperOre": "Copper Ore - Bronze Coin Drop Chance",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountCopperOre": "Copper Ore - Bronze Coin Max Drop",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinChanceCopperOre": "Copper Ore - Copper Coin Drop Chance",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinMaxAmountCopperOre": "Copper Ore - Copper Coin Max Drop",
   "text.autoconfig.bsroleplay.option.currency.goldCoinChanceGoldOre": "Gold Ore - Gold Coin Drop Chance",
   "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountGoldOre": "Gold Ore - Gold Coin Max Drop",
 

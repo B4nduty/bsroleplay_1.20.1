@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "bsroleplay:copper_coin"
+    },
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "GCL",
+    "LLL"
+  ],
+  "result": {
+    "item": "bsroleplay:wallet"
+  },
+  "show_notification": true
+}

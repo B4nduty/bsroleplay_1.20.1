@@ -21,8 +21,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.ROLEPLAY_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.HANDCUFFS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.HANDCUFFS_KEY, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANTI_GOD_HANDCUFFS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HANDCUFFS_KEY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.POLICE_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.POLICE_CHESTPLATE, Models.GENERATED);
@@ -69,9 +69,15 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.FUSION_CORE, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.BRONZE_COIN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_COIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOLD_COIN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AMETHYST_COIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHERITE_COIN, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.COPPER_COIN_STACK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLD_COIN_STACK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AMETHYST_COIN_STACK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_COIN_STACK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GADGET_HAT, Models.GENERATED);
 
@@ -86,5 +92,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LAWYER_BOOTS_PURPLE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FEDORA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FEDORA_PURPLE, Models.GENERATED);
     }
 }

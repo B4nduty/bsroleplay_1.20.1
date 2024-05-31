@@ -14,8 +14,7 @@
   },
   "pattern": [
     "BBB",
-    "WRW",
-    "   "
+    "WRW"
   ],
   "result": {
     "item": "bsroleplay:dealer"

@@ -1,3 +1,4 @@
+
 package banduty.bsroleplay.block.entity;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -10,7 +11,7 @@ import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.RenderUtils;
 
 public class TinyBandutyBlockEntity extends BlockEntity implements GeoBlockEntity {
-    private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+    private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
     public TinyBandutyBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.TINY_BANDUTY_BLOCK_ENTITY, pos, state);
@@ -18,11 +19,11 @@ public class TinyBandutyBlockEntity extends BlockEntity implements GeoBlockEntit
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController(this,"controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
 
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<TinyBandutyBlockEntity> animationState) {
         animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.STOP;
     }

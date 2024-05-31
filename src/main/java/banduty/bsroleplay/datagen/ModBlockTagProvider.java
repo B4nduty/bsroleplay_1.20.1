@@ -1,6 +1,7 @@
+
 package banduty.bsroleplay.datagen;
 
-import banduty.bsroleplay.block.ModBlock;
+import banduty.bsroleplay.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -15,19 +16,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlock.BRONZE_COIN)
-                .add(ModBlock.BRONZE_COIN_STACK)
-                .add(ModBlock.GOLD_COIN)
-                .add(ModBlock.GOLD_COIN_STACK)
-                .add(ModBlock.NETHERITE_COIN)
-                .add(ModBlock.NETHERITE_COIN_STACK);
+                .add(ModBlocks.COPPER_COIN)
+                .add(ModBlocks.COPPER_COIN_STACK)
+                .add(ModBlocks.GOLD_COIN)
+                .add(ModBlocks.GOLD_COIN_STACK)
+                .add(ModBlocks.NETHERITE_COIN)
+                .add(ModBlocks.NETHERITE_COIN_STACK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlock.BRONZE_COIN)
-                .add(ModBlock.BRONZE_COIN_STACK)
-                .add(ModBlock.GOLD_COIN)
-                .add(ModBlock.GOLD_COIN_STACK)
-                .add(ModBlock.NETHERITE_COIN)
-                .add(ModBlock.NETHERITE_COIN_STACK);
+                .add(ModBlocks.COPPER_COIN)
+                .add(ModBlocks.COPPER_COIN_STACK)
+                .add(ModBlocks.GOLD_COIN)
+                .add(ModBlocks.GOLD_COIN_STACK)
+                .add(ModBlocks.NETHERITE_COIN)
+                .add(ModBlocks.NETHERITE_COIN_STACK);
     }
 }

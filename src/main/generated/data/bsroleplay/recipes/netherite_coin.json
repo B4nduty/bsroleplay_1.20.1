@@ -1,18 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
-      "item": "bsroleplay:gold_coin_stack"
+  "ingredients": [
+    {
+      "item": "bsroleplay:netherite_coin_stack"
     }
-  },
-  "pattern": [
-    "###",
-    "###",
-    "###"
   ],
   "result": {
+    "count": 9,
     "item": "bsroleplay:netherite_coin"
-  },
-  "show_notification": true
+  }
 }

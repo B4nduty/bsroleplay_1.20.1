@@ -1,3 +1,4 @@
+
 package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
@@ -32,7 +33,7 @@ public class SadPill extends Item {
 
     @Override
     public int getMaxUseTime(ItemStack stack) {
-        return BsRolePlay.CONFIG.common.getSadPillConsumeTime()*20;
+        return BsRolePlay.CONFIG.common.getSadPillConsumeTime() * 20;
     }
 
     @Override
@@ -42,14 +43,17 @@ public class SadPill extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        if (!world.isClient() && user instanceof PlayerEntity player && !player.hasStatusEffect(StatusEffects.WEAKNESS) && !player.hasStatusEffect(StatusEffects.MINING_FATIGUE) && !player.hasStatusEffect(StatusEffects.SLOWNESS)) {
+        if (!world.isClient() && user instanceof PlayerEntity player &&
+                !player.hasStatusEffect(StatusEffects.WEAKNESS) &&
+                !player.hasStatusEffect(StatusEffects.MINING_FATIGUE) &&
+                !player.hasStatusEffect(StatusEffects.SLOWNESS)) {
             if (!player.isCreative()) stack.decrement(1);
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, BsRolePlay.CONFIG.common.getSadPill1stStageTime()*20, 0, false, false,false));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, BsRolePlay.CONFIG.common.getSadPill1stStageTime()*20, 0, false, false,false));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, BsRolePlay.CONFIG.common.getSadPill1stStageTime()*20, 3, false, false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, BsRolePlay.CONFIG.common.getSadPill1stStageTime() * 20, 0, false, false, false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, BsRolePlay.CONFIG.common.getSadPill1stStageTime() * 20, 0, false, false, false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, BsRolePlay.CONFIG.common.getSadPill1stStageTime() * 20, 3, false, false, false));
 
-            player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getSadPill1stStageTime()*20);
-            }
+            player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getSadPill1stStageTime() * 20);
+        }
 
         return stack;
     }
@@ -57,7 +61,7 @@ public class SadPill extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (BsRolePlay.CONFIG.common.showItemTooltips) {
-            tooltip.add(Text.literal("Not applied if has:").formatted(Formatting.RED));
+            tooltip.add(Text.literal("Not applied if the player has:").formatted(Formatting.RED));
             tooltip.add(Text.literal("- Weakness").formatted(Formatting.WHITE));
             tooltip.add(Text.literal("- Mining Fatigue").formatted(Formatting.WHITE));
             tooltip.add(Text.literal("- Slowness").formatted(Formatting.WHITE));

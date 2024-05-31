@@ -1,3 +1,4 @@
+
 package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
@@ -17,7 +18,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 
 public class HandCuffs extends Item {
 
@@ -27,34 +27,31 @@ public class HandCuffs extends Item {
 
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
-        if (entity instanceof PlayerEntity)
-            if (!((PlayerEntity) entity).isCreative()) {
-                if (!BlockedMilk.isMilkBlocked((IEntityDataSaver) entity)) {
-                    if (!user.isCreative()) stack.decrement(1);
-                    entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,
-                            -1, BsRolePlay.CONFIG.common.getHandcuffsSlownessLevel()-1, false,
-                            false, false));
-                    entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS,
-                            -1, BsRolePlay.CONFIG.common.getHandcuffsWeaknessLevel()-1, false,
-                            false, false));
-                    entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
-                            -1, 217, false, false, false));
+        if (entity instanceof PlayerEntity playerTarget && !playerTarget.isCreative()) {
+            if (!BlockedMilk.isMilkBlocked((IEntityDataSaver) entity)) {
+                if (!user.isCreative()) stack.decrement(1);
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,
+                        -1, BsRolePlay.CONFIG.common.getHandcuffsSlownessLevel() - 1, false,
+                        false, false));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS,
+                        -1, BsRolePlay.CONFIG.common.getHandcuffsWeaknessLevel() - 1, false,
+                        false, false));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
+                        -1, 217, false, false, false));
 
-                    BlockedMilk.setMilkBlocked(((IEntityDataSaver) entity), true);
+                BlockedMilk.setMilkBlocked(((IEntityDataSaver) entity), true);
 
+                if (user.getWorld() instanceof ServerWorld serverWorld) {
+                    BlockPos blockPos = user.getBlockPos();
+                    serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFED, SoundCategory.PLAYERS, 1f, 1f);
+                    entity.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2").formatted(Formatting.RED));
+                    user.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_1", entity.getName().getString()).formatted(Formatting.RED));
+                }
 
-                    World world = user.getWorld();
-                    if (!world.isClient) {
-                        ServerWorld serverWorld = (ServerWorld) user.getWorld();
-                        BlockPos blockPos = user.getBlockPos();
-                        serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFED, SoundCategory.PLAYERS, 1f, 1f);
-                        entity.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2").formatted(Formatting.RED));
-                        user.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_1", entity.getName().getString()).formatted(Formatting.RED));
-                    }
+                user.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getHandcuffsCooldown() * 20);
 
-                    user.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getHandcuffsCooldown() * 20);
+                return ActionResult.SUCCESS;
 
-                    return ActionResult.SUCCESS;
             }
         }
         return ActionResult.PASS;

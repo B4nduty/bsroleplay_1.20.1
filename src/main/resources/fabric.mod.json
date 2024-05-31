@@ -5,7 +5,12 @@
 	"name": "BsRolePlay",
 	"description": "Let’s Roleplay!",
 	"authors": [
-		"Banduty"
+		"Banduty - The Ceo"
+	],
+	"contributors": [
+		"ShiroJr - The Mind of Coding",
+		"7410 - The Life Saver",
+		"GarnishHat - The Funny Guy"
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/bandutys-roleplay",
@@ -36,7 +41,7 @@
 		"bsroleplay.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.10",
+		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"geckolib": ">=4.4.4",

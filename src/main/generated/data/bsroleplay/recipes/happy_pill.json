@@ -10,9 +10,8 @@
     }
   },
   "pattern": [
-    "   ",
-    " W ",
-    " P "
+    "W",
+    "P"
   ],
   "result": {
     "item": "bsroleplay:happy_pill"

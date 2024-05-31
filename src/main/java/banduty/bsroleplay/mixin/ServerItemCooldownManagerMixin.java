@@ -22,7 +22,7 @@ public class ServerItemCooldownManagerMixin {
     private void onCooldownUpdate(Item item, int duration, CallbackInfo ci) {
         if (duration == 0) {
             if (item == ModItems.SAD_PILL) {
-            addEffectsSadPill(this.player);
+                addEffectsSadPill(this.player);
             }
         }
     }
@@ -38,6 +38,6 @@ public class ServerItemCooldownManagerMixin {
         player.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 30 * 20, 1, false, false, false));
         player.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 60 * 20, 0, false, false, false));
         player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 10, 0, false, false, false));
-        player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 30*20, 2, false, false, false));
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 30 * 20, 2, false, false, false));
     }
 }

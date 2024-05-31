@@ -18,5 +18,12 @@
     "sounds": [
       "bsroleplay:handcuffednt"
     ]
+  },
+
+  "wallet_close": {
+    "subtitle": "sounds.bsroleplay.wallet_close",
+    "sounds": [
+      "bsroleplay:wallet_close"
+    ]
   }
 }

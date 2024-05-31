@@ -59,10 +59,12 @@
 
   "block.bsroleplay.tiny_banduty": "Mini Banduty",
 
-  "block.bsroleplay.bronze_coin": "Moneda de Bronce",
-  "block.bsroleplay.bronze_coin_stack": "Pila de Monedas de Bronce",
+  "block.bsroleplay.copper_coin": "Moneda de Cobre",
+  "block.bsroleplay.copper_coin_stack": "Pila de Monedas de Cobre",
   "block.bsroleplay.gold_coin": "Moneda de Oro",
   "block.bsroleplay.gold_coin_stack": "Pila de Monedas de Oro",
+  "block.bsroleplay.amethyst_coin": "Moneda de Amatista",
+  "block.bsroleplay.amethyst_coin_stack": "Pila de Monedas de Amatista",
   "block.bsroleplay.netherite_coin": "Moneda de Netherita",
   "block.bsroleplay.netherite_coin_stack": "Pila de Monedas de Netherita",
 
@@ -80,6 +82,8 @@
   "item.bsroleplay.purple_briefcase": "Maletín Morado",
 
   "item.bsroleplay.fedora": "Sombrero de Fieltro",
+  "item.bsroleplay.fedora_purple": "Sombrero de Fieltro Morado",
+  "item.bsroleplay.wallet": "Cartera",
 
   "item.bsroleplay.handcuffs": "Esposas",
   "item.bsroleplay.handcuffs_key": "Llave de Esposas",
@@ -149,18 +153,18 @@
   "text.autoconfig.bsroleplay.option.currency.hostileMobsDropCoins": "Mobs Hostiles Sueltan Monedas",
   "text.autoconfig.bsroleplay.option.currency.bossMobsDropCoins": "Mobs Jefes Sueltan Monedas",
   "text.autoconfig.bsroleplay.option.currency.oresDropCoins": "Minerales Sueltan Monedas",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceHostileMobs": "Mobs Hostiles - Probabilidad de Caída de Moneda de Bronce",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountHostileMobs": "Mobs Hostiles - Cantidad Máxima de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinChanceHostileMobs": "Mobs Hostiles - Probabilidad de Caída de Moneda de Cobre",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinMaxAmountHostileMobs": "Mobs Hostiles - Cantidad Máxima de Caída de Moneda de Cobre",
   "text.autoconfig.bsroleplay.option.currency.goldCoinChanceHostileMobs": "Mobs Hostiles - Probabilidad de Caída de Moneda de Oro",
   "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountHostileMobs": "Mobs Hostiles - Cantidad Máxima de Caída de Moneda de Oro",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceBossMobs": "Mobs Jefes - Probabilidad de Caída de Moneda de Bronce",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountBossMobs": "Mobs Jefes - Cantidad Máxima de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinChanceBossMobs": "Mobs Jefes - Probabilidad de Caída de Moneda de Cobre",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinMaxAmountBossMobs": "Mobs Jefes - Cantidad Máxima de Caída de Moneda de Cobre",
   "text.autoconfig.bsroleplay.option.currency.goldCoinChanceBossMobs": "Mobs Jefes - Probabilidad de Caída de Moneda de Oro",
   "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountBossMobs": "Mobs Jefes - Cantidad Máxima de Caída de Moneda de Oro",
   "text.autoconfig.bsroleplay.option.currency.netheriteCoinChanceBossMobs": "Mobs Jefes - Probabilidad de Caída de Moneda de Netherite",
   "text.autoconfig.bsroleplay.option.currency.netheriteCoinMaxAmountBossMobs": "Mobs Jefes - Cantidad Máxima de Caída de Moneda de Netherite",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinChanceCopperOre": "Mineral de Cobre - Probabilidad de Caída de Moneda de Bronce",
-  "text.autoconfig.bsroleplay.option.currency.bronzeCoinMaxAmountCopperOre": "Mineral de Cobre - Cantidad Máxima de Caída de Moneda de Bronce",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinChanceCopperOre": "Mineral de Cobre - Probabilidad de Caída de Moneda de Cobre",
+  "text.autoconfig.bsroleplay.option.currency.copperCoinMaxAmountCopperOre": "Mineral de Cobre - Cantidad Máxima de Caída de Moneda de Cobre",
   "text.autoconfig.bsroleplay.option.currency.goldCoinChanceGoldOre": "Mineral de Oro - Probabilidad de Caída de Moneda de Oro",
   "text.autoconfig.bsroleplay.option.currency.goldCoinMaxAmountGoldOre": "Mineral de Oro - Cantidad Máxima de Caída de Moneda de Oro",
 

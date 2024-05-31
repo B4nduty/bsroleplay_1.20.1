@@ -1,7 +1,8 @@
+
 package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
-import banduty.bsroleplay.item.client.items.PharaohStaffRenderer;
+import banduty.bsroleplay.item.client.items.PharaohStaffModel;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -23,6 +24,7 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.renderer.GeoItemRenderer;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -38,12 +40,12 @@ public class PharaohStaff extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private PharaohStaffRenderer renderer;
+            private GeoItemRenderer<PharaohStaff> renderer;
 
             @Override
-            public PharaohStaffRenderer getCustomRenderer() {
+            public GeoItemRenderer<PharaohStaff> getCustomRenderer() {
                 if (this.renderer == null)
-                    this.renderer = new PharaohStaffRenderer();
+                    this.renderer = new GeoItemRenderer<>(new PharaohStaffModel());
 
                 return this.renderer;
             }
@@ -60,7 +62,7 @@ public class PharaohStaff extends Item implements GeoItem {
         controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<PharaohStaff> animationState) {
         if (MinecraftClient.getInstance().player == null) return PlayState.STOP;
         if (BsRolePlay.CONFIG.common.modifyPharaohStaffLightning) {
             animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.LOOP));

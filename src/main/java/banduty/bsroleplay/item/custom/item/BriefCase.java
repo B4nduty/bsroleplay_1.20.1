@@ -1,6 +1,7 @@
+
 package banduty.bsroleplay.item.custom.item;
 
-import banduty.bsroleplay.item.client.items.BriefcaseRenderer;
+import banduty.bsroleplay.item.client.items.BriefcaseModel;
 import net.minecraft.item.Item;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -8,6 +9,7 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.renderer.GeoItemRenderer;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;
@@ -22,12 +24,12 @@ public class BriefCase extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private BriefcaseRenderer renderer;
+            private GeoItemRenderer<BriefCase> renderer;
 
             @Override
-            public BriefcaseRenderer getCustomRenderer() {
+            public GeoItemRenderer<BriefCase> getCustomRenderer() {
                 if (this.renderer == null)
-                    this.renderer = new BriefcaseRenderer();
+                    this.renderer = new GeoItemRenderer<>(new BriefcaseModel());
 
                 return this.renderer;
             }
@@ -44,7 +46,7 @@ public class BriefCase extends Item implements GeoItem {
         controllers.add(new AnimationController<>(this,"controller", 0, this::predicate));
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<BriefCase> animationState) {
         animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.STOP;
     }

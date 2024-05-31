@@ -349,22 +349,22 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Bronze Coin drop chance by Hostile Mobs | Default: 0.3f
+                Copper Coin drop chance by Hostile Mobs | Default: 0.3f
                 """)
-        float bronzeCoinChanceHostileMobs = 0.3f;
+        float copperCoinChanceHostileMobs = 0.3f;
 
-        public float getBronzeCoinChanceHostileMobs() {
-            return Math.min(1, Math.max(0, bronzeCoinChanceHostileMobs));
+        public float getCopperCoinChanceHostileMobs() {
+            return Math.min(1, Math.max(0, copperCoinChanceHostileMobs));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Bronze Coin amount drop by Hostile Mobs | Default: 3.0f
+                Max Copper Coin amount drop by Hostile Mobs | Default: 3.0f
                 """)
-        float bronzeCoinMaxAmountHostileMobs = 3.0f;
+        float copperCoinMaxAmountHostileMobs = 3.0f;
 
-        public float getBronzeCoinMaxAmountHostileMobs() {
-            return Math.max(0, bronzeCoinMaxAmountHostileMobs);
+        public float getCopperCoinMaxAmountHostileMobs() {
+            return Math.max(0, copperCoinMaxAmountHostileMobs);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -389,22 +389,22 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Bronze Coin drop chance by Boss Mobs | Default: 1.0f
+                Copper Coin drop chance by Boss Mobs | Default: 1.0f
                 """)
-        float bronzeCoinChanceBossMobs = 1.0f;
+        float copperCoinChanceBossMobs = 1.0f;
 
-        public float getBronzeCoinChanceBossMobs() {
-            return Math.min(1, Math.max(0, bronzeCoinChanceBossMobs));
+        public float getCopperCoinChanceBossMobs() {
+            return Math.min(1, Math.max(0, copperCoinChanceBossMobs));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Bronze Coin amount drop by Boss Mobs | Default: 2.0f
+                Max Copper Coin amount drop by Boss Mobs | Default: 2.0f
                 """)
-        float bronzeCoinMaxAmountBossMobs = 2.0f;
+        float copperCoinMaxAmountBossMobs = 2.0f;
 
-        public float getBronzeCoinMaxAmountBossMobs() {
-            return Math.max(0, bronzeCoinMaxAmountBossMobs);
+        public float getCopperCoinMaxAmountBossMobs() {
+            return Math.max(0, copperCoinMaxAmountBossMobs);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -449,22 +449,22 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Bronze Coin drop chance by Copper Ore | Default: 0.2f
+                Copper Coin drop chance by Copper Ore | Default: 0.2f
                 """)
-        float bronzeCoinChanceCopperOre = 0.2f;
+        float copperCoinChanceCopperOre = 0.2f;
 
-        public float getBronzeCoinChanceCopperOre() {
-            return Math.min(1, Math.max(0, bronzeCoinChanceCopperOre));
+        public float getCopperCoinChanceCopperOre() {
+            return Math.min(1, Math.max(0, copperCoinChanceCopperOre));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Bronze Coin amount drop by Copper Ore | Default: 5.0f
+                Max Copper Coin amount drop by Copper Ore | Default: 5.0f
                 """)
-        float bronzeCoinMaxAmountCopperOre = 5.0f;
+        float copperCoinMaxAmountCopperOre = 5.0f;
 
-        public float getBronzeCoinMaxAmountCopperOre() {
-            return Math.max(0, bronzeCoinMaxAmountCopperOre);
+        public float getCopperCoinMaxAmountCopperOre() {
+            return Math.max(0, copperCoinMaxAmountCopperOre);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bronze_coin_stack": {
+    "has_gold_coin_stack": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:bronze_coin_stack"
+              "bsroleplay:gold_coin_stack"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bronze_coin_stack",
+      "has_gold_coin_stack",
       "has_the_recipe"
     ]
   ],

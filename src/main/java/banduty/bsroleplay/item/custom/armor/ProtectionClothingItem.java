@@ -1,3 +1,4 @@
+
 package banduty.bsroleplay.item.custom.armor;
 
 import banduty.bsroleplay.BsRolePlay;
@@ -81,7 +82,7 @@ public class ProtectionClothingItem extends ArmorItem implements GeoItem {
 
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<ProtectionClothingItem> animationState) {
         animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.STOP;
     }

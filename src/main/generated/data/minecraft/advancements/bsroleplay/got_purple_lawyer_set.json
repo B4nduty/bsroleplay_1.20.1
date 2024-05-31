@@ -37,6 +37,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "got_purple_fedora": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bsroleplay:fedora_purple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "got_purple_leggings": {
       "conditions": {
         "items": [
@@ -68,6 +80,9 @@
   "requirements": [
     [
       "got_purple_briefcase"
+    ],
+    [
+      "got_purple_fedora"
     ],
     [
       "got_purple_chestplate"

@@ -10,9 +10,8 @@
     }
   },
   "pattern": [
-    "   ",
-    " N ",
-    " P "
+    "N",
+    "P"
   ],
   "result": {
     "item": "bsroleplay:sad_pill"

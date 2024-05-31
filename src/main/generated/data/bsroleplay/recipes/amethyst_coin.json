@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bsroleplay:amethyst_coin_stack"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "bsroleplay:amethyst_coin"
+  }
+}

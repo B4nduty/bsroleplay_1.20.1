@@ -1,11 +1,11 @@
 package banduty.bsroleplay.item;
 
 import banduty.bsroleplay.BsRolePlay;
-import banduty.bsroleplay.block.ModBlock;
+import banduty.bsroleplay.block.ModBlocks;
 import banduty.bsroleplay.item.custom.armor.*;
 import banduty.bsroleplay.item.custom.blocks.TinyBandutyItem;
+import banduty.bsroleplay.item.custom.blocks.currency.CoinItem;
 import banduty.bsroleplay.item.custom.blocks.currency.CoinStackItem;
-import banduty.bsroleplay.item.custom.blocks.currency.RPCoinItem;
 import banduty.bsroleplay.item.custom.item.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ArmorItem;
@@ -134,7 +134,7 @@ public class ModItems {
             new BriefCase(new FabricItemSettings().maxCount(1)));
 
     public static final Item TINY_BANDUTY_ITEM = registerItem("tiny_banduty",
-            new TinyBandutyItem(ModBlock.TINY_BANDUTY, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+            new TinyBandutyItem(ModBlocks.TINY_BANDUTY, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
 
     public static final Item HANDCUFFS = registerItem("handcuffs",
             new HandCuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
@@ -146,27 +146,40 @@ public class ModItems {
     public static final Item FEDORA = registerItem("fedora",
             new ElegantItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
 
-    public static final Item BRONZE_COIN = registerItem("bronze_coin",
-            new RPCoinItem(ModBlock.BRONZE_COIN, new FabricItemSettings()));
+    public static final Item FEDORA_PURPLE = registerItem("fedora_purple",
+            new ElegantItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
+
+    public static final Item COPPER_COIN = registerItem("copper_coin",
+            new CoinItem(ModBlocks.COPPER_COIN, 1, new FabricItemSettings()));
 
     public static final Item GOLD_COIN = registerItem("gold_coin",
-            new RPCoinItem(ModBlock.GOLD_COIN, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+            new CoinItem(ModBlocks.GOLD_COIN, 10, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+
+    public static final Item AMETHYST_COIN = registerItem("amethyst_coin",
+            new CoinItem(ModBlocks.AMETHYST_COIN, 100, new FabricItemSettings().rarity(Rarity.RARE)));
 
     public static final Item NETHERITE_COIN = registerItem("netherite_coin",
-            new RPCoinItem(ModBlock.NETHERITE_COIN, new FabricItemSettings().rarity(Rarity.EPIC)));
+            new CoinItem(ModBlocks.NETHERITE_COIN, 1000, new FabricItemSettings().rarity(Rarity.EPIC)));
 
-    public static final Item BRONZE_COIN_STACK = registerItem("bronze_coin_stack",
-            new CoinStackItem(ModBlock.BRONZE_COIN_STACK, new FabricItemSettings()));
+    public static final Item COPPER_COIN_STACK = registerItem("copper_coin_stack",
+            new CoinStackItem(ModBlocks.COPPER_COIN_STACK, 9, new FabricItemSettings()));
 
     public static final Item GOLD_COIN_STACK = registerItem("gold_coin_stack",
-            new CoinStackItem(ModBlock.GOLD_COIN_STACK, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+            new CoinStackItem(ModBlocks.GOLD_COIN_STACK, 90, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+
+    public static final Item AMETHYST_COIN_STACK = registerItem("amethyst_coin_stack",
+            new CoinStackItem(ModBlocks.AMETHYST_COIN_STACK, 900, new FabricItemSettings().rarity(Rarity.RARE)));
 
     public static final Item NETHERITE_COIN_STACK = registerItem("netherite_coin_stack",
-            new CoinStackItem(ModBlock.NETHERITE_COIN_STACK, new FabricItemSettings().rarity(Rarity.EPIC)));
+            new CoinStackItem(ModBlocks.NETHERITE_COIN_STACK, 9000, new FabricItemSettings().rarity(Rarity.EPIC)));
+
+    public static final Item WALLET = registerItem("wallet",
+            new WalletItem(new FabricItemSettings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BsRolePlay.MOD_ID, name), item);
     }
+
     public static void registerModItems() {
         BsRolePlay.LOGGER.info("Registering Mod Items for " + BsRolePlay.MOD_ID);
     }

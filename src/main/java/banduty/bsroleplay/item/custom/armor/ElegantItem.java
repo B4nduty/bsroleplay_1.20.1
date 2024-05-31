@@ -1,3 +1,4 @@
+
 package banduty.bsroleplay.item.custom.armor;
 
 import banduty.bsroleplay.item.client.armor.ElegantRenderer;
@@ -53,7 +54,7 @@ public class ElegantItem extends ArmorItem implements GeoItem {
 
     }
 
-    private PlayState predicate(AnimationState animationState) {
+    private PlayState predicate(AnimationState<ElegantItem> animationState) {
         animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.STOP;
     }
