@@ -2,19 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "N": {
-      "item": "minecraft:nether_star"
-    },
     "P": {
-      "item": "bsroleplay:fusion_core"
+      "item": "bsroleplay:protection_helmet"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
     }
   },
   "pattern": [
-    "N",
-    "P"
+    "PR"
   ],
   "result": {
-    "item": "bsroleplay:sad_pill"
+    "item": "bsroleplay:red_protection_helmet"
   },
   "show_notification": true
 }

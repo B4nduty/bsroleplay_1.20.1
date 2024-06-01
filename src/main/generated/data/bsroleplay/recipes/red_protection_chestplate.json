@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "bsroleplay:protection_chestplate"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "pattern": [
+    "PR"
+  ],
+  "result": {
+    "item": "bsroleplay:red_protection_chestplate"
+  },
+  "show_notification": true
+}

@@ -176,9 +176,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Fusion Core drop chance by Golems | Default: 0.3f
+                Fusion Core drop chance by Golems | Default: 0.1f
                 """)
-        float fusionCoreChanceGolem = 0.01f;
+        float fusionCoreChanceGolem = 0.1f;
 
         public float getFusionCoreChanceGolem() {
             return Math.min(1, Math.max(0, fusionCoreChanceGolem));
@@ -196,112 +196,92 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Happy Pill Blindness Time in Seconds | Default: 40
+                HealKit Blindness Time in Seconds | Default: 40
                 """)
-        int happyPillBlindnessTime = 40;
+        int healKitBlindnessTime = 90;
 
-        public int getHappyPillBlindnessTime() {
-            return Math.max(0, happyPillBlindnessTime);
+        public int getHealKitBlindnessTime() {
+            return Math.max(0, healKitBlindnessTime);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Blindness Chance | Default: 0.1f
+                HealKit Blindness Chance | Default: 0.001f
                 """)
-        float happyPillBlindnessChance = 0.1f;
+        float healKitBlindnessChance = 0.001f;
 
-        public float getHappyPillBlindnessChance() {
-            return Math.min(1, Math.max(0, happyPillBlindnessChance));
+        public float getHealKitBlindnessChance() {
+            return Math.min(1, Math.max(0, healKitBlindnessChance));
         }
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Happy Pill Weakness Time in Seconds | Default: 30
+                HealKit Weakness Time in Seconds | Default: 40
                 """)
-        int happyPillWeaknessTime = 30;
+        int healKitWeaknessTime = 40;
 
-        public int getHappyPillWeaknessTime() {
-            return Math.max(0, happyPillWeaknessTime);
+        public int getHealKitWeaknessTime() {
+            return Math.max(0, healKitWeaknessTime);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Weakness Chance | Default: 1f
+                HealKit Weakness Chance | Default: 0.3f
                 """)
-        float happyPillWeaknessChance = 1f;
+        float healKitWeaknessChance = 0.3f;
 
-        public float getHappyPillWeaknessChance() {
-            return Math.min(1, Math.max(0, happyPillWeaknessChance));
+        public float getHealKitWeaknessChance() {
+            return Math.min(1, Math.max(0, healKitWeaknessChance));
         }
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Happy Pill Nausea Time in Seconds | Default: 30
+                HealKit Nausea Time in Seconds | Default: 25
                 """)
-        int happyPillNauseaTime = 30;
+        int healKitNauseaTime = 25;
 
-        public int getHappyPillNauseaTime() {
-            return Math.max(0, happyPillNauseaTime);
+        public int getHealKitNauseaTime() {
+            return Math.max(0, healKitNauseaTime);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Nausea Chance | Default: 0.1f
+                HealKit Nausea Chance | Default: 0.05f
                 """)
-        float happyPillNauseaChance = 0.1f;
+        float healKitNauseaChance = 0.05f;
 
-        public float getHappyPillNauseaChance() {
-            return Math.min(1, Math.max(0, happyPillNauseaChance));
+        public float getHealKitNauseaChance() {
+            return Math.min(1, Math.max(0, healKitNauseaChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Happy Pill Instant Health Chance | Default: 0.5f
+                HealKit Instant Health Chance | Default: 1.0f
                 """)
-        float happyPillInstantHealthChance = 0.5f;
+        float healKitInstantHealthChance = 1.0f;
 
-        public float getHappyPillInstantHealthChance() {
-            return Math.min(1, Math.max(0, happyPillInstantHealthChance));
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("""
-                Happy Pill Max Stack | Default: 3
-                """)
-        int happyPillMaxStack = 3;
-
-        public int getHappyPillMaxStack() {
-            return Math.max(0, happyPillMaxStack);
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("""
-                Sad Pill Max Stack | Default: 3
-                """)
-        int sadPillMaxStack = 3;
-
-        public int getSadPillMaxStack() {
-            return Math.max(0, sadPillMaxStack);
+        public float getHealKitInstantHealthChance() {
+            return Math.min(1, Math.max(0, healKitInstantHealthChance));
         }
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Sad Pill Consume Time in Seconds | Default: 2
+                InvKit Consume Time in Seconds | Default: 2
                 """)
-        int sadPillConsumeTime = 2;
+        int invKitConsumeTime = 2;
 
-        public int getSadPillConsumeTime() {
-            return Math.max(0, sadPillConsumeTime);
+        public int getInvKitConsumeTime() {
+            return Math.max(0, invKitConsumeTime);
         }
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Sad Pill 1st Stage in Seconds | Default: 30
+                InvKit 1st Stage in Seconds | Default: 20
                 """)
-        int sadPill1stStageTime = 30;
+        int invKit1stStageTime = 20;
 
-        public int getSadPill1stStageTime() {
-            return Math.max(0, sadPill1stStageTime);
+        public int getInvKit1stStageTime() {
+            return Math.max(0, invKit1stStageTime);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -335,6 +315,16 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @Comment("Coin Price | Default: true")
         public boolean showCoinPrice = true;
 
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
+                Wallet Max Coins | Default: 99999
+                """)
+        int walletMaxCoins = 99999;
+
+        public int getWalletMaxCoins() {
+            return Math.min(99999, Math.max(0, walletMaxCoins));
+        }
+
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("Hostile Mobs Drop Coins | Default: true")
         public boolean hostileMobsDropCoins = true;
@@ -344,14 +334,18 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         public boolean bossMobsDropCoins = true;
 
         @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("Ender Dragon Drop Coins | Default: true")
+        public boolean enderDragonDropCoins = true;
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("Ores Drop Coins | Default: true")
         public boolean oresDropCoins = true;
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Copper Coin drop chance by Hostile Mobs | Default: 0.3f
+                Copper Coin drop chance by Hostile Mobs | Default: 0.25f
                 """)
-        float copperCoinChanceHostileMobs = 0.3f;
+        float copperCoinChanceHostileMobs = 0.25f;
 
         public float getCopperCoinChanceHostileMobs() {
             return Math.min(1, Math.max(0, copperCoinChanceHostileMobs));
@@ -369,9 +363,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Gold Coin drop chance by Hostile Mobs | Default: 0.001f
+                Gold Coin drop chance by Hostile Mobs | Default: 0.01f
                 """)
-        float goldCoinChanceHostileMobs = 0.001f;
+        float goldCoinChanceHostileMobs = 0.01f;
 
         public float getGoldCoinChanceHostileMobs() {
             return Math.min(1, Math.max(0, goldCoinChanceHostileMobs));
@@ -385,26 +379,6 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         public float getGoldCoinMaxAmountHostileMobs() {
             return Math.max(0, goldCoinMaxAmountHostileMobs);
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("""
-                Copper Coin drop chance by Boss Mobs | Default: 1.0f
-                """)
-        float copperCoinChanceBossMobs = 1.0f;
-
-        public float getCopperCoinChanceBossMobs() {
-            return Math.min(1, Math.max(0, copperCoinChanceBossMobs));
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("""
-                Max Copper Coin amount drop by Boss Mobs | Default: 2.0f
-                """)
-        float copperCoinMaxAmountBossMobs = 2.0f;
-
-        public float getCopperCoinMaxAmountBossMobs() {
-            return Math.max(0, copperCoinMaxAmountBossMobs);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -429,62 +403,122 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Netherite Coin drop chance by Boss Mobs | Default: 0.005f
+                Amethyst Coin drop chance by Boss Mobs | Default: 0.5f
                 """)
-        float netheriteCoinChanceBossMobs = 0.005f;
+        float amethystCoinChanceBossMobs = 0.5f;
 
-        public float getNetheriteCoinChanceBossMobs() {
-            return Math.min(1, Math.max(0, netheriteCoinChanceBossMobs));
+        public float getAmethystCoinChanceBossMobs() {
+            return Math.min(1, Math.max(0, amethystCoinChanceBossMobs));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Netherite Coin amount drop by Boss Mobs | Default: 1.0f
+                Max Amethyst Coin amount drop by Boss Mobs | Default: 1.0f
                 """)
-        float netheriteCoinMaxAmountBossMobs = 1.0f;
+        float amethystCoinMaxAmountBossMobs = 1.0f;
 
-        public float getNetheriteCoinMaxAmountBossMobs() {
-            return Math.max(0, netheriteCoinMaxAmountBossMobs);
+        public float getAmethystCoinMaxAmountBossMobs() {
+            return Math.max(0, amethystCoinMaxAmountBossMobs);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Copper Coin drop chance by Copper Ore | Default: 0.2f
+                Amethyst Coin drop chance by Ender Dragon | Default: 1.0f
                 """)
-        float copperCoinChanceCopperOre = 0.2f;
+        float amethystCoinChanceEnderDragon = 1.0f;
 
-        public float getCopperCoinChanceCopperOre() {
-            return Math.min(1, Math.max(0, copperCoinChanceCopperOre));
+        public float getAmethystCoinChanceEnderDragon() {
+            return Math.min(1, Math.max(0, amethystCoinChanceEnderDragon));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Copper Coin amount drop by Copper Ore | Default: 5.0f
+                Max Amethyst Coin amount drop by Ender Dragon | Default: 3.0f
                 """)
-        float copperCoinMaxAmountCopperOre = 5.0f;
+        float amethystCoinMaxAmountEnderDragon = 3.0f;
 
-        public float getCopperCoinMaxAmountCopperOre() {
-            return Math.max(0, copperCoinMaxAmountCopperOre);
+        public float getAmethystCoinMaxAmountEnderDragon() {
+            return Math.max(0, amethystCoinMaxAmountEnderDragon);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Gold Coin drop chance by Gold Ore | Default: 0.001f
+                Netherite Coin drop chance by Ender Dragon | Default: 0.4f
                 """)
-        float goldCoinChanceGoldOre = 0.001f;
+        float netheriteCoinChanceEnderDragon = 0.4f;
 
-        public float getGoldCoinChanceGoldOre() {
-            return Math.min(1, Math.max(0, goldCoinChanceGoldOre));
+        public float getNetheriteCoinChanceEnderDragon() {
+            return Math.min(1, Math.max(0, netheriteCoinChanceEnderDragon));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Gold Coin amount drop by Gold Ore | Default: 1.0f
+                Max Netherite Coin amount drop by Ender Dragon | Default: 1.0f
                 """)
-        float goldCoinMaxAmountGoldOre = 1.0f;
+        float netheriteCoinMaxAmountEnderDragon = 1.0f;
 
-        public float getGoldCoinMaxAmountGoldOre() {
-            return Math.max(0, goldCoinMaxAmountGoldOre);
+        public float getNetheriteCoinMaxAmountEnderDragon() {
+            return Math.max(0, netheriteCoinMaxAmountEnderDragon);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Copper Coin drop chance by Ores | Default: 0.4f
+                """)
+        float copperCoinChanceOres = 0.4f;
+
+        public float getCopperCoinChanceOres() {
+            return Math.min(1, Math.max(0, copperCoinChanceOres));
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Copper Coin amount drop by Ores | Default: 3.0f
+                """)
+        float copperCoinMaxAmountOres = 3.0f;
+
+        public float getCopperCoinMaxAmountOres() {
+            return Math.max(0, copperCoinMaxAmountOres);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Gold Coin drop chance by Ores | Default: 0.02f
+                """)
+        float goldCoinChanceOres = 0.02f;
+
+        public float getGoldCoinChanceOres() {
+            return Math.min(1, Math.max(0, goldCoinChanceOres));
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Gold Coin amount drop by Ores | Default: 2.0f
+                """)
+        float goldCoinMaxAmountOres = 2.0f;
+
+        public float getGoldCoinMaxAmountOres() {
+            return Math.max(0, goldCoinMaxAmountOres);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Amethyst Coin drop chance by Ores | Default: 0.00001f
+                """)
+        float amethystCoinChanceOres = 0.00001f;
+
+        public float getAmethystCoinChanceOres() {
+            return Math.min(1, Math.max(0, amethystCoinChanceOres));
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Max Amethyst Coin amount drop by Ores | Default: 1.0f
+                """)
+        float amethystCoinMaxAmountOres = 1.0f;
+
+        public float getAmethystCoinMaxAmountOres() {
+            return Math.max(0, amethystCoinMaxAmountOres);
         }
     }
 }

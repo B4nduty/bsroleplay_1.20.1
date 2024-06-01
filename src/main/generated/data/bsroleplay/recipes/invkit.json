@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "bsroleplay:fusion_core"
+    },
+    "S": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    "S",
+    "F"
+  ],
+  "result": {
+    "item": "bsroleplay:invkit"
+  },
+  "show_notification": true
+}

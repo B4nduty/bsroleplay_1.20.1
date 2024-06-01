@@ -82,10 +82,6 @@ public class ModItems {
 
     public static final Item ROMAN_TOGA = registerItem("roman_toga",
             new RomanEmperorItem(ModArmorMaterials.ROMAN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-
-    public static final Item HAPPY_PILL = registerItem("happy_pill",
-            new Item(new FabricItemSettings().food(ModFoodComponents.HAPPY_PILL).maxCount(BsRolePlay.CONFIG.common.getHappyPillMaxStack()).rarity(Rarity.RARE)));
-
     public static final Item COWBOY_HAT = registerItem("cowboy_hat",
             new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
@@ -101,11 +97,21 @@ public class ModItems {
     public static final Item PROTECTION_BOOTS = registerItem("protection_boots",
             new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item RED_PROTECTION_HELMET = registerItem("red_protection_helmet",
+            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item RED_PROTECTION_CHESTPLATE = registerItem("red_protection_chestplate",
+            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item RED_PROTECTION_LEGGINGS = registerItem("red_protection_leggings",
+            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+
     public static final Item DEALER = registerItem("dealer",
             new DealerItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
-    public static final Item SAD_PILL = registerItem("sad_pill",
-            new SadPill(new FabricItemSettings().maxCount(BsRolePlay.CONFIG.common.getSadPillMaxStack()).rarity(Rarity.RARE)));
+    public static final Item INVKIT = registerItem("invkit",
+            new InvKit(new FabricItemSettings().maxCount(3).rarity(Rarity.UNCOMMON)));
+
+    public static final Item HEALKIT = registerItem("healkit",
+            new Item(new FabricItemSettings().food(ModFoodComponents.HAPPY_PILL).maxCount(3).rarity(Rarity.UNCOMMON)));
 
     public static final Item GADGET_HAT = registerItem("gadget_hat",
             new GadgetArmor(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));

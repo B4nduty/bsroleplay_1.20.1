@@ -27,8 +27,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ANTI_GOD_HANDCUFFS);
                         entries.add(ModItems.HOOK);
                         entries.add(ModItems.PHARAOH_STAFF);
-                        entries.add(ModItems.HAPPY_PILL);
-                        entries.add(ModItems.SAD_PILL);
+                        entries.add(ModItems.HEALKIT);
+                        entries.add(ModItems.INVKIT);
                     })
                     .build());
 
@@ -86,6 +86,9 @@ public class ModItemGroups {
                         entries.add(ModItems.PROTECTION_HELMET);
                         entries.add(ModItems.PROTECTION_CHESTPLATE);
                         entries.add(ModItems.PROTECTION_LEGGINGS);
+                        entries.add(ModItems.RED_PROTECTION_HELMET);
+                        entries.add(ModItems.RED_PROTECTION_CHESTPLATE);
+                        entries.add(ModItems.RED_PROTECTION_LEGGINGS);
                         entries.add(ModItems.PROTECTION_BOOTS);
 
                         entries.add(ModItems.GADGET_HAT);

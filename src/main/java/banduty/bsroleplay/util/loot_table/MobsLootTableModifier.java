@@ -50,19 +50,11 @@ public class MobsLootTableModifier {
 
         if (BsRolePlay.CONFIG.currency.bossMobsDropCoins) {
             List<Identifier> lootTableIds = Stream.of(
-                    EntityType.ELDER_GUARDIAN, EntityType.ENDER_DRAGON, EntityType.WARDEN, EntityType.WITHER
+                    EntityType.ELDER_GUARDIAN, EntityType.WARDEN, EntityType.WITHER
             ).map(EntityType::getLootTableId).toList();
 
             LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
                 if (lootTableIds.stream().anyMatch(id::equals)) {
-                    LootPool.Builder bronzeCoin = LootPool.builder()
-                            .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getCopperCoinChanceBossMobs()))
-                            .with(ItemEntry.builder(ModItems.COPPER_COIN))
-                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getCopperCoinMaxAmountBossMobs())).build());
-
-                    tableBuilder.pool(bronzeCoin.build());
-
                     LootPool.Builder goldCoin = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
                             .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getGoldCoinChanceBossMobs()))
@@ -71,11 +63,33 @@ public class MobsLootTableModifier {
 
                     tableBuilder.pool(goldCoin.build());
 
+                    LootPool.Builder amethystCoin = LootPool.builder()
+                            .rolls(ConstantLootNumberProvider.create(1))
+                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getAmethystCoinChanceBossMobs()))
+                            .with(ItemEntry.builder(ModItems.AMETHYST_COIN))
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getAmethystCoinMaxAmountBossMobs())).build());
+
+                    tableBuilder.pool(amethystCoin.build());
+                }
+            });
+        }
+
+        if (BsRolePlay.CONFIG.currency.enderDragonDropCoins) {
+            LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+                if (EntityType.ENDER_DRAGON.getLootTableId().equals(id)) {
+                    LootPool.Builder amethystCoin = LootPool.builder()
+                            .rolls(ConstantLootNumberProvider.create(1))
+                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getAmethystCoinChanceEnderDragon()))
+                            .with(ItemEntry.builder(ModItems.AMETHYST_COIN))
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getAmethystCoinMaxAmountEnderDragon())).build());
+
+                    tableBuilder.pool(amethystCoin.build());
+
                     LootPool.Builder netheriteCoin = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getNetheriteCoinChanceBossMobs()))
+                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getNetheriteCoinChanceEnderDragon()))
                             .with(ItemEntry.builder(ModItems.NETHERITE_COIN))
-                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getNetheriteCoinMaxAmountBossMobs())).build());
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getNetheriteCoinMaxAmountEnderDragon())).build());
 
                     tableBuilder.pool(netheriteCoin.build());
                 }

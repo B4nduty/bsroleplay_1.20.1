@@ -2,19 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "P": {
+    "F": {
       "item": "bsroleplay:fusion_core"
     },
-    "W": {
-      "item": "minecraft:wither_rose"
+    "P": {
+      "item": "minecraft:poppy"
     }
   },
   "pattern": [
-    "W",
-    "P"
+    "P",
+    "F"
   ],
   "result": {
-    "item": "bsroleplay:happy_pill"
+    "item": "bsroleplay:healkit"
   },
   "show_notification": true
 }

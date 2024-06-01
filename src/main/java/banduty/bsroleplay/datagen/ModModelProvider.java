@@ -34,6 +34,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PROTECTION_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.PROTECTION_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.RED_PROTECTION_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_PROTECTION_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_PROTECTION_LEGGINGS, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.HALO, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RED_PIRATE_HELMET, Models.GENERATED);
@@ -61,11 +65,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COWBOY_HAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PONCHO, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.HAPPY_PILL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HEALKIT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.DEALER, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.SAD_PILL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.INVKIT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FUSION_CORE, Models.GENERATED);
 

@@ -1,12 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fusion_core": {
+    "has_protection_leggings": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:fusion_core"
+              "bsroleplay:protection_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_red_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:red_dye"
             ]
           }
         ]
@@ -15,33 +27,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:happy_pill"
+        "recipe": "minecraft:red_protection_leggings"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_wither_rose": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:wither_rose"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_wither_rose",
-      "has_fusion_core",
+      "has_red_dye",
+      "has_protection_leggings",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:happy_pill"
+      "minecraft:red_protection_leggings"
     ]
   },
   "sends_telemetry_event": false

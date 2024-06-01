@@ -105,7 +105,5 @@ public class AntiGodHandcuffs extends Item {
             }
             return ActionResult.success(world.isClient());
         }
-
-//        return ActionResult.success(world.isClient());
     }
 }

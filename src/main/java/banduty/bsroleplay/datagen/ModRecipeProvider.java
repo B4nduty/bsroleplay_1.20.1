@@ -318,6 +318,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PROTECTION_BOOTS)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PROTECTION_HELMET, 1)
+                .pattern("PR")
+                .input('R', Items.RED_DYE)
+                .input('P', ModItems.PROTECTION_HELMET)
+                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
+                .criterion(hasItem(ModItems.PROTECTION_HELMET), conditionsFromItem(ModItems.PROTECTION_HELMET))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PROTECTION_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PROTECTION_CHESTPLATE, 1)
+                .pattern("PR")
+                .input('R', Items.RED_DYE)
+                .input('P', ModItems.PROTECTION_CHESTPLATE)
+                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
+                .criterion(hasItem(ModItems.PROTECTION_CHESTPLATE), conditionsFromItem(ModItems.PROTECTION_CHESTPLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PROTECTION_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PROTECTION_LEGGINGS, 1)
+                .pattern("PR")
+                .input('R', Items.RED_DYE)
+                .input('P', ModItems.PROTECTION_LEGGINGS)
+                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
+                .criterion(hasItem(ModItems.PROTECTION_LEGGINGS), conditionsFromItem(ModItems.PROTECTION_LEGGINGS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PROTECTION_LEGGINGS)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ROLEPLAY_CORE, 2)
                 .pattern("RGR")
                 .pattern("III")
@@ -340,23 +364,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DEALER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HAPPY_PILL, 1)
-                .pattern("W")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HEALKIT, 1)
                 .pattern("P")
-                .input('W', Items.WITHER_ROSE)
-                .input('P', ModItems.FUSION_CORE)
-                .criterion(hasItem(Items.WITHER_ROSE), conditionsFromItem(Items.WITHER_ROSE))
+                .pattern("F")
+                .input('P', Items.POPPY)
+                .input('F', ModItems.FUSION_CORE)
+                .criterion(hasItem(Items.POPPY), conditionsFromItem(Items.POPPY))
                 .criterion(hasItem(ModItems.FUSION_CORE), conditionsFromItem(ModItems.FUSION_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HAPPY_PILL)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEALKIT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SAD_PILL, 1)
-                .pattern("N")
-                .pattern("P")
-                .input('N', Items.NETHER_STAR)
-                .input('P', ModItems.FUSION_CORE)
-                .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INVKIT, 1)
+                .pattern("S")
+                .pattern("F")
+                .input('S', Items.SPIDER_EYE)
+                .input('F', ModItems.FUSION_CORE)
+                .criterion(hasItem(Items.SPIDER_EYE), conditionsFromItem(Items.SPIDER_EYE))
                 .criterion(hasItem(ModItems.FUSION_CORE), conditionsFromItem(ModItems.FUSION_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SAD_PILL)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.INVKIT)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LAWYER_LEGGINGS_BLACK, 1)
                 .pattern("BRB")

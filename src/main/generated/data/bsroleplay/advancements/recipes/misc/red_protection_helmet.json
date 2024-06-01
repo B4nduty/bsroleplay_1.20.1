@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fusion_core": {
+    "has_protection_helmet": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:fusion_core"
+              "bsroleplay:protection_helmet"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_nether_star": {
+    "has_red_dye": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:nether_star"
+              "minecraft:red_dye"
             ]
           }
         ]
@@ -27,21 +27,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sad_pill"
+        "recipe": "minecraft:red_protection_helmet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_nether_star",
-      "has_fusion_core",
+      "has_red_dye",
+      "has_protection_helmet",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sad_pill"
+      "minecraft:red_protection_helmet"
     ]
   },
   "sends_telemetry_event": false

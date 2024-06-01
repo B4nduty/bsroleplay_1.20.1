@@ -17,24 +17,36 @@ public class BlocksLootTableModifier {
 
         if (BsRolePlay.CONFIG.currency.oresDropCoins) {
             LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-                if (Blocks.COPPER_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_COPPER_ORE.getLootTableId().equals(id)) {
+                if (Blocks.COAL_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_COAL_ORE.getLootTableId().equals(id) ||
+                        Blocks.COPPER_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_COPPER_ORE.getLootTableId().equals(id) ||
+                        Blocks.IRON_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_IRON_ORE.getLootTableId().equals(id) ||
+                        Blocks.GOLD_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_GOLD_ORE.getLootTableId().equals(id) ||
+                        Blocks.DIAMOND_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_DIAMOND_ORE.getLootTableId().equals(id) ||
+                        Blocks.REDSTONE_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_REDSTONE_ORE.getLootTableId().equals(id) ||
+                        Blocks.LAPIS_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_LAPIS_ORE.getLootTableId().equals(id)) {
                     LootPool.Builder bronzeCoin = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getCopperCoinChanceCopperOre()))
+                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getCopperCoinChanceOres()))
                             .with(ItemEntry.builder(ModItems.COPPER_COIN))
-                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getCopperCoinMaxAmountCopperOre())).build());
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getCopperCoinMaxAmountOres())).build());
 
                     tableBuilder.pool(bronzeCoin.build());
-                }
 
-                if (Blocks.GOLD_ORE.getLootTableId().equals(id) || Blocks.DEEPSLATE_GOLD_ORE.getLootTableId().equals(id)) {
                     LootPool.Builder goldCoin = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getGoldCoinChanceGoldOre()))
+                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getGoldCoinChanceOres()))
                             .with(ItemEntry.builder(ModItems.GOLD_COIN))
-                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getGoldCoinMaxAmountGoldOre())).build());
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getGoldCoinMaxAmountOres())).build());
 
                     tableBuilder.pool(goldCoin.build());
+
+                    LootPool.Builder amethystCoin = LootPool.builder()
+                            .rolls(ConstantLootNumberProvider.create(1))
+                            .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.currency.getAmethystCoinChanceOres()))
+                            .with(ItemEntry.builder(ModItems.AMETHYST_COIN))
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getAmethystCoinMaxAmountOres())).build());
+
+                    tableBuilder.pool(amethystCoin.build());
                 }
             });
         }

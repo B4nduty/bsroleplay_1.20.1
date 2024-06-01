@@ -41,7 +41,7 @@ import java.util.stream.Stream;
 
 public class WalletItem extends Item implements DyeableItem {
     public static final String STORED_CURRENCY_KEY = "storedCurrency";
-    public static final int MAX_COINS = 99999;
+    public static final int MAX_COINS = BsRolePlay.CONFIG.currency.getWalletMaxCoins();
     private static final int ITEM_BAR_COLOR = 0x006666ff;
 
     public WalletItem(Settings settings) {
@@ -101,10 +101,6 @@ public class WalletItem extends Item implements DyeableItem {
             user.playSound(ModSounds.WALLET_CLOSE, 1f, 1f);
         }
         return TypedActionResult.success(user.getStackInHand(hand));
-    }
-
-    public static float getAmountFilled(ItemStack stack) {
-        return (float) WalletItem.getCurrencyFromNbt(stack) / MAX_COINS;
     }
 
     @Override

@@ -8,9 +8,9 @@ import net.minecraft.item.FoodComponent;
 
 public class ModFoodComponents {
     public static final FoodComponent HAPPY_PILL = new FoodComponent.Builder()
-            .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, BsRolePlay.CONFIG.common.getHappyPillWeaknessTime() * 20), BsRolePlay.CONFIG.common.getHappyPillWeaknessChance())
-            .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, BsRolePlay.CONFIG.common.getHappyPillBlindnessTime() * 20), BsRolePlay.CONFIG.common.getHappyPillBlindnessChance())
-            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, BsRolePlay.CONFIG.common.getHappyPillNauseaTime() * 20), BsRolePlay.CONFIG.common.getHappyPillNauseaChance())
-            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10), BsRolePlay.CONFIG.common.getHappyPillInstantHealthChance())
+            .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, BsRolePlay.CONFIG.common.getHealKitWeaknessTime() * 20), BsRolePlay.CONFIG.common.getHealKitWeaknessChance())
+            .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, BsRolePlay.CONFIG.common.getHealKitBlindnessTime() * 20), BsRolePlay.CONFIG.common.getHealKitBlindnessChance())
+            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, BsRolePlay.CONFIG.common.getHealKitNauseaTime() * 20), BsRolePlay.CONFIG.common.getHealKitNauseaChance())
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10), BsRolePlay.CONFIG.common.getHealKitInstantHealthChance())
             .build();
 }
