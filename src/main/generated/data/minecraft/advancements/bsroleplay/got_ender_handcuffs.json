@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:bsroleplay/got_roleplay_core",
   "criteria": {
-    "got_gods_handcuffs": {
+    "got_ender_handcuffs": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:anti_god_handcuffs"
+              "bsroleplay:endercuffs"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.gods_handcuffs.desc"
+      "translate": "advancement.endercuffs.desc"
     },
     "frame": "challenge",
     "hidden": false,
     "icon": {
-      "item": "bsroleplay:anti_god_handcuffs"
+      "item": "bsroleplay:endercuffs"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.gods_handcuffs.title"
+      "translate": "advancement.endercuffs.title"
     }
   },
   "requirements": [
     [
-      "got_gods_handcuffs"
+      "got_ender_handcuffs"
     ]
   ],
   "sends_telemetry_event": true

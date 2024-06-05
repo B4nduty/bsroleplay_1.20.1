@@ -21,7 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.ROLEPLAY_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.HANDCUFFS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ANTI_GOD_HANDCUFFS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDERCUFFS, Models.GENERATED);
         itemModelGenerator.register(ModItems.HANDCUFFS_KEY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.POLICE_HELMET, Models.GENERATED);

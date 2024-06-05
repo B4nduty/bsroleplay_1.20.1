@@ -3,12 +3,12 @@ package banduty.bsroleplay.item.custom.armor;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.item.client.armor.PoliceArmorRenderer;
+import banduty.bsroleplay.util.IEntityDataSaver;
+import banduty.bsroleplay.util.StaminaData;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -36,9 +36,13 @@ public class PoliceArmorItem extends ArmorItem implements GeoItem {
                 }
             }
             if (wearingCorrectArmor) {
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 40, BsRolePlay.CONFIG.common.getPoliceSetSpeedLevel()-1,
-                        false, false, false));
+                StaminaData.setStamina((IEntityDataSaver) player, true);
+                if (player.age % 10 == 0) StaminaData.removeStamina((IEntityDataSaver) player, 0);
+
+                super.inventoryTick(stack, world, entity, slot, selected);
+                return;
             }
+            StaminaData.setStamina((IEntityDataSaver) player, false);
         }
 
         super.inventoryTick(stack, world, entity, slot, selected);

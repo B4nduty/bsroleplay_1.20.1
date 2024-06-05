@@ -20,7 +20,9 @@
   "tooltip.bsroleplay.judgehammer.tooltip": "When Right Click play a Sound",
 
   "item.bsroleplay.police_baton": "Police Baton",
-  "tooltip.bsroleplay.policebaton.tooltip": "On Hit gives Slowness Effect",
+  "tooltip.bsroleplay.policebaton_slowness.tooltip": "- On Hit gives Slowness Effect",
+  "tooltip.bsroleplay.policebaton_save_jail.tooltip": "- On Right Click Block Save Jail Cords",
+  "tooltip.bsroleplay.policebaton_jail.tooltip": "- If Handcuffed, on Hit Tp to Jail",
 
   "item.bsroleplay.police_helmet": "Police Hat",
   "item.bsroleplay.police_chestplate": "Police Uniform",
@@ -90,13 +92,13 @@
 
   "item.bsroleplay.handcuffs": "Handcuffs",
   "item.bsroleplay.handcuffs_key": "Handcuffs Key",
-  "item.bsroleplay.anti_god_handcuffs": "Anti-God Handcuffs",
+  "item.bsroleplay.endercuffs": "Endercuffs",
 
-  "message.bsroleplay.handcuff.handcuffed_1": "%s has been Handcuffed",
-  "message.bsroleplay.handcuff.handcuffed_2": "You have been Handcuffed",
-  "message.bsroleplay.anti_god_handcuffs.handcuffed": "God %s has been downgraded to be a Mortal",
-  "message.bsroleplay.handcuff_key.free_1": "%s has been freed",
-  "message.bsroleplay.handcuff_key.free_2": "You have been freed",
+  "message.bsroleplay.handcuff.handcuffed_1": "%s §4has been Handcuffed",
+  "message.bsroleplay.handcuff.handcuffed_2": "§7You §rhave been Handcuffed",
+  "message.bsroleplay.endercuffs.handcuffed": "§6God %s §4has been downgraded to be a Mortal",
+  "message.bsroleplay.handcuff_key.free_1": "§7%s §2has been freed",
+  "message.bsroleplay.handcuff_key.free_2": "§7You §rhave been freed",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",
   "sounds.bsroleplay.handcuffed": "Handcuffed",
@@ -127,6 +129,9 @@
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Police Baton - Cooldown",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime": "Full Stamina Recover Time",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[0]": "If set to lower than 50, will count as 50 seconds",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[1]": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.fusionCoreChanceGolem": "Fusion Core - Golem Drop Chance",
   "text.autoconfig.bsroleplay.option.common.fusionCoreAmountDropGolem": "Fusion Core - Golem Drop Amount",
   "text.autoconfig.bsroleplay.option.common.healKitBlindnessTime": "HealKit - Blindness Time",
@@ -138,8 +143,10 @@
   "text.autoconfig.bsroleplay.option.common.healKitNauseaTime": "HealKit - Nausea Time",
   "text.autoconfig.bsroleplay.option.common.healKitNauseaTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.healKitNauseaChance": "HealKit - Nausea Chance",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceTime": "HealKit - Fire Resistance Time",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceTime.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceChance": "HealKit - Fire Resistance Chance",
   "text.autoconfig.bsroleplay.option.common.healKitInstantHealthChance": "HealKit - Instant Health Chance",
-  "text.autoconfig.bsroleplay.option.common.healKitMaxStack": "HealKit - Max Stack",
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime": "InvKit - Consume Time",
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Show Item Tooltips",
@@ -149,7 +156,7 @@
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime": "InvKit 1st Stage Time",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance",
-  "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Anti-God Handcuffs - Flint & Steel",
+  "text.autoconfig.bsroleplay.option.common.modifyEndercuffsFire": "Endercuffs - Flint & Steel",
 
   "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Show Coin Price",
   "text.autoconfig.bsroleplay.option.currency.walletMaxCoins": "Wallet Max Coins",
@@ -195,9 +202,13 @@
   "advancement.purple_lawyer_set.title": "Purple Guy",
   "advancement.purple_lawyer_set.desc": "Craft the Purple Briefcase and Purple Lawyer Set",
 
-  "advancement.gods_handcuffs.title": "The God Destroyer",
-  "advancement.gods_handcuffs.desc": "Get the Anti-God Handcuffs",
+  "advancement.endercuffs.title": "The God Destroyer",
+  "advancement.endercuffs.desc": "Get the Endercuffs",
 
   "advancement.netherite_coin_stack.title": "The Richest Guy",
-  "advancement.netherite_coin_stack.desc": "Obtain a Netherite Coin Stack and the Fedora"
+  "advancement.netherite_coin_stack.desc": "Obtain a Netherite Coin Stack and the Fedora",
+
+
+  "key.category.bsroleplay": "BsRolePlay",
+  "key.bsroleplay.police_speed": "Police Speed Boost"
 }

@@ -19,6 +19,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.property.Properties;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
@@ -28,39 +29,38 @@ import net.minecraft.world.GameMode;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
-public class AntiGodHandcuffs extends Item {
-    public AntiGodHandcuffs(Settings settings) {
+public class Endercuffs extends Item {
+    public Endercuffs(Settings settings) {
         super(settings);
     }
 
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
-        if (entity instanceof PlayerEntity playerTarget && playerTarget.isCreative()) {
-            if (!BlockedMilk.isMilkBlocked((IEntityDataSaver) entity)) {
-                if (!user.isCreative()) stack.decrement(1);
-                if (playerTarget instanceof ServerPlayerEntity serverPlayerTarget) {
-                    serverPlayerTarget.changeGameMode(serverPlayerTarget.isCreative() ? GameMode.SURVIVAL : GameMode.CREATIVE);
-                }
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,
-                        -1, BsRolePlay.CONFIG.common.getHandcuffsSlownessLevel() - 1, false,
-                        false, false));
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS,
-                        -1, BsRolePlay.CONFIG.common.getHandcuffsWeaknessLevel() - 1, false,
-                        false, false));
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
-                        -1, 217, false, false, false));
-
-                BlockedMilk.setMilkBlocked(((IEntityDataSaver) entity), true);
-
-                if (user.getWorld() instanceof ServerWorld serverWorld) {
-                    BlockPos blockPos = user.getBlockPos();
-                    serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFED, SoundCategory.PLAYERS, 1f, 1f);
-                    entity.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2").formatted(Formatting.RED));
-                    user.sendMessage(Text.translatable("message.bsroleplay.anti_god_handcuffs.handcuffed", entity.getName().getString()).formatted(Formatting.RED));
-                }
-
-                return ActionResult.SUCCESS;
+        if (entity instanceof PlayerEntity playerTarget && playerTarget.isCreative() &&
+                !BlockedMilk.isMilkBlocked((IEntityDataSaver) playerTarget)) {
+            if (!user.isCreative()) stack.decrement(1);
+            if (playerTarget instanceof ServerPlayerEntity serverPlayerTarget) {
+                serverPlayerTarget.changeGameMode(serverPlayerTarget.isCreative() ? GameMode.SURVIVAL : GameMode.CREATIVE);
             }
+            playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,
+                    -1, BsRolePlay.CONFIG.common.getHandcuffsSlownessLevel() - 1, false,
+                    false, false));
+            playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS,
+                    -1, BsRolePlay.CONFIG.common.getHandcuffsWeaknessLevel() - 1, false,
+                    false, false));
+            playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
+                    -1, 217, false, false, false));
+
+            BlockedMilk.setMilkBlocked(((IEntityDataSaver) playerTarget), true);
+
+            if (user.getWorld() instanceof ServerWorld serverWorld) {
+                BlockPos blockPos = user.getBlockPos();
+                serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFED, SoundCategory.PLAYERS, 1f, 1f);
+                playerTarget.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2").fillStyle(Style.EMPTY.withColor(Formatting.RED)), true);
+                user.sendMessage(Text.translatable("message.bsroleplay.endercuffs.handcuffed", playerTarget.getName().getString()), true);
+            }
+
+            return ActionResult.SUCCESS;
         }
 
         return ActionResult.PASS;
@@ -69,7 +69,7 @@ public class AntiGodHandcuffs extends Item {
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
-        if (!BsRolePlay.CONFIG.common.modifyAntiGodHandcuffsFire) {
+        if (!BsRolePlay.CONFIG.common.modifyEndercuffsFire) {
             return ActionResult.success(world.isClient());
         }
 
@@ -89,7 +89,7 @@ public class AntiGodHandcuffs extends Item {
                 }
 
                 if (playerEntity != null) {
-                    playerEntity.getItemCooldownManager().set(this, 1800);
+                    playerEntity.getItemCooldownManager().set(this, 600);
                 }
 
                 return ActionResult.success(world.isClient());

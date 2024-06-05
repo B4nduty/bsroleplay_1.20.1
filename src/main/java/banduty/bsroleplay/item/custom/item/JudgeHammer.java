@@ -13,7 +13,6 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -103,7 +102,7 @@ public class JudgeHammer extends Item implements GeoItem {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (BsRolePlay.CONFIG.common.showItemTooltips) {
-            tooltip.add(Text.translatable("tooltip.bsroleplay.judgehammer.tooltip").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.bsroleplay.judgehammer.tooltip"));
             super.appendTooltip(stack, world, tooltip, context);
         }
     }

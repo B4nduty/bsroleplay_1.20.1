@@ -12,5 +12,6 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, BsRolePlay.CONFIG.common.getHealKitBlindnessTime() * 20), BsRolePlay.CONFIG.common.getHealKitBlindnessChance())
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, BsRolePlay.CONFIG.common.getHealKitNauseaTime() * 20), BsRolePlay.CONFIG.common.getHealKitNauseaChance())
             .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10), BsRolePlay.CONFIG.common.getHealKitInstantHealthChance())
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, BsRolePlay.CONFIG.common.getHealKitFireResistanceTime() * 20), BsRolePlay.CONFIG.common.getHealKitFireResistanceChance())
             .build();
 }

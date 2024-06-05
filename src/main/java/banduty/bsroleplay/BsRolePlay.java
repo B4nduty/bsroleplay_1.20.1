@@ -4,8 +4,10 @@ package banduty.bsroleplay;
 import banduty.bsroleplay.block.ModBlocks;
 import banduty.bsroleplay.block.entity.ModBlockEntities;
 import banduty.bsroleplay.config.ModConfigs;
+import banduty.bsroleplay.event.PlayerTickHandler;
 import banduty.bsroleplay.item.ModItemGroups;
 import banduty.bsroleplay.item.ModItems;
+import banduty.bsroleplay.networking.ModMessages;
 import banduty.bsroleplay.screen.ModScreenHandlers;
 import banduty.bsroleplay.sound.ModSounds;
 import banduty.bsroleplay.util.loot_table.BlocksLootTableModifier;
@@ -15,6 +17,7 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib.GeckoLib;
@@ -39,11 +42,15 @@ public class BsRolePlay implements ModInitializer {
 
 		GeckoLib.initialize();
 
+		ModMessages.registerC2SPackets();
+
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerAllBlockEntities();
 
 		ChestLootTableModifier.modifyChestLootTables();
 		MobsLootTableModifier.modifyMobsLootTables();
 		BlocksLootTableModifier.modifyBlocksLootTables();
+
+		ServerTickEvents.START_SERVER_TICK.register(new PlayerTickHandler());
 	}
 }

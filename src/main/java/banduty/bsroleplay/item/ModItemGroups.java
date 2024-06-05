@@ -16,6 +16,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.ROLEPLAY_CORE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ROLEPLAY_CORE);
                         entries.add(ModItems.FUSION_CORE);
+                        entries.add(ModItems.HEALKIT);
+                        entries.add(ModItems.INVKIT);
                         entries.add(ModItems.WALLET);
                         entries.add(ModItems.BRIEFCASE);
                         entries.add(ModItems.BLACK_BRIEFCASE);
@@ -24,11 +26,9 @@ public class ModItemGroups {
                         entries.add(ModItems.POLICE_BATON);
                         entries.add(ModItems.HANDCUFFS_KEY);
                         entries.add(ModItems.HANDCUFFS);
-                        entries.add(ModItems.ANTI_GOD_HANDCUFFS);
+                        entries.add(ModItems.ENDERCUFFS);
                         entries.add(ModItems.HOOK);
                         entries.add(ModItems.PHARAOH_STAFF);
-                        entries.add(ModItems.HEALKIT);
-                        entries.add(ModItems.INVKIT);
                     })
                     .build());
 

@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
@@ -27,33 +28,30 @@ public class HandCuffs extends Item {
 
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
-        if (entity instanceof PlayerEntity playerTarget && !playerTarget.isCreative()) {
-            if (!BlockedMilk.isMilkBlocked((IEntityDataSaver) entity)) {
+            if (entity instanceof PlayerEntity playerTarget && !playerTarget.isCreative() &&
+                    !BlockedMilk.isMilkBlocked((IEntityDataSaver) playerTarget)) {
                 if (!user.isCreative()) stack.decrement(1);
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,
+                playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,
                         -1, BsRolePlay.CONFIG.common.getHandcuffsSlownessLevel() - 1, false,
                         false, false));
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS,
+                playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS,
                         -1, BsRolePlay.CONFIG.common.getHandcuffsWeaknessLevel() - 1, false,
                         false, false));
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
+                playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
                         -1, 217, false, false, false));
 
-                BlockedMilk.setMilkBlocked(((IEntityDataSaver) entity), true);
+                BlockedMilk.setMilkBlocked(((IEntityDataSaver) playerTarget), true);
 
                 if (user.getWorld() instanceof ServerWorld serverWorld) {
                     BlockPos blockPos = user.getBlockPos();
                     serverWorld.playSound(null, blockPos, ModSounds.HANDCUFFED, SoundCategory.PLAYERS, 1f, 1f);
-                    entity.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2").formatted(Formatting.RED));
-                    user.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_1", entity.getName().getString()).formatted(Formatting.RED));
+                    playerTarget.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_2").fillStyle(Style.EMPTY.withColor(Formatting.RED)), true);
+                    user.sendMessage(Text.translatable("message.bsroleplay.handcuff.handcuffed_1", playerTarget.getName().getString()).fillStyle(Style.EMPTY), true);
                 }
-
-                user.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getHandcuffsCooldown() * 20);
 
                 return ActionResult.SUCCESS;
 
             }
-        }
         return ActionResult.PASS;
     }
 }

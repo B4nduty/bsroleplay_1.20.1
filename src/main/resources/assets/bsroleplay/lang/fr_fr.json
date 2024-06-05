@@ -20,7 +20,9 @@
   "tooltip.bsroleplay.judgehammer.tooltip": "Lorsque vous faites un clic droit, cela fait un son",
 
   "item.bsroleplay.police_baton": "Bâton de Police",
-  "tooltip.bsroleplay.policebaton.tooltip": "Au Coup, donne un Effet de Lenteur",
+  "tooltip.bsroleplay.policebaton_slowness.tooltip": "- Au Coup, donne un Effet de Lenteur",
+  "tooltip.bsroleplay.policebaton_save_jail.tooltip": "- Sur le Clic Droit, Sauver les Coords de Prison",
+  "tooltip.bsroleplay.policebaton_jail.tooltip": "- S'il est Menotté, il sera Envoyé en Prison",
 
   "item.bsroleplay.police_helmet": "Casquette de Police",
   "item.bsroleplay.police_chestplate": "Uniforme de Police",
@@ -90,13 +92,13 @@
 
   "item.bsroleplay.handcuffs": "Menottes",
   "item.bsroleplay.handcuffs_key": "Clé de Menottes",
-  "item.bsroleplay.anti_god_handcuffs": "Menottes Anti-Dieu",
+  "item.bsroleplay.endercuffs": "EnderMenottes",
 
-  "message.bsroleplay.handcuff.handcuffed_1": "%s a été Menotté",
-  "message.bsroleplay.handcuff.handcuffed_2": "Vous avez été Menotté",
-  "message.bsroleplay.anti_god_handcuffs.handcuffed": "Dieu %s a été déclassé au rang de Mortel",
-  "message.bsroleplay.handcuff_key.free_1": "%s a été Libéré",
-  "message.bsroleplay.handcuff_key.free_2": "Tu as été Libéré",
+  "message.bsroleplay.handcuff.handcuffed_1": "%s §4a été Menotté",
+  "message.bsroleplay.handcuff.handcuffed_2": "§7Vous §ravez été Menotté",
+  "message.bsroleplay.endercuffs.handcuffed": "§6Dieu %s §4a été déclassé au rang de Mortel",
+  "message.bsroleplay.handcuff_key.free_1": "%s §2a été Libéré",
+  "message.bsroleplay.handcuff_key.free_2": "§7Tu §ras été Libéré",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Coup de Marteau du Juge",
   "sounds.bsroleplay.handcuffed": "Passer les Menottes",
@@ -127,6 +129,9 @@
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Bâton de Police - Cooldown",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "En Secondes",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime": "Temps Total de Récupération d’Endurance",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[0]": "Si la valeur est inférieure à 50, cela comptera pour 50 secondes",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[1]": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.fusionCoreChanceGolem": "Fusion Core - Chances de Chute du Golem",
   "text.autoconfig.bsroleplay.option.common.fusionCoreAmountDropGolem": "Fusion Core - Montant des Butins du Golem",
   "text.autoconfig.bsroleplay.option.common.healKitBlindnessTime": "HealKit - Temps de Cécité",
@@ -138,8 +143,10 @@
   "text.autoconfig.bsroleplay.option.common.healKitNauseaTime": "HealKit - Temps de Nausée",
   "text.autoconfig.bsroleplay.option.common.healKitNauseaTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.healKitNauseaChance": "HealKit - Risque de Nausée",
-  "text.autoconfig.bsroleplay.option.common.healKitInstantHealthChance": "HealKit-Guérison Immédiate",
-  "text.autoconfig.bsroleplay.option.common.healKitMaxStack": "HealKit - Max Stack",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceTime": "HealKit - Temps de Résistance au Feu",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceTime.@Tooltip": "En Secondes",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceChance": "HealKit - Possibilité de Résistance au Feu",
+  "text.autoconfig.bsroleplay.option.common.healKitInstantHealthChance": "HealKit - Guérison Immédiate",
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime": "InvKit - Consume Time",
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Info-bulles des Éléments",
@@ -149,7 +156,7 @@
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime": "InvKit - 1ère Étape",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet",
-  "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Menottes Anti-Dieu - Briquet",
+  "text.autoconfig.bsroleplay.option.common.modifyEndercuffsFire": "EnderMenottes - Briquet",
 
   "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Afficher le Prix des Pièces",
   "text.autoconfig.bsroleplay.option.currency.walletMaxCoins": "Portefeuille Max Coins",
@@ -195,9 +202,11 @@
   "advancement.purple_lawyer_set.title": "Purple Guy",
   "advancement.purple_lawyer_set.desc": "Fabriquez la Mallette Violette et l'ensemble d'Avocat Violet",
 
-  "advancement.gods_handcuffs.title": "Le Destructeur de Dieux",
-  "advancement.gods_handcuffs.desc": "Obtenir des Menottes Anti-Dieu",
+  "advancement.endercuffs.title": "Le Destructeur de Dieux",
+  "advancement.endercuffs.desc": "Obtenir des EnderMenottes",
 
   "advancement.netherite_coin_stack.title": "Fils de Riche",
-  "advancement.netherite_coin_stack.desc": "Obtenez une Pile de Pièces Netherite et le Fedora"
+  "advancement.netherite_coin_stack.desc": "Obtenez une Pile de Pièces Netherite et le Fedora",
+  "key.category.bsroleplay": "BsRolePlay",
+  "key.bsroleplay.police_speed": "Police Speed Boost"
 }

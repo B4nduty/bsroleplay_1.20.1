@@ -132,12 +132,23 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Police Set Speed Level | Default: 1
+                Police Set Speed Level | Default: 4
                 """)
-        int policeSetSpeedLevel = 1;
+        int policeSetSpeedLevel = 4;
 
         public int getPoliceSetSpeedLevel() {
             return Math.max(0, policeSetSpeedLevel);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 2)
+        @Comment("""
+                Full Stamina Recover Time in Seconds | Default: 90
+                If set to lower than 50, will count as 50 seconds
+                """)
+        int staminaRecoverTime = 90;
+
+        public int getStaminaRecoverTime() {
+            return Math.max(50, staminaRecoverTime);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -160,19 +171,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
             return Math.max(0, handcuffsWeaknessLevel);
         }
 
-        @ConfigEntry.Gui.Tooltip()
-        @Comment("""
-                Handcuffs Cooldown in Seconds | Default: 3
-                """)
-        int handcuffsCooldown = 3;
-
-        public int getHandcuffsCooldown() {
-            return Math.max(0, handcuffsCooldown);
-        }
-
         @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("Allow Anti-God Handcuffs work as a Flint and Steel | Default: true")
-        public boolean modifyAntiGodHandcuffsFire = true;
+        @Comment("Allow Endercuffs work as a Flint and Steel | Default: true")
+        public boolean modifyEndercuffsFire = true;
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
@@ -226,9 +227,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                HealKit Weakness Chance | Default: 0.3f
+                HealKit Weakness Chance | Default: 0.2f
                 """)
-        float healKitWeaknessChance = 0.3f;
+        float healKitWeaknessChance = 0.2f;
 
         public float getHealKitWeaknessChance() {
             return Math.min(1, Math.max(0, healKitWeaknessChance));
@@ -252,6 +253,26 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         public float getHealKitNauseaChance() {
             return Math.min(1, Math.max(0, healKitNauseaChance));
+        }
+
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
+                HealKit Fire Resistance Time in Seconds | Default: 90
+                """)
+        int healKitFireResistanceTime = 90;
+
+        public int getHealKitFireResistanceTime() {
+            return Math.max(0, healKitFireResistanceTime);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                HealKit Fire Resistance Chance | Default: 1.0f
+                """)
+        float healKitFireResistanceChance = 1.0f;
+
+        public float getHealKitFireResistanceChance() {
+            return Math.min(1, Math.max(0, healKitFireResistanceChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)

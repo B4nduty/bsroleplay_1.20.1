@@ -85,7 +85,7 @@ public class WalletItem extends Item implements DyeableItem {
 
                 @Override
                 public @NotNull ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-                    return new WalletScreenHandler(syncId, playerInventory, walletItemStack); // server only
+                    return new WalletScreenHandler(syncId, playerInventory, walletItemStack);
                 }
 
                 @Override

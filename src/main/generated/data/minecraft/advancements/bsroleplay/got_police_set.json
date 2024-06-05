@@ -82,8 +82,7 @@
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bsroleplay:police_baton",
-      "nbt": "{Damage:0}"
+      "item": "bsroleplay:police_baton"
     },
     "show_toast": true,
     "title": {

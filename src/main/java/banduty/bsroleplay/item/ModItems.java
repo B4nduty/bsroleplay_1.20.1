@@ -18,14 +18,15 @@ import net.minecraft.util.Rarity;
 public class ModItems {
     public static final Item ROLEPLAY_CORE = registerItem("roleplay_core",
             new Item(new FabricItemSettings()));
+
     public static final Item FUSION_CORE = registerItem("fusion_core",
             new Item(new FabricItemSettings()));
 
     public static final Item JUDGE_HAMMER = registerItem("judge_hammer",
-            new JudgeHammer(new FabricItemSettings().maxCount(1).maxDamage(0).rarity(Rarity.UNCOMMON)));
+            new JudgeHammer(new FabricItemSettings().maxCount(1)));
 
     public static final Item POLICE_BATON = registerItem("police_baton",
-            new PoliceBaton(ModToolMaterial.POLICE, new FabricItemSettings().maxDamage(0).rarity(Rarity.UNCOMMON)));
+            new PoliceBaton(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
 
     public static final Item PHARAOH_STAFF = registerItem("pharaoh_staff",
             new PharaohStaff(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
@@ -61,13 +62,11 @@ public class ModItems {
 
     public static final Item CROWN = registerItem("crown",
             new CrownItem(ModArmorMaterials.KING, ArmorItem.Type.HELMET, new FabricItemSettings()));
-
     public static final Item MINI_CROWN = registerItem("mini_crown",
             new MiniCrownItem(ModArmorMaterials.MINI_KING, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item DREAM_MASK = registerItem("dream_mask",
             new DreamMaskItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
-
     public static final Item BUNNY_MASK = registerItem("bunny_mask",
             new BunnyMaskItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
@@ -79,12 +78,11 @@ public class ModItems {
 
     public static final Item CIVIC_CROWN = registerItem("civic_crown",
             new RomanEmperorItem(ModArmorMaterials.ROMAN, ArmorItem.Type.HELMET, new FabricItemSettings()));
-
     public static final Item ROMAN_TOGA = registerItem("roman_toga",
             new RomanEmperorItem(ModArmorMaterials.ROMAN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+
     public static final Item COWBOY_HAT = registerItem("cowboy_hat",
             new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings()));
-
     public static final Item PONCHO = registerItem("poncho",
             new CowboyItem(ModArmorMaterials.COWBOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
 
@@ -109,7 +107,6 @@ public class ModItems {
 
     public static final Item INVKIT = registerItem("invkit",
             new InvKit(new FabricItemSettings().maxCount(3).rarity(Rarity.UNCOMMON)));
-
     public static final Item HEALKIT = registerItem("healkit",
             new Item(new FabricItemSettings().food(ModFoodComponents.HAPPY_PILL).maxCount(3).rarity(Rarity.UNCOMMON)));
 
@@ -132,6 +129,7 @@ public class ModItems {
             new LawyerItem(ModArmorMaterials.MASK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item LAWYER_BOOTS_PURPLE = registerItem("lawyer_boots_purple",
             new LawyerItem(ModArmorMaterials.MASK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     public static final Item BRIEFCASE = registerItem("briefcase",
             new BriefCase(new FabricItemSettings().maxCount(1)));
     public static final Item BLACK_BRIEFCASE = registerItem("black_briefcase",
@@ -143,39 +141,31 @@ public class ModItems {
             new TinyBandutyItem(ModBlocks.TINY_BANDUTY, new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
 
     public static final Item HANDCUFFS = registerItem("handcuffs",
-            new HandCuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+            new HandCuffs(new FabricItemSettings().maxCount(1)));
     public static final Item HANDCUFFS_KEY = registerItem("handcuffs_key",
-            new HandcuffsKey(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
-    public static final Item ANTI_GOD_HANDCUFFS = registerItem("anti_god_handcuffs",
-            new AntiGodHandcuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
+            new HandcuffsKey(new FabricItemSettings().maxCount(1)));
+    public static final Item ENDERCUFFS = registerItem("endercuffs",
+            new Endercuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final Item FEDORA = registerItem("fedora",
             new ElegantItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
-
     public static final Item FEDORA_PURPLE = registerItem("fedora_purple",
             new ElegantItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
 
     public static final Item COPPER_COIN = registerItem("copper_coin",
             new CoinItem(ModBlocks.COPPER_COIN, 1, new FabricItemSettings()));
-
     public static final Item GOLD_COIN = registerItem("gold_coin",
             new CoinItem(ModBlocks.GOLD_COIN, 10, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
-
     public static final Item AMETHYST_COIN = registerItem("amethyst_coin",
             new CoinItem(ModBlocks.AMETHYST_COIN, 100, new FabricItemSettings().rarity(Rarity.RARE)));
-
     public static final Item NETHERITE_COIN = registerItem("netherite_coin",
             new CoinItem(ModBlocks.NETHERITE_COIN, 1000, new FabricItemSettings().rarity(Rarity.EPIC)));
-
     public static final Item COPPER_COIN_STACK = registerItem("copper_coin_stack",
             new CoinStackItem(ModBlocks.COPPER_COIN_STACK, 9, new FabricItemSettings()));
-
     public static final Item GOLD_COIN_STACK = registerItem("gold_coin_stack",
             new CoinStackItem(ModBlocks.GOLD_COIN_STACK, 90, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
-
     public static final Item AMETHYST_COIN_STACK = registerItem("amethyst_coin_stack",
             new CoinStackItem(ModBlocks.AMETHYST_COIN_STACK, 900, new FabricItemSettings().rarity(Rarity.RARE)));
-
     public static final Item NETHERITE_COIN_STACK = registerItem("netherite_coin_stack",
             new CoinStackItem(ModBlocks.NETHERITE_COIN_STACK, 9000, new FabricItemSettings().rarity(Rarity.EPIC)));
 

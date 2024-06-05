@@ -92,6 +92,14 @@ public class MobsLootTableModifier {
                             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, BsRolePlay.CONFIG.currency.getNetheriteCoinMaxAmountEnderDragon())).build());
 
                     tableBuilder.pool(netheriteCoin.build());
+
+                    LootPool.Builder poolBuilder = LootPool.builder()
+                            .rolls(ConstantLootNumberProvider.create(1))
+                            .conditionally(RandomChanceLootCondition.builder(0.05f))
+                            .with(ItemEntry.builder(ModItems.ENDERCUFFS))
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                    tableBuilder.pool(poolBuilder.build());
                 }
             });
         }

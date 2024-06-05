@@ -11,12 +11,16 @@ import banduty.bsroleplay.block.entity.client.coins.stack.AmethystCoinStackRende
 import banduty.bsroleplay.block.entity.client.coins.stack.CopperCoinStackRenderer;
 import banduty.bsroleplay.block.entity.client.coins.stack.GoldCoinStackRenderer;
 import banduty.bsroleplay.block.entity.client.coins.stack.NetheriteCoinStackRenderer;
+import banduty.bsroleplay.client.StaminaOverlay;
+import banduty.bsroleplay.event.KeyInputHandler;
 import banduty.bsroleplay.item.ModItems;
+import banduty.bsroleplay.networking.ModMessages;
 import banduty.bsroleplay.screen.ModScreenHandlers;
 import banduty.bsroleplay.screen.WalletScreen;
 import dev.architectury.registry.client.rendering.BlockEntityRendererRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.item.DyeableItem;
 
@@ -38,5 +42,11 @@ public class BsRolePlayClient implements ClientModInitializer {
                 tintIndex > 0 ? -1 : ((DyeableItem) stack.getItem()).getColor(stack), ModItems.WALLET);
 
         HandledScreens.register(ModScreenHandlers.WALLET_SCREEN_HANDLER, WalletScreen::new);
+
+        HudRenderCallback.EVENT.register(new StaminaOverlay());
+
+        ModMessages.registerS2CPackets();
+
+        KeyInputHandler.register();
     }
 }

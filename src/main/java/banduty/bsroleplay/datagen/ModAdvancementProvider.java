@@ -113,19 +113,19 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .criterion("got_purple_boots", InventoryChangedCriterion.Conditions.items(ModItems.LAWYER_BOOTS_PURPLE))
                 .build(consumer, BsRolePlay.MOD_ID + "/got_purple_lawyer_set");
 
-        Advancement godsHandcuffsAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
+        Advancement enderHandcuffsAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
                 .display(
-                        ModItems.ANTI_GOD_HANDCUFFS,
-                        Text.translatable("advancement.gods_handcuffs.title"),
-                        Text.translatable("advancement.gods_handcuffs.desc"),
+                        ModItems.ENDERCUFFS,
+                        Text.translatable("advancement.endercuffs.title"),
+                        Text.translatable("advancement.endercuffs.desc"),
                         null,
                         AdvancementFrame.CHALLENGE,
                         true,
                         true,
                         false
                 )
-                .criterion("got_gods_handcuffs", InventoryChangedCriterion.Conditions.items(ModItems.ANTI_GOD_HANDCUFFS))
-                .build(consumer, BsRolePlay.MOD_ID + "/got_gods_handcuffs");
+                .criterion("got_ender_handcuffs", InventoryChangedCriterion.Conditions.items(ModItems.ENDERCUFFS))
+                .build(consumer, BsRolePlay.MOD_ID + "/got_ender_handcuffs");
 
         Advancement coinAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
                 .display(

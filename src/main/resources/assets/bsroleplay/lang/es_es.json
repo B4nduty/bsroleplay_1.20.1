@@ -20,7 +20,9 @@
   "tooltip.bsroleplay.judgehammer.tooltip": "Al darle Clic Derecho hace Sonido",
 
   "item.bsroleplay.police_baton": "Porra Policial",
-  "tooltip.bsroleplay.policebaton.tooltip": "Al Golpear da Efecto de Lentitud",
+  "tooltip.bsroleplay.policebaton_slowness.tooltip": "- Al Golpear da Efecto de Lentitud",
+  "tooltip.bsroleplay.policebaton_save_jail.tooltip": "- Clic Derecho para guardar Coordenadas de la Carcel",
+  "tooltip.bsroleplay.policebaton_jail.tooltip": "- Si está Esposado, al Golpear Teleporta a la Carcel",
 
   "item.bsroleplay.police_helmet": "Gorra Policial",
   "item.bsroleplay.police_chestplate": "Uniforme Policial",
@@ -90,12 +92,12 @@
 
   "item.bsroleplay.handcuffs": "Esposas",
   "item.bsroleplay.handcuffs_key": "Llave de Esposas",
-  "item.bsroleplay.anti_god_handcuffs": "Esposas Anti-Dioses",
+  "item.bsroleplay.endercuffs": "Esposas del End",
 
-  "message.bsroleplay.handcuff.handcuffed_1": "%s ha sido esposado",
+  "message.bsroleplay.handcuff.handcuffed_1": "%s §4ha sido esposado",
   "message.bsroleplay.handcuff.handcuffed_2": "Has sido esposado",
-  "message.bsroleplay.anti_god_handcuffs.handcuffed": "El Dios %s ha sido rebajado a un simple Mortal",
-  "message.bsroleplay.handcuff_key.free_1": "%s ha sido liberado",
+  "message.bsroleplay.endercuffs.handcuffed": "§6El Dios %s §4ha sido rebajado a un simple Mortal",
+  "message.bsroleplay.handcuff_key.free_1": "%s §2ha sido liberado",
   "message.bsroleplay.handcuff_key.free_2": "Has sido liberado",
 
   "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
@@ -127,6 +129,9 @@
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessDuration.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Porra Policial - Cooldown",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime": "Tiempo Total de Recuperación de Estamina",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[0]": "Si se establece en menos de 50, contará como 50 segundos",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[1]": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.fusionCoreChanceGolem": "Fusion Core - Golem Probabilidad de Drop",
   "text.autoconfig.bsroleplay.option.common.fusionCoreAmountDropGolem": "Fusion Core - Golem Cantidad de Drop",
   "text.autoconfig.bsroleplay.option.common.healKitBlindnessTime": "HealKit - Tiempo de Ceguera",
@@ -138,8 +143,10 @@
   "text.autoconfig.bsroleplay.option.common.healKitNauseaTime": "HealKit - Tiempo de Nausea",
   "text.autoconfig.bsroleplay.option.common.healKitNauseaTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.healKitNauseaChance": "HealKit - Posibilidad Nausea",
-  "text.autoconfig.bsroleplay.option.common.healKitInstantHealthChance": "HealKit-Probabilidad Curación",
-  "text.autoconfig.bsroleplay.option.common.healKitMaxStack": "HealKit - Max Stack",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceTime": "HealKit - Tiempo de Resistencia al Fuego",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceTime.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.healKitFireResistanceChance": "HealKit - Posibilidad Resistencia al Fuego",
+  "text.autoconfig.bsroleplay.option.common.healKitInstantHealthChance": "HealKit - Probabilidad Curación",
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime": "Pastilla Depresiva - Temps de Consommation",
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas",
@@ -149,7 +156,7 @@
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime": "Pastilla Depresiva - Primera Etapa",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio",
-  "text.autoconfig.bsroleplay.option.common.modifyAntiGodHandcuffsFire": "Esposas Anti-Dioses - Mechero",
+  "text.autoconfig.bsroleplay.option.common.modifyEndercuffsFire": "Esposas del End - Mechero",
 
   "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Mostrar Precio de las Monedas",
   "text.autoconfig.bsroleplay.option.currency.walletMaxCoins": "Cartera Max Monedas",
@@ -195,9 +202,11 @@
   "advancement.purple_lawyer_set.title": "Hombre de Morado",
   "advancement.purple_lawyer_set.desc": "Crea el Maletín Morado y el conjunto de Abogado Morado",
 
-  "advancement.gods_handcuffs.title": "El Destructor de Dioses",
-  "advancement.gods_handcuffs.desc": "Consigue unas Esposas Anti-Dioses",
+  "advancement.endercuffs.title": "El Destructor de Dioses",
+  "advancement.endercuffs.desc": "Consigue unas Esposas del Ender",
 
   "advancement.netherite_coin_stack.title": "El Niño Pijo",
-  "advancement.netherite_coin_stack.desc": "Obtén una Pila de Monedas de Netherita y Fedora"
+  "advancement.netherite_coin_stack.desc": "Obtén una Pila de Monedas de Netherita y Fedora",
+  "key.category.bsroleplay": "BsRolePlay",
+  "key.bsroleplay.police_speed": "Police Speed Boost"
 }
