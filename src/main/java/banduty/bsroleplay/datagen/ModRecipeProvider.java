@@ -353,7 +353,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ROLEPLAY_CORE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DEALER, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DEALER_MASK, 1)
                 .pattern("BBB")
                 .pattern("WRW")
                 .input('B', Items.BLACK_WOOL)
@@ -362,7 +362,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
                 .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DEALER)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DEALER_MASK)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HEALKIT, 1)
                 .pattern("P")

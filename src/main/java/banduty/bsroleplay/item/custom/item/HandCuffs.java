@@ -3,7 +3,7 @@ package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.sound.ModSounds;
-import banduty.bsroleplay.util.BlockedMilk;
+import banduty.bsroleplay.util.Handcuffed;
 import banduty.bsroleplay.util.IEntityDataSaver;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -29,7 +29,7 @@ public class HandCuffs extends Item {
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
             if (entity instanceof PlayerEntity playerTarget && !playerTarget.isCreative() &&
-                    !BlockedMilk.isMilkBlocked((IEntityDataSaver) playerTarget)) {
+                    !((IEntityDataSaver) playerTarget).bsroleplay$getPersistentData().getBoolean("handcuffed")) {
                 if (!user.isCreative()) stack.decrement(1);
                 playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,
                         -1, BsRolePlay.CONFIG.common.getHandcuffsSlownessLevel() - 1, false,
@@ -40,7 +40,7 @@ public class HandCuffs extends Item {
                 playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
                         -1, 217, false, false, false));
 
-                BlockedMilk.setMilkBlocked(((IEntityDataSaver) playerTarget), true);
+                Handcuffed.setHandcuffed(((IEntityDataSaver) playerTarget), true);
 
                 if (user.getWorld() instanceof ServerWorld serverWorld) {
                     BlockPos blockPos = user.getBlockPos();

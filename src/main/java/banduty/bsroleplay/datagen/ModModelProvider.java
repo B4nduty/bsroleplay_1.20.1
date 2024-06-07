@@ -67,7 +67,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.HEALKIT, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.DEALER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEALER_MASK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.INVKIT, Models.GENERATED);
 

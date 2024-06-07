@@ -14,6 +14,12 @@ public class StaminaData {
         syncStaminaBoolean(stamina_boolean, (ServerPlayerEntity) player);
     }
 
+    public static void setZero(IEntityDataSaver player, boolean stamina_zero) {
+        NbtCompound nbt = player.bsroleplay$getPersistentData();
+        nbt.putBoolean("stamina_zero", stamina_zero);
+        syncStaminaZero(stamina_zero, (ServerPlayerEntity) player);
+    }
+
     public static int addStamina(IEntityDataSaver player, int amount) {
         NbtCompound nbt = player.bsroleplay$getPersistentData();
         int stamina_int = nbt.getInt("stamina_int");
@@ -52,5 +58,11 @@ public class StaminaData {
         PacketByteBuf buffer = PacketByteBufs.create();
         buffer.writeBoolean(stamina_boolean);
         ServerPlayNetworking.send(player, ModMessages.STAMINA_BOOLEAN_ID, buffer);
+    }
+
+    public static void syncStaminaZero(boolean stamina_zero, ServerPlayerEntity player) {
+        PacketByteBuf buffer = PacketByteBufs.create();
+        buffer.writeBoolean(stamina_zero);
+        ServerPlayNetworking.send(player, ModMessages.STAMINA_ZERO_ID, buffer);
     }
 }

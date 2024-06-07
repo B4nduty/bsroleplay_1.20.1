@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dealer"
+        "recipe": "minecraft:dealer_mask"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -54,7 +54,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dealer"
+      "minecraft:dealer_mask"
     ]
   },
   "sends_telemetry_event": false

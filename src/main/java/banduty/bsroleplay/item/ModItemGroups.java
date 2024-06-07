@@ -95,7 +95,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.DREAM_MASK);
                         entries.add(ModItems.BUNNY_MASK);
-                        entries.add(ModItems.DEALER);
+                        entries.add(ModItems.DEALER_MASK);
 
                         entries.add(ModItems.NEANDERTHAL_CHESTPLATE);
 

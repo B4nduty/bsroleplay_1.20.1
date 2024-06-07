@@ -1,6 +1,5 @@
 package banduty.bsroleplay.mixin;
 
-import banduty.bsroleplay.util.BlockedMilk;
 import banduty.bsroleplay.util.IEntityDataSaver;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -17,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class MilkBucketMixin {
     @Inject(method = "use", at = @At("HEAD"), cancellable = true)
     private void bsroleplay$use(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir) {
-        if (BlockedMilk.isMilkBlocked((IEntityDataSaver) user)) {
+        if (((IEntityDataSaver) user).bsroleplay$getPersistentData().getBoolean("handcuffed")) {
             cir.setReturnValue(TypedActionResult.pass(user.getStackInHand(hand)));
         }
     }

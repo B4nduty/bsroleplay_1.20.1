@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bsroleplay:item/dealer"
+    "layer0": "bsroleplay:item/dealer_mask"
   }
 }

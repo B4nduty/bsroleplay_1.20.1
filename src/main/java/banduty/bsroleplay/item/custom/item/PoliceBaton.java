@@ -3,7 +3,6 @@ package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.item.client.items.PoliceBatonModel;
-import banduty.bsroleplay.util.BlockedMilk;
 import banduty.bsroleplay.util.IEntityDataSaver;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -110,13 +109,14 @@ public class PoliceBaton extends Item implements GeoItem {
             return false;
         }
         if (BsRolePlay.CONFIG.common.modifyPoliceBatonSlowness
-                && !playerAttacker.getItemCooldownManager().isCoolingDown(this) && !BlockedMilk.isMilkBlocked((IEntityDataSaver) playerTarget)) {
+                && !playerAttacker.getItemCooldownManager().isCoolingDown(this)
+                && !((IEntityDataSaver) playerTarget).bsroleplay$getPersistentData().getBoolean("handcuffed")) {
             playerAttacker.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getPoliceBatonCooldown() * 20);
             playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, BsRolePlay.CONFIG.common.getPoliceBatonSlownessDuration() * 20,
                     BsRolePlay.CONFIG.common.getPoliceBatonSlownessLevel() - 1));
             return true;
         }
-        if (BlockedMilk.isMilkBlocked((IEntityDataSaver) playerTarget) && !playerAttacker.getItemCooldownManager().isCoolingDown(this) &&
+        if (((IEntityDataSaver) playerTarget).bsroleplay$getPersistentData().getBoolean("handcuffed") && !playerAttacker.getItemCooldownManager().isCoolingDown(this) &&
                 stack.getNbt() != null && stack.getNbt().contains(COORDS, NbtElement.INT_ARRAY_TYPE)) {
             BlockPos blockPos = PoliceBaton.readBlockPosFromNbt(stack);
             if (blockPos != null) playerTarget.teleport(blockPos.getX(), blockPos.getY() + 1, blockPos.getZ());

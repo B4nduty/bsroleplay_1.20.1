@@ -3,7 +3,7 @@ package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.sound.ModSounds;
-import banduty.bsroleplay.util.BlockedMilk;
+import banduty.bsroleplay.util.Handcuffed;
 import banduty.bsroleplay.util.IEntityDataSaver;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.*;
@@ -37,7 +37,7 @@ public class Endercuffs extends Item {
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
         if (entity instanceof PlayerEntity playerTarget && playerTarget.isCreative() &&
-                !BlockedMilk.isMilkBlocked((IEntityDataSaver) playerTarget)) {
+                !((IEntityDataSaver) playerTarget).bsroleplay$getPersistentData().getBoolean("handcuffed")) {
             if (!user.isCreative()) stack.decrement(1);
             if (playerTarget instanceof ServerPlayerEntity serverPlayerTarget) {
                 serverPlayerTarget.changeGameMode(serverPlayerTarget.isCreative() ? GameMode.SURVIVAL : GameMode.CREATIVE);
@@ -51,7 +51,7 @@ public class Endercuffs extends Item {
             playerTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
                     -1, 217, false, false, false));
 
-            BlockedMilk.setMilkBlocked(((IEntityDataSaver) playerTarget), true);
+            Handcuffed.setHandcuffed(((IEntityDataSaver) playerTarget), true);
 
             if (user.getWorld() instanceof ServerWorld serverWorld) {
                 BlockPos blockPos = user.getBlockPos();

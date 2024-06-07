@@ -22,24 +22,8 @@ public abstract class PlayerEntityMixin implements IEntityDataSaver {
         return persistentData;
     }
 
-    @Unique
-    private boolean milkBlocked = false;
-
-    @Override
-    public boolean bsroleplay$isMilkBlocked() {
-        return milkBlocked;
-    }
-
-    @Override
-    public void bsroleplay$setMilkBlocked(boolean milkBlocked) {
-        this.milkBlocked = milkBlocked;
-    }
-
     @Inject(method = "writeCustomDataToNbt", at = @At("HEAD"))
     protected void injectWriteMethod(NbtCompound nbt, CallbackInfo ci) {
-        if (milkBlocked) {
-            nbt.putBoolean("BlockedMilk", true);
-        }
         if(persistentData != null) {
             nbt.put("bsroleplay.data", persistentData);
         }
@@ -47,9 +31,6 @@ public abstract class PlayerEntityMixin implements IEntityDataSaver {
 
     @Inject(method = "readCustomDataFromNbt", at = @At("HEAD"))
     protected void injectReadMethod(NbtCompound nbt, CallbackInfo info) {
-        if (nbt.contains("BlockedMilk")) {
-            milkBlocked = nbt.getBoolean("BlockedMilk");
-        }
         if (nbt.contains("bsroleplay.data", 10)) {
             persistentData = nbt.getCompound("bsroleplay.data");
         }

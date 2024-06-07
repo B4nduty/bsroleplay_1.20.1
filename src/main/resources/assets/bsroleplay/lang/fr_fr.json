@@ -56,7 +56,7 @@
   "item.bsroleplay.red_protection_leggings": "Pantalon de Protection Rouge",
   "item.bsroleplay.protection_boots": "Bottes de Protection",
 
-  "item.bsroleplay.dealer": "Masque de Trafiquant",
+  "item.bsroleplay.dealer_mask": "Masque de Trafiquant",
   "item.bsroleplay.invkit": "InvKit",
   "item.bsroleplay.fusion_core": "Noyau de Fusion",
 
@@ -130,7 +130,7 @@
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown": "Bâton de Police - Cooldown",
   "text.autoconfig.bsroleplay.option.common.policeBatonCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.staminaRecoverTime": "Temps Total de Récupération d’Endurance",
-  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[0]": "Si la valeur est inférieure à 50, cela comptera pour 50 secondes",
+  "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[0]": "Si la valeur est inférieure à 30, cela comptera pour 30 secondes",
   "text.autoconfig.bsroleplay.option.common.staminaRecoverTime.@Tooltip[1]": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.fusionCoreChanceGolem": "Fusion Core - Chances de Chute du Golem",
   "text.autoconfig.bsroleplay.option.common.fusionCoreAmountDropGolem": "Fusion Core - Montant des Butins du Golem",

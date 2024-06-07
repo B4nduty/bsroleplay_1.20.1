@@ -2,7 +2,7 @@
 package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.sound.ModSounds;
-import banduty.bsroleplay.util.BlockedMilk;
+import banduty.bsroleplay.util.Handcuffed;
 import banduty.bsroleplay.util.IEntityDataSaver;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -27,7 +27,8 @@ public class HandcuffsKey extends Item {
 
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
-        if (entity instanceof PlayerEntity playerTarget && BlockedMilk.isMilkBlocked((IEntityDataSaver) playerTarget)) {
+        if (entity instanceof PlayerEntity playerTarget &&
+                ((IEntityDataSaver) playerTarget).bsroleplay$getPersistentData().getBoolean("handcuffed")) {
             if (!user.isCreative()) stack.decrement(1);
             playerTarget.removeStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS).getEffectType());
             playerTarget.removeStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS).getEffectType());
@@ -41,7 +42,7 @@ public class HandcuffsKey extends Item {
                 playerTarget.sendMessage(Text.translatable("message.bsroleplay.handcuff_key.free_2").fillStyle(Style.EMPTY.withColor(Formatting.GREEN)), true);
                 user.sendMessage(Text.translatable("message.bsroleplay.handcuff_key.free_1", playerTarget.getName().getString()).fillStyle(Style.EMPTY), true);
             }
-            BlockedMilk.setMilkBlocked((IEntityDataSaver) playerTarget, false);
+            Handcuffed.setHandcuffed((IEntityDataSaver) playerTarget, false);
 
             return ActionResult.SUCCESS;
         }

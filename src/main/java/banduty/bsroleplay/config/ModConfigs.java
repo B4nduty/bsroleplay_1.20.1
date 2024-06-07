@@ -143,12 +143,12 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @ConfigEntry.Gui.Tooltip(count = 2)
         @Comment("""
                 Full Stamina Recover Time in Seconds | Default: 90
-                If set to lower than 50, will count as 50 seconds
+                If set to lower than 30, will count as 30 seconds
                 """)
         int staminaRecoverTime = 90;
 
         public int getStaminaRecoverTime() {
-            return Math.max(50, staminaRecoverTime);
+            return Math.max(30, staminaRecoverTime);
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -484,9 +484,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Copper Coin drop chance by Ores | Default: 0.4f
+                Copper Coin drop chance by Ores | Default: 0.2f
                 """)
-        float copperCoinChanceOres = 0.4f;
+        float copperCoinChanceOres = 0.2f;
 
         public float getCopperCoinChanceOres() {
             return Math.min(1, Math.max(0, copperCoinChanceOres));

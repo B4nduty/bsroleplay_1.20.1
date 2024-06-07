@@ -26,6 +26,7 @@ public class KeyInputHandler {
                 if(policeSpeed.isPressed() && ((IEntityDataSaver) playerEntity).bsroleplay$getPersistentData()
                         .getBoolean("stamina_boolean") && stamina > 0) {
                     ClientPlayNetworking.send(ModMessages.POLICE_SPEED_ID, PacketByteBufs.create());
+                    ClientPlayNetworking.send(ModMessages.SET_STAMINA_ZERO_ID, PacketByteBufs.create());
                 }
             }
         });

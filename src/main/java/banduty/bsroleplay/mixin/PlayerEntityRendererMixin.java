@@ -1,6 +1,5 @@
 package banduty.bsroleplay.mixin;
 
-import banduty.bsroleplay.util.BlockedMilk;
 import banduty.bsroleplay.util.IEntityDataSaver;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.render.entity.PlayerEntityRenderer;
@@ -15,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class PlayerEntityRendererMixin {
     @Inject(method = "getArmPose", at = @At("RETURN"), cancellable = true)
     private static void bsroleplay$getArmPose(AbstractClientPlayerEntity player, Hand hand, CallbackInfoReturnable<BipedEntityModel.ArmPose> callbackInfoReturnable) {
-        if (BlockedMilk.isMilkBlocked((IEntityDataSaver) player)) {
+        if (((IEntityDataSaver) player).bsroleplay$getPersistentData().getBoolean("handcuffed")) {
             callbackInfoReturnable.setReturnValue(BipedEntityModel.ArmPose.CROSSBOW_CHARGE);
         }
     }
