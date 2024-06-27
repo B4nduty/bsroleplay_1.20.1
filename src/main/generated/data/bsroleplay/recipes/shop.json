@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:red_carpet"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "O": {
+      "item": "minecraft:oak_planks"
+    },
+    "R": {
+      "item": "bsroleplay:roleplay_core"
+    }
+  },
+  "pattern": [
+    " G ",
+    "CRC",
+    "OOO"
+  ],
+  "result": {
+    "item": "bsroleplay:shop"
+  },
+  "show_notification": true
+}
