@@ -12,10 +12,12 @@ public class ModMessages {
     public static final Identifier STAMINA_BOOLEAN_ID = new Identifier(BsRolePlay.MOD_ID, "stamina_boolean");
     public static final Identifier STAMINA_ZERO_ID = new Identifier(BsRolePlay.MOD_ID, "stamina_zero");
     public static final Identifier SET_STAMINA_ZERO_ID = new Identifier(BsRolePlay.MOD_ID, "set_stamina_zero");
+    public static final Identifier CURRENCY_COUNTER = new Identifier(BsRolePlay.MOD_ID, "currency_counter");
 
     public static void registerC2SPackets() {
         ServerPlayNetworking.registerGlobalReceiver(POLICE_SPEED_ID, PoliceSpeedC2SPacket::receive);
         ServerPlayNetworking.registerGlobalReceiver(SET_STAMINA_ZERO_ID, StaminaZeroC2SPacket::receive);
+        ServerPlayNetworking.registerGlobalReceiver(CURRENCY_COUNTER, UpdateCurrencyCounterPacketC2SPacket::receive);
     }
 
     public static void registerS2CPackets() {

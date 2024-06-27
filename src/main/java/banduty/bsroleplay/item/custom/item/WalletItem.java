@@ -3,7 +3,7 @@ package banduty.bsroleplay.item.custom.item;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.item.custom.blocks.currency.CoinItem;
-import banduty.bsroleplay.screen.WalletScreenHandler;
+import banduty.bsroleplay.screen.wallet.WalletScreenHandler;
 import banduty.bsroleplay.sound.ModSounds;
 import com.google.common.collect.Lists;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;

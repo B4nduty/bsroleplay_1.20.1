@@ -73,6 +73,9 @@
   "block.bsroleplay.netherite_coin": "Pièces de Netherite",
   "block.bsroleplay.netherite_coin_stack": "Pièces de Netherite Empilées",
 
+  "block.bsroleplay.shop": "Boutique",
+  "block.bsroleplay.creative_shop": "Boutique Créative",
+
   "item.bsroleplay.lawyer_blackblue_chestplate": "Costume Noir et Bleu",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Costume Noir et Or",
   "item.bsroleplay.lawyer_blackred_chestplate": "Costume Noir et Rouge",
@@ -94,6 +97,8 @@
   "item.bsroleplay.handcuffs_key": "Clé de Menottes",
   "item.bsroleplay.endercuffs": "EnderMenottes",
 
+  "item.bsroleplay.invdetector": "Détecteur de Pouls",
+
   "message.bsroleplay.handcuff.handcuffed_1": "%s §4a été Menotté",
   "message.bsroleplay.handcuff.handcuffed_2": "§7Vous §ravez été Menotté",
   "message.bsroleplay.endercuffs.handcuffed": "§6Dieu %s §4a été déclassé au rang de Mortel",
@@ -103,6 +108,12 @@
   "sounds.bsroleplay.judge_hammer_right_click": "Coup de Marteau du Juge",
   "sounds.bsroleplay.handcuffed": "Passer les Menottes",
   "sounds.bsroleplay.handcuffednt": "Libérer",
+
+  "bsroleplay.shop.sell_popup": "Votre %s a été vendu",
+  "bsroleplay.shop.no_money": "Pas assez d'Argent",
+  "bsroleplay.shop.full_coins": "La Boutique est Pleine de Pièces, revenez plus tard",
+  "bsroleplay.shop.wallet_need": "Vous avez besoin d'un Portefeuille pour acheter",
+  "bsroleplay.shop.no_item_sell": "Il n'y a pas d'Article en Vente",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.category.common": "Commun",

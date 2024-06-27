@@ -26,6 +26,6 @@ public class MasksModel extends GeoModel<MasksItem> {
 
     @Override
     public Identifier getAnimationResource(MasksItem animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/generic.animation.json");
     }
 }

@@ -29,6 +29,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ENDERCUFFS);
                         entries.add(ModItems.HOOK);
                         entries.add(ModItems.PHARAOH_STAFF);
+                        entries.add(ModItems.INV_DETECTOR);
                     })
                     .build());
 
@@ -45,6 +46,8 @@ public class ModItemGroups {
                         entries.add(ModItems.AMETHYST_COIN_STACK);
                         entries.add(ModItems.NETHERITE_COIN);
                         entries.add(ModItems.NETHERITE_COIN_STACK);
+                        entries.add(ModItems.SHOP);
+                        entries.add(ModItems.CREATIVE_SHOP);
                     })
                     .build());
 

@@ -64,12 +64,9 @@ public class Hook extends Item implements GeoItem {
 
     private PlayState predicate(AnimationState<Hook> animationState) {
         if (MinecraftClient.getInstance().player == null) return PlayState.STOP;
-        Item mainHand = MinecraftClient.getInstance().player.getMainHandStack().getItem();
-        if (mainHand != this) {
-            return PlayState.STOP;
-        }
+        boolean coolDown = MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this);
         if (BsRolePlay.CONFIG.common.modifyHookEvokerFang) {
-            if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {
+            if (coolDown) {
                 animationState.getController().setAnimation(RawAnimation.begin().then("unabled", Animation.LoopType.HOLD_ON_LAST_FRAME));
                 return PlayState.CONTINUE;
             }

@@ -18,6 +18,6 @@ public class GoldCoinModel extends GeoModel<GoldCoinBlockEntity> {
 
     @Override
     public Identifier getAnimationResource(GoldCoinBlockEntity animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/generic.animation.json");
     }
 }

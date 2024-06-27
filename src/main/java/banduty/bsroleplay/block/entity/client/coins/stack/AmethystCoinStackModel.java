@@ -18,6 +18,6 @@ public class AmethystCoinStackModel extends GeoModel<AmethystCoinStackBlockEntit
 
     @Override
     public Identifier getAnimationResource(AmethystCoinStackBlockEntity animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/generic.animation.json");
     }
 }

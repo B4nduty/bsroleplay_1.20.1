@@ -63,11 +63,10 @@ public class PharaohStaff extends Item implements GeoItem {
 
     private PlayState predicate(AnimationState<PharaohStaff> animationState) {
         if (MinecraftClient.getInstance().player == null) return PlayState.STOP;
+        boolean coolDown = MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this);
+        if (coolDown) return PlayState.STOP;
         if (BsRolePlay.CONFIG.common.modifyPharaohStaffLightning) {
             animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.LOOP));
-            if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {
-                return PlayState.STOP;
-            }
             return PlayState.CONTINUE;
         }
         animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));

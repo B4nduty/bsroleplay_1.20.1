@@ -63,15 +63,15 @@ public class JudgeHammer extends Item implements GeoItem {
     private PlayState predicate(AnimationState<JudgeHammer> animationState) {
         if (MinecraftClient.getInstance().player == null) return PlayState.STOP;
         Item mainHand = MinecraftClient.getInstance().player.getMainHandStack().getItem();
-        if (mainHand == this) {
-            if (BsRolePlay.CONFIG.common.modifyJudgeHammerSound) {
-                if (MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this)) {
-                    animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));
-                    return PlayState.CONTINUE;
-                }
-                animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.HOLD_ON_LAST_FRAME));
+        Item leftHand = MinecraftClient.getInstance().player.getOffHandStack().getItem();
+        boolean coolDown = MinecraftClient.getInstance().player.getItemCooldownManager().isCoolingDown(this);
+        if (BsRolePlay.CONFIG.common.modifyJudgeHammerSound && (mainHand == this || leftHand == this)) {
+            if (coolDown) {
+                animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));
                 return PlayState.CONTINUE;
             }
+            animationState.getController().setAnimation(RawAnimation.begin().then("able", Animation.LoopType.HOLD_ON_LAST_FRAME));
+            return PlayState.CONTINUE;
         }
         animationState.getController().setAnimation(RawAnimation.begin().then("unable", Animation.LoopType.HOLD_ON_LAST_FRAME));
         return PlayState.CONTINUE;

@@ -73,6 +73,9 @@
   "block.bsroleplay.netherite_coin": "Netherite Coin",
   "block.bsroleplay.netherite_coin_stack": "Netherite Coin Stack",
 
+  "block.bsroleplay.shop": "Shop",
+  "block.bsroleplay.creative_shop": "Creative Shop",
+
   "item.bsroleplay.lawyer_blackblue_chestplate": "Black and Blue Suit",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Black and Gold Suit",
   "item.bsroleplay.lawyer_blackred_chestplate": "Black and Red Suit",
@@ -94,6 +97,8 @@
   "item.bsroleplay.handcuffs_key": "Handcuffs Key",
   "item.bsroleplay.endercuffs": "Endercuffs",
 
+  "item.bsroleplay.invdetector": "Pulse Detector",
+
   "message.bsroleplay.handcuff.handcuffed_1": "%s §4has been Handcuffed",
   "message.bsroleplay.handcuff.handcuffed_2": "§7You §rhave been Handcuffed",
   "message.bsroleplay.endercuffs.handcuffed": "§6God %s §4has been downgraded to be a Mortal",
@@ -103,6 +108,12 @@
   "sounds.bsroleplay.judge_hammer_right_click": "Judge Hammer Noise",
   "sounds.bsroleplay.handcuffed": "Handcuffed",
   "sounds.bsroleplay.handcuffednt": "Handcuffednt",
+
+  "bsroleplay.shop.sell_popup": "Your %s has been Sold",
+  "bsroleplay.shop.no_money": "Not enough money",
+  "bsroleplay.shop.full_coins": "Shop is Full of Coins, come back later",
+  "bsroleplay.shop.wallet_need": "You need a Wallet to Buy",
+  "bsroleplay.shop.no_item_sell": "There's no Item Selling",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.category.common": "Common",

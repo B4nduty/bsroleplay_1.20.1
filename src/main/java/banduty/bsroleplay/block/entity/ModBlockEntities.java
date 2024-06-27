@@ -10,6 +10,8 @@ import banduty.bsroleplay.block.entity.coins.stack.AmethystCoinStackBlockEntity;
 import banduty.bsroleplay.block.entity.coins.stack.CopperCoinStackBlockEntity;
 import banduty.bsroleplay.block.entity.coins.stack.GoldCoinStackBlockEntity;
 import banduty.bsroleplay.block.entity.coins.stack.NetheriteCoinStackBlockEntity;
+import banduty.bsroleplay.block.entity.shops.CreativeShopBlockEntity;
+import banduty.bsroleplay.block.entity.shops.ShopBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
@@ -19,6 +21,16 @@ import net.minecraft.util.Identifier;
 public class ModBlockEntities {
     public static void registerAllBlockEntities() {
     }
+
+    public static final BlockEntityType<ShopBlockEntity> SHOP_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+            new Identifier(BsRolePlay.MOD_ID, "shop_block_entity"),
+            FabricBlockEntityTypeBuilder.create(ShopBlockEntity::new,
+                    ModBlocks.SHOP).build());
+
+    public static final BlockEntityType<CreativeShopBlockEntity> CREATIVE_SHOP_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+            new Identifier(BsRolePlay.MOD_ID, "creative_shop_block_entity"),
+            FabricBlockEntityTypeBuilder.create(CreativeShopBlockEntity::new,
+                    ModBlocks.CREATIVE_SHOP).build());
 
     public static final BlockEntityType<TinyBandutyBlockEntity> TINY_BANDUTY_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
             new Identifier(BsRolePlay.MOD_ID, "tiny_banduty_block_entity"),

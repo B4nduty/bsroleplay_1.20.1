@@ -18,6 +18,6 @@ public class GoldCoinStackModel extends GeoModel<GoldCoinStackBlockEntity> {
 
     @Override
     public Identifier getAnimationResource(GoldCoinStackBlockEntity animatable) {
-        return new Identifier(BsRolePlay.MOD_ID, "animations/noanim.animation.json");
+        return new Identifier(BsRolePlay.MOD_ID, "animations/generic.animation.json");
     }
 }

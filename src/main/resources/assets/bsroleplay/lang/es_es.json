@@ -73,6 +73,9 @@
   "block.bsroleplay.netherite_coin": "Moneda de Netherita",
   "block.bsroleplay.netherite_coin_stack": "Pila de Monedas de Netherita",
 
+  "block.bsroleplay.shop": "Tienda",
+  "block.bsroleplay.creative_shop": "Tienda Infinita",
+
   "item.bsroleplay.lawyer_blackblue_chestplate": "Traje Negro y Azul",
   "item.bsroleplay.lawyer_blackgold_chestplate": "Traje Negro y Oro",
   "item.bsroleplay.lawyer_blackred_chestplate": "Traje Negro y Rojo",
@@ -94,6 +97,8 @@
   "item.bsroleplay.handcuffs_key": "Llave de Esposas",
   "item.bsroleplay.endercuffs": "Esposas del End",
 
+  "item.bsroleplay.invdetector": "Detector de Pulsos",
+
   "message.bsroleplay.handcuff.handcuffed_1": "%s §4ha sido esposado",
   "message.bsroleplay.handcuff.handcuffed_2": "Has sido esposado",
   "message.bsroleplay.endercuffs.handcuffed": "§6El Dios %s §4ha sido rebajado a un simple Mortal",
@@ -103,6 +108,12 @@
   "sounds.bsroleplay.judge_hammer_right_click": "Golpe de Martillo de Juez",
   "sounds.bsroleplay.handcuffed": "Esposar",
   "sounds.bsroleplay.handcuffednt": "Exesposado",
+
+  "bsroleplay.shop.sell_popup": "Tu %s ha sido vendido",
+  "bsroleplay.shop.no_money": "Dinero insuficiente",
+  "bsroleplay.shop.full_coins": "La Tienda está llena de Monedas, vuelve más tarde.",
+  "bsroleplay.shop.wallet_need": "Necesitas una Cartera para Comprar",
+  "bsroleplay.shop.no_item_sell": "No hay ningún Artículo en Venta",
 
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.category.common": "Común",

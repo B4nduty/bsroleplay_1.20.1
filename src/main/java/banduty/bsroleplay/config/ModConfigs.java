@@ -287,19 +287,19 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                InvKit Consume Time in Seconds | Default: 2
+                InvKit Consume Time in Seconds | Default: 0.5
                 """)
-        int invKitConsumeTime = 2;
+        double invKitConsumeTime = 0.5;
 
-        public int getInvKitConsumeTime() {
+        public double getInvKitConsumeTime() {
             return Math.max(0, invKitConsumeTime);
         }
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                InvKit 1st Stage in Seconds | Default: 20
+                InvKit 1st Stage in Seconds | Default: 15
                 """)
-        int invKit1stStageTime = 20;
+        int invKit1stStageTime = 15;
 
         public int getInvKit1stStageTime() {
             return Math.max(0, invKit1stStageTime);
@@ -364,9 +364,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Copper Coin drop chance by Hostile Mobs | Default: 0.25f
+                Copper Coin drop chance by Hostile Mobs | Default: 0.15f
                 """)
-        float copperCoinChanceHostileMobs = 0.25f;
+        float copperCoinChanceHostileMobs = 0.15f;
 
         public float getCopperCoinChanceHostileMobs() {
             return Math.min(1, Math.max(0, copperCoinChanceHostileMobs));
@@ -384,9 +384,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Gold Coin drop chance by Hostile Mobs | Default: 0.01f
+                Gold Coin drop chance by Hostile Mobs | Default: 0.005f
                 """)
-        float goldCoinChanceHostileMobs = 0.01f;
+        float goldCoinChanceHostileMobs = 0.005f;
 
         public float getGoldCoinChanceHostileMobs() {
             return Math.min(1, Math.max(0, goldCoinChanceHostileMobs));
@@ -414,9 +414,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Gold Coin amount drop by Boss Mobs | Default: 5.0f
+                Max Gold Coin amount drop by Boss Mobs | Default: 3.0f
                 """)
-        float goldCoinMaxAmountBossMobs = 5.0f;
+        float goldCoinMaxAmountBossMobs = 3.0f;
 
         public float getGoldCoinMaxAmountBossMobs() {
             return Math.max(0, goldCoinMaxAmountBossMobs);
@@ -424,9 +424,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Amethyst Coin drop chance by Boss Mobs | Default: 0.5f
+                Amethyst Coin drop chance by Boss Mobs | Default: 0.2f
                 """)
-        float amethystCoinChanceBossMobs = 0.5f;
+        float amethystCoinChanceBossMobs = 0.2f;
 
         public float getAmethystCoinChanceBossMobs() {
             return Math.min(1, Math.max(0, amethystCoinChanceBossMobs));
@@ -464,9 +464,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Netherite Coin drop chance by Ender Dragon | Default: 0.4f
+                Netherite Coin drop chance by Ender Dragon | Default: 0.05f
                 """)
-        float netheriteCoinChanceEnderDragon = 0.4f;
+        float netheriteCoinChanceEnderDragon = 0.05f;
 
         public float getNetheriteCoinChanceEnderDragon() {
             return Math.min(1, Math.max(0, netheriteCoinChanceEnderDragon));
@@ -484,9 +484,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Copper Coin drop chance by Ores | Default: 0.2f
+                Copper Coin drop chance by Ores | Default: 0.05f
                 """)
-        float copperCoinChanceOres = 0.2f;
+        float copperCoinChanceOres = 0.05f;
 
         public float getCopperCoinChanceOres() {
             return Math.min(1, Math.max(0, copperCoinChanceOres));
@@ -504,9 +504,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Gold Coin drop chance by Ores | Default: 0.02f
+                Gold Coin drop chance by Ores | Default: 0.005f
                 """)
-        float goldCoinChanceOres = 0.02f;
+        float goldCoinChanceOres = 0.005f;
 
         public float getGoldCoinChanceOres() {
             return Math.min(1, Math.max(0, goldCoinChanceOres));
@@ -524,9 +524,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Amethyst Coin drop chance by Ores | Default: 0.00001f
+                Amethyst Coin drop chance by Ores | Default: 0.000001f
                 """)
-        float amethystCoinChanceOres = 0.00001f;
+        float amethystCoinChanceOres = 0.000001f;
 
         public float getAmethystCoinChanceOres() {
             return Math.min(1, Math.max(0, amethystCoinChanceOres));

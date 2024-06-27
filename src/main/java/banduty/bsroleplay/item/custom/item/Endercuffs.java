@@ -7,6 +7,7 @@ import banduty.bsroleplay.util.Handcuffed;
 import banduty.bsroleplay.util.IEntityDataSaver;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.*;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -28,6 +29,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.GameMode;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class Endercuffs extends Item {
     public Endercuffs(Settings settings) {
@@ -105,5 +109,12 @@ public class Endercuffs extends Item {
             }
             return ActionResult.success(world.isClient());
         }
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.literal("Use on a Creative Player to Handcuff and change the gamemode into Survival").formatted(Formatting.AQUA));
+        tooltip.add(Text.literal("Use it on Blocks or Flammable Blocks to make Fire").formatted(Formatting.AQUA));
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }

@@ -93,13 +93,13 @@ public class MobsLootTableModifier {
 
                     tableBuilder.pool(netheriteCoin.build());
 
-                    LootPool.Builder poolBuilder = LootPool.builder()
+                    LootPool.Builder enderCuffs = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(0.05f))
+                            .conditionally(RandomChanceLootCondition.builder(0.01f))
                             .with(ItemEntry.builder(ModItems.ENDERCUFFS))
                             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
-                    tableBuilder.pool(poolBuilder.build());
+                    tableBuilder.pool(enderCuffs.build());
                 }
             });
         }
