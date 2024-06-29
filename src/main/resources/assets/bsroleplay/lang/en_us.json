@@ -97,7 +97,7 @@
   "item.bsroleplay.handcuffs_key": "Handcuffs Key",
   "item.bsroleplay.endercuffs": "Endercuffs",
 
-  "item.bsroleplay.invdetector": "Pulse Detector",
+  "item.bsroleplay.spectral_scanner": "Spectral Scanner",
 
   "message.bsroleplay.handcuff.handcuffed_1": "%s §4has been Handcuffed",
   "message.bsroleplay.handcuff.handcuffed_2": "§7You §rhave been Handcuffed",

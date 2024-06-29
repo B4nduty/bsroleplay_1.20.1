@@ -29,7 +29,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ENDERCUFFS);
                         entries.add(ModItems.HOOK);
                         entries.add(ModItems.PHARAOH_STAFF);
-                        entries.add(ModItems.INV_DETECTOR);
+                        entries.add(ModItems.SPECTRAL_SCANNER);
                     })
                     .build());
 

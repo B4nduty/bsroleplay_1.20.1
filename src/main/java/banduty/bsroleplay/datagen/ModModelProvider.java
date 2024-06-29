@@ -71,6 +71,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.INVKIT, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.SPECTRAL_SCANNER, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.FUSION_CORE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.COPPER_COIN, Models.GENERATED);

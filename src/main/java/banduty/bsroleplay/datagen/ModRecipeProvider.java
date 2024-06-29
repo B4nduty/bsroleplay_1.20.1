@@ -728,21 +728,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.COPPER_COIN), conditionsFromItem(ModItems.COPPER_COIN))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.WALLET)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INV_DETECTOR, 1)
-                .pattern("  G")
-                .pattern("ERA")
-                .pattern(" I ")
-                .input('R', ModItems.ROLEPLAY_CORE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SPECTRAL_SCANNER, 1)
+                .pattern("ASA")
+                .pattern("SES")
+                .pattern("ASA")
+                .input('S', Items.SCULK)
                 .input('E', Items.ENDER_EYE)
                 .input('A', Items.AMETHYST_SHARD)
-                .input('I', Items.IRON_INGOT)
-                .input('G', Items.TINTED_GLASS)
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.ENDER_EYE), conditionsFromItem(Items.ENDER_EYE))
                 .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
-                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
-                .criterion(hasItem(Items.TINTED_GLASS), conditionsFromItem(Items.TINTED_GLASS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.INV_DETECTOR)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SPECTRAL_SCANNER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SHOP, 1)
                 .pattern(" G ")

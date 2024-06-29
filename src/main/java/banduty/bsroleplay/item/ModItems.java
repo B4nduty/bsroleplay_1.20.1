@@ -176,8 +176,8 @@ public class ModItems {
     public static final Item WALLET = registerItem("wallet",
             new WalletItem(new FabricItemSettings().maxCount(1)));
 
-    public static final Item INV_DETECTOR = registerItem("invdetector",
-            new InvDetector(new FabricItemSettings().maxCount(1).maxDamage(5)));
+    public static final Item SPECTRAL_SCANNER = registerItem("spectral_scanner",
+            new SpectralScanner(new FabricItemSettings().maxCount(1).maxDamage(5)));
 
     public static final Item SHOP = registerItem("shop",
             new ShopItem(ModBlocks.SHOP, new FabricItemSettings()));
