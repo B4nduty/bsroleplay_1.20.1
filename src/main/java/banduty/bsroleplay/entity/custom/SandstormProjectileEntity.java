@@ -14,6 +14,7 @@ import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
 import net.minecraft.particle.DustParticleEffect;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -48,7 +49,6 @@ public class SandstormProjectileEntity extends ThrownItemEntity {
         super.onEntityHit(entityHitResult);
         BlockPos center = entityHitResult.getEntity().getBlockPos();
         int radius = 8;
-
         BlockPos corner1 = new BlockPos(
                 center.getX() - radius,
                 center.getY() - radius,
@@ -60,9 +60,8 @@ public class SandstormProjectileEntity extends ThrownItemEntity {
                 center.getY() + radius,
                 center.getZ() + radius
         );
-
-        spawnHollowCubeParticles(corner1, corner2, this.getWorld());
         if (!this.getWorld().isClient) {
+            spawnHollowCubeParticles(corner1, corner2, (ServerWorld) this.getWorld());
             this.getWorld().sendEntityStatus(this, (byte) 3);
             Box box = new Box(center).expand(8);
             this.getWorld().getEntitiesByClass(LivingEntity.class, box, entity ->
@@ -79,7 +78,6 @@ public class SandstormProjectileEntity extends ThrownItemEntity {
         super.onBlockHit(blockHitResult);
         BlockPos center = blockHitResult.getBlockPos();
         int radius = 8;
-
         BlockPos corner1 = new BlockPos(
                 center.getX() - radius,
                 center.getY() - radius,
@@ -92,8 +90,8 @@ public class SandstormProjectileEntity extends ThrownItemEntity {
                 center.getZ() + radius
         );
 
-        spawnHollowCubeParticles(corner1, corner2, this.getWorld());
         if (!this.getWorld().isClient) {
+            spawnHollowCubeParticles(corner1, corner2, (ServerWorld) this.getWorld());
             this.getWorld().sendEntityStatus(this, (byte) 3);
             Box box = new Box(center).expand(8);
             this.getWorld().getEntitiesByClass(LivingEntity.class, box, entity ->
@@ -105,7 +103,7 @@ public class SandstormProjectileEntity extends ThrownItemEntity {
         this.discard();
     }
 
-    public static void spawnHollowCubeParticles(BlockPos corner1, BlockPos corner2, World world) {
+    public static void spawnHollowCubeParticles(BlockPos corner1, BlockPos corner2, ServerWorld world) {
         List<BlockPos> result = new ArrayList<>();
         int minX = Math.min(corner1.getX(), corner2.getX());
         int minY = Math.min(corner1.getY(), corner2.getY());
@@ -149,8 +147,8 @@ public class SandstormProjectileEntity extends ThrownItemEntity {
             float green = ColorHelper.Argb.getGreen(color) / 255.0F;
             float blue = ColorHelper.Argb.getBlue(color) / 255.0F;
 
-            world.addParticle(new DustParticleEffect(new Vector3f(red, green, blue), 1.0f),
-                    x, y, z, 0.0, 0.0, 0.0);
+            world.spawnParticles(new DustParticleEffect(new Vector3f(red, green, blue), 1.0f), x, y, z,
+                    1, 0.0, 0.0, 0.0, 0.0);
         }
     }
 }

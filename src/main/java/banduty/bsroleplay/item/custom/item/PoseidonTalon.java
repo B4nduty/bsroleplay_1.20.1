@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.particle.DustParticleEffect;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.Box;
@@ -56,14 +57,13 @@ public class PoseidonTalon extends Item {
                     float green = ColorHelper.Argb.getGreen(color) / 255.0F;
                     float blue = ColorHelper.Argb.getBlue(color) / 255.0F;
 
-                    world.addParticle(new DustParticleEffect(
-                                    new Vector3f(red, green, blue),
-                                    1.0f
-                            ),
-                            particleX,
-                            particleY,
-                            particleZ,
-                            0f, 0f, 0f);
+                    if (world instanceof ServerWorld serverWorld) {
+                        serverWorld.spawnParticles(new DustParticleEffect(new Vector3f(red, green, blue), 1.0f),
+                                particleX,
+                                particleY,
+                                particleZ,
+                                1, 0.0, 0.0, 0.0, 0.0);
+                    }
                 }
             }
             if (!world.isClient) {

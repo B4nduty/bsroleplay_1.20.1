@@ -4,6 +4,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.particle.DustParticleEffect;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.ColorHelper;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
@@ -50,15 +51,13 @@ public class SandstormEffect extends StatusEffect {
 
                 Vec3d offset = new Vec3d(xOffset + swirlX, yOffset + oscillationY, zOffset + swirlZ);
 
-                entity.getEntityWorld().addParticle(new DustParticleEffect(
-                                new Vector3f(red, green, blue),
-                                1.0f
-                        ),
-                        centerX + offset.x,
-                        centerY + offset.y,
-                        centerZ + offset.z,
-                        0, 0, 0
-                );
+                if (entity.getEntityWorld() instanceof ServerWorld serverWorld) {
+                    serverWorld.spawnParticles(new DustParticleEffect(new Vector3f(red, green, blue), 1.0f),
+                            centerX + offset.x,
+                            centerY + offset.y,
+                            centerZ + offset.z,
+                            1, 0.0, 0.0, 0.0, 0.0);
+                }
             }
         }
         super.applyUpdateEffect(entity, amplifier);
