@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-29T20:25:04.2419795	BsRolePlay/Recipes
+// 1.20.1	2024-07-02T10:20:20.7522435	BsRolePlay/Recipes
 27a5ce389e7a055451819460d0b4b1a574bbfd4a data\bsroleplay\advancements\recipes\misc\halo.json
 1c6f4972ebef5ecbfb308a1dba90e23e0164567e data\bsroleplay\recipes\protection_chestplate.json
 0981626eee4fd292a161dd2445e2f9216e88994e data\bsroleplay\advancements\recipes\misc\lawyer_boots_black_2.json
@@ -12,8 +12,8 @@ c79cdfcb71c5cae3402e565f2d0b5acf294acc7f data\bsroleplay\recipes\protection_legg
 f39765e375c67336e10dabafdd053632e3eff3f2 data\bsroleplay\recipes\red_protection_helmet.json
 d3eaeb38a9f18d81d906c0f5d51d423e210b088c data\bsroleplay\advancements\recipes\misc\blue_pirate_leggings.json
 af6aa17eacdd0fa5dfec72a926e64e3ee5962a9b data\bsroleplay\recipes\lawyer_blackred_chestplate_1.json
-85119fd03a8e0431da8ac8104511ba6863576134 data\bsroleplay\advancements\recipes\misc\black_briefcase.json
 b1805108caf0ecec982e715869cb11ac65e75f51 data\bsroleplay\recipes\black_briefcase_to_violet_briefcase.json
+85119fd03a8e0431da8ac8104511ba6863576134 data\bsroleplay\advancements\recipes\misc\black_briefcase.json
 dd041b48bd461a14af303a3c64d557fc985df420 data\bsroleplay\advancements\recipes\misc\cowboy_hat.json
 c985375f49119df4256dc394c4fd07ecb805fa26 data\bsroleplay\advancements\recipes\misc\amethyst_coin.json
 aee1edeefb816ee06bc1d4cfd5cad4f49cda8812 data\bsroleplay\advancements\recipes\misc\dealer_mask.json
@@ -150,8 +150,8 @@ f6d2df3ec0242b580e2f3afecff1363a401705bf data\bsroleplay\advancements\recipes\mi
 87be6c1a6fe5c09e299f17421a98fe2a5817019f data\bsroleplay\advancements\recipes\misc\gold_coin_stack.json
 5eb60f41fa6a6cf7dfc5acd63ab74faa8d3a6187 data\bsroleplay\recipes\red_pirate_leggings.json
 2453b52e529b6509fe032c6600e7b778e3680045 data\bsroleplay\recipes\violet_briefcase_to_black_briefcase.json
-40dc8bcafb7b9e00807c1f14d29a18348625c9b6 data\bsroleplay\advancements\recipes\misc\police_leggings.json
 395c09d8154375e212ff017b823387e38fab6405 data\bsroleplay\advancements\recipes\misc\bunny_mask.json
+40dc8bcafb7b9e00807c1f14d29a18348625c9b6 data\bsroleplay\advancements\recipes\misc\police_leggings.json
 b95ba3b4b014ab66f58c869b02f1b5bd350f8f33 data\bsroleplay\advancements\recipes\misc\protection_helmet.json
 4564474a2af396b49b56910acbce64fe2500de5a data\bsroleplay\recipes\roman_toga.json
 6dfbaacc6619e01712a071eeaf460148acd83e8f data\bsroleplay\recipes\lawyer_blackred_chestplate_3.json

@@ -95,7 +95,7 @@ public class MobsLootTableModifier {
 
                     LootPool.Builder enderCuffs = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(0.01f))
+                            .conditionally(RandomChanceLootCondition.builder(0.05f))
                             .with(ItemEntry.builder(ModItems.ENDERCUFFS))
                             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 

@@ -13,8 +13,8 @@
   "item.bsroleplay.dream_mask": "Masque de Dream",
   "item.bsroleplay.bunny_mask": "Masque de Lapin",
 
-  "item.bsroleplay.hook": "Crochet",
-  "tooltip.bsroleplay.hook.tooltip": "Lorsque vous faites un clic droit, un Evoker Fangs apparaît",
+  "item.bsroleplay.poseidon_talon": "Serre de Poséidon",
+  "tooltip.bsroleplay.poseidon_talon.tooltip": "Lorsque le clic droit crée une onde de choc",
 
   "item.bsroleplay.judge_hammer": "Marteau du Juge",
   "tooltip.bsroleplay.judgehammer.tooltip": "Lorsque vous faites un clic droit, cela fait un son",
@@ -29,8 +29,8 @@
   "item.bsroleplay.police_leggings": "Pantalon de Police",
   "item.bsroleplay.police_boots": "Chaussures de Police",
 
-  "item.bsroleplay.pharaoh_staff": "Bâton du Pharaon",
-  "tooltip.bsroleplay.pharaoh_staff.tooltip": "Lorsque vous faites un clic droit, un éclair apparaît",
+  "item.bsroleplay.dune_caller": "Chant des Sables",
+  "tooltip.bsroleplay.dune_caller.tooltip": "Quand un Clic Droit invoque une Tempête de Sable",
 
   "item.bsroleplay.halo": "Aura",
 
@@ -118,8 +118,6 @@
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.category.common": "Commun",
   "text.autoconfig.bsroleplay.category.currency": "Devise",
-  "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bâton du Pharaon - Éclairs",
-  "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Crochet - Evoker Fang",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Marteau du Juge- Son",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Bâton de Police - Lenteur",
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Ensemble de Protections - Effets",
@@ -129,10 +127,10 @@
   "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Menottes - Niveau de Faiblesse",
   "text.autoconfig.bsroleplay.option.common.handcuffsCooldown": "Menottes - Refroidissement",
   "text.autoconfig.bsroleplay.option.common.handcuffsCooldown.@Tooltip": "En Secondes",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bâton du Pharaon - Refroidissement",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Secondes",
-  "text.autoconfig.bsroleplay.option.common.hookCooldown": "Crochet - Refroidissement",
-  "text.autoconfig.bsroleplay.option.common.hookCooldown.@Tooltip": "En Secondes",
+  "text.autoconfig.bsroleplay.option.common.duneCallerCooldown": "Chant des Sables - Refroidissement",
+  "text.autoconfig.bsroleplay.option.common.duneCallerCooldown.@Tooltip": "En Secondes",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonCooldown": "Serre de Poséidon - Refroidissement",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown": "Marteau du Juge - Refroidissement",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessLevel": "Bâton de Police - Niveau de Lenteur",
@@ -162,11 +160,11 @@
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime.@Tooltip": "En Secondes",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Info-bulles des Éléments",
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Chances de Coffre - Masque Funéraire",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Chances de Coffre - Bâton du Pharaon",
+  "text.autoconfig.bsroleplay.option.common.duneCallerChestsChance": "Chances de Coffre - Chant des Sables",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Chances de Coffre - Chapeau Gadget",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime": "InvKit - 1ère Étape",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime.@Tooltip": "En Secondes",
-  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Chances de Coffre - Crochet",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonChestsChance": "Chances de Coffre - Serre de Poséidon",
   "text.autoconfig.bsroleplay.option.common.modifyEndercuffsFire": "EnderMenottes - Briquet",
 
   "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Afficher le Prix des Pièces",
@@ -202,10 +200,10 @@
   "advancement.roleplay_core.desc": "Créer un Noyau Roleplay",
 
   "advancement.funeral_mask.title": "Soyez le Joueur Ultime",
-  "advancement.funeral_mask.desc": "Trouver un Masque Funéraire et le Bâton du Pharaon",
+  "advancement.funeral_mask.desc": "Trouver un Masque Funéraire et le Chant des Sables",
 
-  "advancement.hook.title": "Le Roi des Pirates",
-  "advancement.hook.desc": "Trouver un Crochet",
+  "advancement.poseidonTalon.title": "Le Roi des Pirates",
+  "advancement.poseidonTalon.desc": "Trouver un Serre de Poséidon",
 
   "advancement.fusion_core.title": "Le Savant Fou",
   "advancement.fusion_core.desc": "Trouver le Noyau de Fusion",
@@ -219,5 +217,9 @@
   "advancement.netherite_coin_stack.title": "Fils de Riche",
   "advancement.netherite_coin_stack.desc": "Obtenez une Pile de Pièces Netherite et le Fedora",
   "key.category.bsroleplay": "BsRolePlay",
-  "key.bsroleplay.police_speed": "Police Speed Boost"
+  "key.bsroleplay.police_speed": "Police Speed Boost",
+
+
+  "effect.bsroleplay.sandstorm": "Tempête de Sable",
+  "effect.bsroleplay.tidal_surge": "Onde de Marée"
 }

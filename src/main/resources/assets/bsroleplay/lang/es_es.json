@@ -13,8 +13,8 @@
   "item.bsroleplay.dream_mask": "Máscara de Dream",
   "item.bsroleplay.bunny_mask": "Máscara de Conejo",
 
-  "item.bsroleplay.hook": "Garfio",
-  "tooltip.bsroleplay.hook.tooltip": "Cuando haces clic derecho, aparece unos Colmillos de Evocador",
+  "item.bsroleplay.poseidon_talon": "Garra de Poseidón",
+  "tooltip.bsroleplay.poseidon_talon.tooltip": "Cuando haces clic derecho, crea una onda de choque",
 
   "item.bsroleplay.judge_hammer": "Martillo de Juez",
   "tooltip.bsroleplay.judgehammer.tooltip": "Al darle Clic Derecho hace Sonido",
@@ -29,8 +29,8 @@
   "item.bsroleplay.police_leggings": "Pantalón Policial",
   "item.bsroleplay.police_boots": "Zapatos Policiales",
 
-  "item.bsroleplay.pharaoh_staff": "Bastón del Faraón",
-  "tooltip.bsroleplay.pharaoh_staff.tooltip": "Al darle Clic Derecho aparece un Rayo",
+  "item.bsroleplay.dune_caller": "Susurrador del Desierto",
+  "tooltip.bsroleplay.dune_caller.tooltip": "Clic Derecho para invocar una Tormenta de Arena",
 
   "item.bsroleplay.halo": "Aureola",
 
@@ -118,8 +118,6 @@
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.category.common": "Común",
   "text.autoconfig.bsroleplay.category.currency": "Divisa",
-  "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Bastón del Faraón - Relámpagos",
-  "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Garfio - Colmillos de Evocador",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Martillo del Juez - Sonido",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Porra Policial - Lentitud",
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Conjunto de Protección - Efectos",
@@ -129,10 +127,10 @@
   "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Esposas - Nivel de Debilidad",
   "text.autoconfig.bsroleplay.option.common.handcuffsCooldown": "Esposas - Enfriamiento",
   "text.autoconfig.bsroleplay.option.common.handcuffsCooldown.@Tooltip": "En Segundos",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Bastón del Faraón - Enfriamiento",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "En Segundos",
-  "text.autoconfig.bsroleplay.option.common.hookCooldown": "Garfio - Enfriamiento",
-  "text.autoconfig.bsroleplay.option.common.hookCooldown.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.duneCallerCooldown": "Susurrador del Desierto - Enfriamiento",
+  "text.autoconfig.bsroleplay.option.common.duneCallerCooldown.@Tooltip": "En Segundos",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonCooldown": "Garra de Poseidón - Enfriamiento",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown": "Martillo de Juez - Enfriamiento",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessLevel": "Porra Policial - Nivel de Lentitud",
@@ -162,11 +160,11 @@
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime.@Tooltip": "En Segundos",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Información sobre Herramientas",
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Probabilidad de Cofres - Máscara Funeraria",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Probabilidad de Cofres - Bastón del Faraón",
+  "text.autoconfig.bsroleplay.option.common.duneCallerChestsChance": "Probabilidad de Cofres - Susurrador del Desierto",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Probabilidad de Cofres - Sombrero de Artilugios",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime": "Pastilla Depresiva - Primera Etapa",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime.@Tooltip": "En Segundos",
-  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Probabilidad de Cofres - Garfio",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonChestsChance": "Probabilidad de Cofres - Garra de Poseidón",
   "text.autoconfig.bsroleplay.option.common.modifyEndercuffsFire": "Esposas del End - Mechero",
 
   "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Mostrar Precio de las Monedas",
@@ -202,10 +200,10 @@
   "advancement.roleplay_core.desc": "Craftea un Núcleo de Roleplay",
 
   "advancement.funeral_mask.title": "Sé el Jugador Supremo",
-  "advancement.funeral_mask.desc": "Encuentra una Máscara Funeraria y el Bastón del Faraón",
+  "advancement.funeral_mask.desc": "Encuentra una Máscara Funeraria y el Susurrador del Desierto",
 
-  "advancement.hook.title": "El Rey de los Piratas",
-  "advancement.hook.desc": "Encuentra un Garfio",
+  "advancement.poseidonTalon.title": "El Rey de los Piratas",
+  "advancement.poseidonTalon.desc": "Encuentra una Garra de Poseidón",
 
   "advancement.fusion_core.title": "El Científico Loco",
   "advancement.fusion_core.desc": "Encuentra el Núcleo de Fusión",
@@ -219,5 +217,9 @@
   "advancement.netherite_coin_stack.title": "El Niño Pijo",
   "advancement.netherite_coin_stack.desc": "Obtén una Pila de Monedas de Netherita y Fedora",
   "key.category.bsroleplay": "BsRolePlay",
-  "key.bsroleplay.police_speed": "Police Speed Boost"
+  "key.bsroleplay.police_speed": "Police Speed Boost",
+
+
+  "effect.bsroleplay.sandstorm": "Tormenta de Arena",
+  "effect.bsroleplay.tidal_surge": "Marejada"
 }

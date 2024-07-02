@@ -26,9 +26,9 @@ public class SpectralScanner extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!world.isClient) {
-            Box box = new Box(user.getBlockPos()).expand(32);
+            Box box = new Box(user.getBlockPos()).expand(24);
             world.getEntitiesByClass(LivingEntity.class, box, entity ->
-                    user.getBlockPos().isWithinDistance(entity.getBlockPos(), 33) && entity instanceof PlayerEntity
+                    user.getBlockPos().isWithinDistance(entity.getBlockPos(), 25) && entity instanceof PlayerEntity
                             && entity != user && entity.hasStatusEffect(StatusEffects.INVISIBILITY))
                     .forEach(entity -> {
                         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING,
@@ -36,7 +36,7 @@ public class SpectralScanner extends Item {
                         entity.playSound(SoundEvents.BLOCK_BELL_USE, 1.0f, 1.0f);
                     });
             user.getStackInHand(hand).damage(1, null, (ServerPlayerEntity) user);
-            user.getItemCooldownManager().set(this, 30 * 20);
+            user.getItemCooldownManager().set(this, 45 * 20);
         }
         return TypedActionResult.success(user.getStackInHand(hand));
     }

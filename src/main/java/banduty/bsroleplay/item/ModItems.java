@@ -32,8 +32,10 @@ public class ModItems {
     public static final Item POLICE_BATON = registerItem("police_baton",
             new PoliceBaton(new FabricItemSettings().maxCount(1)));
 
-    public static final Item PHARAOH_STAFF = registerItem("pharaoh_staff",
-            new PharaohStaff(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
+    public static final Item DUNE_CALLER = registerItem("dune_caller",
+            new DuneCaller(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
+    public static final Item SANDSTORM_PROJECTILE = registerItem("sandstorm_projectile",
+            new Item(new FabricItemSettings()));
 
     public static final Item POLICE_HELMET = registerItem("police_helmet",
             new PoliceArmorItem(ModArmorMaterials.POLICE, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -61,8 +63,8 @@ public class ModItems {
     public static final Item BLUE_PIRATE_LEGGINGS = registerItem("blue_pirate_leggings",
             new GenericArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
 
-    public static final Item HOOK = registerItem("hook",
-            new Hook(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
+    public static final Item POSEIDON_TALON = registerItem("poseidon_talon",
+            new PoseidonTalon(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final Item CROWN = registerItem("crown",
             new GenericArmorItem(ModArmorMaterials.KING, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -177,7 +179,7 @@ public class ModItems {
             new WalletItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item SPECTRAL_SCANNER = registerItem("spectral_scanner",
-            new SpectralScanner(new FabricItemSettings().maxCount(1).maxDamage(5)));
+            new SpectralScanner(new FabricItemSettings().maxCount(1).maxDamage(8)));
 
     public static final Item SHOP = registerItem("shop",
             new ShopItem(ModBlocks.SHOP, new FabricItemSettings()));

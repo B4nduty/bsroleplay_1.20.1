@@ -35,9 +35,9 @@ public class ServerItemCooldownManagerMixin {
 
     @Unique
     private static void addEffectsSadPill(ServerPlayerEntity player) {
-        player.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 30 * 20, 1, false, false, false));
-        player.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 60 * 20, 0, false, false, false));
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 30 * 20, 2, false, false, false));
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 45 * 20, 0, false, false, false));
         player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 10, 0, false, false, false));
-        player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 40 * 20, 2, false, false, false));
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 30 * 20, 2, false, false, false));
     }
 }

@@ -13,8 +13,8 @@
   "item.bsroleplay.dream_mask": "Dream Mask",
   "item.bsroleplay.bunny_mask": "Bunny Mask",
 
-  "item.bsroleplay.hook": "Hook",
-  "tooltip.bsroleplay.hook.tooltip": "When Right Click Summon Evoker Fangs",
+  "item.bsroleplay.poseidon_talon": "Poseidon's Talon",
+  "tooltip.bsroleplay.poseidon_talon.tooltip": "When Right Click creates a Shockwave",
 
   "item.bsroleplay.judge_hammer": "Judge Hammer",
   "tooltip.bsroleplay.judgehammer.tooltip": "When Right Click play a Sound",
@@ -29,8 +29,8 @@
   "item.bsroleplay.police_leggings": "Police Leggings",
   "item.bsroleplay.police_boots": "Police Boots",
 
-  "item.bsroleplay.pharaoh_staff": "Pharaoh Staff",
-  "tooltip.bsroleplay.pharaoh_staff.tooltip": "When Right Click summon a Lightning",
+  "item.bsroleplay.dune_caller": "Desert's Wrath",
+  "tooltip.bsroleplay.dune_caller.tooltip": "When Right Click invoke a Sandstorm",
 
   "item.bsroleplay.halo": "Halo",
 
@@ -118,8 +118,6 @@
   "text.autoconfig.bsroleplay.title": "Banduty's Roleplay",
   "text.autoconfig.bsroleplay.category.common": "Common",
   "text.autoconfig.bsroleplay.category.currency": "Currency",
-  "text.autoconfig.bsroleplay.option.common.modifyPharaohStaffLightning": "Pharaoh Staff - Lightnings",
-  "text.autoconfig.bsroleplay.option.common.modifyHookEvokerFang": "Hook - Evoker Fang",
   "text.autoconfig.bsroleplay.option.common.modifyJudgeHammerSound": "Judge Hammer - Sound",
   "text.autoconfig.bsroleplay.option.common.modifyPoliceBatonSlowness": "Police Baton - Slowness",
   "text.autoconfig.bsroleplay.option.common.modifyProtectionSetEffects": "Protection Set - Effects",
@@ -129,10 +127,10 @@
   "text.autoconfig.bsroleplay.option.common.handcuffsWeaknessLevel": "Handcuffs - Weakness Level",
   "text.autoconfig.bsroleplay.option.common.handcuffsCooldown": "Handcuffs - Cooldown",
   "text.autoconfig.bsroleplay.option.common.handcuffsCooldown.@Tooltip": "In Seconds",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown": "Pharaoh Staff - Cooldown",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffCooldown.@Tooltip": "In Seconds",
-  "text.autoconfig.bsroleplay.option.common.hookCooldown": "Hook - Cooldown",
-  "text.autoconfig.bsroleplay.option.common.hookCooldown.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.duneCallerCooldown": "Dune Caller - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.duneCallerCooldown.@Tooltip": "In Seconds",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonCooldown": "Poseidon's Talon - Cooldown",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonCooldown.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown": "Judge Hammer - Cooldown",
   "text.autoconfig.bsroleplay.option.common.judgeHammerCooldown.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.policeBatonSlownessLevel": "Police Baton - Slowness Level",
@@ -162,11 +160,11 @@
   "text.autoconfig.bsroleplay.option.common.invKitConsumeTime.@Tooltip": "In Seconds",
   "text.autoconfig.bsroleplay.option.common.showItemTooltips": "Show Item Tooltips",
   "text.autoconfig.bsroleplay.option.common.funeralMaskChestsChance": "Funeral Mask Chests Chance",
-  "text.autoconfig.bsroleplay.option.common.pharaohStaffChestsChance": "Pharaoh Staff Chests Chance",
+  "text.autoconfig.bsroleplay.option.common.duneCallerChestsChance": "Dune Caller Chests Chance",
   "text.autoconfig.bsroleplay.option.common.gadgetHatChestsChance": "Gadget Hat Chests Chances",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime": "InvKit 1st Stage Time",
   "text.autoconfig.bsroleplay.option.common.invKit1stStageTime.@Tooltip": "In Seconds",
-  "text.autoconfig.bsroleplay.option.common.hookChestsChance": "Hook Chests Chance",
+  "text.autoconfig.bsroleplay.option.common.poseidonTalonChestsChance": "Poseidon's Talon Chests Chance",
   "text.autoconfig.bsroleplay.option.common.modifyEndercuffsFire": "Endercuffs - Flint & Steel",
 
   "text.autoconfig.bsroleplay.option.currency.showCoinPrice": "Show Coin Price",
@@ -202,10 +200,10 @@
   "advancement.roleplay_core.desc": "Craft a Roleplay Core",
 
   "advancement.funeral_mask.title": "Be the Supreme Player",
-  "advancement.funeral_mask.desc": "Find a Funeral Mask and the Pharaoh Staff",
+  "advancement.funeral_mask.desc": "Find a Funeral Mask and the Dune Caller",
 
-  "advancement.hook.title": "The Pirate King",
-  "advancement.hook.desc": "Find a Hook",
+  "advancement.poseidonTalon.title": "The Pirate King",
+  "advancement.poseidonTalon.desc": "Find a Poseidon's Talon",
 
   "advancement.fusion_core.title": "The Mad Scientist",
   "advancement.fusion_core.desc": "Find a Fusion Core",
@@ -221,5 +219,9 @@
 
 
   "key.category.bsroleplay": "BsRolePlay",
-  "key.bsroleplay.police_speed": "Police Speed Boost"
+  "key.bsroleplay.police_speed": "Police Speed Boost",
+
+
+  "effect.bsroleplay.sandstorm": "Sandstorm",
+  "effect.bsroleplay.tidal_surge": "Tidal Surge"
 }

@@ -36,8 +36,7 @@ public class ProtectionClothingItem extends ArmorItem implements GeoItem {
                 }
             }
             if (wearingCorrectArmor) {
-                player.removeStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 40, 0,
-                        false, false, false).getEffectType());
+                player.removeStatusEffect(new StatusEffectInstance(StatusEffects.POISON).getEffectType());
             }
         }
 

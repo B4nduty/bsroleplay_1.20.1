@@ -13,7 +13,9 @@ import banduty.bsroleplay.block.entity.client.coins.stack.GoldCoinStackRenderer;
 import banduty.bsroleplay.block.entity.client.coins.stack.NetheriteCoinStackRenderer;
 import banduty.bsroleplay.block.entity.client.shops.creative_shop.CreativeShopRenderer;
 import banduty.bsroleplay.block.entity.client.shops.shop.ShopRenderer;
+import banduty.bsroleplay.client.GrayscaleOverlay;
 import banduty.bsroleplay.client.StaminaOverlay;
+import banduty.bsroleplay.entity.ModEntities;
 import banduty.bsroleplay.event.KeyInputHandler;
 import banduty.bsroleplay.item.ModItems;
 import banduty.bsroleplay.networking.ModMessages;
@@ -25,8 +27,10 @@ import dev.architectury.registry.client.rendering.BlockEntityRendererRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.item.DyeableItem;
 
 public class BsRolePlayClient implements ClientModInitializer {
@@ -72,10 +76,13 @@ public class BsRolePlayClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.CREATIVE_SHOP_SCREEN_HANDLER, CreativeShopScreen::new);
 
         HudRenderCallback.EVENT.register(new StaminaOverlay());
+        HudRenderCallback.EVENT.register(new GrayscaleOverlay());
 
         ModMessages.registerS2CPackets();
 
         KeyInputHandler.register();
+
+        EntityRendererRegistry.register(ModEntities.SANDSTORM_PROJECTILE, FlyingItemEntityRenderer::new);
     }
 
     public static int getAngle() {

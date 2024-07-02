@@ -99,5 +99,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.FEDORA, Models.GENERATED);
         itemModelGenerator.register(ModItems.FEDORA_PURPLE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.DUNE_CALLER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SANDSTORM_PROJECTILE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.POSEIDON_TALON, Models.HANDHELD);
     }
 }

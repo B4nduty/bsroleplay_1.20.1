@@ -13,7 +13,7 @@ public class StaminaZeroC2SPacket {
                                PacketByteBuf buf, PacketSender responseSender) {
         int stamina = ((IEntityDataSaver) player).bsroleplay$getPersistentData().getInt("stamina_int");
         if (stamina == 0) StaminaData.setZero((IEntityDataSaver) player, true);
-        if (stamina >= 10 && ((IEntityDataSaver) player).bsroleplay$getPersistentData()
+        if (stamina == 100 && ((IEntityDataSaver) player).bsroleplay$getPersistentData()
                 .getBoolean("stamina_zero")) StaminaData.setZero((IEntityDataSaver) player, false);
     }
 }

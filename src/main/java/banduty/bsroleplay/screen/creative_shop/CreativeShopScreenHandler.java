@@ -84,11 +84,11 @@ public class CreativeShopScreenHandler extends ScreenHandler {
             ItemStack newStack = slot.getStack();
             originalStack = newStack.copy();
             if (1 <= slotIndex) {
-                if (!this.insertItem(newStack, 2, 41, true)) {
+                if (!this.insertItem(newStack, 2, 37, true)) {
                     return ItemStack.EMPTY;
                 }
                 slot.onQuickTransfer(newStack, originalStack);
-            } else if (!this.insertItem(newStack, 2, 41, false)) return ItemStack.EMPTY;
+            } else if (!this.insertItem(newStack, 2, 37, false)) return ItemStack.EMPTY;
             if (newStack.isEmpty()) {
                 slot.setStack(ItemStack.EMPTY);
             } else {

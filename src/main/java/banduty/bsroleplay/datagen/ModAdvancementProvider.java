@@ -45,22 +45,22 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                         false
                 )
                 .criterion("got_funeral_mask", InventoryChangedCriterion.Conditions.items(ModItems.FUNERAL_MASK))
-                .criterion("got_pharaoh_staff", InventoryChangedCriterion.Conditions.items(ModItems.PHARAOH_STAFF))
+                .criterion("got_dune_caller", InventoryChangedCriterion.Conditions.items(ModItems.DUNE_CALLER))
                 .build(consumer, BsRolePlay.MOD_ID + "/be_supreme_player");
 
         Advancement hookAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
                 .display(
-                        ModItems.HOOK,
-                        Text.translatable("advancement.hook.title"),
-                        Text.translatable("advancement.hook.desc"),
+                        ModItems.POSEIDON_TALON,
+                        Text.translatable("advancement.poseidonTalon.title"),
+                        Text.translatable("advancement.poseidonTalon.desc"),
                         null,
                         AdvancementFrame.GOAL,
                         true,
                         true,
                         false
                 )
-                .criterion("got_hook", InventoryChangedCriterion.Conditions.items(ModItems.HOOK))
-                .build(consumer, BsRolePlay.MOD_ID + "/got_hook");
+                .criterion("got_poseidon_talon", InventoryChangedCriterion.Conditions.items(ModItems.POSEIDON_TALON))
+                .build(consumer, BsRolePlay.MOD_ID + "/got_poseidon_talon");
 
         Advancement fusionCoreAdvancement = Advancement.Builder.create().parent(roleplayCoreAdvancement)
                 .display(

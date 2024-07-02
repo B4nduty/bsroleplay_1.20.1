@@ -9,7 +9,8 @@
 		"ServerItemCooldownManagerMixin"
 	],
 	"client": [
-		"PlayerEntityRendererMixin"
+      "BackgroundRendererMixin",
+      "PlayerEntityRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

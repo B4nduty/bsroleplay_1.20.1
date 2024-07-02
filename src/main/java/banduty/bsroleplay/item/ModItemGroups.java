@@ -27,8 +27,8 @@ public class ModItemGroups {
                         entries.add(ModItems.HANDCUFFS_KEY);
                         entries.add(ModItems.HANDCUFFS);
                         entries.add(ModItems.ENDERCUFFS);
-                        entries.add(ModItems.HOOK);
-                        entries.add(ModItems.PHARAOH_STAFF);
+                        entries.add(ModItems.POSEIDON_TALON);
+                        entries.add(ModItems.DUNE_CALLER);
                         entries.add(ModItems.SPECTRAL_SCANNER);
                     })
                     .build());

@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:bsroleplay/got_roleplay_core",
   "criteria": {
-    "got_funeral_mask": {
+    "got_dune_caller": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:funeral_mask"
+              "bsroleplay:dune_caller"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "got_pharaoh_staff": {
+    "got_funeral_mask": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bsroleplay:pharaoh_staff"
+              "bsroleplay:funeral_mask"
             ]
           }
         ]
@@ -47,7 +47,7 @@
       "got_funeral_mask"
     ],
     [
-      "got_pharaoh_staff"
+      "got_dune_caller"
     ]
   ],
   "sends_telemetry_event": true

@@ -27,8 +27,8 @@ public class ChestLootTableModifier {
 
                 LootPool.Builder poolBuilder2 = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.common.getPharaohStaffChestsChance()))
-                        .with(ItemEntry.builder(ModItems.PHARAOH_STAFF))
+                        .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.common.getDuneCallerChestsChance()))
+                        .with(ItemEntry.builder(ModItems.DUNE_CALLER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder2.build());
@@ -47,8 +47,8 @@ public class ChestLootTableModifier {
             if (LootTables.BURIED_TREASURE_CHEST.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.common.getHookChestsChance()))
-                        .with(ItemEntry.builder(ModItems.HOOK))
+                        .conditionally(RandomChanceLootCondition.builder(BsRolePlay.CONFIG.common.getPoseidonTalonChestsChance()))
+                        .with(ItemEntry.builder(ModItems.POSEIDON_TALON))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

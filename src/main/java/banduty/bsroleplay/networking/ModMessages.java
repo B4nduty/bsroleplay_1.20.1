@@ -13,6 +13,7 @@ public class ModMessages {
     public static final Identifier STAMINA_ZERO_ID = new Identifier(BsRolePlay.MOD_ID, "stamina_zero");
     public static final Identifier SET_STAMINA_ZERO_ID = new Identifier(BsRolePlay.MOD_ID, "set_stamina_zero");
     public static final Identifier CURRENCY_COUNTER = new Identifier(BsRolePlay.MOD_ID, "currency_counter");
+    public static final Identifier VELOCITY_UPDATE = new Identifier(BsRolePlay.MOD_ID, "velocity_update");
 
     public static void registerC2SPackets() {
         ServerPlayNetworking.registerGlobalReceiver(POLICE_SPEED_ID, PoliceSpeedC2SPacket::receive);
@@ -24,5 +25,6 @@ public class ModMessages {
         ClientPlayNetworking.registerGlobalReceiver(STAMINA_INT_ID, StaminaIntS2CPacket::receive);
         ClientPlayNetworking.registerGlobalReceiver(STAMINA_BOOLEAN_ID, StaminaBooleanS2CPacket::receive);
         ClientPlayNetworking.registerGlobalReceiver(STAMINA_ZERO_ID, StaminaZeroS2CPacket::receive);
+        ClientPlayNetworking.registerGlobalReceiver(VELOCITY_UPDATE, VelocityUpdateS2CPacket::receive);
     }
 }

@@ -36,7 +36,7 @@ public class KeyInputHandler {
         policeSpeed = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 KEY_POLICE_SPEED,
                 InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_R,
+                GLFW.GLFW_KEY_LEFT_CONTROL,
                 BANDUTY_ROLEPLAY
         ));
 

@@ -44,7 +44,7 @@ public class InvKit extends Item {
             if (!player.isCreative()) stack.decrement(1);
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, BsRolePlay.CONFIG.common.getInvKit1stStageTime() * 20, 0, false, false, false));
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, BsRolePlay.CONFIG.common.getInvKit1stStageTime() * 20, 4, false, false, false));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, BsRolePlay.CONFIG.common.getInvKit1stStageTime() * 20, 3, false, false, false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, BsRolePlay.CONFIG.common.getInvKit1stStageTime() * 20, 2, false, false, false));
 
             player.getItemCooldownManager().set(this, BsRolePlay.CONFIG.common.getInvKit1stStageTime() * 20);
         }

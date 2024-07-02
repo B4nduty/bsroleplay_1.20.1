@@ -21,56 +21,46 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
     @Config(name = BsRolePlay.MOD_ID + "-common")
     public static final class Common implements ConfigData {
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("""
+                Dune Caller Cooldown in Seconds | Default: 90
+                Min Limit to 20 sec
+                """)
+        int duneCallerCooldown = 90;
+
+        public int getDuneCallerCooldown() {
+            return Math.max(20, duneCallerCooldown);
+        }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("Allow Pharaoh Staff throw Lightnings | Default: true")
-        public boolean modifyPharaohStaffLightning = true;
+        @Comment("""
+                Dune Caller Spawns in Chests Chance | Default: 0.01f
+                """)
+        float duneCallerChestsChance = 0.01f;
 
+        public float getDuneCallerChestsChance() {
+            return Math.min(1, Math.max(0, duneCallerChestsChance));
+        }
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                Pharaoh Staff Cooldown in Seconds | Default: 15
+                Poseidon's Talon Cooldown in Seconds | Default: 60
                 """)
-        int pharaohStaffCooldown = 15;
+        int poseidonTalonCooldown = 60;
 
-        public int getPharaohStaffCooldown() {
-            return Math.max(0, pharaohStaffCooldown);
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("""
-                Pharaoh Staff Spawns in Chests Chance | Default: 0.05f
-                """)
-        float pharaohStaffChestsChance = 0.05f;
-
-        public float getPharaohStaffChestsChance() {
-            return Math.min(1, Math.max(0, pharaohStaffChestsChance));
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("Allow Hook spawn Evoker Fang | Default: true")
-        public boolean modifyHookEvokerFang = true;
-
-
-        @ConfigEntry.Gui.Tooltip()
-        @Comment("""
-                Hook Cooldown in Seconds | Default: 8
-                """)
-        int hookCooldown = 8;
-
-        public int getHookCooldown() {
-            return Math.max(0, hookCooldown);
+        public int getPoseidonTalonCooldown() {
+            return Math.max(0, poseidonTalonCooldown);
         }
 
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Hook Spawns in Chests Chance | Default: 0.5f
+                Poseidon's Talon Spawns in Chests Chance | Default: 0.1f
                 """)
-        float hookChestsChance = 0.5f;
+        float poseidonTalonChestsChance = 0.1f;
 
-        public float getHookChestsChance() {
-            return Math.min(1, Math.max(0, hookChestsChance));
+        public float getPoseidonTalonChestsChance() {
+            return Math.min(1, Math.max(0, poseidonTalonChestsChance));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)
@@ -132,9 +122,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Police Set Speed Level | Default: 4
+                Police Set Speed Level | Default: 3
                 """)
-        int policeSetSpeedLevel = 4;
+        int policeSetSpeedLevel = 3;
 
         public int getPoliceSetSpeedLevel() {
             return Math.max(0, policeSetSpeedLevel);
@@ -142,10 +132,10 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 2)
         @Comment("""
-                Full Stamina Recover Time in Seconds | Default: 90
+                Full Stamina Recover Time in Seconds | Default: 60
                 If set to lower than 30, will count as 30 seconds
                 """)
-        int staminaRecoverTime = 90;
+        int staminaRecoverTime = 60;
 
         public int getStaminaRecoverTime() {
             return Math.max(30, staminaRecoverTime);
@@ -177,9 +167,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Fusion Core drop chance by Golems | Default: 0.1f
+                Fusion Core drop chance by Golems | Default: 0.05f
                 """)
-        float fusionCoreChanceGolem = 0.1f;
+        float fusionCoreChanceGolem = 0.05f;
 
         public float getFusionCoreChanceGolem() {
             return Math.min(1, Math.max(0, fusionCoreChanceGolem));
@@ -197,9 +187,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                HealKit Blindness Time in Seconds | Default: 40
+                HealKit Blindness Time in Seconds | Default: 60
                 """)
-        int healKitBlindnessTime = 90;
+        int healKitBlindnessTime = 60;
 
         public int getHealKitBlindnessTime() {
             return Math.max(0, healKitBlindnessTime);
@@ -207,9 +197,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                HealKit Blindness Chance | Default: 0.001f
+                HealKit Blindness Chance | Default: 0.01f
                 """)
-        float healKitBlindnessChance = 0.001f;
+        float healKitBlindnessChance = 0.01f;
 
         public float getHealKitBlindnessChance() {
             return Math.min(1, Math.max(0, healKitBlindnessChance));
@@ -247,9 +237,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                HealKit Nausea Chance | Default: 0.05f
+                HealKit Nausea Chance | Default: 0.03f
                 """)
-        float healKitNauseaChance = 0.05f;
+        float healKitNauseaChance = 0.03f;
 
         public float getHealKitNauseaChance() {
             return Math.min(1, Math.max(0, healKitNauseaChance));
@@ -297,9 +287,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip()
         @Comment("""
-                InvKit 1st Stage in Seconds | Default: 15
+                InvKit 1st Stage in Seconds | Default: 20
                 """)
-        int invKit1stStageTime = 15;
+        int invKit1stStageTime = 20;
 
         public int getInvKit1stStageTime() {
             return Math.max(0, invKit1stStageTime);
@@ -307,9 +297,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Funeral Mask Spawns in Chests Chance | Default: 0.2f
+                Funeral Mask Spawns in Chests Chance | Default: 0.05f
                 """)
-        float funeralMaskChestsChance = 0.2f;
+        float funeralMaskChestsChance = 0.05f;
 
         public float getFuneralMaskChestsChance() {
             return Math.min(1, Math.max(0, funeralMaskChestsChance));
@@ -317,9 +307,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Gadget Hat Spawns in Chests Chance | Default: 0.1f
+                Gadget Hat Spawns in Chests Chance | Default: 0.15f
                 """)
-        float gadgetHatChestsChance = 0.1f;
+        float gadgetHatChestsChance = 0.15f;
 
         public float getGadgetHatChestsChance() {
             return Math.min(1, Math.max(0, gadgetHatChestsChance));
@@ -384,9 +374,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Gold Coin drop chance by Hostile Mobs | Default: 0.005f
+                Gold Coin drop chance by Hostile Mobs | Default: 0.05f
                 """)
-        float goldCoinChanceHostileMobs = 0.005f;
+        float goldCoinChanceHostileMobs = 0.05f;
 
         public float getGoldCoinChanceHostileMobs() {
             return Math.min(1, Math.max(0, goldCoinChanceHostileMobs));
@@ -416,7 +406,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @Comment("""
                 Max Gold Coin amount drop by Boss Mobs | Default: 3.0f
                 """)
-        float goldCoinMaxAmountBossMobs = 3.0f;
+        float goldCoinMaxAmountBossMobs = 2.0f;
 
         public float getGoldCoinMaxAmountBossMobs() {
             return Math.max(0, goldCoinMaxAmountBossMobs);
@@ -454,9 +444,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Amethyst Coin amount drop by Ender Dragon | Default: 3.0f
+                Max Amethyst Coin amount drop by Ender Dragon | Default: 2.0f
                 """)
-        float amethystCoinMaxAmountEnderDragon = 3.0f;
+        float amethystCoinMaxAmountEnderDragon = 2.0f;
 
         public float getAmethystCoinMaxAmountEnderDragon() {
             return Math.max(0, amethystCoinMaxAmountEnderDragon);
@@ -494,9 +484,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Copper Coin amount drop by Ores | Default: 3.0f
+                Max Copper Coin amount drop by Ores | Default: 2.0f
                 """)
-        float copperCoinMaxAmountOres = 3.0f;
+        float copperCoinMaxAmountOres = 2.0f;
 
         public float getCopperCoinMaxAmountOres() {
             return Math.max(0, copperCoinMaxAmountOres);
@@ -514,9 +504,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Max Gold Coin amount drop by Ores | Default: 2.0f
+                Max Gold Coin amount drop by Ores | Default: 1.0f
                 """)
-        float goldCoinMaxAmountOres = 2.0f;
+        float goldCoinMaxAmountOres = 1.0f;
 
         public float getGoldCoinMaxAmountOres() {
             return Math.max(0, goldCoinMaxAmountOres);
@@ -524,9 +514,9 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Amethyst Coin drop chance by Ores | Default: 0.000001f
+                Amethyst Coin drop chance by Ores | Default: 0.0001f
                 """)
-        float amethystCoinChanceOres = 0.000001f;
+        float amethystCoinChanceOres = 0.0001f;
 
         public float getAmethystCoinChanceOres() {
             return Math.min(1, Math.max(0, amethystCoinChanceOres));

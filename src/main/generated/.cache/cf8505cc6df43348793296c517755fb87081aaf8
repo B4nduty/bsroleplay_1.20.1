@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-29T20:25:04.2479747	BsRolePlay/Model Definitions
+// 1.20.1	2024-07-02T10:20:20.75728	BsRolePlay/Model Definitions
 466079be3ee933f6917e5d589dac9c72d60cc263 assets\bsroleplay\models\item\gold_coin.json
 c1fed0545dc2dd265526c4b8d7ef11a5bf8ea6c7 assets\bsroleplay\models\item\bunny_mask.json
 4c6c05caeb0779589935bbfbce0debdd31f63d3f assets\bsroleplay\models\item\protection_helmet.json
@@ -7,8 +7,8 @@ d04d2d2f4ebe463edf2cb0f2e63f5758e994bb89 assets\bsroleplay\models\item\copper_co
 2ff6ae5d50b0f1e4c081328d1d9776c4defea74b assets\bsroleplay\models\item\red_protection_leggings.json
 3baf4c34df3ed1042c1eb3cb16e1bf03a44f22bd assets\bsroleplay\models\item\endercuffs.json
 df0fdcacaf612440f3f137e4ff0f9273d3036e0c assets\bsroleplay\models\item\protection_boots.json
-515b582c3c22be72f92368d582c5ce9f49bae69e assets\bsroleplay\models\item\red_pirate_leggings.json
 682244f2c8c786616dde28b802fa702b98392d19 assets\bsroleplay\models\item\civic_crown.json
+515b582c3c22be72f92368d582c5ce9f49bae69e assets\bsroleplay\models\item\red_pirate_leggings.json
 5c552247f27fffde41c7043025c5bb6bf44ca581 assets\bsroleplay\models\item\poncho.json
 36057332bf0595eacc435d4d38b7e83e6af5425b assets\bsroleplay\models\item\red_pirate_helmet.json
 8706a117b5623d8b847fa8413e4b73e0d4b067c0 assets\bsroleplay\models\item\red_pirate_chestplate.json
@@ -17,6 +17,7 @@ df0fdcacaf612440f3f137e4ff0f9273d3036e0c assets\bsroleplay\models\item\protectio
 1c52b1a36a43b4ab24694f1d63038c66b0849d61 assets\bsroleplay\models\item\protection_chestplate.json
 48fc7812c694ac977be1d507cb49c534ebc83139 assets\bsroleplay\models\item\amethyst_coin_stack.json
 9e9252e21c525f5cd7beb1c5ea6c66f11f32f764 assets\bsroleplay\models\item\gadget_hat.json
+58dc643abc0d9c10c19e001d9dd3c91d76d9965e assets\bsroleplay\models\item\poseidon_talon.json
 2309a31b971480d9526939ab61b6c4ff524dc5d4 assets\bsroleplay\models\item\police_boots.json
 efd2a3edfa4d3a73b02fa696f26d9bea5d37e4aa assets\bsroleplay\models\item\handcuffs_key.json
 f58068b0f4bc018ea6985bfeaf2711fd2796bc27 assets\bsroleplay\models\item\lawyer_boots_purple.json
@@ -28,6 +29,7 @@ d3190c97c9c5e10f549fb5fba68311a12e79dad8 assets\bsroleplay\models\item\netherite
 73982755a7167b5604b678947715473a988eec29 assets\bsroleplay\models\item\roleplay_core.json
 2e95c2f26a435df570eeb0cec518f9e5eaedb2ea assets\bsroleplay\models\item\mini_crown.json
 e9a226fef62cf8c5159d304d3fa12e1914e81b24 assets\bsroleplay\models\item\dream_mask.json
+3b4327915b9328bf17918ac50de32d5661c120d7 assets\bsroleplay\models\item\sandstorm_projectile.json
 84ec0fb2d662405abec089bc813e5b5c659349d3 assets\bsroleplay\models\item\blue_pirate_chestplate.json
 f736b9e5f422ae34e1a50e024bc8d889463d2e2a assets\bsroleplay\models\item\lawyer_leggings_purple.json
 3b22be818569d3cc2367cce832c3aecd6968262f assets\bsroleplay\models\item\cowboy_hat.json
@@ -47,6 +49,7 @@ e8a7ff6250b6cf7b4453674fb15c8b05f76eae90 assets\bsroleplay\models\item\handcuffs
 bdb5621e348f402bb8aa5b226108beed060bfeb8 assets\bsroleplay\models\item\spectral_scanner.json
 8a408b33732650fbe8564a97994b4a91ce02fa45 assets\bsroleplay\models\item\lawyer_purplered_chestplate.json
 5438564054ddf0717e0d7907fe4025793dd542a5 assets\bsroleplay\models\item\lawyer_boots_black.json
+9e23d944465a342be70b588019ca51208d53b465 assets\bsroleplay\models\item\dune_caller.json
 16d4a0255f19941dc2d94274cbf975a8eae4e071 assets\bsroleplay\models\item\dealer_mask.json
 3a9753935a0fd466ff77789292b965b1158229a1 assets\bsroleplay\models\item\roman_toga.json
 6088d0e7b29ebb7f69c77cb7a2785a64993469b4 assets\bsroleplay\models\item\neanderthal_chestplate.json
