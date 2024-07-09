@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bsroleplay:item/protection_leggings",
+    "layer1": "bsroleplay:item/protection_leggings_overlay"
+  }
+}

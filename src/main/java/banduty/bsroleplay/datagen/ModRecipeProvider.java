@@ -92,81 +92,43 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HALO)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PIRATE_HELMET, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PIRATE_HELMET, 1)
                 .pattern(" I ")
                 .pattern("IBI")
                 .pattern("RRR")
                 .input('I', Items.GOLD_INGOT)
                 .input('B', ModItems.ROLEPLAY_CORE)
-                .input('R', Items.RED_WOOL)
+                .input('R', Items.BROWN_WOOL)
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PIRATE_HELMET)));
+                .criterion(hasItem(Items.BROWN_WOOL), conditionsFromItem(Items.BROWN_WOOL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PIRATE_HELMET)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PIRATE_CHESTPLATE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PIRATE_CHESTPLATE, 1)
                 .pattern("RWR")
                 .pattern("RCR")
                 .pattern("IWI")
                 .input('I', Items.GOLD_INGOT)
-                .input('R', Items.RED_WOOL)
+                .input('R', Items.BROWN_WOOL)
                 .input('W', Items.WHITE_WOOL)
                 .input('C', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
+                .criterion(hasItem(Items.BROWN_WOOL), conditionsFromItem(Items.BROWN_WOOL))
                 .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PIRATE_CHESTPLATE)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PIRATE_CHESTPLATE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PIRATE_LEGGINGS, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PIRATE_LEGGINGS, 1)
                 .pattern("RCR")
                 .pattern("R R")
                 .pattern("G G")
-                .input('R', Items.RED_WOOL)
+                .input('R', Items.BROWN_WOOL)
                 .input('G', Items.GOLD_INGOT)
                 .input('C', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
+                .criterion(hasItem(Items.BROWN_WOOL), conditionsFromItem(Items.BROWN_WOOL))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PIRATE_LEGGINGS)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLUE_PIRATE_HELMET, 1)
-                .pattern(" I ")
-                .pattern("IBI")
-                .pattern("RRR")
-                .input('I', Items.GOLD_INGOT)
-                .input('B', ModItems.ROLEPLAY_CORE)
-                .input('R', Items.BLUE_WOOL)
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BLUE_PIRATE_HELMET)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLUE_PIRATE_CHESTPLATE, 1)
-                .pattern("RWR")
-                .pattern("RCR")
-                .pattern("IWI")
-                .input('I', Items.GOLD_INGOT)
-                .input('R', Items.BLUE_WOOL)
-                .input('W', Items.WHITE_WOOL)
-                .input('C', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
-                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BLUE_PIRATE_CHESTPLATE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLUE_PIRATE_LEGGINGS, 1)
-                .pattern("RCR")
-                .pattern("R R")
-                .pattern("G G")
-                .input('R', Items.BLUE_WOOL)
-                .input('G', Items.GOLD_INGOT)
-                .input('C', ModItems.ROLEPLAY_CORE)
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(hasItem(Items.BLUE_WOOL), conditionsFromItem(Items.BLUE_WOOL))
-                .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BLUE_PIRATE_LEGGINGS)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PIRATE_LEGGINGS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MINI_CROWN, 1)
                 .pattern("GRG")
@@ -311,36 +273,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("B B")
                 .pattern("GRG")
                 .input('B', Items.BLACK_WOOL)
-                .input('G', Items.RED_WOOL)
+                .input('G', Items.REDSTONE)
                 .input('R', ModItems.ROLEPLAY_CORE)
                 .criterion(hasItem(Items.BLACK_WOOL), conditionsFromItem(Items.BLACK_WOOL))
-                .criterion(hasItem(Items.RED_WOOL), conditionsFromItem(Items.RED_WOOL))
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .criterion(hasItem(ModItems.ROLEPLAY_CORE), conditionsFromItem(ModItems.ROLEPLAY_CORE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PROTECTION_BOOTS)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PROTECTION_HELMET, 1)
-                .pattern("PR")
-                .input('R', Items.RED_DYE)
-                .input('P', ModItems.PROTECTION_HELMET)
-                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
-                .criterion(hasItem(ModItems.PROTECTION_HELMET), conditionsFromItem(ModItems.PROTECTION_HELMET))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PROTECTION_HELMET)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PROTECTION_CHESTPLATE, 1)
-                .pattern("PR")
-                .input('R', Items.RED_DYE)
-                .input('P', ModItems.PROTECTION_CHESTPLATE)
-                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
-                .criterion(hasItem(ModItems.PROTECTION_CHESTPLATE), conditionsFromItem(ModItems.PROTECTION_CHESTPLATE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PROTECTION_CHESTPLATE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_PROTECTION_LEGGINGS, 1)
-                .pattern("PR")
-                .input('R', Items.RED_DYE)
-                .input('P', ModItems.PROTECTION_LEGGINGS)
-                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
-                .criterion(hasItem(ModItems.PROTECTION_LEGGINGS), conditionsFromItem(ModItems.PROTECTION_LEGGINGS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RED_PROTECTION_LEGGINGS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ROLEPLAY_CORE, 2)
                 .pattern("RGR")

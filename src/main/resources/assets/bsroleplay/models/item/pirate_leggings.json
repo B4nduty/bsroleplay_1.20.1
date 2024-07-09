@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bsroleplay:item/pirate_leggings",
+    "layer1": "bsroleplay:item/pirate_leggings_overlay"
+  }
+}

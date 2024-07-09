@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bsroleplay:item/protection_chestplate",
+    "layer1": "bsroleplay:item/protection_chestplate_overlay"
+  }
+}

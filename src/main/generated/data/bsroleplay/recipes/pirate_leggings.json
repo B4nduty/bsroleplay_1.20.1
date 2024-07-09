@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "bsroleplay:roleplay_core"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "pattern": [
+    "RCR",
+    "R R",
+    "G G"
+  ],
+  "result": {
+    "item": "bsroleplay:pirate_leggings"
+  },
+  "show_notification": true
+}

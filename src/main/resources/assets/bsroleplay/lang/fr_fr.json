@@ -1,11 +1,7 @@
 {
-  "item.bsroleplay.red_pirate_helmet": "Tricorne Rouge",
-  "item.bsroleplay.red_pirate_chestplate": "Vêtements de Pirates Rouge",
-  "item.bsroleplay.red_pirate_leggings": "Pantalon de Pirate Rouge",
-
-  "item.bsroleplay.blue_pirate_helmet": "Tricorne Bleu",
-  "item.bsroleplay.blue_pirate_chestplate": "Vêtements de Pirates Bleu",
-  "item.bsroleplay.blue_pirate_leggings": "Pantalon de Pirate Bleu",
+  "item.bsroleplay.pirate_helmet": "Tricorne",
+  "item.bsroleplay.pirate_chestplate": "Vêtements de Pirates",
+  "item.bsroleplay.pirate_leggings": "Pantalon de Pirate",
 
   "item.bsroleplay.crown": "Couronne",
   "item.bsroleplay.mini_crown": "Petite Couronne",
@@ -51,9 +47,6 @@
   "item.bsroleplay.protection_helmet": "Casque de Protection",
   "item.bsroleplay.protection_chestplate": "Plastron de Protection",
   "item.bsroleplay.protection_leggings": "Pantalon de Protection",
-  "item.bsroleplay.red_protection_helmet": "Casque de Protection Rouge",
-  "item.bsroleplay.red_protection_chestplate": "Plastron de Protection Rouge",
-  "item.bsroleplay.red_protection_leggings": "Pantalon de Protection Rouge",
   "item.bsroleplay.protection_boots": "Bottes de Protection",
 
   "item.bsroleplay.dealer_mask": "Masque de Trafiquant",

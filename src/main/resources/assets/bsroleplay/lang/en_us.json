@@ -1,11 +1,7 @@
 {
-  "item.bsroleplay.red_pirate_helmet": "Red Tricorn",
-  "item.bsroleplay.red_pirate_chestplate": "Red Pirate Clothing",
-  "item.bsroleplay.red_pirate_leggings": "Red Pirate Pants",
-
-  "item.bsroleplay.blue_pirate_helmet": "Blue Tricorn",
-  "item.bsroleplay.blue_pirate_chestplate": "Blue Pirate Clothing",
-  "item.bsroleplay.blue_pirate_leggings": "Blue Pirate Pants",
+  "item.bsroleplay.pirate_helmet": "Tricorn",
+  "item.bsroleplay.pirate_chestplate": "Pirate Clothing",
+  "item.bsroleplay.pirate_leggings": "Pirate Pants",
 
   "item.bsroleplay.crown": "Crown",
   "item.bsroleplay.mini_crown": "Mini Crown",
@@ -51,9 +47,6 @@
   "item.bsroleplay.protection_helmet": "Protection Helmet",
   "item.bsroleplay.protection_chestplate": "Protection Chestplate",
   "item.bsroleplay.protection_leggings": "Protection Leggings",
-  "item.bsroleplay.red_protection_helmet": "Red Protection Helmet",
-  "item.bsroleplay.red_protection_chestplate": "Red Protection Chestplate",
-  "item.bsroleplay.red_protection_leggings": "Red Protection Leggings",
   "item.bsroleplay.protection_boots": "Protection Boots",
 
   "item.bsroleplay.dealer_mask": "Dealer Mask",

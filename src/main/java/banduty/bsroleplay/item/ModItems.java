@@ -2,10 +2,7 @@ package banduty.bsroleplay.item;
 
 import banduty.bsroleplay.BsRolePlay;
 import banduty.bsroleplay.block.ModBlocks;
-import banduty.bsroleplay.item.custom.armor.GenericArmorItem;
-import banduty.bsroleplay.item.custom.armor.MasksItem;
-import banduty.bsroleplay.item.custom.armor.PoliceArmorItem;
-import banduty.bsroleplay.item.custom.armor.ProtectionClothingItem;
+import banduty.bsroleplay.item.custom.armor.*;
 import banduty.bsroleplay.item.custom.blocks.ShopItem;
 import banduty.bsroleplay.item.custom.blocks.TinyBandutyItem;
 import banduty.bsroleplay.item.custom.blocks.currency.CoinItem;
@@ -49,19 +46,12 @@ public class ModItems {
     public static final Item HALO = registerItem("halo",
             new GenericArmorItem(ModArmorMaterials.HOLY, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.EPIC)));
 
-    public static final Item RED_PIRATE_HELMET = registerItem("red_pirate_helmet",
-            new GenericArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.HELMET, new FabricItemSettings()));
-    public static final Item RED_PIRATE_CHESTPLATE = registerItem("red_pirate_chestplate",
-            new GenericArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item RED_PIRATE_LEGGINGS = registerItem("red_pirate_leggings",
-            new GenericArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-
-    public static final Item BLUE_PIRATE_HELMET = registerItem("blue_pirate_helmet",
-            new GenericArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.HELMET, new FabricItemSettings()));
-    public static final Item BLUE_PIRATE_CHESTPLATE = registerItem("blue_pirate_chestplate",
-            new GenericArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item BLUE_PIRATE_LEGGINGS = registerItem("blue_pirate_leggings",
-            new GenericArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item PIRATE_HELMET = registerItem("pirate_helmet",
+            new PirateArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item PIRATE_CHESTPLATE = registerItem("pirate_chestplate",
+            new PirateArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item PIRATE_LEGGINGS = registerItem("pirate_leggings",
+            new PirateArmorItem(ModArmorMaterials.PIRATE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
 
     public static final Item POSEIDON_TALON = registerItem("poseidon_talon",
             new PoseidonTalon(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
@@ -101,13 +91,6 @@ public class ModItems {
     public static final Item PROTECTION_BOOTS = registerItem("protection_boots",
             new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    public static final Item RED_PROTECTION_HELMET = registerItem("red_protection_helmet",
-            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.HELMET, new FabricItemSettings()));
-    public static final Item RED_PROTECTION_CHESTPLATE = registerItem("red_protection_chestplate",
-            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item RED_PROTECTION_LEGGINGS = registerItem("red_protection_leggings",
-            new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-
     public static final Item DEALER_MASK = registerItem("dealer_mask",
             new MasksItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
@@ -117,7 +100,7 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.HEALKIT).maxCount(3).rarity(Rarity.UNCOMMON)));
 
     public static final Item GADGET_HAT = registerItem("gadget_hat",
-            new GenericArmorItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new GadgetHatItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item LAWYER_BLACKBLUE_CHESTPLATE = registerItem("lawyer_blackblue_chestplate",
             new GenericArmorItem(ModArmorMaterials.MASK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));

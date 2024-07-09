@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bsroleplay:item/gadget_hat",
+    "layer1": "bsroleplay:item/gadget_hat_overlay"
+  }
+}

@@ -12,7 +12,10 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.DyeableItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
 import net.minecraft.world.World;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -24,7 +27,7 @@ import software.bernie.geckolib.core.object.PlayState;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public class ProtectionClothingItem extends ArmorItem implements GeoItem {
+public class ProtectionClothingItem extends ArmorItem implements GeoItem, DyeableItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (!world.isClient() && entity instanceof PlayerEntity player && BsRolePlay.CONFIG.common.modifyProtectionSetEffects) {
@@ -87,5 +90,14 @@ public class ProtectionClothingItem extends ArmorItem implements GeoItem {
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return this.cache;
+    }
+
+    @Override
+    public int getColor(ItemStack stack) {
+        NbtCompound nbtCompound = stack.getSubNbt(DISPLAY_KEY);
+        if (nbtCompound != null && nbtCompound.contains(COLOR_KEY, NbtElement.NUMBER_TYPE)) {
+            return nbtCompound.getInt(COLOR_KEY);
+        }
+        return 16773120;
     }
 }

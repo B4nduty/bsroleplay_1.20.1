@@ -75,13 +75,9 @@ public class ModItemGroups {
                         entries.add(ModItems.LAWYER_BOOTS_PURPLE);
 
 
-                        entries.add(ModItems.RED_PIRATE_HELMET);
-                        entries.add(ModItems.RED_PIRATE_CHESTPLATE);
-                        entries.add(ModItems.RED_PIRATE_LEGGINGS);
-
-                        entries.add(ModItems.BLUE_PIRATE_HELMET);
-                        entries.add(ModItems.BLUE_PIRATE_CHESTPLATE);
-                        entries.add(ModItems.BLUE_PIRATE_LEGGINGS);
+                        entries.add(ModItems.PIRATE_HELMET);
+                        entries.add(ModItems.PIRATE_CHESTPLATE);
+                        entries.add(ModItems.PIRATE_LEGGINGS);
 
                         entries.add(ModItems.COWBOY_HAT);
                         entries.add(ModItems.PONCHO);
@@ -89,9 +85,6 @@ public class ModItemGroups {
                         entries.add(ModItems.PROTECTION_HELMET);
                         entries.add(ModItems.PROTECTION_CHESTPLATE);
                         entries.add(ModItems.PROTECTION_LEGGINGS);
-                        entries.add(ModItems.RED_PROTECTION_HELMET);
-                        entries.add(ModItems.RED_PROTECTION_CHESTPLATE);
-                        entries.add(ModItems.RED_PROTECTION_LEGGINGS);
                         entries.add(ModItems.PROTECTION_BOOTS);
 
                         entries.add(ModItems.GADGET_HAT);

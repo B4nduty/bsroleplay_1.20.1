@@ -1,18 +1,19 @@
 
 {
-	"required": true,
-	"package": "banduty.bsroleplay.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"MilkBucketMixin",
-		"PlayerEntityMixin",
-		"ServerItemCooldownManagerMixin"
-	],
-	"client": [
-      "BackgroundRendererMixin",
-      "PlayerEntityRendererMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "banduty.bsroleplay.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MilkBucketMixin",
+    "PlayerEntityMixin",
+    "ServerItemCooldownManagerMixin"
+  ],
+  "client": [
+    "BackgroundRendererMixin",
+    "DyeableGeoArmorRendererInvoker",
+    "PlayerEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

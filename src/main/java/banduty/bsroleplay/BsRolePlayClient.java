@@ -69,7 +69,9 @@ public class BsRolePlayClient implements ClientModInitializer {
         BlockEntityRendererRegistry.register(ModBlockEntities.NETHERITE_COIN_STACK_BLOCK_ENTITY, NetheriteCoinStackRenderer::new);
 
         ColorProviderRegistry.ITEM.register((stack, tintIndex) ->
-                tintIndex > 0 ? -1 : ((DyeableItem) stack.getItem()).getColor(stack), ModItems.WALLET);
+                tintIndex > 0 ? -1 : ((DyeableItem) stack.getItem()).getColor(stack), ModItems.WALLET, ModItems.PIRATE_HELMET,
+                ModItems.PIRATE_CHESTPLATE, ModItems.PIRATE_LEGGINGS, ModItems.PROTECTION_HELMET, ModItems.PROTECTION_CHESTPLATE,
+                ModItems.PROTECTION_LEGGINGS, ModItems.PROTECTION_BOOTS, ModItems.GADGET_HAT);
 
         HandledScreens.register(ModScreenHandlers.WALLET_SCREEN_HANDLER, WalletScreen::new);
         HandledScreens.register(ModScreenHandlers.SHOP_SCREEN_HANDLER, ShopScreen::new);

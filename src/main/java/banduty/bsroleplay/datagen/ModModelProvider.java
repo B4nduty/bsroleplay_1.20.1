@@ -29,24 +29,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.POLICE_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.POLICE_BOOTS, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.PROTECTION_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PROTECTION_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PROTECTION_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PROTECTION_BOOTS, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.RED_PROTECTION_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RED_PROTECTION_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RED_PROTECTION_LEGGINGS, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.HALO, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.RED_PIRATE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RED_PIRATE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RED_PIRATE_LEGGINGS, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.BLUE_PIRATE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BLUE_PIRATE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BLUE_PIRATE_LEGGINGS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CROWN, Models.GENERATED);
         itemModelGenerator.register(ModItems.MINI_CROWN, Models.GENERATED);
@@ -84,8 +67,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GOLD_COIN_STACK, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_COIN_STACK, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHERITE_COIN_STACK, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.GADGET_HAT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.LAWYER_BLACKBLUE_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LAWYER_BLACKGOLD_CHESTPLATE, Models.GENERATED);
