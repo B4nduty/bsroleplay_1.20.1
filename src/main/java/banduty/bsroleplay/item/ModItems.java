@@ -78,9 +78,9 @@ public class ModItems {
             new GenericArmorItem(ModArmorMaterials.ROMAN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
 
     public static final Item COWBOY_HAT = registerItem("cowboy_hat",
-            new GenericArmorItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new CowboyArmorItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item PONCHO = registerItem("poncho",
-            new GenericArmorItem(ModArmorMaterials.COWBOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new CowboyArmorItem(ModArmorMaterials.COWBOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
 
     public static final Item PROTECTION_HELMET = registerItem("protection_helmet",
             new ProtectionClothingItem(ModArmorMaterials.PROTECTION, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -137,9 +137,9 @@ public class ModItems {
             new Endercuffs(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final Item FEDORA = registerItem("fedora",
-            new GenericArmorItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
+            new GenericArmorItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
     public static final Item FEDORA_PURPLE = registerItem("fedora_purple",
-            new GenericArmorItem(ModArmorMaterials.COWBOY, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
+            new GenericArmorItem(ModArmorMaterials.MASK, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
 
     public static final Item COPPER_COIN = registerItem("copper_coin",
             new CoinItem(ModBlocks.COPPER_COIN, 1, new FabricItemSettings()));

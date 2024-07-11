@@ -27,7 +27,10 @@ public class KeyInputHandler {
                         .getBoolean("stamina_boolean") && stamina > 0) {
                     ClientPlayNetworking.send(ModMessages.POLICE_SPEED_ID, PacketByteBufs.create());
                     ClientPlayNetworking.send(ModMessages.SET_STAMINA_ZERO_ID, PacketByteBufs.create());
+                    ClientPlayNetworking.send(ModMessages.SET_REGEN_STAMINA_FALSE_ID, PacketByteBufs.create());
                 }
+
+                if (!policeSpeed.isPressed()) ClientPlayNetworking.send(ModMessages.SET_REGEN_STAMINA_TRUE_ID, PacketByteBufs.create());
             }
         });
     }

@@ -122,27 +122,6 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Police Set Speed Level | Default: 3
-                """)
-        int policeSetSpeedLevel = 3;
-
-        public int getPoliceSetSpeedLevel() {
-            return Math.max(0, policeSetSpeedLevel);
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 2)
-        @Comment("""
-                Full Stamina Recover Time in Seconds | Default: 60
-                If set to lower than 30, will count as 30 seconds
-                """)
-        int staminaRecoverTime = 60;
-
-        public int getStaminaRecoverTime() {
-            return Math.max(30, staminaRecoverTime);
-        }
-
-        @ConfigEntry.Gui.Tooltip(count = 0)
-        @Comment("""
                 Handcuffs Slowness Level | Default: 6
                 """)
         int handcuffsSlownessLevel = 6;

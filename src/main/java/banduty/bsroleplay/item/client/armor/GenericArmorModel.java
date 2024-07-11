@@ -10,8 +10,6 @@ public class GenericArmorModel extends GeoModel<GenericArmorItem> {
 
     @Override
     public Identifier getModelResource(GenericArmorItem animatable) {
-        if (animatable == ModItems.COWBOY_HAT || animatable == ModItems.PONCHO)
-            return new Identifier(BsRolePlay.MOD_ID, "geo/cowboy.geo.json");
         if (animatable == ModItems.CROWN) return new Identifier(BsRolePlay.MOD_ID, "geo/crown.geo.json");
         if (animatable == ModItems.MINI_CROWN) return new Identifier(BsRolePlay.MOD_ID, "geo/mini_crown.geo.json");
         if (animatable == ModItems.FEDORA || animatable == ModItems.FEDORA_PURPLE)
@@ -31,8 +29,6 @@ public class GenericArmorModel extends GeoModel<GenericArmorItem> {
 
     @Override
     public Identifier getTextureResource(GenericArmorItem animatable) {
-        if (animatable == ModItems.COWBOY_HAT || animatable == ModItems.PONCHO)
-            return new Identifier(BsRolePlay.MOD_ID, "textures/armor/cowboy.png");
         if (animatable == ModItems.CROWN) return new Identifier(BsRolePlay.MOD_ID, "textures/armor/crown.png");
         if (animatable == ModItems.MINI_CROWN) return new Identifier(BsRolePlay.MOD_ID, "textures/armor/mini_crown.png");
         if (animatable == ModItems.FEDORA) return new Identifier(BsRolePlay.MOD_ID, "textures/armor/elegant.png");
