@@ -18,6 +18,7 @@ import java.util.Map;
 
 public class StaminaOverlay implements HudRenderCallback {
     private static final Identifier STAMINA = new Identifier(BsRolePlay.MOD_ID, "textures/overlay/stamina.png");
+    private static final Identifier BLOCKED_STAMINA = new Identifier(BsRolePlay.MOD_ID, "textures/overlay/blocked_stamina.png");
     private static final Identifier NETHER_ADVANCEMENT = new Identifier("minecraft", "nether/root");
     private static final Identifier DRAGON_ADVANCEMENT = new Identifier("minecraft", "end/kill_dragon");
 
@@ -28,6 +29,7 @@ public class StaminaOverlay implements HudRenderCallback {
         ClientPlayerEntity player = MinecraftClient.getInstance().player;
         if (player == null) return;
         boolean shouldStamina = ((IEntityDataSaver) player).bsroleplay$getPersistentData().getBoolean("stamina_boolean");
+        boolean blockedStamina = ((IEntityDataSaver) player).bsroleplay$getPersistentData().getBoolean("blocked_stamina");
         int stamina = ((IEntityDataSaver) player).bsroleplay$getPersistentData().getInt("stamina_int");
         if (shouldStamina && !player.isSpectator()) {
             ClientPlayNetworkHandler networkHandler = player.networkHandler;
@@ -63,8 +65,13 @@ public class StaminaOverlay implements HudRenderCallback {
 
             for(int i = 0; i < totalStamina; i++) {
                 if(stamina > i) {
-                    RenderSystem.setShaderTexture(0, STAMINA);
-                    drawContext.drawTexture(STAMINA, x + 94, y - 31, 0, 0, (int) (i * constantWidth) + 1, 34, 34, 34);
+                    if (blockedStamina) {
+                        RenderSystem.setShaderTexture(0, BLOCKED_STAMINA);
+                        drawContext.drawTexture(BLOCKED_STAMINA, x + 94, y - 31, 0, 0, (int) (i * constantWidth) + 1, 34, 34, 34);
+                    } else {
+                        RenderSystem.setShaderTexture(0, STAMINA);
+                        drawContext.drawTexture(STAMINA, x + 94, y - 31, 0, 0, (int) (i * constantWidth) + 1, 34, 34, 34);
+                    }
                 } else {
                     break;
                 }

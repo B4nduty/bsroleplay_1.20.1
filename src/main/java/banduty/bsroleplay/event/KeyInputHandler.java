@@ -23,10 +23,10 @@ public class KeyInputHandler {
             PlayerEntity playerEntity = MinecraftClient.getInstance().player;
             if (playerEntity != null) {
                 int stamina = ((IEntityDataSaver) playerEntity).bsroleplay$getPersistentData().getInt("stamina_int");
+                boolean staminaZero = ((IEntityDataSaver) playerEntity).bsroleplay$getPersistentData().getBoolean("stamina_zero");
                 if(policeSpeed.isPressed() && ((IEntityDataSaver) playerEntity).bsroleplay$getPersistentData()
-                        .getBoolean("stamina_boolean") && stamina > 0) {
+                        .getBoolean("stamina_boolean") && stamina > 0 && !staminaZero) {
                     ClientPlayNetworking.send(ModMessages.POLICE_SPEED_ID, PacketByteBufs.create());
-                    ClientPlayNetworking.send(ModMessages.SET_STAMINA_ZERO_ID, PacketByteBufs.create());
                     ClientPlayNetworking.send(ModMessages.SET_REGEN_STAMINA_FALSE_ID, PacketByteBufs.create());
                 }
 

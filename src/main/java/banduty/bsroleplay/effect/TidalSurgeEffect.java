@@ -39,7 +39,7 @@ public class TidalSurgeEffect extends StatusEffect {
                 buf.writeDouble(velocityX);
                 buf.writeDouble(velocityY);
                 buf.writeDouble(velocityZ);
-                ServerPlayNetworking.send((ServerPlayerEntity) player, ModMessages.VELOCITY_UPDATE, buf);
+                ServerPlayNetworking.send((ServerPlayerEntity) player, ModMessages.VELOCITY_UPDATE_ID, buf);
             }
 
             EntityAttributeInstance attributeInstance = entity.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE);

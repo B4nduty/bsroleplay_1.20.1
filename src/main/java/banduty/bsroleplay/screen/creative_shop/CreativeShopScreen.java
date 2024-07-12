@@ -74,7 +74,7 @@ public class CreativeShopScreen extends HandledScreen<CreativeShopScreenHandler>
         PacketByteBuf buf = PacketByteBufs.create();
         buf.writeInt(this.handler.syncId);
         buf.writeInt(amount);
-        ClientPlayNetworking.send(ModMessages.CURRENCY_COUNTER, buf);
+        ClientPlayNetworking.send(ModMessages.CURRENCY_COUNTER_ID, buf);
     }
 
     @Override
